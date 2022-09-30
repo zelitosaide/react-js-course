@@ -1,3 +1,1 @@
 # react-js-course
-
-Ola
