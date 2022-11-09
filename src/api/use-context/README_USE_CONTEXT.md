@@ -230,6 +230,10 @@ function Button({ children }) {
 
 ##### Updating an object via context
 
+In this example, there is a `currentUser` state variable which holds an object. You combine `{ currentUser, setCurrentUser }` into a single object and pass it down through the context inside the `value={}`
+. This lets any component below, such as `LoginButton`, read both `currentUser` and `setCurrentUser`, and then call `setCurrentUser` when needed.
+
+
 ##### Multiple contexts
 
 ##### Extracting providers to a component
