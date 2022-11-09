@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 const ThemeContext = createContext(null);
 const CurrentUserContext = createContext(null);
@@ -20,6 +20,7 @@ export function MultipleContexts() {
         <input
           id="theme"
           checked={theme === "dark"}
+          type="checkbox"
           onChange={function (event) {
             setTheme(event.target.checked ? "dark" : "light");
           }}
@@ -30,5 +31,31 @@ export function MultipleContexts() {
 }
 
 function WelcomePanel() {
-  return;
+  const { currentUser } = useContext(CurrentUserContext);
+
+  return (
+    <Panel title="Welcome">
+      {currentUser !== null ? <Greeting /> : <LoginForm />}
+    </Panel>
+  );
 }
+
+function Panel({ title, children }) {
+  const theme = useContext(ThemeContext);
+  const className = "panel-" + theme;
+
+  return (
+    <section className={className}>
+      <h1>{title}</h1>
+      {children}
+    </section>
+  );
+}
+
+function Greeting() {
+  const { currentUser } = useContext(CurrentUserContext);
+
+  return <p>You logged in as {currentUser.name}.</p>;
+}
+
+function LoginForm() {}

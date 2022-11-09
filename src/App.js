@@ -1,4 +1,5 @@
 // import { MyApp } from "./learn/quick_start/MyApp";
+import { MultipleContexts } from "./api/use-context/multiple-contexts";
 import { PassingData } from "./api/use-context/passing-data-deeply-into-the-tree";
 import { UpadatingValueViaContext } from "./api/use-context/updating-a-value-via-context";
 import { UpdatingObjectViaContext } from "./api/use-context/updating-an-object-via-context";
@@ -14,7 +15,8 @@ function App() {
     // <PassingData />
     // <UpdatingData />
     // <UpadatingValueViaContext />
-    <UpdatingObjectViaContext />
+    // <UpdatingObjectViaContext />
+    <MultipleContexts />
   );
 }
 
