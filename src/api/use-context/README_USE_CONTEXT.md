@@ -169,6 +169,12 @@ Now any `Button` inside of the provider will receive the current `theme` value. 
 
 ##### Updating a value via context
 
+In this example, the `MyApp` component holds a state variable which is then passed to the `ThemeContext` provider. Checking the "Dark mode" checkbox updates the state. Changing the provided value re-renders all the components using that context.
+
+```javascript
+
+```
+
 ##### Updating an object via context
 
 ##### Multiple contexts
