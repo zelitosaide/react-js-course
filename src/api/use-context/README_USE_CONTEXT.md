@@ -127,9 +127,11 @@ function MyPage() {
   return (
     <ThemeContext.Provider value={theme}>
       <Form />
-      <Button onClick={function() {
-        setTheme("light");
-      }}>
+      <Button 
+        onClick={function() {
+          setTheme("light");
+        }}
+      >
         Switch to light theme
       </Button>
     </ThemeContext.Provider>
