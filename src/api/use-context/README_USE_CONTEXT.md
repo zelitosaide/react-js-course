@@ -346,6 +346,14 @@ function WelcomePanel() {
     </Panel>
   );
 }
+
+function Greeting() {
+  const { currentUser } = useContext(CurrentUserContext);
+
+  return (
+    <p>You logged in as {currentUser.name}.</p>
+  );
+}
 ```
 
 ##### Extracting providers to a component
