@@ -1,9 +1,9 @@
-# Content
+> # Content
 
-- [Content](#content)
 - [useContext](#usecontext)
   - [Usage](#usage)
     - [Passing data deeply into the tree](#passing-data-deeply-into-the-tree)
+      - [Pitfall](#pitfall)
     - [Updating data passed via context](#updating-data-passed-via-context)
     - [Specifying a fallback default value](#specifying-a-fallback-default-value)
     - [Overriding context for a part of the tree](#overriding-context-for-a-part-of-the-tree)
@@ -55,6 +55,12 @@ function Form() {
   // ... renders buttons inside ...
 }
 ```
+
+It doesn't matter how many layers of components there are between the provider and the `Button`. When a `Button` anywhere inside of `Form` calls `useContext(ThemeContext)`, it will receive `"dark"` as the value.
+
+#### Pitfall
+
+> `useContext()` always looks for the closest provider above the component that calls it. It searches upwards and does not consider providers in the component from which your're calling `useContext()`.
 
 ### Updating data passed via context
 
