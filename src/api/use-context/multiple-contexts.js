@@ -90,6 +90,30 @@ function LoginForm() {
           }}
         />
       </p>
+      <Button
+        disabled={!canLogin}
+        onClick={function () {
+          setCurrentUser({ name: firstName + " " + lastName });
+        }}
+      >
+        Log in
+      </Button>
+      {!canLogin && <i>Fill in both fields</i>}
     </>
+  );
+}
+
+function Button({ children, disabled, onClick }) {
+  const theme = useContext(ThemeContext);
+  const className = "button-" + theme;
+
+  return (
+    <button
+      className={className}
+      disabled={disabled}
+      onClick={onClick}
+    >
+      {children}
+    </button>
   );
 }
