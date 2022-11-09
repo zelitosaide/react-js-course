@@ -305,6 +305,39 @@ function Button({ children, onClick }) {
 
 In this example, there are two independent contexts. `ThemeContext` provides the current theme, which is a string, while `CurrentUserContext` holds the object representing the current user.
 
+```javascript
+import { createContext, useContext, useState } from "react";
+
+const ThemeContext = createContext(null);
+const CurrentUserContext = createContext(null);
+
+export function MyApp() {
+  const [theme, setTheme] = useState("light");
+  const [currentUser, setCurrentUser] = useState(null);
+
+  return (
+    <ThemeContext.Provider value={theme}>
+      <CurrentUserContext.Provider
+        value={{
+          currentUser,
+          setCurrentUser
+        }}
+      >
+        <WelcomePanel />
+        <label htmlFor="theme">Use dark mode</label>
+        <input
+          id="theme"
+          checked={theme === "dark"}
+          onChange={function(event) {
+            setTheme(event.target.checked ? "dark" : "light");
+          }}
+        />
+      </CurrentUserContext.Provider>
+    </ThemeContext.Provider>
+  );
+}
+```
+
 ##### Extracting providers to a component
 
 ##### Scaling up with context and a reducer
