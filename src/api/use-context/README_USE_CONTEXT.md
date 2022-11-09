@@ -1,15 +1,7 @@
-# useContext
+# Content
 
-`useContext` is a React Hook that lets you read and subscribe to [context](https://beta.reactjs.org/learn/passing-data-deeply-with-context) from your component.
-
-```js
-const value = useContext(SomeContext); 
-```
-
-## Content
-
+- [Content](#content)
 - [useContext](#usecontext)
-  - [Content](#content)
   - [Usage](#usage)
     - [Passing data deeply into the tree](#passing-data-deeply-into-the-tree)
     - [Updating data passed via context](#updating-data-passed-via-context)
@@ -22,6 +14,14 @@ const value = useContext(SomeContext);
     - [My component doesn't see the value from my provider](#my-component-doesnt-see-the-value-from-my-provider)
     - [I am always getting `undefined` from my context although the default value is different](#i-am-always-getting-undefined-from-my-context-although-the-default-value-is-different)
 
+
+# useContext
+
+`useContext` is a React Hook that lets you read and subscribe to [context](https://beta.reactjs.org/learn/passing-data-deeply-with-context) from your component.
+
+```js
+const value = useContext(SomeContext); 
+```
 
 ## Usage
 
