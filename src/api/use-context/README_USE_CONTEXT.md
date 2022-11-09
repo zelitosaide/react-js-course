@@ -6,6 +6,11 @@
     - [Pitfall](#pitfall)
   - [Updating data passed via context](#updating-data-passed-via-context)
     - [Examples of updating context](#examples-of-updating-context)
+      - [Updating a value via context](#updating-a-value-via-context)
+      - [Updating an object via context](#updating-an-object-via-context)
+      - [Multiple contexts](#multiple-contexts)
+      - [Extracting providers to a component](#extracting-providers-to-a-component)
+      - [Scaling up with context and a reducer](#scaling-up-with-context-and-a-reducer)
   - [Specifying a fallback default value](#specifying-a-fallback-default-value)
   - [Overriding context for a part of the tree](#overriding-context-for-a-part-of-the-tree)
   - [Optimizing re-renders when passing objects and functions](#optimizing-re-renders-when-passing-objects-and-functions)
@@ -161,6 +166,16 @@ function Button({ onClick, children }) {
 Now any `Button` inside of the provider will receive the current `theme` value. If you call `setTheme` to update the `theme` value that you pass to the provider, all `Button` components will re-render with the new `"light"` value.
 
 ####  Examples of updating context
+
+##### Updating a value via context
+
+##### Updating an object via context
+
+##### Multiple contexts
+
+##### Extracting providers to a component
+
+##### Scaling up with context and a reducer
 
 ### Specifying a fallback default value
 
