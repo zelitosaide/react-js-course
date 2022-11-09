@@ -407,6 +407,21 @@ function LoginForm() {
     </>
   );
 }
+
+function Button({ children, disabled, onClick }) {
+  const theme = useContext(ThemeContext);
+  const className = "button-" + theme;
+
+  return (
+    <button
+      className={className}
+      disabled={disabled}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
+}
 ```
 
 ##### Extracting providers to a component
