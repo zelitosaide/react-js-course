@@ -38,6 +38,24 @@ function Button() {
 }
 ```
 
+`useContext` returns the `context value` for the `context` you passed. To determine the context value, React searches the component tree and finds the closest context provider above for that particular context.
+
+To Pass context to a `Button`, wrap it or one of its parent components into the corresponding context provider:
+
+```javascript
+function MyPage() {
+  return (
+    <ThemeContext.Provider value="dark">
+      <Form />
+    </ThemeContext.Provider>
+  );
+}
+
+function Form() {
+  // ... renders buttons inside ...
+}
+```
+
 ### Updating data passed via context
 
 ### Specifying a fallback default value
