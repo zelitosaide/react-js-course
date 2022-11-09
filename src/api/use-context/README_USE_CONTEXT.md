@@ -172,7 +172,28 @@ Now any `Button` inside of the provider will receive the current `theme` value. 
 In this example, the `MyApp` component holds a state variable which is then passed to the `ThemeContext` provider. Checking the "Dark mode" checkbox updates the state. Changing the provided value re-renders all the components using that context.
 
 ```javascript
+import { createContext, useContext, useState } from "react";
 
+const ThemeContext = createContext(null);
+
+export function MyApp() {
+  const [theme, setTheme] = useState("light");
+
+  return (
+    <ThemeContext.Provider value={theme}>
+      <Form />
+      <lable htmlFor="checkbox">Use dark mode</label>
+      <input 
+        id="checkbox"
+        type="checkbox"
+        checked={theme === "dark"}
+        onChange={function(event) {
+          setTheme(event.target.checked ? "dark" : "light");
+        }}
+      />
+    </ThemeContext.Provider>
+  );
+}
 ```
 
 ##### Updating an object via context
