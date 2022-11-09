@@ -27,6 +27,17 @@ const value = useContext(SomeContext);
 
 ### Passing data deeply into the tree
 
+Call `useContext` at the top level of your component to read and subscribe to [context](https://beta.reactjs.org/learn/passing-data-deeply-with-context).
+
+```javascript
+import { useContext } from "react";
+
+function Button() {
+  const theme = useContext(ThemeContext);
+  // ...
+}
+```
+
 ### Updating data passed via context
 
 ### Specifying a fallback default value
