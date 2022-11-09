@@ -336,6 +336,16 @@ export function MyApp() {
     </ThemeContext.Provider>
   );
 }
+
+function WelcomePanel() {
+  const { currentUser } = useContext(CurrentUserContext);
+
+  return (
+    <Panel title="Welcome">
+      {currentUser !== null ? <Greeting /> : <LoginForm />}
+    </Panel>
+  );
+}
 ```
 
 ##### Extracting providers to a component
