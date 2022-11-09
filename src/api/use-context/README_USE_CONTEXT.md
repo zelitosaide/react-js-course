@@ -114,7 +114,7 @@ It doesn't matter how many layers of components there are between the provider a
 
 ### Updating data passed via context
 
-Often, you'll want the context to change over time. To update context, you need to combine it with [state.](https://beta.reactjs.org/apis/react/useState) Declare a state variable in the parent component, and pass the current state down as the `contect value` to the provider.
+Often, you'll want the context to change over time. To update context, you need to combine it with [state.](https://beta.reactjs.org/apis/react/useState) Declare a state variable in the parent component, and pass the current state down as the `context value` to the provider.
 
 ```javascript
 import { useState, createContext, useContext } from "react";
@@ -138,6 +138,10 @@ function MyPage() {
   );
 }
 
+function Form() {
+  // ....
+}
+
 function Button({ onClick, children }) {
   const theme = useContext(ThemeContext);
   const className = "button-" + theme;
@@ -152,6 +156,8 @@ function Button({ onClick, children }) {
   );
 }
 ```
+
+Now any `Button` inside of the provider will receive the current `theme` value. If you call `setTheme` to update the `theme` value that you pass to the provider, all `Button` components will re-render with the new `"light"` value.
 
 ### Specifying a fallback default value
 
