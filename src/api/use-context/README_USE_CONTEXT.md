@@ -303,6 +303,8 @@ function Button({ children, onClick }) {
 
 ##### Multiple contexts
 
+In this example, there are two independent contexts. `ThemeContext` provides the current theme, which is a string, while `CurrentUserContext` holds the object representing the current user.
+
 ##### Extracting providers to a component
 
 ##### Scaling up with context and a reducer
