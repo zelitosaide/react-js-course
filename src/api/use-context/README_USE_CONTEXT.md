@@ -1,21 +1,21 @@
-> # Content
+> ## Content
 
 - [useContext](#usecontext)
-  - [Usage](#usage)
-    - [Passing data deeply into the tree](#passing-data-deeply-into-the-tree)
-      - [Pitfall](#pitfall)
-    - [Updating data passed via context](#updating-data-passed-via-context)
-    - [Specifying a fallback default value](#specifying-a-fallback-default-value)
-    - [Overriding context for a part of the tree](#overriding-context-for-a-part-of-the-tree)
-    - [Optimizing re-renders when passing objects and functions](#optimizing-re-renders-when-passing-objects-and-functions)
-  - [Reference](#reference)
-    - [`useContext(Somecontext)`](#usecontextsomecontext)
-  - [Troubleshooting](#troubleshooting)
-    - [My component doesn't see the value from my provider](#my-component-doesnt-see-the-value-from-my-provider)
-    - [I am always getting `undefined` from my context although the default value is different](#i-am-always-getting-undefined-from-my-context-although-the-default-value-is-different)
+- [Usage](#usage)
+  - [Passing data deeply into the tree](#passing-data-deeply-into-the-tree)
+    - [Pitfall](#pitfall)
+  - [Updating data passed via context](#updating-data-passed-via-context)
+  - [Specifying a fallback default value](#specifying-a-fallback-default-value)
+  - [Overriding context for a part of the tree](#overriding-context-for-a-part-of-the-tree)
+  - [Optimizing re-renders when passing objects and functions](#optimizing-re-renders-when-passing-objects-and-functions)
+- [Reference](#reference)
+  - [`useContext(Somecontext)`](#usecontextsomecontext)
+- [Troubleshooting](#troubleshooting)
+  - [My component doesn't see the value from my provider](#my-component-doesnt-see-the-value-from-my-provider)
+  - [I am always getting `undefined` from my context although the default value is different](#i-am-always-getting-undefined-from-my-context-although-the-default-value-is-different)
 
 
-# useContext
+## useContext
 
 `useContext` is a React Hook that lets you read and subscribe to [context](https://beta.reactjs.org/learn/passing-data-deeply-with-context) from your component.
 
