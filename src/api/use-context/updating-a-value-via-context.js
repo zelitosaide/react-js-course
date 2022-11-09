@@ -2,7 +2,7 @@ import { useState, createContext, useContext } from "react";
 
 const ThemeContext = createContext(null);
 
-export function UpadatingViaContext() {
+export function UpadatingValueViaContext() {
   const [theme, setTheme] = useState("light");
 
   return (
