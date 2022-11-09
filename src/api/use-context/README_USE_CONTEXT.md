@@ -79,6 +79,15 @@ It doesn't matter how many layers of components there are between the provider a
       </ThemeContext.Provider>
     );
   }
+
+  function Form() {
+    return (
+      <Panel title="Welcome">
+        <Button>Sign up</Button>
+        <Button>Sign in</Button>
+      </Panel>
+    );
+  }
   ```
 </details>
 
