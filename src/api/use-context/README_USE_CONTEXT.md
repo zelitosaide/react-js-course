@@ -99,6 +99,16 @@ It doesn't matter how many layers of components there are between the provider a
       </section>
     );
   }
+
+  function Button({ children }) {
+    const theme = useContext(ThemeContext);
+    const className = "button-" + theme;
+    return (
+      <button className={className}>
+        {children}
+      </button>
+    );
+  }
   ```
 </details>
 
