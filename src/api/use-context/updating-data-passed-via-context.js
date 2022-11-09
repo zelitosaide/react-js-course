@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 const ThemeContext = createContext(null);
 
 export function UpdatingData() {
-  const [theme, setTheme] = useState();
+  const [theme, setTheme] = useState("dark");
 
   return (
     <ThemeContext.Provider value={theme}>
