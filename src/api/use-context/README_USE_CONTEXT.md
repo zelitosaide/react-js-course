@@ -114,6 +114,43 @@ It doesn't matter how many layers of components there are between the provider a
 
 ### Updating data passed via context
 
+Often, you'll want the context to change over time. To update context, you need to combine it with [state.](https://beta.reactjs.org/apis/react/useState) Declare a state variable in the parent component, and pass the current state down as the `contect value` to the provider.
+
+```javascript
+import { useState, createContext, useContext } from "react";
+
+const ThemeContext = createContext(null);
+
+function MyPage() {
+  const [theme, setTheme] = useState("dark");
+
+  return (
+    <ThemeContext.Provider value={theme}>
+      <Form />
+      <Button onClick={function() {
+        setTheme("light");
+      }}>
+        Switch to light theme
+      </Button>
+    </ThemeContext.Provider>
+  );
+}
+
+function Button({ onClick, children }) {
+  const theme = useContext(ThemeContext);
+  const className = "button-" + theme;
+
+  return (
+    <button 
+      className={className}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
+}
+```
+
 ### Specifying a fallback default value
 
 ### Overriding context for a part of the tree
