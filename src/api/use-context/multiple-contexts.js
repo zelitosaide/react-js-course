@@ -16,15 +16,17 @@ export function MultipleContexts() {
         }}
       >
         <WelcomePanel />
-        <label htmlFor="theme">Use dark mode</label>
-        <input
-          id="theme"
-          checked={theme === "dark"}
-          type="checkbox"
-          onChange={function (event) {
-            setTheme(event.target.checked ? "dark" : "light");
-          }}
-        />
+        <p>
+          <label htmlFor="theme">Use dark mode</label>
+          <input
+            id="theme"
+            checked={theme === "dark"}
+            type="checkbox"
+            onChange={function (event) {
+              setTheme(event.target.checked ? "dark" : "light");
+            }}
+          />
+        </p>
       </CurrentUserContext.Provider>
     </ThemeContext.Provider>
   );
