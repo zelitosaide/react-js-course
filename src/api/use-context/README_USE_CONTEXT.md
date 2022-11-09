@@ -62,6 +62,26 @@ It doesn't matter how many layers of components there are between the provider a
 
 > `useContext()` always looks for the closest provider above the component that calls it. It searches upwards and does not consider providers in the component from which your're calling `useContext()`.
 
+<details>
+  <summary>Show code</summary>
+
+  <br>
+
+  ```javascript
+  import { createContext, useContext } from "react";
+
+  const ThemeContext = createContext(null);
+
+  export function MyApp() {
+    return (
+      <ThemeContext.Provider value="dark">
+        <Form />
+      </ThemeContext.Provider>
+    );
+  }
+  ```
+</details>
+
 ### Updating data passed via context
 
 ### Specifying a fallback default value
