@@ -354,6 +354,47 @@ function Greeting() {
     <p>You logged in as {currentUser.name}.</p>
   );
 }
+
+function LoginForm() {
+  const { setCurrentUser } = useContext(CurrentUserContext);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const canLogin = firstName !== "" && lastName !== "";
+
+  return (
+    <>
+      <label htmlFor="first-name">First Name:{" "}</label>
+      <input 
+        required
+        id="first-name"
+        value={firstName}
+        onChange={function(event) {
+          setFirstName(event.target.value);
+        }}
+      />
+      <label htmlFor="last-name">Last Name:{" "}</label>
+      <input 
+        required
+        id="last-name"
+        value={lastName}
+        onChange={function(event) {
+          setLastName(event.target.value);
+        }}
+      />
+      <Button
+        disabled={!canLogin}
+        onClick={function() {
+          setCurrentUser({
+            name: firstName + " " + lastName
+          });
+        }}
+      >
+        Log in
+      </Button>
+      {!canLogin && <i>Fill in both fields.</i>}
+    </>
+  );
+}
 ```
 
 ##### Extracting providers to a component
