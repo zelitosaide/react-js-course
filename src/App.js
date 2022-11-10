@@ -1,4 +1,5 @@
 // import { MyApp } from "./learn/quick_start/MyApp";
+import { ExtractingProviderToComponent } from "./api/use-context/extracting-providers-to-a-component.";
 import { MultipleContexts } from "./api/use-context/multiple-contexts";
 import { PassingData } from "./api/use-context/passing-data-deeply-into-the-tree";
 import { UpadatingValueViaContext } from "./api/use-context/updating-a-value-via-context";
@@ -16,7 +17,8 @@ function App() {
     // <UpdatingData />
     // <UpadatingValueViaContext />
     // <UpdatingObjectViaContext />
-    <MultipleContexts />
+    // <MultipleContexts />
+    <ExtractingProviderToComponent />
   );
 }
 
