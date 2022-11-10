@@ -610,6 +610,15 @@ export function MyApp() {
     </>
   );
 }
+
+function Form() {
+  return (
+    <Panel title="Welcome">
+      <Button>Sign up</Button>
+      <Button>Sign in</Button>
+    </Panel>
+  );
+}
 ```
 
 ### Overriding context for a part of the tree
