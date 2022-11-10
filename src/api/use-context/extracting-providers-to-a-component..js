@@ -102,6 +102,17 @@ function LoginForm() {
           }}
         />
       </p>
+      <Button
+        disabled={!canLogin}
+        onClick={function () {
+          setCurrentUser({ name: firstName + " " + lastName });
+        }}
+      >
+        Log in
+      </Button>
+      {!canLogin && <i>Fill in both fields.</i>}
     </>
   );
 }
+
+function Button({ children, disabled, onClick }) {}
