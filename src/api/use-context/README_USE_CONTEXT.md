@@ -631,6 +631,17 @@ function Panel({ title, children }) {
     </section>
   );
 }
+
+function Button({ children, onClick }) {
+  const theme = useContext(ThemeContext);
+  const className = "button-" + theme;
+
+  return (
+    <button className={className} onClick={onClick}>
+      {children}
+    </button>
+  );
+}
 ```
 
 ### Overriding context for a part of the tree
