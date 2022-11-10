@@ -583,6 +583,10 @@ Often, instead of `null`, there is some more meaningful value you can use as a d
 const ThemeContext = createContext("light");
 ```
 
+This way, if you accidentally render some component without a corresponding provider, it won't break. This also helps your components work well in a test environment without setting up a lot of providers in the tests.
+
+In the example below, the "Toggle theme" button is always light because it's outside any theme context provider and the default context theme value is `"light"`. Try editing the default theme to be `"dark"`.
+
 ### Overriding context for a part of the tree
 
 ### Optimizing re-renders when passing objects and functions
