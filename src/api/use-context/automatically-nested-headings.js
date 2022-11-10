@@ -1,7 +1,9 @@
 import { createContext, useContext } from "react";
 
+// level-context.js
 const LevelContext = createContext(0);
 
+// automatically-nested-headings.js
 export function AutomaticallyNestedHeadings() {
   return (
     <Section>
@@ -25,6 +27,7 @@ export function AutomaticallyNestedHeadings() {
   );
 }
 
+// section.js
 function Section({ children }) {
   const level = useContext(LevelContext);
 
@@ -37,6 +40,7 @@ function Section({ children }) {
   );
 }
 
+// heading.js
 function Heading({ children }) {
   const level = useContext(LevelContext);
 
