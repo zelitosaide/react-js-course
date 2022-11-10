@@ -727,6 +727,36 @@ You can "accumulate" information when you nest context providers. In this exampl
 
 Read a [detailed walkthrough](https://beta.reactjs.org/learn/passing-data-deeply-with-context) of this example.
 
+`App.js`
+
+```javascript
+import { Heading } from "./heading.js";
+import { Section } from "./section.js";
+
+export function Page() {
+  return (
+    <Section>
+      <Heading>Title</Heading>
+      <Section>
+        <Heading>Heading</Heading>
+        <Heading>Heading</Heading>
+        <Heading>Heading</Heading>
+        <Section>
+          <Heading>Sub-heading</Heading>
+          <Heading>Sub-heading</Heading>
+          <Heading>Sub-heading</Heading>
+          <Section>
+            <Heading>Sub-sub-heading</Heading>
+            <Heading>Sub-sub-heading</Heading>
+            <Heading>Sub-sub-heading</Heading>
+          </Section>
+        </Section>
+      </Section>
+    </Section>
+  );
+}
+```
+
 ### Optimizing re-renders when passing objects and functions
 
 ## Reference
