@@ -587,6 +587,31 @@ This way, if you accidentally render some component without a corresponding prov
 
 In the example below, the "Toggle theme" button is always light because it's outside any theme context provider and the default context theme value is `"light"`. Try editing the default theme to be `"dark"`.
 
+```javascript
+import { createContext, useContext, useState } from "react";
+
+const ThemeContext = createContext("light");
+
+export function MyApp() {
+  const [theme, setTheme] = useState("light");
+
+  return (
+    <>
+      <ThemeContext.Provider value={theme}>
+        <Form />
+      </ThemeContext.Provider>
+      <Button
+        onClick={function() {
+          setTheme(theme === "dark" ? "light" : "dark");
+        }}
+      >
+        Toggle theme
+      </Button>
+    </>
+  );
+}
+```
+
 ### Overriding context for a part of the tree
 
 ### Optimizing re-renders when passing objects and functions
