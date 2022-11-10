@@ -575,6 +575,14 @@ If React can't find any providers of that particular `context` in the parent tre
 const ThemeContext = createContext(null);
 ```
 
+The default value never changes. If you want to update context, use it with state as [described above](https://beta.reactjs.org/apis/react/useContext#updating-data-passed-via-context).
+
+Often, instead of `null`, there is some more meaningful value you can use as a default, for example:
+
+```javascript
+const ThemeContext = createContext("light");
+```
+
 ### Overriding context for a part of the tree
 
 ### Optimizing re-renders when passing objects and functions
