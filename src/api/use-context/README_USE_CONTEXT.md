@@ -806,6 +806,14 @@ export function Heading({ children }) {
 }
 ```
 
+`level-context.js`
+
+```javascript
+import { createContext } from "react";
+
+export const LevelContext = createContext(0);
+```
+
 ### Optimizing re-renders when passing objects and functions
 
 ## Reference
