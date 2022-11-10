@@ -646,6 +646,20 @@ function Button({ children, onClick }) {
 
 ### Overriding context for a part of the tree
 
+You can override the context for a part of the tree by wrapping that part in a provider with a different value.
+
+```javascript
+<ThemeContext.Provider value="dark">
+  ...
+  <ThemeContext.Provider value="light">
+    <Footer />
+  </ThemeContext.Provider>
+  ...
+</ThemeContext.Provider>
+```
+
+You can nest and override providers as many times as you need.
+
 ### Optimizing re-renders when passing objects and functions
 
 ## Reference
