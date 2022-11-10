@@ -829,6 +829,7 @@ export const LevelContext = createContext(0);
 ## What is lefting?
 
 * [Example 5 of 5: Scaling up with context and a reducer](#scaling-up-with-context-and-a-reducer-example)
+* [Optimizing re-renders when passing objects and functions](#optimizing-re-renders-when-passing-objects-and-functions)
 
 ## What is the Next?
 
