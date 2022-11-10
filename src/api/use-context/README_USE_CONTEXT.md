@@ -590,3 +590,6 @@ function Button({ children, disabled, onClick }) {
 ## What is the Next?
 
 * [useReducer](https://beta.reactjs.org/apis/react/useReducer)
+* [useMemo](https://beta.reactjs.org/apis/react/useMemo)
+* [useCallback](https://beta.reactjs.org/apis/react/useCallback)
+* [memo](https://beta.reactjs.org/apis/react/memo)
