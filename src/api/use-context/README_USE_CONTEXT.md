@@ -434,7 +434,26 @@ import { createContext, useContext, useState } from "react";
 const ThemeContext = createContext(null);
 const CurrentUserContext = createContext(null);
 
+export function MyApp() {
+  const [theme, setTheme] = useState("light");
 
+  return (
+    <MyProviders theme={theme} setTheme={setTheme}>
+      <WelcomePanel />
+      <p>
+        <label htmlFor="theme">Use dark mode</label>
+        <input
+          id="theme"
+          type="checkbox"
+          checked={theme === "dark"}
+          onChange={function(event) {
+            setTheme(event.target.checked ? "dark" : "light");
+          }}
+        />
+      </p>
+    </MyProviders>
+  );
+}
 ```
 
 ##### Scaling up with context and a reducer
