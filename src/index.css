@@ -84,3 +84,10 @@ footer {
   background: #fff;
   color: #222;
 }
+
+.section {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
