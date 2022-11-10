@@ -19,6 +19,7 @@
 - [Troubleshooting](#troubleshooting)
   - [My component doesn't see the value from my provider](#my-component-doesnt-see-the-value-from-my-provider)
   - [I am always getting `undefined` from my context although the default value is different](#i-am-always-getting-undefined-from-my-context-although-the-default-value-is-different)
+- [What is lefting?](#what-is-lefting)
 
 
 ## useContext
@@ -580,3 +581,7 @@ function Button({ children, disabled, onClick }) {
 ### My component doesn't see the value from my provider
 
 ### I am always getting `undefined` from my context although the default value is different
+
+## What is lefting?
+
+* [Example 5 of 5: Scaling up with context and a reducer](#scaling-up-with-context-and-a-reducer)
