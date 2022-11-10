@@ -3,7 +3,7 @@ import { useState, createContext, useContext } from "react";
 const ThemeContext = createContext("light");
 
 export function SpecifyingFallbackDefaultValueExample() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   return (
     <>
