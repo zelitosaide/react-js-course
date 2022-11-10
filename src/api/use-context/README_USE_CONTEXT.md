@@ -489,6 +489,29 @@ function Greeting() {
     <p>You logged in as {currentUser.name}.</p>
   );
 }
+
+function LoginForm() {
+  const { setCurrentUser } = useContext(CurrentUserContext);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const canLogin = firstName !== "" && lastName !== "";
+
+  return (
+    <>
+      <p>
+        <label htmlFor="first-name">First Name: </label>
+        <input
+          required
+          id="first-name"
+          value={firstName}
+          onChange={function(event) {
+            setFirstName(event.target.value);
+          }}
+        />
+      </p>
+    </>
+  );
+}
 ```
 
 ##### Scaling up with context and a reducer
