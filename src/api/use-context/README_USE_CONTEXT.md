@@ -569,6 +569,12 @@ function Button({ children, disabled, onClick }) {
 
 ### Specifying a fallback default value
 
+If React can't find any providers of that particular `context` in the parent tree, the context value returned by `useContext()` will be equal to the `default value` that you specified when you [created that context](https://beta.reactjs.org/apis/react/createContext):
+
+```javascript
+const ThemeContext = createContext(null);
+```
+
 ### Overriding context for a part of the tree
 
 ### Optimizing re-renders when passing objects and functions
