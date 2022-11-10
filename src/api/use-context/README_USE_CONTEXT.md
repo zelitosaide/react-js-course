@@ -471,6 +471,16 @@ function MyProviders({ children, theme, setTheme }) {
     </ThemeContext.Provider>
   );
 }
+
+function WelccomePanel() {
+  const { currentUser } = useContext(CurrentUserContext);
+
+  return (
+    <Panel title="Welcome">
+      {currentUser !== null ? <Greeting /> : <LoginForm />}
+    </Panel>
+  );
+}
 ```
 
 ##### Scaling up with context and a reducer
