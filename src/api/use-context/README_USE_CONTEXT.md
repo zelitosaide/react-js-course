@@ -12,6 +12,7 @@
     - [Scaling up with context and a reducer Example](#scaling-up-with-context-and-a-reducer-example)
   - [Specifying a fallback default value](#specifying-a-fallback-default-value)
   - [Overriding context for a part of the tree](#overriding-context-for-a-part-of-the-tree)
+    - [Overriding a theme Example](#overriding-a-theme-example)
   - [Optimizing re-renders when passing objects and functions](#optimizing-re-renders-when-passing-objects-and-functions)
 - [Reference](#reference)
   - [`useContext(Somecontext)`](#usecontextsomecontext)
@@ -657,6 +658,24 @@ You can override the context for a part of the tree by wrapping that part in a p
 ```
 
 You can nest and override providers as many times as you need.
+
+#### Overriding a theme Example
+
+Here, the button inside the `Footer` receives a different context value (`"light"`) than the buttons ouside (`"dark"`).
+
+```javascript
+import { createContext, useContext } from "react";
+
+const ThemeContext = createContext(null);
+
+export function MyApp() {
+  return (
+    <ThemeContext.Provider value="dark">
+      <Form />
+    </ThemeContext.Provider>
+  );
+}
+```
 
 ### Optimizing re-renders when passing objects and functions
 
