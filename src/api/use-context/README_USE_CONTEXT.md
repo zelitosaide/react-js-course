@@ -454,6 +454,23 @@ export function MyApp() {
     </MyProviders>
   );
 }
+
+function MyProviders({ children, theme, setTheme }) {
+  const [currentUser, setCurrentUser] = useState(null);
+
+  return (
+    <ThemeContext.Provider value={theme}>
+      <CurrentUserProvider
+        value={{
+          currentUser,
+          setCurrentUser
+        }}
+      >
+        {children}
+      </CurrentUserContext.Provider>
+    </ThemeContext.Provider>
+  );
+}
 ```
 
 ##### Scaling up with context and a reducer
