@@ -727,7 +727,7 @@ You can "accumulate" information when you nest context providers. In this exampl
 
 Read a [detailed walkthrough](https://beta.reactjs.org/learn/passing-data-deeply-with-context) of this example.
 
-`App.js`
+`page.js`
 
 ```javascript
 import { Heading } from "./heading.js";
@@ -753,6 +753,25 @@ export function Page() {
         </Section>
       </Section>
     </Section>
+  );
+}
+```
+
+`section.js`
+
+```javascript
+import { useContext } from "react";
+import { LevelContext } from "./level-context.js";
+
+export function Section({ children }) {
+  const level = useContext(LevelContext);
+
+  return (
+    <section className="section">
+      <LevelContext.Provider value={level + 1}>
+        {children}
+      </LevelContext.Provider>
+    </section>
   );
 }
 ```
