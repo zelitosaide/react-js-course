@@ -481,6 +481,14 @@ function WelccomePanel() {
     </Panel>
   );
 }
+
+function Greeting() {
+  const { currentUser } = useContext(CurrentUserContext);
+
+  return (
+    <p>You logged in as {currentUser.name}.</p>
+  );
+}
 ```
 
 ##### Scaling up with context and a reducer
