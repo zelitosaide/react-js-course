@@ -426,6 +426,17 @@ function Button({ children, disabled, onClick }) {
 
 ##### Extracting providers to a component
 
+As your app grows, it is expected that you'll have a "pyramid" of contexts closer to the root of your app. There is nothing wrong with that. However, if you dislike the nesting aesthetically, you can extract the providers into a single component. In this example, `MyProviders` hides the "plumbing" and renders the children passed to it inside the necessary providers. Note that the `theme` and `setTheme` state is needed in `MyApp` itself, so `MyApp` still owns that piece of the state.
+
+```javascript
+import { createContext, useContext, useState } from "react";
+
+const ThemeContext = createContext(null);
+const CurrentUserContext = createContext(null);
+
+
+```
+
 ##### Scaling up with context and a reducer
 
 ### Specifying a fallback default value
