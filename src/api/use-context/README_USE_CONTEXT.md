@@ -13,6 +13,7 @@
   - [Specifying a fallback default value](#specifying-a-fallback-default-value)
   - [Overriding context for a part of the tree](#overriding-context-for-a-part-of-the-tree)
     - [Overriding a theme Example](#overriding-a-theme-example)
+    - [Automatically nested headings Example](#automatically-nested-headings-example)
   - [Optimizing re-renders when passing objects and functions](#optimizing-re-renders-when-passing-objects-and-functions)
 - [Reference](#reference)
   - [`useContext(Somecontext)`](#usecontextsomecontext)
@@ -719,6 +720,12 @@ function Footer() {
   );
 }
 ```
+
+#### Automatically nested headings Example
+
+You can "accumulate" information when you nest context providers. In this example, the `Section` component keeps track of the `LevelContext` which specifies the depth of the section nesting. It reads the `LevelContext` from the parent section, and provides the `LevelContext` number increased by one to its children. As a result, the `Heading` component can automatically decide which of the `<h1>`, `<h2>`, `<h3>`, ..., tags to use based on how may `Section` components it is nested inside of.
+
+Read a [detailed walkthrough](https://beta.reactjs.org/learn/passing-data-deeply-with-context) of this example.
 
 ### Optimizing re-renders when passing objects and functions
 
