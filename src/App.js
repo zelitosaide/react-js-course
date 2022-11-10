@@ -1,4 +1,5 @@
 // import { MyApp } from "./learn/quick_start/MyApp";
+import { AutomaticallyNestedHeadings } from "./api/use-context/automatically-nested-headings";
 import { ExtractingProviderToComponent } from "./api/use-context/extracting-providers-to-a-component.";
 import { MultipleContexts } from "./api/use-context/multiple-contexts";
 import { OverridingThemeExample } from "./api/use-context/overriding-a-theme-example";
@@ -24,7 +25,8 @@ function App() {
     // <ExtractingProviderToComponent />
     // <SpecifyingFallbackDefaultValue />
     // <SpecifyingFallbackDefaultValueExample />
-    <OverridingThemeExample />
+    // <OverridingThemeExample />
+    <AutomaticallyNestedHeadings />
   );
 }
 
