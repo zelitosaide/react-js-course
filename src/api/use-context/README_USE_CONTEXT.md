@@ -619,6 +619,18 @@ function Form() {
     </Panel>
   );
 }
+
+function Panel({ title, children }) {
+  const theme = useContext(ThemeContext);
+  const className = "panel-" + theme;
+
+  return (
+    <section className={className}>
+      <h1>{title}</h1>
+      {children}
+    </section>
+  );
+}
 ```
 
 ### Overriding context for a part of the tree
