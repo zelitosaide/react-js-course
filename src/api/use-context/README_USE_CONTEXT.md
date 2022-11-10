@@ -509,6 +509,17 @@ function LoginForm() {
           }}
         />
       </p>
+      <p>
+        <label htmlFor="last-name">Last Name: </label>
+        <input
+          required
+          id="last-name"
+          value={lastName}
+          onChange={function(event) {
+            setLastName(event.target.value);
+          }}
+        />
+      </p>
     </>
   );
 }
