@@ -1,6 +1,7 @@
 // import { MyApp } from "./learn/quick_start/MyApp";
 import { ExtractingProviderToComponent } from "./api/use-context/extracting-providers-to-a-component.";
 import { MultipleContexts } from "./api/use-context/multiple-contexts";
+import { OverridingThemeExample } from "./api/use-context/overriding-a-theme-example";
 import { PassingData } from "./api/use-context/passing-data-deeply-into-the-tree";
 import { SpecifyingFallbackDefaultValue } from "./api/use-context/specifying-a-fallback-default-value";
 import { SpecifyingFallbackDefaultValueExample } from "./api/use-context/specifying-a-fallback-default-value-example";
@@ -22,7 +23,8 @@ function App() {
     // <MultipleContexts />
     // <ExtractingProviderToComponent />
     // <SpecifyingFallbackDefaultValue />
-    <SpecifyingFallbackDefaultValueExample />
+    // <SpecifyingFallbackDefaultValueExample />
+    <OverridingThemeExample />
   );
 }
 
