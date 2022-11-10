@@ -41,4 +41,10 @@ function Button({ children }) {
   return <button className={className}>{children}</button>;
 }
 
-function Footer() {}
+function Footer() {
+  return (
+    <footer>
+      <Button>Settings</Button>
+    </footer>
+  );
+}
