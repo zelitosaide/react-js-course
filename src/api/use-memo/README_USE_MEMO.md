@@ -30,6 +30,11 @@ function TodoList({ todos, tab, theme }) {
 }
 ```
 
+You need to pass two things to `useMemo`:
+
+1. A `calculation function` that takes no arguments, like `() =>`, and returns what you wanted to calculate.
+2. A `list of dependencies` including every value within your component that's used inside your calculation.
+
 ### Skipping re-rendering of components
 
 ### Memoizing a dependency of another Hook
