@@ -90,3 +90,5 @@ function Todos ({ todos }) {
 
 export default memo(Todos);
 ```
+
+Now the `Todos` component only re-renders when the `todos` that are passed to it through props are updated.
