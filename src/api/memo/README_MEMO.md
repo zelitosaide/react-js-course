@@ -56,3 +56,7 @@ export function Todos({ todos }) {
   );
 }
 ```
+
+When you click the increment button, the `Todos` component re-renders.
+
+If this component was complex, it could cause performance issues.
