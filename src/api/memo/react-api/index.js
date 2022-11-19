@@ -33,5 +33,10 @@ export function Index() {
 
 const Greeting = memo(function ({ name }) {
   console.log("Greeting was rendered at", new Date().toLocaleTimeString());
-  return <h3>Hello, {name}!</h3>;
+  return (
+    <h3>
+      Hello{name && ", "}
+      {name}!
+    </h3>
+  );
 });
