@@ -1,4 +1,6 @@
-export function Todos({ todos }) {
+import { memo } from "react";
+
+function todos({ todos }) {
   console.log("child render");
   return (
     <>
@@ -9,3 +11,8 @@ export function Todos({ todos }) {
     </>
   );
 }
+
+const Todos = memo(todos);
+// export default memo(Todos);
+
+export { Todos };
