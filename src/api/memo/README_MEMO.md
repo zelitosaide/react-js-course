@@ -5,3 +5,18 @@ Using `memo` will cause React to skip rendering a component if its props have no
 This can improve performance.
 
 > This section uses React Hooks. See the [React Hooks](https://www.w3schools.com/react/react_hooks.asp) section for more information on Hooks.
+
+## Problem
+
+In this example, the `Todos` component re-renders even when the todos have not changed.
+
+```javascript
+import { useState } from "react";
+import ReactDOM from "react-dom/client";
+import Todos from "./todos";
+
+export function App() {
+  const [count, setCount] = useState(0);
+  const [todos, setTodos] = useState(["todo 1", "todo 2"]);
+}
+```
