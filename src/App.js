@@ -1,5 +1,6 @@
 // import { MyApp } from "./learn/quick_start/MyApp";
-import { Index } from "./api/memo/w3schools";
+import { Index as ReactAPIIndex } from "./api/memo/react-api";
+import { Index as W3SchoolsIndex } from "./api/memo/w3schools";
 import { AutomaticallyNestedHeadings } from "./api/use-context/automatically-nested-headings";
 import { ExtractingProviderToComponent } from "./api/use-context/extracting-providers-to-a-component.";
 import { MultipleContexts } from "./api/use-context/multiple-contexts";
@@ -29,7 +30,8 @@ function App() {
     // <OverridingThemeExample />
     // <AutomaticallyNestedHeadings />
 
-    <Index />
+    // <W3SchoolsIndex />
+    <ReactAPIIndex />
   );
 }
 
