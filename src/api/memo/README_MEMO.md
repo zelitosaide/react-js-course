@@ -10,6 +10,8 @@ This can improve performance.
 
 In this example, the `Todos` component re-renders even when the todos have not changed.
 
+`app.js`
+
 ```javascript
 import { useState } from "react";
 import ReactDOM from "react-dom/client";
@@ -60,3 +62,29 @@ export function Todos({ todos }) {
 When you click the increment button, the `Todos` component re-renders.
 
 If this component was complex, it could cause performance issues.
+
+## Solution
+
+To fix this, we can use `memo`.
+
+Use `memo` to keep the `Todos` component from needlessly re-rendering.
+
+Wrap the `Todos` component export in `memo`:
+
+```javascript
+import { memo } from "react";
+
+function Todos ({ todos }) {
+  console.log("child render");
+  return (
+    <>
+      <h2>My Todos</h2>
+      {todos.map(function(todo, index) {
+        return <p key={index}>{todo}</p>;
+      })}
+    </>
+  );
+}
+
+export default memo(Todos);
+```
