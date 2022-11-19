@@ -37,6 +37,8 @@ export default Greeting;
 
 A React component should always have [pure rendering logic](https://beta.reactjs.org/learn/keeping-components-pure). This means that it must return the same output if its props, state, and context haven't changed. By using `memo`, you are telling React that your component complies with this requirement, so React doens't need to re-render as long as its props haven't changed. When you use `memo`, your component will still re-render if its own state changes or if a context that it's using changes.
 
+In this example, notice that the `Greeting` component re-renders whenever `name` is changed (because that's one of its props), but not when `address` is changed (because it's not passed to `Greeting` as a prop):
+
 ### Updating a memoized component using state
 
 ### Updating a memoized component using a context
