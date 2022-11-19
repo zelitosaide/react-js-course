@@ -39,6 +39,44 @@ A React component should always have [pure rendering logic](https://beta.reactjs
 
 In this example, notice that the `Greeting` component re-renders whenever `name` is changed (because that's one of its props), but not when `address` is changed (because it's not passed to `Greeting` as a prop):
 
+```javascript
+import { memo, useState } from "react";
+
+export function MyApp() {
+  const [name, seName] = useState("");
+  const [address, setAddress] = useState("");
+
+  return (
+    <>
+      <p>
+        <label>Name: </label>
+        <input 
+          value={name}
+          onChange={function(event) {
+            setName(event.target.value);
+          }}
+        />
+      </p>
+      <p>
+        <label>Address: </label>
+        <input
+          value={address}
+          onChange={function(event) {
+            setAddress(event.target.value);
+          }}
+        />
+      </p>
+      <Greeting name={name} />
+    </>
+  );
+}
+
+const Greeting = memo(function({ name }) {
+  console.log("Greeting was rendered at", new Date().toLocaleTimeString());
+  return <h3>Hello{name && ", "}{name}!</h3>;
+});
+```
+
 ### Updating a memoized component using state
 
 ### Updating a memoized component using a context
