@@ -13,7 +13,7 @@ In this example, the `Todos` component re-renders even when the todos have not c
 ```javascript
 import { useState } from "react";
 import ReactDOM from "react-dom/client";
-import Todos from "./todos";
+import { Todos } from "./todos";
 
 export function App() {
   const [count, setCount] = useState(0);
@@ -39,4 +39,20 @@ export function App() {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
+```
+
+`todos.js`
+
+```javascript
+export function Todos({ todos }) {
+  console.log("child render");
+  return (
+    <>
+      <h2>My Todos</h2>
+      {todos.map(function(todo, index) {
+        return <p key={index}>{todo}</p>;
+      })}
+    </>
+  );
+}
 ```
