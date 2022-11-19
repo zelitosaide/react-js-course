@@ -71,6 +71,8 @@ Use `memo` to keep the `Todos` component from needlessly re-rendering.
 
 Wrap the `Todos` component export in `memo`:
 
+`todos.js`
+
 ```javascript
 import { memo } from "react";
 
