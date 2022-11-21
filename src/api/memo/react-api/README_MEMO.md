@@ -81,6 +81,10 @@ const Greeting = memo(function({ name }) {
 > 
 > You should only rely on `memo` as a performance optimization. If your code doesn't work without it, find the underlying problem and fix it first. Then you may add `memo` to improve performance.
 
+> ### Should you add memo everywhere?
+
+
+
 ### Updating a memoized component using state
 
 ### Updating a memoized component using a context
