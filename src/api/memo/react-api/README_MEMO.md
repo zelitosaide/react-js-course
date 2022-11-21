@@ -83,7 +83,9 @@ const Greeting = memo(function({ name }) {
 
 > ### Should you add memo everywhere?
 
-
+<details>
+  <summary>Show Details</summary>
+</details>
 
 ### Updating a memoized component using state
 
