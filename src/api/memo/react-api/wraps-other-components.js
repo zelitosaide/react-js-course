@@ -12,7 +12,7 @@ function Wrapper({ children }) {
   const [theme, setTheme] = useState("dark");
 
   return (
-    <div>
+    <div className={theme === "dark" ? "panel-dark" : "panel-light"}>
       {children}
       <p>
         <label htmlFor="theme">Use dark mode</label>

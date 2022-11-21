@@ -1,5 +1,6 @@
 // import { MyApp } from "./learn/quick_start/MyApp";
 import { Index as ReactAPIIndex } from "./api/memo/react-api";
+import { WrapsOtherComponents } from "./api/memo/react-api/wraps-other-components";
 import { Index as W3SchoolsIndex } from "./api/memo/w3schools";
 import { AutomaticallyNestedHeadings } from "./api/use-context/automatically-nested-headings";
 import { ExtractingProviderToComponent } from "./api/use-context/extracting-providers-to-a-component.";
@@ -31,7 +32,8 @@ function App() {
     // <AutomaticallyNestedHeadings />
 
     // <W3SchoolsIndex />
-    <ReactAPIIndex />
+    // <ReactAPIIndex />
+    <WrapsOtherComponents />
   );
 }
 
