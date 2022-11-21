@@ -85,6 +85,12 @@ const Greeting = memo(function({ name }) {
 
 <details>
   <summary>Show Details</summary>
+
+  <br />
+
+  If your app is like this site, and most interactions are coarse (like replacing a page or an entire section), memoization is usually unnecessary. On the other hand, if your app is more like a drawing editor, and most interactions are granular (like moving shapes), then you might find memoization very helpful.
+
+  
 </details>
 
 ### Updating a memoized component using state
