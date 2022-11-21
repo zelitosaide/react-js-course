@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export function WrapsOtherComponents() {
+  console.log("grandparent rendered");
   return (
     <Wrapper>
       <Child />
@@ -10,6 +11,7 @@ export function WrapsOtherComponents() {
 
 function Wrapper({ children }) {
   const [theme, setTheme] = useState("dark");
+  console.log("wrapper rendered");
 
   return (
     <div className={theme === "dark" ? "panel-dark" : "panel-light"}>
