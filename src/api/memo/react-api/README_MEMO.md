@@ -95,6 +95,7 @@ const Greeting = memo(function({ name }) {
   In practice, you can meke a lot of memoization unnecessary by following a few principles:
 
   1. When a component visually wraps other components, let it [accept JSX as children](https://beta.reactjs.org/learn/passing-props-to-a-component#passing-jsx-as-children). This way, when the wrapper component updates its own state, React knows that its children don't need to re-render.
+  2. Prefer local state and don't [lift state up](https://beta.reactjs.org/learn/sharing-state-between-components) any further than necessary. For example, don't keep transient state like forms and whether an item is hovered at the top of your tree or in a global state library.
 </details>
 
 ### Updating a memoized component using state
