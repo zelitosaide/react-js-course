@@ -80,3 +80,12 @@ function Avatar({ person, size }) {
 function getImageUrl(person, size = "s") {
   return "https://i.imgur.com/" + person.imageId + size + ".jpg";
 }
+
+// --------------------------------------------------------
+function Item({ name, isPacked }) {
+  return (
+    <li className="item">
+      {name} {isPacked && "✔"}
+    </li>
+  );
+}
