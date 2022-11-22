@@ -89,3 +89,11 @@ function Item({ name, isPacked }) {
     </li>
   );
 }
+
+export function PackingList() {
+  return (
+    <section>
+      <h1>Sally Ride's Packing List</h1>
+    </section>
+  );
+}
