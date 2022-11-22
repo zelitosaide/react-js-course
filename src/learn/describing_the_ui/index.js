@@ -180,3 +180,26 @@ const people = [
     imageId: "lrWQx8l",
   },
 ];
+
+// --------------------------------------------------------
+// Keeping components pure
+// Minds its own business. It does not change any objects or variables that existed before it was called.
+// Same inputs, same output. Given the same inputs, a pure function should always return the same result.
+
+let guest = 0;
+
+function Cup() {
+  // Bad: changing a preexisting variable:
+  guest = guest + 1;
+  return <h2>Tea cup for guest #{guest}</h2>;
+}
+
+export function TeaSet() {
+  return (
+    <>
+      <Cup />
+      <Cup />
+      <Cup />
+    </>
+  );
+}
