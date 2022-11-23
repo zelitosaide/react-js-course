@@ -40,3 +40,7 @@ function formatDate(date) {
     weekday: "long",
   }).format(date);
 }
+
+export function TodoList2() {
+  return <h1>To Do List for {formatDate(today)}</h1>;
+}
