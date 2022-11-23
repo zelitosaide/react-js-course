@@ -31,3 +31,8 @@ export function Profile3() {
     />
   );
 }
+
+// --------------------------------------------------------
+function Avatar2({ person, size }) {
+  // person and size are available here
+}
