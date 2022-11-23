@@ -106,7 +106,7 @@ function Profile5({ person, size, isSepia, thickBorder }) {
 
 function Avatar5(props) {}
 
-// ----------------------------------------------------------
+// --------------------------------------------------------
 function Profile6(props) {
   return (
     <div className="card">
@@ -114,3 +114,8 @@ function Profile6(props) {
     </div>
   );
 }
+
+// --------------------------------------------------------
+<div>
+  <img />
+</div>;
