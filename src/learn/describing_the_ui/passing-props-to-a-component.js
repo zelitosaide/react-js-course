@@ -21,3 +21,13 @@ export function Profile() {
 export function Profile2() {
   return <Avatar />;
 }
+
+// --------------------------------------------------------
+export function Profile3() {
+  return (
+    <Avatar2
+      person={{ name: "Lin Lanying", imageId: "1bX5QH6" }}
+      size={100}
+    />
+  );
+}
