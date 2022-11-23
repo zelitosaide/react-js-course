@@ -43,3 +43,25 @@ export function Gallery() {
     </section>
   );
 }
+
+// --------------------------------------------------------
+// Components can render other components, but you must never nest their definiitions:
+export function Parent() {
+  // 🔴 Never define a component inside another component!
+  function Child() {
+    // ...
+  }
+  // ...
+}
+
+// The snippet above is very slow and causes bugs. Instead, define every component at the top level:
+export function Father() {
+  // ...
+}
+
+// ✅ Declare components at the top level
+function Son() {
+  // ...
+}
+
+// When a child component needs some data from a parent, pass it by props instead of nesting definitions.
