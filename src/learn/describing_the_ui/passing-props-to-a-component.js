@@ -84,3 +84,8 @@ function Avatar3(props) {
   const size = props.size;
   // ...
 }
+
+// --------------------------------------------------------
+function Avatar4({ person, size = 100 }) {
+  // ...
+}
