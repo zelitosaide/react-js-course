@@ -77,3 +77,10 @@ export function Profile4() {
     </div>
   );
 }
+
+// --------------------------------------------------------
+function Avatar3(props) {
+  const person = props.person;
+  const size = props.size;
+  // ...
+}
