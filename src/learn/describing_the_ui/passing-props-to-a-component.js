@@ -12,3 +12,7 @@ function Avatar() {
     />
   );
 }
+
+export function Profile() {
+  return <Avatar />;
+}
