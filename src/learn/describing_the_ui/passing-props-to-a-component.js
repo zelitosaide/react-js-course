@@ -33,6 +33,19 @@ export function Profile3() {
 }
 
 // --------------------------------------------------------
+function getImageUrl(person, size = "s") {
+  return "https://i.imgur.com/" + person.imageId + size + ".jpg";
+}
+
 function Avatar2({ person, size }) {
   // person and size are available here
+  return (
+    <img
+      className="avatar"
+      src={getImageUrl(person)}
+      alt={person.name}
+      width={size}
+      height={size}
+    />
+  );
 }
