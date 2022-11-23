@@ -50,3 +50,14 @@ export function Gallery2() {
     </section>
   );
 }
+
+// --------------------------------------------------------
+export function Profile3() {
+  // ...
+}
+
+import { Profile } from "./Gallery.js";
+
+export function App2() {
+  return <Profile />;
+}
