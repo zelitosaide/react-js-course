@@ -32,3 +32,11 @@ export function TodoList() {
 }
 
 // --------------------------------------------------------
+const today = new Date();
+
+// "pt-pt"
+function formatDate(date) {
+  return new Intl.DateTimeFormat("en-US", {
+    weekday: "long",
+  }).format(date);
+}
