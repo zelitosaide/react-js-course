@@ -49,3 +49,31 @@ function Avatar2({ person, size }) {
     />
   );
 }
+
+export function Profile4() {
+  return (
+    <div>
+      <Avatar2
+        size={100}
+        person={{
+          name: "Katsuko Saruhashi",
+          imageId: "YfeOqp2",
+        }}
+      />
+      <Avatar2
+        size={80}
+        person={{
+          name: "Aklilu Lemma",
+          imageId: "OKS67lh",
+        }}
+      />
+      <Avatar2
+        size={50}
+        person={{
+          name: "Lin Lanying",
+          imageId: "1bX5QH6",
+        }}
+      />
+    </div>
+  );
+}
