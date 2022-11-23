@@ -89,3 +89,28 @@ function Avatar3(props) {
 function Avatar4({ person, size = 100 }) {
   // ...
 }
+
+// --------------------------------------------------------
+function Profile5({ person, size, isSepia, thickBorder }) {
+  return (
+    <div className="card">
+      <Avatar5
+        person={person}
+        size={size}
+        isSepia={isSepia}
+        thickBorder={thickBorder}
+      />
+    </div>
+  );
+}
+
+function Avatar5(props) {}
+
+// ----------------------------------------------------------
+function Profile6(props) {
+  return (
+    <div className="card">
+      <Avatar {...props} />
+    </div>
+  );
+}
