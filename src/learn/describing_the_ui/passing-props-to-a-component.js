@@ -16,3 +16,8 @@ function Avatar() {
 export function Profile() {
   return <Avatar />;
 }
+
+// --------------------------------------------------------
+export function Profile2() {
+  return <Avatar />;
+}
