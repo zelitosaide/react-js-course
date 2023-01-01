@@ -136,3 +136,14 @@ export function UpdatingTheScreen() {
 
   return <button onClick={handleClick}>Clicked {count} times</button>;
 }
+
+// Counters that update separately
+export function CountersThatUpdateSeparately() {
+  return (
+    <div>
+      <h1>Counters that update separately</h1>
+      <UpdatingTheScreen />
+      <UpdatingTheScreen />
+    </div>
+  );
+}

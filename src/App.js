@@ -1,6 +1,7 @@
 import QuickStart, {
   AboutPage,
   AddingStyles,
+  CountersThatUpdateSeparately,
   DisplayingData,
   RespondingToEvents,
   ShoppingList,
@@ -17,6 +18,7 @@ function App() {
       <ShoppingList />
       <RespondingToEvents />
       <UpdatingTheScreen />
+      <CountersThatUpdateSeparately />
     </>
   );
 }
