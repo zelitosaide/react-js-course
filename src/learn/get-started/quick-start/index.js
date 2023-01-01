@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./style.css";
 import { products, user } from "../../../utils/data";
 
@@ -51,7 +52,6 @@ export function DisplayingData() {
           height: user.imageSize,
         }}
       />
-      <h1>Dane estas bem?</h1>
     </>
   );
 }
@@ -124,4 +124,15 @@ export function RespondingToEvents() {
     console.log("You clicked me!");
   }
   return <button onClick={handleClick}>Click me!</button>;
+}
+
+// Updating the screen
+export function UpdatingTheScreen() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+
+  return <button onClick={handleClick}>Clicked {count} times</button>;
 }
