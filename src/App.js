@@ -2,6 +2,7 @@ import QuickStart, {
   AboutPage,
   AddingStyles,
   DisplayingData,
+  ShoppingList,
 } from "./learn/get-started/quick-start";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <AboutPage />
       <AddingStyles />
       <DisplayingData />
+      <ShoppingList />
     </>
   );
 }

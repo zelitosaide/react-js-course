@@ -1,5 +1,5 @@
 import "./style.css";
-import { user } from "../../../utils/data";
+import { products, user } from "../../../utils/data";
 
 export default function QuickStart() {
   return (
@@ -89,3 +89,31 @@ function LoginForm() {
 }
 
 // Rendering lists
+export function ShoppingList() {
+  const listItems = products.map(function (product) {
+    return (
+      <li
+        key={product.id}
+        style={{ color: product.isFruit ? "magenta" : "darkgreen" }}
+      >
+        {product.title}
+      </li>
+    );
+  });
+  return <ul>{listItems}</ul>;
+
+  // return (
+  //   <ul>
+  //     {products.map(function (product) {
+  //       return (
+  //         <li
+  //           key={product.id}
+  //           style={{ color: product.isFruit ? "magenta" : "darkgreen" }}
+  //         >
+  //           {product.title}
+  //         </li>
+  //       );
+  //     })}
+  //   </ul>
+  // );
+}
