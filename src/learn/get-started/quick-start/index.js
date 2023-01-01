@@ -66,7 +66,10 @@ export function ConditionalRendering() {
   //   content = <LoginForm />;
   // }
   // return <div>{content}</div>;
-  return <div>{isLoggedIn ? <AdminPanel /> : <LoginForm />}</div>;
+
+  // return <div>{isLoggedIn ? <AdminPanel /> : <LoginForm />}</div>;
+
+  return <div>{isLoggedIn && <AdminPanel />}</div>;
 }
 
 function AdminPanel() {
