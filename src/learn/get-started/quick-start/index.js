@@ -59,13 +59,14 @@ export function DisplayingData() {
 // Conditional rendering
 export function ConditionalRendering() {
   const isLoggedIn = false;
-  let content;
-  if (isLoggedIn) {
-    content = <AdminPanel />;
-  } else {
-    content = <LoginForm />;
-  }
-  return <div>{content}</div>;
+  // let content;
+  // if (isLoggedIn) {
+  //   content = <AdminPanel />;
+  // } else {
+  //   content = <LoginForm />;
+  // }
+  // return <div>{content}</div>;
+  return <div>{isLoggedIn ? <AdminPanel /> : <LoginForm />}</div>;
 }
 
 function AdminPanel() {
