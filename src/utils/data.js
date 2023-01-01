@@ -5,7 +5,7 @@ export const user = {
 };
 
 export const products = [
-  { title: "Cabbage", id: 1 },
-  { title: "Garlic", id: 2 },
-  { title: "Apple", id: 3 },
+  { title: "Cabbage", isFruit: false, id: 1 },
+  { title: "Garlic", isFruit: false, id: 2 },
+  { title: "Apple", isFruit: true, id: 3 },
 ];
