@@ -117,3 +117,11 @@ export function ShoppingList() {
   //   </ul>
   // );
 }
+
+// Responding to events
+export function RespondingToEvents() {
+  function handleClick() {
+    console.log("You clicked me!");
+  }
+  return <button onClick={handleClick}>Click me!</button>;
+}
