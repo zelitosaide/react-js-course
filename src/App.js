@@ -4,6 +4,7 @@ import QuickStart, {
   DisplayingData,
   RespondingToEvents,
   ShoppingList,
+  UpdatingTheScreen,
 } from "./learn/get-started/quick-start";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <DisplayingData />
       <ShoppingList />
       <RespondingToEvents />
+      <UpdatingTheScreen />
     </>
   );
 }
