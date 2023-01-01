@@ -35,3 +35,5 @@ export function AddingStyles() {
     </p>
   );
 }
+
+// Displaying data
