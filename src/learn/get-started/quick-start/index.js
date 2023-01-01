@@ -7,6 +7,6 @@ export function QuickStart() {
   );
 }
 
-function MyButton() {
+export function MyButton() {
   return <button>I'am a button</button>;
 }
