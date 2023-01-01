@@ -46,9 +46,12 @@ export function DisplayingData() {
         className="avatar"
         src={user.imageUrl}
         alt={"Photo of " + user.name}
-        style={{ width: user.imageSize, height: user.imageSize }}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize,
+        }}
       />
-      <h1>Dane estas bem? </h1>
+      <h1>Dane estas bem?</h1>
     </>
   );
 }
