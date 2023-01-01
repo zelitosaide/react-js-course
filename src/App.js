@@ -17,7 +17,10 @@ import { FilterableProductTable } from "./learn/thinking_in_react/FilterableProd
 import { PRODUCTS as products } from "./learn/thinking_in_react/products";
 
 // New Start
-import QuickStart, { AboutPage } from "./learn/get-started/quick-start";
+import QuickStart, {
+  AboutPage,
+  AddingStyles,
+} from "./learn/get-started/quick-start";
 
 function App() {
   return (
@@ -42,6 +45,7 @@ function App() {
     <>
       <QuickStart />
       <AboutPage />
+      <AddingStyles />
     </>
   );
 }

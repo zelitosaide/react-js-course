@@ -1,3 +1,5 @@
+import "./style.css";
+
 export default function QuickStart() {
   return (
     <div>
@@ -22,5 +24,14 @@ export function AboutPage() {
         How do you do?
       </p>
     </>
+  );
+}
+
+// Adding styles
+export function AddingStyles() {
+  return (
+    <p className="p">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
   );
 }
