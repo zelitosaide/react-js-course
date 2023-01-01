@@ -55,3 +55,31 @@ export function DisplayingData() {
     </>
   );
 }
+
+// Conditional rendering
+export function ConditionalRendering() {
+  const isLoggedIn = false;
+  let content;
+  if (isLoggedIn) {
+    content = <AdminPanel />;
+  } else {
+    content = <LoginForm />;
+  }
+  return <div>{content}</div>;
+}
+
+function AdminPanel() {
+  return (
+    <div>
+      <h1>Admin Panel</h1>
+    </div>
+  );
+}
+
+function LoginForm() {
+  return (
+    <div>
+      <h1>Login Form</h1>
+    </div>
+  );
+}
