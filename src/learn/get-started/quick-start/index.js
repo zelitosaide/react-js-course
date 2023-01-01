@@ -1,5 +1,10 @@
 export function QuickStart() {
-  return <MyButton />;
+  return (
+    <div>
+      <h1>Welcome to my App</h1>
+      <MyButton />
+    </div>
+  );
 }
 
 function MyButton() {
