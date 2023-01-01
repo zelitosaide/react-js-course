@@ -1,4 +1,5 @@
 import "./style.css";
+import { user } from "../../../utils/data";
 
 export default function QuickStart() {
   return (
@@ -37,3 +38,17 @@ export function AddingStyles() {
 }
 
 // Displaying data
+export function DisplayingData() {
+  return (
+    <>
+      <h1>{user.name}</h1>
+      <img
+        className="avatar"
+        src={user.imageUrl}
+        alt={"Photo of " + user.name}
+        style={{ width: user.imageSize, height: user.imageSize }}
+      />
+      <h1>Dane estas bem? </h1>
+    </>
+  );
+}

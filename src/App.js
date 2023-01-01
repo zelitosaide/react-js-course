@@ -20,6 +20,7 @@ import { PRODUCTS as products } from "./learn/thinking_in_react/products";
 import QuickStart, {
   AboutPage,
   AddingStyles,
+  DisplayingData,
 } from "./learn/get-started/quick-start";
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
       <QuickStart />
       <AboutPage />
       <AddingStyles />
+      <DisplayingData />
     </>
   );
 }
