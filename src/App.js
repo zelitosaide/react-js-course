@@ -16,6 +16,9 @@ import { FilterableProductTable } from "./learn/thinking_in_react/FilterableProd
 
 import { PRODUCTS as products } from "./learn/thinking_in_react/products";
 
+// New Start
+import { QuickStart } from "./learn/get-started/quick-start";
+
 function App() {
   return (
     // <MyApp />
@@ -33,7 +36,10 @@ function App() {
 
     // <W3SchoolsIndex />
     // <ReactAPIIndex />
-    <WrapsOtherComponents />
+    // <WrapsOtherComponents />
+
+    // New Start
+    <QuickStart />
   );
 }
 
