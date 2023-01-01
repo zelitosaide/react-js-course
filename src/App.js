@@ -1,4 +1,3 @@
-// New Start
 import QuickStart, {
   AboutPage,
   AddingStyles,
