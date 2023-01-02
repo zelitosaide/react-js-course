@@ -9,10 +9,13 @@ import QuickStart, {
   UpdatingTheScreen,
 } from "./learn/get-started/quick-start";
 
+import TicTacToe from "./learn/get-started/quick-start/tic-tac-toe";
+
 function App() {
   return (
     <>
-      <QuickStart />
+      {/* Quick Start */}
+      {/* <QuickStart />
       <AboutPage />
       <AddingStyles />
       <DisplayingData />
@@ -20,7 +23,10 @@ function App() {
       <RespondingToEvents />
       <UpdatingTheScreen />
       <CountersThatUpdateSeparately />
-      <CountersThatUpdateTogether />
+      <CountersThatUpdateTogether /> */}
+
+      {/* Tic Tac Toe */}
+      <TicTacToe />
     </>
   );
 }
