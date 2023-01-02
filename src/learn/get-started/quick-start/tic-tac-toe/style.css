@@ -17,4 +17,13 @@ body {
   width: 34px;
   text-align: center;
   padding: 0;
+  float: left;
+  margin-right: -1px;
+  margin-top: -1px;
+}
+
+.board-row::after {
+  content: "";
+  display: table;
+  clear: both;
 }

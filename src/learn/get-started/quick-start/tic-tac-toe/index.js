@@ -1,10 +1,10 @@
 import "./style.css";
 
 export default function TicTacToe() {
-  return <Square />;
+  return <Board />;
 }
 
-export function Square() {
+export function Board() {
   return (
     <>
       <div className="board-row">
