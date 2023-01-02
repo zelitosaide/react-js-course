@@ -9,9 +9,9 @@ export default function TicTacToe() {
 export function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
 
-  function handleClick() {
+  function handleClick(i) {
     const nextSquares = squares.slice();
-    nextSquares[0] = "X";
+    nextSquares[i] = "X";
     setSquares(nextSquares);
   }
 
