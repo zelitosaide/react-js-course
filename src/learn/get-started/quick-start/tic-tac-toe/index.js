@@ -38,14 +38,44 @@ export function Board() {
         />
       </div>
       <div className="board-row">
-        <Square value={squares[3]} />
-        <Square value={squares[4]} />
-        <Square value={squares[5]} />
+        <Square
+          value={squares[3]}
+          onSquareClick={function () {
+            handleClick(3);
+          }}
+        />
+        <Square
+          value={squares[4]}
+          onSquareClick={function () {
+            handleClick(4);
+          }}
+        />
+        <Square
+          value={squares[5]}
+          onSquareClick={function () {
+            handleClick(5);
+          }}
+        />
       </div>
       <div className="board-row">
-        <Square value={squares[6]} />
-        <Square value={squares[7]} />
-        <Square value={squares[8]} />
+        <Square
+          value={squares[6]}
+          onSquareClick={function () {
+            handleClick(6);
+          }}
+        />
+        <Square
+          value={squares[7]}
+          onSquareClick={function () {
+            handleClick(7);
+          }}
+        />
+        <Square
+          value={squares[8]}
+          onSquareClick={function () {
+            handleClick(8);
+          }}
+        />
       </div>
     </>
   );
