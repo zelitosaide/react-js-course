@@ -3,7 +3,16 @@ import { useState } from "react";
 import "./style.css";
 
 export default function TicTacToe() {
-  return <Board />;
+  return (
+    <div className="game">
+      <div className="game-board">
+        <Board />
+      </div>
+      <div className="game-info">
+        <ol></ol>
+      </div>
+    </div>
+  );
 }
 
 export function Board() {
