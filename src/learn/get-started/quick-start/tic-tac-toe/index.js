@@ -20,10 +20,22 @@ export function Board() {
       <div className="board-row">
         <Square
           value={squares[0]}
-          onSquareClick={handleClick}
+          onSquareClick={function () {
+            handleClick(0);
+          }}
         />
-        <Square value={squares[1]} />
-        <Square value={squares[2]} />
+        <Square
+          value={squares[1]}
+          onSquareClick={function () {
+            handleClick(1);
+          }}
+        />
+        <Square
+          value={squares[2]}
+          onSquareClick={function () {
+            handleClick(2);
+          }}
+        />
       </div>
       <div className="board-row">
         <Square value={squares[3]} />
