@@ -30,6 +30,13 @@ export function Board() {
   );
 }
 
-export function Square({ value }) {
-  return <button className="square">{value}</button>;
+export function Square({ value, onSquareClick }) {
+  return (
+    <button
+      className="square"
+      onClick={onSquareClick}
+    >
+      {value}
+    </button>
+  );
 }
