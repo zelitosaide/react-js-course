@@ -5,6 +5,7 @@ import "./style.css";
 export default function TicTacToe() {
   const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
+  const currentSquares = history[history.length - 1];
 
   return (
     <div className="game">
