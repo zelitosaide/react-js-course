@@ -12,6 +12,30 @@ export default function TicTacToe() {
     setXIsNext(!xIsNext);
   }
 
+  function jumpTo(nextMove) {
+    // TODO
+  }
+
+  const moves = history.map(function (squares, move) {
+    let description;
+    if (move > 0) {
+      description = "Go to move #" + move;
+    } else {
+      description = "Go to game start";
+    }
+    return (
+      <li key={move}>
+        <button
+          onClick={function () {
+            jumpTo(move);
+          }}
+        >
+          {description}
+        </button>
+      </li>
+    );
+  });
+
   return (
     <div className="game">
       <div className="game-board">
