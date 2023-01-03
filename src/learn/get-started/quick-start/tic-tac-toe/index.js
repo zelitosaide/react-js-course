@@ -46,7 +46,7 @@ export default function TicTacToe() {
         />
       </div>
       <div className="game-info">
-        <ol>{/* TODO */}</ol>
+        <ol>{moves}</ol>
       </div>
     </div>
   );
