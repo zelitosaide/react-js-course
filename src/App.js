@@ -9,7 +9,7 @@
 //   UpdatingTheScreen,
 // } from "./learn/get-started/quick-start";
 
-import { Square } from "./learn/get-started/quick-start/tic-tac-toe";
+import Square from "./learn/get-started/quick-start/tic-tac-toe";
 
 function App() {
   return (
