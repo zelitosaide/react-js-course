@@ -1,5 +1,5 @@
 import "./style.css";
 
 export function Square() {
-  return <button>X</button>;
+  return <button className="square">X</button>;
 }
