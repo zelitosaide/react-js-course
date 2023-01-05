@@ -9,7 +9,7 @@
 //   UpdatingTheScreen,
 // } from "./learn/get-started/quick-start";
 
-import TicTacToe from "./learn/get-started/quick-start/tic-tac-toe";
+import TicTacToe, { Square } from "./learn/get-started/quick-start/tic-tac-toe";
 
 function App() {
   return (
@@ -26,7 +26,8 @@ function App() {
       <CountersThatUpdateTogether /> */}
 
       {/* Tic Tac Toe */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+      <Square />
     </>
   );
 }
