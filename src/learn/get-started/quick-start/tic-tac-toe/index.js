@@ -7,6 +7,8 @@ export default function TicTocToeGame() {
   const [currentMove, setCurrentMove] = useState(0);
   const currentSquares = history[history.length - 1];
 
+  console.log(currentMove);
+
   function handlePlay(nextSquares) {
     setHistory([...history, nextSquares]);
     setXIsNext(!xIsNext);
