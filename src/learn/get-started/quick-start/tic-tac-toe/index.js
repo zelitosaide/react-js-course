@@ -26,7 +26,9 @@ export default function Board() {
 function Square() {
   const [value, setValue] = useState(null);
 
-  function handleClick() {}
+  function handleClick() {
+    setValue("X");
+  }
 
   return (
     <button
