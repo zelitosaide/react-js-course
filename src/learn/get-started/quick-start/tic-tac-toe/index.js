@@ -7,6 +7,9 @@ export default function TicTocToeGame() {
       <div className="game-board">
         <Board />
       </div>
+      <div className="game-info">
+        <ol>{/*TTODO */}</ol>
+      </div>
     </div>
   );
 }
