@@ -13,7 +13,8 @@ export default function TicTocToeGame() {
   }
 
   function jumpTo(nextMove) {
-    // TODO
+    setCurrentMove(nextMove);
+    setXIsNext(nextMove % 2 === 0);
   }
 
   const moves = history.map(function (squares, move) {
