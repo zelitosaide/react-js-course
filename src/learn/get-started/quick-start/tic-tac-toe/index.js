@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import "./style.css";
 
 export default function TicTocToeGame() {
@@ -174,3 +175,9 @@ function calculateWinner(squares) {
   }
   return null;
 }
+
+/**
+ * If you have extra time or want to practice your new React skills, here are some ideas
+ * for improvements that you could make to the tic-tac-toe game, listed in order of
+ * increasing difficulty:
+ */
