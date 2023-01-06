@@ -15,43 +15,61 @@ export default function Board() {
       <div className="board-row">
         <Square
           value={squares[0]}
-          onSquareClick={handleClick}
+          onSquareClick={function () {
+            handleClick(0);
+          }}
         />
         <Square
           value={squares[1]}
-          onSquareClick={handleClick}
+          onSquareClick={function () {
+            handleClick(1);
+          }}
         />
         <Square
           value={squares[2]}
-          onSquareClick={handleClick}
+          onSquareClick={function () {
+            handleClick(2);
+          }}
         />
       </div>
       <div className="board-row">
         <Square
           value={squares[3]}
-          onSquareClick={handleClick}
+          onSquareClick={function () {
+            handleClick(3);
+          }}
         />
         <Square
           value={squares[4]}
-          onSquareClick={handleClick}
+          onSquareClick={function () {
+            handleClick(4);
+          }}
         />
         <Square
           value={squares[5]}
-          onSquareClick={handleClick}
+          onSquareClick={function () {
+            handleClick(5);
+          }}
         />
       </div>
       <div className="board-row">
         <Square
           value={squares[6]}
-          onSquareClick={handleClick}
+          onSquareClick={function () {
+            handleClick(6);
+          }}
         />
         <Square
           value={squares[7]}
-          onSquareClick={handleClick}
+          onSquareClick={function () {
+            handleClick(7);
+          }}
         />
         <Square
           value={squares[8]}
-          onSquareClick={handleClick}
+          onSquareClick={function () {
+            handleClick(8);
+          }}
         />
       </div>
     </>
