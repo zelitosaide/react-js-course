@@ -1,7 +1,17 @@
 import { useState } from "react";
 import "./style.css";
 
-export default function Board() {
+export default function TicTocToeGame() {
+  return (
+    <div className="game">
+      <div className="game-board">
+        <Board />
+      </div>
+    </div>
+  );
+}
+
+function Board() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
 
