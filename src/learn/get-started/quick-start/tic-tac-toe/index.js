@@ -23,13 +23,15 @@ export default function TicTocToeGame() {
       description = "Go to game start";
     }
     return (
-      <button
-        onClick={function () {
-          jumpTo(move);
-        }}
-      >
-        {description}
-      </button>
+      <li key={move}>
+        <button
+          onClick={function () {
+            jumpTo(move);
+          }}
+        >
+          {description}
+        </button>
+      </li>
     );
   });
 
