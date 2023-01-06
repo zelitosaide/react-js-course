@@ -11,7 +11,7 @@ export default function TicTocToeGame() {
     setXIsNext(!xIsNext);
   }
 
-  function jumpTo(move) {
+  function jumpTo(nextMove) {
     // TODO
   }
 
@@ -22,6 +22,7 @@ export default function TicTocToeGame() {
     } else {
       description = "Go to game start";
     }
+
     return (
       <li key={move}>
         <button
@@ -45,7 +46,7 @@ export default function TicTocToeGame() {
         />
       </div>
       <div className="game-info">
-        <ol>{/*TTODO */}</ol>
+        <ol>{moves}</ol>
       </div>
     </div>
   );
