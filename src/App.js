@@ -9,7 +9,7 @@
 //   UpdatingTheScreen,
 // } from "./learn/get-started/quick-start";
 
-import Square from "./learn/get-started/quick-start/tic-tac-toe";
+import TicTacToeGame from "./learn/get-started/quick-start/tic-tac-toe";
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
 
       {/* Tic Tac Toe */}
       {/* <TicTacToe /> */}
-      <Square />
+      <TicTacToeGame />
     </>
   );
 }
