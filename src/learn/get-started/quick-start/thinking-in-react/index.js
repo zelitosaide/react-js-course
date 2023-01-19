@@ -1,6 +1,4 @@
 export default function FilterableProductTable({ products }) {
-  console.log(products);
-
   return (
     <div>
       <SearchBar />
@@ -11,7 +9,32 @@ export default function FilterableProductTable({ products }) {
 
 function SearchBar() {}
 
-function ProductTable({}) {}
+function ProductTable({ products }) {
+  const rows = [];
+  let lastCategory = null;
+
+  products.forEach(function (product) {
+    if (product.category !== lastCategory) {
+      rows.push(
+        <ProductCategoryRow
+          category={product.category}
+          key={product.category}
+        />
+      );
+    }
+
+    rows.push(
+      <ProductRow
+        product={product}
+        key={product.name}
+      />
+    );
+    lastCategory = product.category;
+  });
+
+  console.log(rows);
+  return <div></div>;
+}
 
 function ProductCategoryRow() {}
 
