@@ -9,7 +9,9 @@
 //   UpdatingTheScreen,
 // } from "./learn/get-started/quick-start";
 
-import TicTacToeGame from "./learn/get-started/quick-start/tic-tac-toe";
+// import TicTacToeGame from "./learn/get-started/quick-start/tic-tac-toe";
+
+import ThinkingInReact from "./learn/get-started/quick-start/thinking-in-react";
 
 function App() {
   return (
@@ -26,8 +28,9 @@ function App() {
       <CountersThatUpdateTogether /> */}
 
       {/* Tic Tac Toe */}
-      {/* <TicTacToe /> */}
-      <TicTacToeGame />
+      {/* <TicTacToeGame /> */}
+
+      <ThinkingInReact />
     </>
   );
 }
