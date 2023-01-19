@@ -72,4 +72,6 @@ function ProductRow({ product }) {
  * Step 1: Break the UI into a component hierarchy
  *
  * Step 2: Build a static version in React
+ *
+ * Step 3: Find the minimal but complete representation of UI state
  */
