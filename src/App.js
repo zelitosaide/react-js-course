@@ -11,7 +11,7 @@
 
 // import TicTacToeGame from "./learn/get-started/quick-start/tic-tac-toe";
 
-import ThinkingInReact from "./learn/get-started/quick-start/thinking-in-react";
+import FilterableProductTable from "./learn/get-started/quick-start/thinking-in-react";
 
 function App() {
   return (
