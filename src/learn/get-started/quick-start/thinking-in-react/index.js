@@ -46,7 +46,13 @@ function ProductTable({ products }) {
   );
 }
 
-function ProductCategoryRow() {}
+function ProductCategoryRow({ category }) {
+  return (
+    <tr>
+      <th colSpan={2}>{category}</th>
+    </tr>
+  );
+}
 
 function ProductRow() {}
 
