@@ -32,7 +32,6 @@ function ProductTable({ products }) {
     lastCategory = product.category;
   });
 
-  console.log(rows);
   return (
     <table>
       <thead>
@@ -54,7 +53,14 @@ function ProductCategoryRow({ category }) {
   );
 }
 
-function ProductRow() {}
+function ProductRow({ product }) {
+  return (
+    <tr>
+      <td>{product.name}</td>
+      <td>{product.price}</td>
+    </tr>
+  );
+}
 
 /**
  * Step 1: Break the UI into a component hierarchy
