@@ -1,15 +1,17 @@
-export default function FilterableProductTable() {
+export default function FilterableProductTable({ products }) {
+  console.log(products);
+
   return (
     <div>
       <SearchBar />
-      <ProductTable />
+      <ProductTable products={products} />
     </div>
   );
 }
 
 function SearchBar() {}
 
-function ProductTable() {}
+function ProductTable({}) {}
 
 function ProductCategoryRow() {}
 

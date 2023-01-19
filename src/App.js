@@ -12,6 +12,7 @@
 // import TicTacToeGame from "./learn/get-started/quick-start/tic-tac-toe";
 
 import FilterableProductTable from "./learn/get-started/quick-start/thinking-in-react";
+import { products2 as products } from "./utils/data";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
       {/* Tic Tac Toe */}
       {/* <TicTacToeGame /> */}
 
-      <ThinkingInReact />
+      <FilterableProductTable products={products} />
     </>
   );
 }
