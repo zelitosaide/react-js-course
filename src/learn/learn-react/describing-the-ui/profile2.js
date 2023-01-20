@@ -15,13 +15,13 @@ export default function Profile() {
 }
 
 function Card({ children }) {
-  return <div>{children}</div>;
+  return <div className="card">{children}</div>;
 }
 
 function Avatar({ size, person }) {
   return (
     <img
-      className="avatar"
+      style={{ margin: 20, borderRadius: "50%" }}
       src={getImageUrl(person)}
       alt={person.name}
       width={size}
