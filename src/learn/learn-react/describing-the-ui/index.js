@@ -5,6 +5,7 @@ import Profile3 from "./profile2";
 import PackingList from "./packing-list";
 import List from "./list";
 import TeaSet from "./tea-set";
+import TeaSet2 from "./tea-set2";
 
 function Profile() {
   return (
@@ -30,6 +31,7 @@ export function Gallery() {
       <PackingList />
       <List />
       <TeaSet />
+      <TeaSet2 />
     </section>
   );
 }
