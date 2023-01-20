@@ -41,6 +41,9 @@ function SearchBar({
         <input
           type="checkbox"
           checked={inStockOnly}
+          onChange={function (event) {
+            onInStockOnlyChange(event.target.checked);
+          }}
         />{" "}
         Only show products in stock
       </label>
