@@ -7,7 +7,19 @@ export default function FilterableProductTable({ products }) {
   );
 }
 
-function SearchBar() {}
+function SearchBar() {
+  return (
+    <form>
+      <input
+        type="text"
+        placeholder="Search..."
+      />
+      <label style={{ display: "block", marginTop: 4, marginBottom: 5 }}>
+        <input type="checkbox" /> Only show products in stock
+      </label>
+    </form>
+  );
+}
 
 function ProductTable({ products }) {
   const rows = [];
