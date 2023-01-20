@@ -4,6 +4,7 @@ import TodoList2 from "./todo-list2";
 import Profile3 from "./profile2";
 import PackingList from "./packing-list";
 import List from "./list";
+import TeaCup from "./tea-set";
 
 function Profile() {
   return (
@@ -28,6 +29,7 @@ export function Gallery() {
       <Profile3 />
       <PackingList />
       <List />
+      <TeaCup />
     </section>
   );
 }
