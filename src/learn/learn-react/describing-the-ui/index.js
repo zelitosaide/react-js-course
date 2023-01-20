@@ -1,3 +1,5 @@
+import Profile2 from "./profile";
+
 function Profile() {
   return (
     <img
@@ -15,6 +17,7 @@ export function Gallery() {
       <Profile />
       <Profile />
       <Profile />
+      <Profile2 />
     </section>
   );
 }
