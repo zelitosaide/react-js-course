@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function FilterableProductTable({ products }) {
-  const [filterText, setFilterText] = useState("fruits");
+  const [filterText, setFilterText] = useState("");
   const [inStockOnly, setInStockOnly] = useState(false);
 
   return (
@@ -9,6 +9,8 @@ export default function FilterableProductTable({ products }) {
       <SearchBar
         filterText={filterText}
         inStockOnly={inStockOnly}
+        onFilterTextChange={setFilterText}
+        onInStockOnlyChange={setInStockOnly}
       />
       <ProductTable
         products={products}
@@ -19,12 +21,20 @@ export default function FilterableProductTable({ products }) {
   );
 }
 
-function SearchBar({ filterText, inStockOnly }) {
+function SearchBar({
+  filterText,
+  inStockOnly,
+  onFilterTextChange,
+  onInStockOnlyChange,
+}) {
   return (
     <form>
       <input
         type="text"
         placeholder="Search..."
+        onChange={function (event) {
+          onFilterTextChange(event.target.value);
+        }}
         value={filterText}
       />
       <label style={{ display: "block", marginTop: 4, marginBottom: 5 }}>
