@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function FilterableProductTable({ products }) {
-  const [filterText, setFilterText] = useState("");
+  const [filterText, setFilterText] = useState("fruits");
   const [inStockOnly, setInStockOnly] = useState(false);
 
   return (
@@ -38,7 +38,7 @@ function SearchBar({ filterText, inStockOnly }) {
   );
 }
 
-function ProductTable({ products }) {
+function ProductTable({ products, filterText, inStockOnly }) {
   const rows = [];
   let lastCategory = null;
 
