@@ -113,4 +113,6 @@ function ProductRow({ product }) {
  * Step 3: Find the minimal but complete representation of UI state
  *
  * Step 4: Identify where your state should live
+ *
+ * Step 5: Add inverse data flow
  */
