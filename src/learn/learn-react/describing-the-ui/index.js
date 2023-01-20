@@ -3,6 +3,7 @@ import TodoList from "./todo-list";
 import TodoList2 from "./todo-list2";
 import Profile3 from "./profile2";
 import PackingList from "./packing-list";
+import List from "./list";
 
 function Profile() {
   return (
@@ -26,6 +27,7 @@ export function Gallery() {
       <TodoList2 />
       <Profile3 />
       <PackingList />
+      <List />
     </section>
   );
 }
