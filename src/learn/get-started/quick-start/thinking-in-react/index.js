@@ -32,10 +32,10 @@ function SearchBar({
       <input
         type="text"
         placeholder="Search..."
+        value={filterText}
         onChange={function (event) {
           onFilterTextChange(event.target.value);
         }}
-        value={filterText}
       />
       <label style={{ display: "block", marginTop: 4, marginBottom: 5 }}>
         <input
