@@ -19,15 +19,20 @@ export default function FilterableProductTable({ products }) {
   );
 }
 
-function SearchBar() {
+function SearchBar({ filterText, inStockOnly }) {
   return (
     <form>
       <input
         type="text"
         placeholder="Search..."
+        value={filterText}
       />
       <label style={{ display: "block", marginTop: 4, marginBottom: 5 }}>
-        <input type="checkbox" /> Only show products in stock
+        <input
+          type="checkbox"
+          checked={inStockOnly}
+        />{" "}
+        Only show products in stock
       </label>
     </form>
   );
