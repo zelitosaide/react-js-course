@@ -4,6 +4,14 @@ export const user = {
   imageSize: 90,
 };
 
+export const person = {
+  name: "Gregorio Y. Zara",
+  theme: {
+    backgroundColor: "black",
+    color: "pink",
+  },
+};
+
 export const products = [
   { title: "Cabbage", isFruit: false, id: 1 },
   { title: "Garlic", isFruit: false, id: 2 },
