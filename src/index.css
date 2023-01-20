@@ -102,3 +102,8 @@ td {
   border-radius: 5px;
   border: 1px solid #aaa;
 }
+
+.avatar {
+  border-radius: 50%;
+  height: 90px;
+}
