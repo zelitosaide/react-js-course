@@ -86,4 +86,6 @@ function ProductRow({ product }) {
  * Step 2: Build a static version in React
  *
  * Step 3: Find the minimal but complete representation of UI state
+ *
+ * Step 4: Identify where your state should live
  */
