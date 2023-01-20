@@ -47,6 +47,10 @@ function ProductTable({ products, filterText, inStockOnly }) {
       return;
     }
 
+    if (inStockOnly && !product.stocked) {
+      return;
+    }
+
     if (product.category !== lastCategory) {
       rows.push(
         <ProductCategoryRow
