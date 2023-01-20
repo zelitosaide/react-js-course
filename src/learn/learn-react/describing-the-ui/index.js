@@ -1,5 +1,6 @@
 import Profile2 from "./profile";
 import TodoList from "./todo-list";
+import TodoList2 from "./todo-list-2";
 
 function Profile() {
   return (
@@ -20,6 +21,7 @@ export function Gallery() {
       <Profile />
       <Profile2 />
       <TodoList />
+      <TodoList2 />
     </section>
   );
 }
