@@ -9,6 +9,7 @@ export const person = {
   theme: {
     backgroundColor: "black",
     color: "pink",
+    padding: 20,
   },
 };
 
