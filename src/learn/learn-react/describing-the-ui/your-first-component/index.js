@@ -7,7 +7,7 @@ function Profile() {
     <img
       src="https://i.imgur.com/MK3eW3Am.jpg"
       alt="Katherine Johnson"
-      style={{ height: 200 }}
+      style={{ margin: "0 10px 10px 0", height: 90 }}
     />
   );
 }
