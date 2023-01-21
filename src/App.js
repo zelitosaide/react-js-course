@@ -14,7 +14,9 @@
 // import FilterableProductTable from "./learn/get-started/quick-start/thinking-in-react";
 // import { products2 as products } from "./utils/data";
 
-import { Gallery } from "./learn/learn-react/describing-the-ui";
+// import { Gallery } from "./learn/learn-react/describing-the-ui";
+
+import YourFirstComponet from "./learn/learn-react/describing-the-ui/your-first-component";
 
 function App() {
   return (
@@ -34,7 +36,9 @@ function App() {
       {/* <TicTacToeGame /> */}
 
       {/* <FilterableProductTable products={products} /> */}
-      <Gallery />
+      {/* <Gallery /> */}
+
+      <YourFirstComponet />
     </>
   );
 }
