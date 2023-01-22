@@ -16,7 +16,7 @@
 
 // import { Gallery } from "./learn/learn-react/describing-the-ui";
 
-import YourFirstComponet from "./learn/learn-react/describing-the-ui/your-first-component";
+// import YourFirstComponet from "./learn/learn-react/describing-the-ui/your-first-component";
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
       {/* <FilterableProductTable products={products} /> */}
       {/* <Gallery /> */}
 
-      <YourFirstComponet />
+      {/* <YourFirstComponet /> */}
     </>
   );
 }
