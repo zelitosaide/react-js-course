@@ -18,6 +18,8 @@
 
 // import YourFirstComponet from "./learn/learn-react/describing-the-ui/your-first-component";
 
+import ExportingAndImportingAComponent from "./learn/learn-react/describing-the-ui/importing-and-exporting-components";
+
 function App() {
   return (
     <>
@@ -39,6 +41,8 @@ function App() {
       {/* <Gallery /> */}
 
       {/* <YourFirstComponet /> */}
+
+      <ExportingAndImportingAComponent />
     </>
   );
 }
