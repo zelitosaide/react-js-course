@@ -25,7 +25,16 @@ function List() {
     );
   });
 
-  return <ul>{listItems}</ul>;
+  return (
+    <ul
+      style={{
+        paddingLeft: 20,
+        listStyleType: "none",
+      }}
+    >
+      {listItems}
+    </ul>
+  );
 }
 
 function List2() {
