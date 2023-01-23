@@ -3,13 +3,17 @@ export default function Index() {
 }
 
 function Item({ name, isPacked }) {
+  return <li className="item">{isPacked ? name + " ✔" : name}</li>;
+}
+
+function Item1({ name, isPacked }) {
   if (isPacked) {
     return null;
   }
   return <li className="item">{name}</li>;
 }
 
-function Item2({ name, isPacked }) {
+function Item3({ name, isPacked }) {
   if (isPacked) {
     return <li className="item">{name} ✔</li>;
   }
