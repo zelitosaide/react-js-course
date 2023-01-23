@@ -55,7 +55,9 @@ function Clock() {
   );
 }
 
-function Time({ color, time }) {}
+function Time({ color, time }) {
+  return <h1 style={{ color: color }}>{time}</h1>;
+}
 
 // function Card(props) {
 function Card({ children }) {
