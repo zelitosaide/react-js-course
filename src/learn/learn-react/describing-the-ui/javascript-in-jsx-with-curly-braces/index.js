@@ -1,9 +1,14 @@
+import { formatDate } from "../../../../utils/services";
+
+const today = new Date();
+
 export default function Index() {
   return (
     <>
       <Avatar />
       <Avatar2 />
       <TodoList />
+      <TodoList2 />
     </>
   );
 }
@@ -11,6 +16,10 @@ export default function Index() {
 function TodoList() {
   const name = "Gregorio Y. Zara";
   return <h1>{name}'s To Do List</h1>;
+}
+
+function TodoList2() {
+  return <h1>To Do List for {formatDate(today)}</h1>;
 }
 
 function Avatar() {
