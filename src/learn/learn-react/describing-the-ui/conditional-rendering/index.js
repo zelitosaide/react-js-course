@@ -3,7 +3,7 @@ export default function Index() {
 }
 
 function Item({ name, isPacked }) {
-  return <li className="item">{isPacked ? name + " ✔" : name}</li>;
+  return <li className="item">{isPacked ? <del>name + " ✔" </del> : name}</li>;
 }
 
 function Item1({ name, isPacked }) {
