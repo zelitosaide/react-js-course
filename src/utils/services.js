@@ -3,5 +3,6 @@ export function getImageUrl(person, size = "s") {
 }
 
 export function formatDate(date) {
-  return new Intl.DateTimeFormat("en-US", { weekday: "long" }).format(date);
+  // return new Intl.DateTimeFormat("en-US", { weekday: "long" }).format(date);
+  return new Intl.DateTimeFormat("pt-PT", { weekday: "long" }).format(date);
 }
