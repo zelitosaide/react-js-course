@@ -3,8 +3,14 @@ export default function Index() {
     <>
       <Avatar />
       <Avatar2 />
+      <TodoList />
     </>
   );
+}
+
+function TodoList() {
+  const name = "Gregorio Y. Zara";
+  return <h1>{name}'s To Do List</h1>;
 }
 
 function Avatar() {
