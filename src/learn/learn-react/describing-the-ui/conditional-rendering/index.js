@@ -3,6 +3,15 @@ export default function Index() {
 }
 
 function Item({ name, isPacked }) {
+  let itemContent = name;
+  if (isPacked) {
+    itemContent = name + "✔";
+  }
+
+  return <li className="itme">{itemContent}</li>;
+}
+
+function Item2({ name, isPacked }) {
   return (
     <li className="item">
       {/* {name} {!!isPacked && "✔"} */}
@@ -11,18 +20,18 @@ function Item({ name, isPacked }) {
   );
 }
 
-function Item2({ name, isPacked }) {
+function Item3({ name, isPacked }) {
   return <li className="item">{isPacked ? <del>{name + " ✔"}</del> : name}</li>;
 }
 
-function Item3({ name, isPacked }) {
+function Item4({ name, isPacked }) {
   if (isPacked) {
     return null;
   }
   return <li className="item">{name}</li>;
 }
 
-function Item4({ name, isPacked }) {
+function Item5({ name, isPacked }) {
   if (isPacked) {
     return <li className="item">{name} ✔</li>;
   }
