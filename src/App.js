@@ -18,7 +18,9 @@
 
 // import YourFirstComponet from "./learn/learn-react/describing-the-ui/your-first-component";
 
-import ExportingAndImportingAComponent from "./learn/learn-react/describing-the-ui/importing-and-exporting-components";
+// import ExportingAndImportingAComponent from "./learn/learn-react/describing-the-ui/importing-and-exporting-components";
+
+import WritingMarkupWithJSX from "./learn/learn-react/describing-the-ui/writing-markup-with-jsx";
 
 function App() {
   return (
@@ -42,7 +44,9 @@ function App() {
 
       {/* <YourFirstComponet /> */}
 
-      <ExportingAndImportingAComponent />
+      {/* <ExportingAndImportingAComponent /> */}
+
+      <WritingMarkupWithJSX />
     </>
   );
 }
