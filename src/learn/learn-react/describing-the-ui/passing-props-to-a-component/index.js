@@ -1,4 +1,6 @@
-export default function Index() {}
+export default function Index() {
+  return <Avatar />;
+}
 
 function Avatar() {
   return (
