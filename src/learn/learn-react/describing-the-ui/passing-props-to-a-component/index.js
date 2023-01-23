@@ -12,8 +12,21 @@ export default function Index() {
         }}
         size={80}
       />
+      <Card>
+        <Avatar2
+          person={{
+            name: "Katsuko Saruhashi",
+            imageId: "YfeOqp2",
+          }}
+          size={100}
+        />
+      </Card>
     </div>
   );
+}
+
+function Card({ children }) {
+  return <div className="card">{children}</div>;
 }
 
 function Profile() {
