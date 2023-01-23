@@ -17,7 +17,7 @@ function List() {
     );
   });
 
-  return <ul>{listItems}</ul>;
+  return <div>{listItems}</div>;
 }
 
 function List2() {
