@@ -22,6 +22,8 @@ export default function Index() {
           size={100}
         />
       </Card>
+
+      <Clock />
     </div>
   );
 }
@@ -32,20 +34,28 @@ function Clock() {
 
   return (
     <div>
-      <p>Pick a color: </p>
-      <select
-        value={color}
-        onChange={function (event) {
-          setColor(event.target.value);
-        }}
-      >
-        <option value="lightcoral">lightcoral</option>
-        <option value="midnightblue">midnightblue</option>
-        <option value="rebeccapurple">rebeccapurple</option>
-      </select>
+      <p>
+        Pick a color:
+        <select
+          value={color}
+          onChange={function (event) {
+            setColor(event.target.value);
+          }}
+        >
+          <option value="lightcoral">lightcoral</option>
+          <option value="midnightblue">midnightblue</option>
+          <option value="rebeccapurple">rebeccapurple</option>
+        </select>
+      </p>
+      <Time
+        color={color}
+        time={time.toLocaleTimeString()}
+      />
     </div>
   );
 }
+
+function Time({ color, time }) {}
 
 // function Card(props) {
 function Card({ children }) {
