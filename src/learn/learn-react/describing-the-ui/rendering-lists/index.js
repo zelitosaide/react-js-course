@@ -12,7 +12,10 @@ function List() {
 
   const listItems = chemists.map(function (person) {
     return (
-      <li key={person.id}>
+      <li
+        key={person.id}
+        style={{ display: "flex", gap: 20 }}
+      >
         <img
           src={getImageUrl(person)}
           alt={person.name}
