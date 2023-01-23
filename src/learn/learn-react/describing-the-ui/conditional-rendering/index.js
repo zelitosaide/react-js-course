@@ -1,4 +1,6 @@
-export default function Index() {}
+export default function Index() {
+  return <PackingList />;
+}
 
 function Item({ name, isPacked }) {
   return <li className="item">{name}</li>;
