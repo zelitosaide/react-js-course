@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useState } from "react";
 import { getImageUrl } from "../../../../utils/services";
 
 export default function Index() {
@@ -23,6 +25,24 @@ export default function Index() {
       </Card>
     </div>
   );
+}
+
+function useTime() {
+  const [time, setTime] = useState(function () {
+    return new Date();
+  });
+
+  useEffect(function () {
+    const id = setInterval(function () {
+      setTime(new Date());
+    }, 1000);
+
+    return function () {
+      clearInterval(id);
+    };
+  }, []);
+
+  return time;
 }
 
 function Clock({ color, time }) {
