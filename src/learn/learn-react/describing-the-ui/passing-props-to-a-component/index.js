@@ -13,15 +13,24 @@ function Profile() {
   return (
     <div>
       <Avatar2
-        person={{ name: "Katsuko Saruhashi", imageId: "YfeOqp2" }}
+        person={{
+          name: "Katsuko Saruhashi",
+          imageId: "YfeOqp2",
+        }}
         size={100}
       />
       <Avatar2
-        person={{ name: "Aklilu Lemma", imageId: "OKS67lh" }}
+        person={{
+          name: "Aklilu Lemma",
+          imageId: "OKS67lh",
+        }}
         size={80}
       />
       <Avatar2
-        person={{ name: "Lin Lanying", imageId: "1bX5QH6" }}
+        person={{
+          name: "Lin Lanying",
+          imageId: "1bX5QH6",
+        }}
         size={50}
       />
     </div>
