@@ -17,7 +17,7 @@ function Profile() {
           name: "Katsuko Saruhashi",
           imageId: "YfeOqp2",
         }}
-        size={100}
+        // size={100}
       />
       <Avatar2
         person={{
@@ -50,7 +50,7 @@ function Avatar() {
   );
 }
 
-function Avatar2({ person, size }) {
+function Avatar2({ person, size = 100 }) {
   return (
     <img
       src={getImageUrl(person)}
