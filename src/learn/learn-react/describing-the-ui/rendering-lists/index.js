@@ -18,7 +18,8 @@ function List() {
           alt={person.name}
         />
         <p>
-          <b>{person.name}:</b> {person.profession}
+          <b>{person.name}:</b> {person.profession} known for{" "}
+          {person.accomplishment}
         </p>
       </li>
     );
