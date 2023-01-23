@@ -5,7 +5,8 @@ export default function Index() {
 function Item({ name, isPacked }) {
   return (
     <li className="item">
-      {name} {!!isPacked && "✔"}
+      {/* {name} {!!isPacked && "✔"} */}
+      {name} {isPacked > 0 && "✔"}
     </li>
   );
 }
