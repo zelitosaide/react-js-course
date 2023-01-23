@@ -1,4 +1,5 @@
 import { people } from "../../../../utils/data";
+import { getImageUrl } from "../../../../utils/services";
 
 export default function Index() {
   return <List />;
@@ -10,7 +11,17 @@ function List() {
   });
 
   const listItems = chemists.map(function (person) {
-    return <li key={person.id}>{person.name}</li>;
+    return (
+      <li key={person.id}>
+        <img
+          src={getImageUrl(person)}
+          alt={person.name}
+        />
+        <p>
+          <b>{person.name}:</b> {person.profession}
+        </p>
+      </li>
+    );
   });
 
   return <ul>{listItems}</ul>;
