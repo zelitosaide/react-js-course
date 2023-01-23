@@ -22,7 +22,9 @@
 
 // import WritingMarkupWithJSX from "./learn/learn-react/describing-the-ui/writing-markup-with-jsx";
 
-import JSInJSXWithCurlyBraces from "./learn/learn-react/describing-the-ui/javascript-in-jsx-with-curly-braces";
+// import JSInJSXWithCurlyBraces from "./learn/learn-react/describing-the-ui/javascript-in-jsx-with-curly-braces";
+
+import PassingPropsToAComponent from "./learn/learn-react/describing-the-ui/passing-props-to-a-component";
 
 function App() {
   return (
@@ -50,7 +52,9 @@ function App() {
 
       {/* <WritingMarkupWithJSX /> */}
 
-      <JSInJSXWithCurlyBraces />
+      {/* <JSInJSXWithCurlyBraces /> */}
+
+      <PassingPropsToAComponent />
     </>
   );
 }
