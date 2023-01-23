@@ -1,6 +1,5 @@
-import { useEffect } from "react";
 import { useState } from "react";
-import { getImageUrl } from "../../../../utils/services";
+import { getImageUrl, useTime } from "../../../../utils/services";
 
 export default function Index() {
   return (
@@ -27,26 +26,15 @@ export default function Index() {
   );
 }
 
-function useTime() {
-  const [time, setTime] = useState(function () {
-    return new Date();
-  });
+function Clock() {
+  const time = useTime();
+  const [color, setColor] = useState("lightcoral");
 
-  useEffect(function () {
-    const id = setInterval(function () {
-      setTime(new Date());
-    }, 1000);
-
-    return function () {
-      clearInterval(id);
-    };
-  }, []);
-
-  return time;
-}
-
-function Clock({ color, time }) {
-  return <h1 style={{ color: color }}>{time}</h1>;
+  return (
+    <div>
+      <p>Pick a color: </p>
+    </div>
+  );
 }
 
 // function Card(props) {
