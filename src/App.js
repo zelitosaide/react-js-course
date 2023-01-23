@@ -24,7 +24,9 @@
 
 // import JSInJSXWithCurlyBraces from "./learn/learn-react/describing-the-ui/javascript-in-jsx-with-curly-braces";
 
-import PassingPropsToAComponent from "./learn/learn-react/describing-the-ui/passing-props-to-a-component";
+// import PassingPropsToAComponent from "./learn/learn-react/describing-the-ui/passing-props-to-a-component";
+
+import ConditionalRendering from "./learn/learn-react/describing-the-ui/conditional-rendering";
 
 function App() {
   return (
@@ -54,7 +56,9 @@ function App() {
 
       {/* <JSInJSXWithCurlyBraces /> */}
 
-      <PassingPropsToAComponent />
+      {/* <PassingPropsToAComponent /> */}
+
+      <ConditionalRendering />
     </>
   );
 }
