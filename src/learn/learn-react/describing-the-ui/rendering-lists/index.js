@@ -16,6 +16,7 @@ function List() {
         <img
           src={getImageUrl(person)}
           alt={person.name}
+          style={{ width: 100, height: 100, borderRadius: "50%" }}
         />
         <p>
           <b>{person.name}:</b> {person.profession} known for{" "}
