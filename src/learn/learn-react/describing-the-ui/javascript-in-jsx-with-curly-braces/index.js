@@ -1,4 +1,5 @@
 import { formatDate } from "../../../../utils/services";
+import { person } from "../../../../utils/data";
 
 const today = new Date();
 
@@ -10,6 +11,7 @@ export default function Index() {
       <TodoList />
       <TodoList2 />
       <TodoList3 />
+      <TodoList4 />
     </>
   );
 }
@@ -30,6 +32,24 @@ function TodoList3() {
       <li>Prepare aeronautics lectures</li>
       <li>Work on the alcohol-fuelled engine</li>
     </ul>
+  );
+}
+
+function TodoList4() {
+  return (
+    <div style={person.theme}>
+      <h1>{person.name}'s Todos</h1>
+      <img
+        src="https://i.imgur.com/7vQD0fPs.jpg"
+        alt="Gregorio Y. Zara"
+        className="avatar"
+      />
+      <ul>
+        <li>Improve the videophone</li>
+        <li>Prepare aeronautics lectures</li>
+        <li>Work on the alcohol-fuelled engine</li>
+      </ul>
+    </div>
   );
 }
 
