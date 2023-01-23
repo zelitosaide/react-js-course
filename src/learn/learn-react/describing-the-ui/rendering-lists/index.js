@@ -28,7 +28,7 @@ function List() {
   return (
     <ul
       style={{
-        paddingLeft: 20,
+        padding: "0 10px",
         listStyleType: "none",
       }}
     >
