@@ -2,11 +2,9 @@ import Gallery, { Profile } from "./gallery";
 
 export default function Index() {
   return (
-    <>
+    <div>
       <Gallery />
-      <section>
-        <Profile />
-      </section>
-    </>
+      <Profile />
+    </div>
   );
 }
