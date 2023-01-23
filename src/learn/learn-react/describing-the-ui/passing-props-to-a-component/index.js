@@ -33,6 +33,12 @@ function Clock() {
   return (
     <div>
       <p>Pick a color: </p>
+      <select
+        value={color}
+        onChange={function (event) {
+          setColor(event.target.value);
+        }}
+      ></select>
     </div>
   );
 }
