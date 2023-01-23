@@ -25,7 +25,9 @@ export default function Index() {
   );
 }
 
+// function Card(props) {
 function Card({ children }) {
+  // return <div className="card">{props.children}</div>;
   return <div className="card">{children}</div>;
 }
 
