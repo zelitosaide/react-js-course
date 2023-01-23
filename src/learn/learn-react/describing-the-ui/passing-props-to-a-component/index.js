@@ -1,7 +1,15 @@
 import { getImageUrl } from "../../../../utils/services";
 
 export default function Index() {
-  return <Avatar />;
+  return (
+    <div>
+      <Avatar />
+      <Avatar2
+        person={{ name: "Katsuko Saruhashi", imageId: "YfeOqp2" }}
+        size={100}
+      />
+    </div>
+  );
 }
 
 function Profile() {
