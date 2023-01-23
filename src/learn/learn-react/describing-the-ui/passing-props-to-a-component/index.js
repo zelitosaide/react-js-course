@@ -25,6 +25,10 @@ export default function Index() {
   );
 }
 
+function Clock({ color, time }) {
+  return <h1 style={{ color: color }}>{time}</h1>;
+}
+
 // function Card(props) {
 function Card({ children }) {
   // return <div className="card">{props.children}</div>;
