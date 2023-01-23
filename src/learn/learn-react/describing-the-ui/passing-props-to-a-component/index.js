@@ -38,7 +38,11 @@ function Clock() {
         onChange={function (event) {
           setColor(event.target.value);
         }}
-      ></select>
+      >
+        <option value="lightcoral">lightcoral</option>
+        <option value="midnightblue">midnightblue</option>
+        <option value="rebeccapurple">rebeccapurple</option>
+      </select>
     </div>
   );
 }
