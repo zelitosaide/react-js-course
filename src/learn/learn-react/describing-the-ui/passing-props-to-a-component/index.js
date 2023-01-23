@@ -8,6 +8,10 @@ export default function Index() {
         person={{ name: "Katsuko Saruhashi", imageId: "YfeOqp2" }}
         size={100}
       />
+      <Avatar2
+        person={{ name: "Aklilu Lemma", imageId: "OKS67lh" }}
+        size={80}
+      />
     </div>
   );
 }
@@ -29,7 +33,7 @@ function Avatar() {
       width={100}
       height={100}
       className="avatar"
-      style={{ width: 100, height: 100 }}
+      style={{ width: 100, height: 100, margin: 10 }}
     />
   );
 }
@@ -39,7 +43,7 @@ function Avatar2({ person, size }) {
     <img
       src={getImageUrl(person)}
       alt={person.name}
-      style={{ width: size, height: size }}
+      style={{ width: size, height: size, margin: 10 }}
       className="avatar"
     />
   );
