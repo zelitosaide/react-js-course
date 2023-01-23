@@ -2,10 +2,10 @@ export default function Index() {
   return <PackingList />;
 }
 
-function Item(name, isPacked) {
+function Item({ name, isPacked }) {
   return (
     <li className="item">
-      {name} {isPacked && "✔"}
+      {name} {!!isPacked && "✔"}
     </li>
   );
 }
