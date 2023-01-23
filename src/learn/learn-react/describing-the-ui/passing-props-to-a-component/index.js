@@ -5,6 +5,13 @@ export default function Index() {
     <div>
       <Avatar />
       <Profile />
+      <Profile2
+        person={{
+          name: "Aklilu Lemma",
+          imageId: "OKS67lh",
+        }}
+        size={80}
+      />
     </div>
   );
 }
@@ -33,6 +40,14 @@ function Profile() {
         }}
         size={50}
       />
+    </div>
+  );
+}
+
+function Profile2(props) {
+  return (
+    <div className="card">
+      <Avatar2 {...props} />
     </div>
   );
 }
