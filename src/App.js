@@ -26,7 +26,7 @@
 
 // import PassingPropsToAComponent from "./learn/learn-react/describing-the-ui/passing-props-to-a-component";
 
-import ConditionalRendering from "./learn/learn-react/describing-the-ui/conditional-rendering";
+// import ConditionalRendering from "./learn/learn-react/describing-the-ui/conditional-rendering";
 
 function App() {
   return (
@@ -58,7 +58,7 @@ function App() {
 
       {/* <PassingPropsToAComponent /> */}
 
-      <ConditionalRendering />
+      {/* <ConditionalRendering /> */}
     </>
   );
 }

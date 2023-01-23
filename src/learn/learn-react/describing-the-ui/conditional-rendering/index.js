@@ -10,41 +10,41 @@ function Item({ name, isPacked }) {
   return <li className="item">{itemContent}</li>;
 }
 
-function Item2({ name, isPacked }) {
-  let itemContent = name;
-  if (isPacked) {
-    itemContent = name + "✔";
-  }
+// function Item2({ name, isPacked }) {
+//   let itemContent = name;
+//   if (isPacked) {
+//     itemContent = name + "✔";
+//   }
 
-  return <li className="itme">{itemContent}</li>;
-}
+//   return <li className="itme">{itemContent}</li>;
+// }
 
-function Item3({ name, isPacked }) {
-  return (
-    <li className="item">
-      {/* {name} {!!isPacked && "✔"} */}
-      {name} {isPacked > 0 && "✔"}
-    </li>
-  );
-}
+// function Item3({ name, isPacked }) {
+//   return (
+//     <li className="item">
+//       {/* {name} {!!isPacked && "✔"} */}
+//       {name} {isPacked > 0 && "✔"}
+//     </li>
+//   );
+// }
 
-function Item4({ name, isPacked }) {
-  return <li className="item">{isPacked ? <del>{name + " ✔"}</del> : name}</li>;
-}
+// function Item4({ name, isPacked }) {
+//   return <li className="item">{isPacked ? <del>{name + " ✔"}</del> : name}</li>;
+// }
 
-function Item5({ name, isPacked }) {
-  if (isPacked) {
-    return null;
-  }
-  return <li className="item">{name}</li>;
-}
+// function Item5({ name, isPacked }) {
+//   if (isPacked) {
+//     return null;
+//   }
+//   return <li className="item">{name}</li>;
+// }
 
-function Item6({ name, isPacked }) {
-  if (isPacked) {
-    return <li className="item">{name} ✔</li>;
-  }
-  return <li className="item">{name}</li>;
-}
+// function Item6({ name, isPacked }) {
+//   if (isPacked) {
+//     return <li className="item">{name} ✔</li>;
+//   }
+//   return <li className="item">{name}</li>;
+// }
 
 function PackingList() {
   return (
