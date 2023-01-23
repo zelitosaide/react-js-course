@@ -45,8 +45,6 @@ function Profile() {
 }
 
 function Profile2(props) {
-  console.log(props);
-
   return (
     <div className="card">
       <Avatar2 {...props} />
