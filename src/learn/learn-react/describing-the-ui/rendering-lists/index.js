@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 import { people } from "../../../../utils/data";
 import { getImageUrl } from "../../../../utils/services";
 
@@ -6,6 +8,19 @@ export default function Index() {
 }
 
 function List() {
+  const listItems = people.map(function (person) {
+    return (
+      <Fragment key={person.id}>
+        <h2>{person.name}</h2>
+        <p>known for {person.accomplishment}</p>
+      </Fragment>
+    );
+  });
+
+  return <ul>{listItems}</ul>;
+}
+
+function List2() {
   const chemists = people.filter(function (person) {
     return person.profession === "chemist";
   });
@@ -41,7 +56,7 @@ function List() {
   );
 }
 
-function List2() {
+function List3() {
   const listItems = people.map(function (person) {
     return <li key={person.id}>{person.name}</li>;
   });
