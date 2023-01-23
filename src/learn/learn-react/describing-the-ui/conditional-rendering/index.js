@@ -2,16 +2,16 @@ export default function Index() {
   return <PackingList />;
 }
 
-function Ite2({ name, isPacked }) {
+function Item({ name, isPacked }) {
   if (isPacked) {
-    return <li className="item">{name} ✔</li>;
+    return null;
   }
   return <li className="item">{name}</li>;
 }
 
-function Item({ name, isPacked }) {
+function Item2({ name, isPacked }) {
   if (isPacked) {
-    return null;
+    return <li className="item">{name} ✔</li>;
   }
   return <li className="item">{name}</li>;
 }
