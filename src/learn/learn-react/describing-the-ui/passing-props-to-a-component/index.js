@@ -4,6 +4,14 @@ export default function Index() {
   return (
     <div>
       <Avatar />
+      <Profile />
+    </div>
+  );
+}
+
+function Profile() {
+  return (
+    <div>
       <Avatar2
         person={{ name: "Katsuko Saruhashi", imageId: "YfeOqp2" }}
         size={100}
@@ -12,16 +20,11 @@ export default function Index() {
         person={{ name: "Aklilu Lemma", imageId: "OKS67lh" }}
         size={80}
       />
+      <Avatar2
+        person={{ name: "Lin Lanying", imageId: "1bX5QH6" }}
+        size={50}
+      />
     </div>
-  );
-}
-
-function Profile() {
-  return (
-    <Avatar2
-      person={{ name: "Lin Lanying", imageId: "1bX5QH6" }}
-      size={100}
-    />
   );
 }
 
