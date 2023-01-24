@@ -1,3 +1,5 @@
+import ImpureComponent from "./impure-tea-set";
+
 export default function Index() {
   return <Recipes />;
 }
@@ -22,6 +24,8 @@ function Recipes() {
       <Recipe drinkers={2} />
       <h2>For a gathering</h2>
       <Recipe drinkers={4} />
+      <h2>Impure Components</h2>
+      <ImpureComponent />
     </section>
   );
 }
