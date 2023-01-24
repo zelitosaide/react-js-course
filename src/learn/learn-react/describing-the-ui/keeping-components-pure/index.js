@@ -3,6 +3,7 @@ import PureComponent from "./pure-tea-set";
 import LocalMutation from "./local-mutation-tea-set";
 import InfinityCounter from "./infinity-counter";
 import FixABrokenClock from "./challenges/fix-a-broken-clock";
+import FixABrokenProfile from "./challenges/fix-a-broken-profile";
 
 export default function Index() {
   return <Recipes />;
@@ -36,8 +37,10 @@ function Recipes() {
       <LocalMutation />
       <h2>Infinity Counter</h2>
       <InfinityCounter />
-      <h2>Fix a broken clock</h2>
+      <h2>Fix a broken Clock</h2>
       <FixABrokenClock />
+      <h2>Fix a broken Profile</h2>
+      <FixABrokenProfile />
     </section>
   );
 }
