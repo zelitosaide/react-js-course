@@ -44,6 +44,7 @@ function Profile({ person }) {
 }
 
 function Header() {
+  console.log("Header");
   return <h1>{currentPerson.name}</h1>;
 }
 
