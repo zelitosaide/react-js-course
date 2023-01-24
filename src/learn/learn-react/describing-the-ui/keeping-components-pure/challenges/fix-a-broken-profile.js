@@ -12,6 +12,7 @@ import { useState } from "react";
 import { getImageUrl } from "../../../../../utils/services";
 
 let currentPerson;
+console.log(currentPerson);
 
 export default function Index() {
   return (
@@ -44,7 +45,6 @@ function Profile({ person }) {
 }
 
 function Header() {
-  console.log("Header");
   return <h1>{currentPerson.name}</h1>;
 }
 
