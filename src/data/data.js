@@ -13,6 +13,11 @@ export const person = {
   },
 };
 
+export const stories = [
+  { id: 0, label: "Ankit's Story" },
+  { id: 1, label: "Taylor's Story" },
+];
+
 export const products = [
   { title: "Cabbage", isFruit: false, id: 1 },
   { title: "Garlic", isFruit: false, id: 2 },
