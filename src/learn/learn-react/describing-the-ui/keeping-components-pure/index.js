@@ -40,7 +40,7 @@ function Recipes() {
 }
 
 /**
- * You will learn
+ * You will learn:
  *
  * What purity is and how it helps you avoid bugs
  *
