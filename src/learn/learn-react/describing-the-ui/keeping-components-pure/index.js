@@ -11,3 +11,11 @@ function Recipe({ drinkers }) {
     </ol>
   );
 }
+
+function Recipes() {
+  return (
+    <section>
+      <h1>Spiced Chai Recipe</h1>
+    </section>
+  );
+}
