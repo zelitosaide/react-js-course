@@ -10,3 +10,13 @@
  * “Create Story” appears more than once. Fix the issue.
  */
 export default function Index() {}
+
+function StoryTray({ stories }) {
+  return (
+    <ul>
+      {stories.map(function (story) {
+        return <li key={story.id}>{story.label}</li>;
+      })}
+    </ul>
+  );
+}
