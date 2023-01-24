@@ -50,11 +50,11 @@ function Header() {
 function Avatar() {
   return (
     <img
-      className="avatar"
       src={getImageUrl(currentPerson)}
       alt={currentPerson.name}
       width={50}
       height={50}
+      style={{ margin: 5, borderRadius: "50%" }}
     />
   );
 }
