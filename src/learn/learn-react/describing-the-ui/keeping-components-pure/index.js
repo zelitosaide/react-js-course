@@ -1,4 +1,5 @@
 import ImpureComponent from "./impure-tea-set";
+import PureComponent from "./pure-tea-set";
 
 export default function Index() {
   return <Recipes />;
@@ -26,6 +27,8 @@ function Recipes() {
       <Recipe drinkers={4} />
       <h2>Impure Components</h2>
       <ImpureComponent />
+      <h2>Pure Components</h2>
+      <PureComponent />
     </section>
   );
 }
