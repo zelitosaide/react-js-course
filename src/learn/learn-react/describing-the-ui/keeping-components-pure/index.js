@@ -38,3 +38,11 @@ function Recipes() {
     </section>
   );
 }
+
+/**
+ * You will learn
+ *
+ * What purity is and how it helps you avoid bugs
+ *
+ * How to keep components pure by keeping changes out of the render phase
+ */
