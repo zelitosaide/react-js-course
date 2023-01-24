@@ -17,5 +17,16 @@ function Profile({ person }) {
 function Panel({ children }) {
   const [open, setOpen] = useState(true);
 
-  return <section className="panel"></section>;
+  return (
+    <section className="panel">
+      <button
+        onClick={function () {
+          setOpen(!open);
+        }}
+      >
+        {open ? "Collapse" : "Expand"}
+      </button>
+      {open && children}
+    </section>
+  );
 }
