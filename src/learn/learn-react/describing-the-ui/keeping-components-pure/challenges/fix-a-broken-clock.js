@@ -9,4 +9,21 @@
  * computer’s timezone. When the current time is between midnight and six
  * in the morning, the clock should have inverted colors!
  */
-export default function Clock() {}
+function Clock({ time }) {
+  let hours = time.getHours();
+  let className;
+
+  if (hours >= 0 && hours <= 6) {
+    className = "night";
+  } else {
+    className = "day";
+  }
+  return (
+    <h1
+      id="time"
+      className={className}
+    >
+      {time.toLocaleTimeString()}
+    </h1>
+  );
+}
