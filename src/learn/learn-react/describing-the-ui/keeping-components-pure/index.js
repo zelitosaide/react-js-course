@@ -58,3 +58,11 @@ function Recipes() {
  * b) Same inputs, same output. Given the same inputs, a pure function should always return
  *    the same result.
  */
+
+/**
+ * Side Effects: (un)intended consequences:
+ *
+ * React’s rendering process must always be pure. Components should only return their JSX,
+ * and not change any objects or variables that existed before rendering—that would make
+ * them impure!
+ */
