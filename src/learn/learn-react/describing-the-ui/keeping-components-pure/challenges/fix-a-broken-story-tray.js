@@ -2,6 +2,17 @@ import { useState } from "react";
 import { stories as initialStories } from "../../../../../utils/data";
 import { useTime } from "../../../../../utils/services";
 
+const listItemStyle = {
+  border: "1px solid #aaa",
+  borderRadius: 6,
+  float: "left",
+  margin: 5,
+  marginBottom: 20,
+  padding: 5,
+  width: 70,
+  height: 100,
+};
+
 /**
  * Fix a broken story tray
  *
@@ -35,9 +46,16 @@ function StoryTray({ stories }) {
   stories.push({ id: "create", label: "Create Story" });
 
   return (
-    <ul>
+    <ul style={{ paddingLeft: 20, margin: 0, listStyleType: "none" }}>
       {stories.map(function (story) {
-        return <li key={story.id}>{story.label}</li>;
+        return (
+          <li
+            key={story.id}
+            style={listItemStyle}
+          >
+            {story.label}
+          </li>
+        );
       })}
     </ul>
   );
