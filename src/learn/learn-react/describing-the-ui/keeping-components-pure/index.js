@@ -1,5 +1,6 @@
 import ImpureComponent from "./impure-tea-set";
 import PureComponent from "./pure-tea-set";
+import LocalMutation from "./local-mutation-tea-set";
 
 export default function Index() {
   return <Recipes />;
@@ -29,6 +30,8 @@ function Recipes() {
       <ImpureComponent />
       <h2>Pure Components</h2>
       <PureComponent />
+      <h2>Local Mutation</h2>
+      <LocalMutation />
     </section>
   );
 }
