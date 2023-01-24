@@ -30,7 +30,9 @@
 
 // import RenderingLists from "./learn/learn-react/describing-the-ui/rendering-lists";
 
-import KeepingComponentsPure from "./learn/learn-react/describing-the-ui/keeping-components-pure";
+// import KeepingComponentsPure from "./learn/learn-react/describing-the-ui/keeping-components-pure";
+
+import AddingInteractivity from "./learn/learn-react/adding-interactivity";
 
 function App() {
   return (
@@ -66,7 +68,9 @@ function App() {
 
       {/* <RenderingLists /> */}
 
-      <KeepingComponentsPure />
+      {/* <KeepingComponentsPure /> */}
+
+      <AddingInteractivity />
     </>
   );
 }
