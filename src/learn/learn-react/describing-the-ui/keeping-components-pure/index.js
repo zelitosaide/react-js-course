@@ -1,6 +1,7 @@
 import ImpureComponent from "./impure-tea-set";
 import PureComponent from "./pure-tea-set";
 import LocalMutation from "./local-mutation-tea-set";
+import InfinityCounter from "./infinity-counter";
 
 export default function Index() {
   return <Recipes />;
@@ -32,6 +33,8 @@ function Recipes() {
       <PureComponent />
       <h2>Local Mutation</h2>
       <LocalMutation />
+      <h2>Infinity Counter</h2>
+      <InfinityCounter />
     </section>
   );
 }
