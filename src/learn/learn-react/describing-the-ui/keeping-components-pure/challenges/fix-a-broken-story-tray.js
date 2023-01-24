@@ -26,12 +26,14 @@ export default function Index() {
       }}
     >
       <h2>It is {time.toLocaleTimeString()} now.</h2>
-      <StoryTray />
+      <StoryTray stories={stories} />
     </div>
   );
 }
 
 function StoryTray({ stories }) {
+  stories.push({ id: "create", label: "Create Story" });
+
   return (
     <ul>
       {stories.map(function (story) {
