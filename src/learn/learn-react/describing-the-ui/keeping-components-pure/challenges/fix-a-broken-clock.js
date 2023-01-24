@@ -1,3 +1,5 @@
+import { useTime } from "../../../../../utils/services";
+
 /**
  * Fix a broken clock
  *
@@ -9,6 +11,12 @@
  * computer’s timezone. When the current time is between midnight and six
  * in the morning, the clock should have inverted colors!
  */
+export default function Index() {
+  const time = useTime();
+
+  return <Clock time={time} />;
+}
+
 function Clock({ time }) {
   let hours = time.getHours();
   let className;
