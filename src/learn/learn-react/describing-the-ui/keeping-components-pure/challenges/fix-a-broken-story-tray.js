@@ -43,8 +43,11 @@ export default function Index() {
 }
 
 function StoryTray({ stories }) {
+  // Copy the array!
+  // const storiesToDisplay = [...stories];
   const storiesToDisplay = stories.slice();
 
+  // Does not affect the original array:
   storiesToDisplay.push({
     id: "create",
     label: "Create Story",
