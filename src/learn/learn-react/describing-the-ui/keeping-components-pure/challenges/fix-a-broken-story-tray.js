@@ -43,8 +43,6 @@ export default function Index() {
 }
 
 function StoryTray({ stories }) {
-  stories.push({ id: "create", label: "Create Story" });
-
   return (
     <ul style={{ paddingLeft: 20, margin: 0, listStyleType: "none" }}>
       {stories.map(function (story) {
@@ -57,6 +55,7 @@ function StoryTray({ stories }) {
           </li>
         );
       })}
+      <li style={listItemStyle}>Create Story</li>
     </ul>
   );
 }
