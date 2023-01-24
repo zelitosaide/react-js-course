@@ -4,6 +4,7 @@ import LocalMutation from "./local-mutation-tea-set";
 import InfinityCounter from "./infinity-counter";
 import FixABrokenClock from "./challenges/fix-a-broken-clock";
 import FixABrokenProfile from "./challenges/fix-a-broken-profile";
+import FixABrokenStoryTray from "./challenges/fix-a-broken-story-tray";
 
 export default function Index() {
   return <Recipes />;
@@ -41,6 +42,8 @@ function Recipes() {
       <FixABrokenClock />
       <h2>Fix a broken Profile</h2>
       <FixABrokenProfile />
+      <h2>Fix a broken story tray</h2>
+      <FixABrokenStoryTray />
     </section>
   );
 }
