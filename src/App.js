@@ -28,7 +28,9 @@
 
 // import ConditionalRendering from "./learn/learn-react/describing-the-ui/conditional-rendering";
 
-import RenderingLists from "./learn/learn-react/describing-the-ui/rendering-lists";
+// import RenderingLists from "./learn/learn-react/describing-the-ui/rendering-lists";
+
+import KeepingComponentsPure from "./learn/learn-react/describing-the-ui/keeping-components-pure";
 
 function App() {
   return (
@@ -62,7 +64,9 @@ function App() {
 
       {/* <ConditionalRendering /> */}
 
-      <RenderingLists />
+      {/* <RenderingLists /> */}
+
+      <KeepingComponentsPure />
     </>
   );
 }
