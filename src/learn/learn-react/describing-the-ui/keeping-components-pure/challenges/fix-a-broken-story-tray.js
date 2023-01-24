@@ -43,6 +43,30 @@ export default function Index() {
 }
 
 function StoryTray({ stories }) {
+  const storiesToDisplay = stories.slice();
+
+  storiesToDisplay.push({
+    id: "create",
+    label: "Create Story",
+  });
+
+  return (
+    <ul style={{ paddingLeft: 20, margin: 0, listStyleType: "none" }}>
+      {storiesToDisplay.map(function (story) {
+        return (
+          <li
+            key={story.id}
+            style={listItemStyle}
+          >
+            {story.label}
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function StoryTray2({ stories }) {
   return (
     <ul style={{ paddingLeft: 20, margin: 0, listStyleType: "none" }}>
       {stories.map(function (story) {
