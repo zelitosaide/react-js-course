@@ -16,7 +16,12 @@ let currentPerson;
 function Profile({ person }) {
   currentPerson = person;
 
-  return <Panel></Panel>;
+  return (
+    <Panel>
+      <Header />
+      <Avatar />
+    </Panel>
+  );
 }
 
 function Header() {
