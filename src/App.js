@@ -31,7 +31,6 @@
 // import RenderingLists from "./learn/learn-react/describing-the-ui/rendering-lists";
 
 import KeepingComponentsPure from "./learn/learn-react/describing-the-ui/keeping-components-pure";
-import ImpureComponent from "./learn/learn-react/describing-the-ui/keeping-components-pure/impure-tea-set";
 
 function App() {
   return (
@@ -68,7 +67,6 @@ function App() {
       {/* <RenderingLists /> */}
 
       <KeepingComponentsPure />
-      <ImpureComponent />
     </>
   );
 }
