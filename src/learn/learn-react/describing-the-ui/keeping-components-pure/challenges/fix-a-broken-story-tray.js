@@ -1,3 +1,7 @@
+import { useState } from "react";
+import { stories as initialStories } from "../../../../../utils/data";
+import { useTime } from "../../../../../utils/services";
+
 /**
  * Fix a broken story tray
  *
@@ -9,7 +13,23 @@
  * at the end of the stories array that you receive as a prop. But for some reason,
  * “Create Story” appears more than once. Fix the issue.
  */
-export default function Index() {}
+export default function Index() {
+  const [stories, setStories] = useState([...initialStories]);
+  const time = useTime();
+
+  return (
+    <div
+      style={{
+        width: "100%",
+        height: "100%",
+        textAlign: "center",
+      }}
+    >
+      <h2>It is {time.toLocaleTimeString()} now.</h2>
+      <StoryTray />
+    </div>
+  );
+}
 
 function StoryTray({ stories }) {
   return (
