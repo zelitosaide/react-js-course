@@ -40,6 +40,8 @@ function Gallery() {
       <img
         src={sculpture.url}
         alt={sculpture.alt}
+        height={100}
+        width={100}
       />
     </>
   );
