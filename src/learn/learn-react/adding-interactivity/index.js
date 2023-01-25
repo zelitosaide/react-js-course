@@ -13,7 +13,9 @@ export default function Index() {
 function Gallery() {
   const [index, setIndex] = useState(0);
 
-  function handleNextClick() {}
+  function handleNextClick() {
+    setIndex(index + 1);
+  }
 
   return (
     <>
