@@ -29,7 +29,7 @@ function Gallery() {
       <h3>
         ({index + 1} of {sculptureList.length})
       </h3>
-      <button></button>
+      <button>{showMore ? "Hide" : "Show"} details</button>
     </>
   );
 }
