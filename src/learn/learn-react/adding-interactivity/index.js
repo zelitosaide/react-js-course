@@ -36,6 +36,7 @@ function Gallery() {
       <button onClick={handleMoreClick}>
         {showMore ? "Hide" : "Show"} details
       </button>
+      {showMore && <p>{sculpture.description}</p>}
     </>
   );
 }
