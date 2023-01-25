@@ -35,9 +35,13 @@ function Gallery() {
       <h3>
         ({index + 1} of {sculptureList.length})
       </h3>
-      <button onClick={handleMoreClick}>
+      <button
+        onClick={handleMoreClick}
+        style={{ display: "block" }}
+      >
         {showMore ? "Hide" : "Show"} details
       </button>
+
       {showMore && <p>{sculpture.description}</p>}
       <img
         src={sculpture.url}
