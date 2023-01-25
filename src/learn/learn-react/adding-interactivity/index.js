@@ -1,6 +1,14 @@
+import { sculptureList } from "../../../data/data";
+
 export default function Index() {
-  return <RespondingToEvents />;
+  return (
+    <>
+      <RespondingToEvents />
+    </>
+  );
 }
+
+function Gallery() {}
 
 function RespondingToEvents() {
   return (
