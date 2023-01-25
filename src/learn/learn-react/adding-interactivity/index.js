@@ -37,6 +37,10 @@ function Gallery() {
         {showMore ? "Hide" : "Show"} details
       </button>
       {showMore && <p>{sculpture.description}</p>}
+      <img
+        src={sculpture.url}
+        alt={sculpture.alt}
+      />
     </>
   );
 }
