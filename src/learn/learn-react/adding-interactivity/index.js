@@ -18,6 +18,10 @@ function Gallery() {
     setIndex(index + 1);
   }
 
+  function handleMoreClick() {
+    setShowMore(!showMore);
+  }
+
   let sculpture = sculptureList[index];
 
   return (
@@ -29,7 +33,9 @@ function Gallery() {
       <h3>
         ({index + 1} of {sculptureList.length})
       </h3>
-      <button>{showMore ? "Hide" : "Show"} details</button>
+      <button onClick={handleMoreClick}>
+        {showMore ? "Hide" : "Show"} details
+      </button>
     </>
   );
 }
