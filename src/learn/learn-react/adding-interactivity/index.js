@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { sculptureList } from "../../../data/data";
 
 export default function Index() {
@@ -10,9 +11,13 @@ export default function Index() {
 }
 
 function Gallery() {
+  const [index, setIndex] = useState(0);
+
+  function handleNextClick() {}
+
   return (
     <>
-      <button>Next</button>
+      <button onClick={handleNextClick}>Next</button>
     </>
   );
 }
