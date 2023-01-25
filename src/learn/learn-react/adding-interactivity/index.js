@@ -4,11 +4,18 @@ export default function Index() {
   return (
     <>
       <RespondingToEvents />
+      <Gallery />
     </>
   );
 }
 
-function Gallery() {}
+function Gallery() {
+  return (
+    <>
+      <button>Next</button>
+    </>
+  );
+}
 
 function RespondingToEvents() {
   return (
