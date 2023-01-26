@@ -8,12 +8,12 @@ export default function Index() {
       <RespondingToEvents />
       <Gallery />
       <Form />
-      <Counter />
+      <BuggyCounter />
     </>
   );
 }
 
-function Counter() {
+function BuggyCounter() {
   const [score, setScore] = useState(0);
 
   function increment() {
