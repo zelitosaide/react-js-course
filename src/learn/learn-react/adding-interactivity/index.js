@@ -21,7 +21,19 @@ function Form() {
     }, 5000);
   }
 
-  return <form onSubmit={handleSubmit}></form>;
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        To{" "}
+        <select
+          value={to}
+          onChange={function (event) {
+            setTo(event.target.value);
+          }}
+        ></select>
+      </label>
+    </form>
+  );
 }
 
 function Gallery() {
