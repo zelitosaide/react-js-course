@@ -32,7 +32,15 @@ function UpdatingObjectsInState() {
     });
   }
 
-  function handleTitleChange(event) {}
+  function handleTitleChange(event) {
+    setPerson({
+      ...person,
+      artwork: {
+        ...person.artwork,
+        title: event.target.value,
+      },
+    });
+  }
 
   return (
     <>
