@@ -44,6 +44,7 @@ function Form() {
           setMessage(event.target.value);
         }}
       />
+      <button type="submit">Send</button>
     </form>
   );
 }
