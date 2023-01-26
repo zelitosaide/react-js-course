@@ -10,6 +10,11 @@ export default function Index() {
   );
 }
 
+function Form() {
+  const [to, setTo] = useState("Alice");
+  const [message, setMessage] = useState("Hello");
+}
+
 function Gallery() {
   const [index, setIndex] = useState(0);
   const [showMore, setShowMore] = useState(false);
