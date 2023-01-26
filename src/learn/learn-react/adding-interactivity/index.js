@@ -17,6 +17,18 @@ function Counter() {
   function increment() {
     setScore(score + 1);
   }
+
+  return (
+    <>
+      <button
+        onClick={function () {
+          increment();
+        }}
+      >
+        +1
+      </button>
+    </>
+  );
 }
 
 function Form() {
