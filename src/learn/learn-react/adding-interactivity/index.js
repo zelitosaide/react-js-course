@@ -21,7 +21,17 @@ export default function Index() {
 function BucketList() {
   const [list, setList] = useState(initialList);
 
-  function handleToggle() {}
+  function handleToggle(artworkId, nextSeen) {
+    setList(
+      list.map(function (artwork) {
+        if (artwork.id === artworkId) {
+          return { ...artwork, seen: nextSeen };
+        } else {
+          return artwork;
+        }
+      })
+    );
+  }
 
   return (
     <>
