@@ -25,7 +25,12 @@ function UpdatingObjectsInState() {
     },
   });
 
-  function handleNameChange(event) {}
+  function handleNameChange(event) {
+    setPerson({
+      ...person,
+      name: event.target.value,
+    });
+  }
 
   return (
     <>
