@@ -35,6 +35,13 @@ function Form() {
           <option value="Alice">Alice</option>
           <option value="Bob">Bob</option>
         </select>
+        <textarea
+          placeholder="Message"
+          value={message}
+          onChange={function (event) {
+            setMessage(event.target.value);
+          }}
+        />
       </label>
     </form>
   );
