@@ -35,7 +35,28 @@ function BucketList() {
   );
 }
 
-function ItemList({ artworks, onToggle }) {}
+function ItemList({ artworks, onToggle }) {
+  return (
+    <ul>
+      {artworks.map(function (artwork) {
+        return (
+          <li key={artwork.id}>
+            <label>
+              <input
+                type="checkbox"
+                checked={artwork.seen}
+                onChange={function (event) {
+                  onToggle(artwork.id, event.target.checked);
+                }}
+              />
+              {artwork.title}
+            </label>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
 
 function UpdateObjectsInStateUsingImmer() {
   const [person, updatePerson] = useImmer({
