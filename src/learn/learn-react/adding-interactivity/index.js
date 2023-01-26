@@ -28,6 +28,15 @@ function Counter() {
       >
         +1
       </button>
+      <button
+        onClick={function () {
+          increment();
+          increment();
+          increment();
+        }}
+      >
+        +3
+      </button>
     </>
   );
 }
