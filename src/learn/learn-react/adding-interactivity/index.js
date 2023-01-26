@@ -35,15 +35,14 @@ function Form() {
           <option value="Alice">Alice</option>
           <option value="Bob">Bob</option>
         </select>
-        <textarea
-          placeholder="Message"
-          style={{ display: "block" }}
-          value={message}
-          onChange={function (event) {
-            setMessage(event.target.value);
-          }}
-        />
       </label>
+      <textarea
+        placeholder="Message"
+        value={message}
+        onChange={function (event) {
+          setMessage(event.target.value);
+        }}
+      />
     </form>
   );
 }
