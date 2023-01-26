@@ -19,9 +19,11 @@ function FixedCounter() {
   const [score, setScore] = useState(0);
 
   function increment() {
+    console.log("FixedCounter", score);
     setScore(function (s) {
       return s + 1;
     });
+    console.log("FixedCounter", score);
   }
 
   return (
@@ -51,7 +53,9 @@ function BuggyCounter() {
   const [score, setScore] = useState(0);
 
   function increment() {
+    console.log("BuggyCounter", score);
     setScore(score + 1);
+    console.log("BuggyCounter", score);
   }
 
   return (
