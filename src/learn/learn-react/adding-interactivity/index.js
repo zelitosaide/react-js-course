@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useImmer } from "use-immer";
 
 import { sculptureList } from "../../../data/data";
 
@@ -16,7 +17,78 @@ export default function Index() {
   );
 }
 
-function UpdateObjectsInStateUsingImmer() {}
+function UpdateObjectsInStateUsingImmer() {
+  const [person, updatePerson] = useImmer({
+    name: "Niki de Saint Phalle",
+    artwork: {
+      title: "Blue nana",
+      city: "Hamburg",
+      image: "https://i.imgur.com/Sd1AgUOm.jpg",
+    },
+  });
+
+  function handleNameChange(event) {
+    updatePerson(function (person) {
+      person.name = event.target.value;
+    });
+  }
+
+  function handleTitleChange(event) {
+    updatePerson(function (person) {
+      person.artwork.title = event.target.value;
+    });
+  }
+
+  function handleCityChange(event) {
+    updatePerson(function (person) {
+      person.artwork.city = event.target.value;
+    });
+  }
+
+  return (
+    <>
+      <label style={{ display: "block" }}>
+        Name:{" "}
+        <input
+          value={person.name}
+          onChange={handleNameChange}
+        />
+      </label>
+      <label style={{ display: "block" }}>
+        Title{" "}
+        <input
+          value={person.artwork.title}
+          onChange={handleTitleChange}
+        />
+      </label>
+      <label style={{ display: "block" }}>
+        City:{" "}
+        <input
+          value={person.artwork.city}
+          onChange={handleCityChange}
+        />
+      </label>
+      <label style={{ display: "block" }}>
+        Image:{" "}
+        <input
+          value={person.artwork.image}
+          onChange={handleImageChange}
+        />
+      </label>
+      <p>
+        <i>{person.artwork.title}</i> by {person.name}
+        <br />
+        (located in {person.artwork.city})
+      </p>
+      <img
+        src={person.artwork.image}
+        alt={person.artwork.title}
+        height={100}
+        width={100}
+      />
+    </>
+  );
+}
 
 function UpdatingObjectsInState() {
   const [person, setPerson] = useState({
