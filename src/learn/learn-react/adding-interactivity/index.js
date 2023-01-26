@@ -93,7 +93,10 @@ function UpdatingObjectsInState() {
         />
       </label>
       <p>
-        {person.artwork.title} by {person.name} <br />
+        <i>
+          {person.artwork.title} by {person.name}
+        </i>
+        <br />
         (located in {person.artwork.city})
       </p>
     </>
