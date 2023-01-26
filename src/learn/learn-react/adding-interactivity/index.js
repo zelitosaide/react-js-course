@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useImmer } from "use-immer";
 
-import { sculptureList, listOfArt as initialList } from "../../../data/data";
+import { sculptureList, artworks as initialList } from "../../../data/data";
 
 export default function Index() {
   return (
@@ -20,7 +20,22 @@ export default function Index() {
 
 function BucketList() {
   const [list, setList] = useState(initialList);
+
+  function handleToggle() {}
+
+  return (
+    <>
+      <h1>Art Bucket List</h1>
+      <h2>My list of art to see:</h2>
+      <ItemList
+        artworks={list}
+        onToggle={handleToggle}
+      />
+    </>
+  );
 }
+
+function ItemList({ artworks, onToggle }) {}
 
 function UpdateObjectsInStateUsingImmer() {
   const [person, updatePerson] = useImmer({
