@@ -15,7 +15,12 @@ export default function Index() {
   );
 }
 
-function UpdatingObjectsInState() {}
+function UpdatingObjectsInState() {
+  const [person, setPerson] = useState({
+    name: "Niki de Saint Phalle",
+    artwork: {},
+  });
+}
 
 function FixedCounter() {
   const [score, setScore] = useState(0);
