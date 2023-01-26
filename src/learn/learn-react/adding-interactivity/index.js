@@ -19,7 +19,18 @@ export default function Index() {
   );
 }
 
-function BucketListUsingImmer() {}
+function BucketListUsingImmer() {
+  const [list, updateList] = useImmer(initialList);
+
+  function handleToggle(artworkId, nextSeen) {
+    updateList(function (draft) {
+      const artwork = draft.find(function (a) {
+        return a.id === artworkId;
+      });
+      artwork.seen = nextSeen;
+    });
+  }
+}
 
 function BucketList() {
   const [list, setList] = useState(initialList);
