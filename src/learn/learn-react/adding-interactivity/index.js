@@ -42,6 +42,16 @@ function UpdatingObjectsInState() {
     });
   }
 
+  function handleCityChange(event) {
+    setPerson({
+      ...person,
+      artwork: {
+        ...person.artwork,
+        city: event.target.value,
+      },
+    });
+  }
+
   return (
     <>
       <label style={{ display: "block" }}>
@@ -56,6 +66,13 @@ function UpdatingObjectsInState() {
         <input
           value={person.artwork.title}
           onChange={handleTitleChange}
+        />
+      </label>
+      <label style={{ display: "block" }}>
+        City:{" "}
+        <input
+          value={person.artwork.city}
+          onChange={handleCityChange}
         />
       </label>
     </>
