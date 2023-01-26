@@ -18,7 +18,11 @@ export default function Index() {
 function UpdatingObjectsInState() {
   const [person, setPerson] = useState({
     name: "Niki de Saint Phalle",
-    artwork: {},
+    artwork: {
+      title: "Blue nana",
+      city: "Hamburg",
+      image: "https://i.imgur.com/Sd1AgUOm.jpg",
+    },
   });
 }
 
