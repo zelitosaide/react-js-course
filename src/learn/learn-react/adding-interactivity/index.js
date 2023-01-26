@@ -11,9 +11,12 @@ export default function Index() {
       <BuggyCounter />
       <FixedCounter />
       <UpdatingObjectsInState />
+      <UpdateObjectsInStateUsingImmer />
     </>
   );
 }
+
+function UpdateObjectsInStateUsingImmer() {}
 
 function UpdatingObjectsInState() {
   const [person, setPerson] = useState({
