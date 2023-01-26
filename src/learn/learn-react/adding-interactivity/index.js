@@ -37,6 +37,7 @@ function Form() {
         </select>
         <textarea
           placeholder="Message"
+          style={{ display: "block" }}
           value={message}
           onChange={function (event) {
             setMessage(event.target.value);
