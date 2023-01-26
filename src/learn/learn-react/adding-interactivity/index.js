@@ -97,6 +97,12 @@ function UpdatingObjectsInState() {
         <br />
         (located in {person.artwork.city})
       </p>
+      <img
+        src={person.artwork.image}
+        alt={person.artwork.title}
+        height={100}
+        width={100}
+      />
     </>
   );
 }
