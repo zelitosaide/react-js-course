@@ -45,6 +45,12 @@ function UpdateObjectsInStateUsingImmer() {
     });
   }
 
+  function handleImageChange(event) {
+    updatePerson(function (person) {
+      person.artwork.image = event.target.value;
+    });
+  }
+
   return (
     <>
       <label style={{ display: "block" }}>
