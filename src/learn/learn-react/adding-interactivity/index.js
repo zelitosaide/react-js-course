@@ -14,9 +14,12 @@ export default function Index() {
       <UpdatingObjectsInState />
       <UpdateObjectsInStateUsingImmer />
       <BucketList />
+      <BucketListUsingImmer />
     </>
   );
 }
+
+function BucketListUsingImmer() {}
 
 function BucketList() {
   const [list, setList] = useState(initialList);
