@@ -30,6 +30,17 @@ function BucketListUsingImmer() {
       artwork.seen = nextSeen;
     });
   }
+
+  return (
+    <>
+      <h1>Art Bucket List</h1>
+      <h2>My list of art to see:</h2>
+      <ItemList
+        artworks={list}
+        onToggle={handleToggle}
+      />
+    </>
+  );
 }
 
 function BucketList() {
