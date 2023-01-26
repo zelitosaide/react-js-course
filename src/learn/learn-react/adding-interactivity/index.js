@@ -9,7 +9,6 @@ export default function Index() {
       <Gallery />
       <Form />
       <BuggyCounter />
-
       <FixedCounter />
     </>
   );
