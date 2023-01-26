@@ -24,6 +24,20 @@ function UpdatingObjectsInState() {
       image: "https://i.imgur.com/Sd1AgUOm.jpg",
     },
   });
+
+  function handleNameChange(event) {}
+
+  return (
+    <>
+      <label>
+        Name:{" "}
+        <input
+          value={person.name}
+          onChange={handleNameChange}
+        />
+      </label>
+    </>
+  );
 }
 
 function FixedCounter() {
