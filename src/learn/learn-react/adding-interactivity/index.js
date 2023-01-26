@@ -13,6 +13,15 @@ export default function Index() {
 function Form() {
   const [to, setTo] = useState("Alice");
   const [message, setMessage] = useState("Hello");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    setTimeout(function () {
+      alert(`You said ${message} to ${to}`);
+    }, 5000);
+  }
+
+  return <form onSubmit={handleSubmit}></form>;
 }
 
 function Gallery() {
