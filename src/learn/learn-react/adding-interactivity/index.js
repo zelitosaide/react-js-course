@@ -10,9 +10,12 @@ export default function Index() {
       <Form />
       <BuggyCounter />
       <FixedCounter />
+      <UpdatingObjectsInState />
     </>
   );
 }
+
+function UpdatingObjectsInState() {}
 
 function FixedCounter() {
   const [score, setScore] = useState(0);
