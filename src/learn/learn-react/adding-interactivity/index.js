@@ -32,6 +32,8 @@ function UpdatingObjectsInState() {
     });
   }
 
+  function handleTitleChange(event) {}
+
   return (
     <>
       <label>
@@ -39,6 +41,13 @@ function UpdatingObjectsInState() {
         <input
           value={person.name}
           onChange={handleNameChange}
+        />
+      </label>
+      <label>
+        Title{" "}
+        <input
+          value={person.artwork.title}
+          onChange={handleTitleChange}
         />
       </label>
     </>
