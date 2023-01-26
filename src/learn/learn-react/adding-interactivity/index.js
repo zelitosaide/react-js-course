@@ -37,6 +37,7 @@ function Counter() {
       >
         +3
       </button>
+      <h2>Score: {score}</h2>
     </>
   );
 }
