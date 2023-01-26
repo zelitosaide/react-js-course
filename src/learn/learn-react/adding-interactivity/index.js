@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import { sculptureList } from "../../../data/data";
 
 export default function Index() {
