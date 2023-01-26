@@ -92,6 +92,10 @@ function UpdatingObjectsInState() {
           onChange={handleImageChange}
         />
       </label>
+      <p>
+        {person.artwork.title} by {person.name} <br />
+        (located in {person.artwork.city})
+      </p>
     </>
   );
 }
