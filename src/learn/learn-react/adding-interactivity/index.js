@@ -13,6 +13,38 @@ export default function Index() {
   );
 }
 
+function FixedCounter() {
+  const [score, setScore] = useState(0);
+
+  function increment() {
+    setScore(function (s) {
+      return s + 1;
+    });
+  }
+
+  return (
+    <>
+      <button
+        onClick={function () {
+          increment();
+        }}
+      >
+        +1
+      </button>
+      <button
+        onClick={function () {
+          increment();
+          increment();
+          increment();
+        }}
+      >
+        +3
+      </button>
+      <h2>Score: {score}</h2>
+    </>
+  );
+}
+
 function BuggyCounter() {
   const [score, setScore] = useState(0);
 
