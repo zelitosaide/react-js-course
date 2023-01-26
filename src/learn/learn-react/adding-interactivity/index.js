@@ -44,14 +44,14 @@ function UpdatingObjectsInState() {
 
   return (
     <>
-      <label>
+      <label style={{ display: "block" }}>
         Name:{" "}
         <input
           value={person.name}
           onChange={handleNameChange}
         />
       </label>
-      <label>
+      <label style={{ display: "block" }}>
         Title{" "}
         <input
           value={person.artwork.title}
