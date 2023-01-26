@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useImmer } from "use-immer";
 
-import { sculptureList } from "../../../data/data";
+import { sculptureList, listOfArt as initialList } from "../../../data/data";
 
 export default function Index() {
   return (
@@ -13,8 +13,13 @@ export default function Index() {
       <FixedCounter />
       <UpdatingObjectsInState />
       <UpdateObjectsInStateUsingImmer />
+      <BucketList />
     </>
   );
+}
+
+function BucketList() {
+  const [list, setList] = useState(initialList);
 }
 
 function UpdateObjectsInStateUsingImmer() {
