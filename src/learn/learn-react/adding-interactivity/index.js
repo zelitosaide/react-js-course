@@ -11,6 +11,14 @@ export default function Index() {
   );
 }
 
+function Counter() {
+  const [score, setScore] = useState(0);
+
+  function increment() {
+    setScore(score + 1);
+  }
+}
+
 function Form() {
   const [to, setTo] = useState("Alice");
   const [message, setMessage] = useState("Hello");
