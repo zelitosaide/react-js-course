@@ -25,7 +25,22 @@ function Toolbar() {
       onClickCapture={function () {
         alert("Sent to analytics");
       }}
-    ></div>
+    >
+      <ButtonWithStopPropagation
+        onClick={function () {
+          alert("Playing!");
+        }}
+      >
+        Play Movie
+      </ButtonWithStopPropagation>
+      <ButtonWithStopPropagation
+        onClick={function () {
+          alert("Uploading!");
+        }}
+      >
+        Upload Image
+      </ButtonWithStopPropagation>
+    </div>
   );
 }
 
