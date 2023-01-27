@@ -7,5 +7,5 @@ function Button() {
     alert("You clicked me!");
   }
 
-  return <button onClick={handleClick}>I don't do anything</button>;
+  return <button onClick={handleClick}>Click me</button>;
 }
