@@ -1,5 +1,19 @@
 export default function Index() {
-  return <Button />;
+  return (
+    <>
+      <Button />
+      <Toolbar />
+    </>
+  );
+}
+
+function Toolbar() {
+  return (
+    <div>
+      <AlertButton message="Playing!">Play Movie</AlertButton>
+      <AlertButton message="Uploading!">Upload Image</AlertButton>
+    </div>
+  );
 }
 
 function AlertButton({ message, children }) {
