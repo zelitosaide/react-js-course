@@ -17,6 +17,19 @@ export default function Index() {
   );
 }
 
+function ButtonWithStopPropagation({ onClick, children }) {
+  return (
+    <button
+      onClick={function (e) {
+        e.stopPropagation();
+        onClick();
+      }}
+    >
+      {children}
+    </button>
+  );
+}
+
 function Toolbar() {
   return (
     <div
