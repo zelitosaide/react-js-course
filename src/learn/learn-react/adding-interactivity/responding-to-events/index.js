@@ -32,6 +32,13 @@ function Toolbar() {
       >
         Play Movie
       </button>
+      <button
+        onClick={function () {
+          alert("Uploading!");
+        }}
+      >
+        Upload Image
+      </button>
     </div>
   );
 }
