@@ -14,7 +14,18 @@ export default function Index() {
       />
       <Toolbar5 />
       <Toolbar6 />
+      <Toolbar />
     </>
+  );
+}
+
+function Toolbar() {
+  return (
+    <div
+      onClickCapture={function () {
+        alert("Sent to analytics");
+      }}
+    ></div>
   );
 }
 
