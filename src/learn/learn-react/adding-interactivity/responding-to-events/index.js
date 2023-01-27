@@ -13,6 +13,7 @@ export default function Index() {
         }}
       />
       <Toolbar5 />
+      <Toolbar />
     </>
   );
 }
