@@ -7,6 +7,18 @@ export default function Index() {
   );
 }
 
+function UploadButton() {
+  return (
+    <Button
+      onClick={function () {
+        alert("Uploading");
+      }}
+    >
+      Upload Image
+    </Button>
+  );
+}
+
 function PlayButton({ movieName }) {
   function handleClick() {
     alert(`Playing ${movieName}`);
