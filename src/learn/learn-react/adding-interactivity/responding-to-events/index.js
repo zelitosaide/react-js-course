@@ -4,7 +4,7 @@ export default function Index() {
       <Button2 />
       <Toolbar2 />
       <Toolbar3 />
-      <Toolba4
+      <Toolbar4
         onPlayMovie={function () {
           alert("Playing!");
         }}
@@ -12,11 +12,26 @@ export default function Index() {
           alert("Uploading!");
         }}
       />
-      <Toolbar />
+      <Toolbar5 />
     </>
   );
 }
 
+function Toolbar() {
+  return (
+    <div
+      onClick={function () {
+        alert("You clicked on the toolbar!");
+      }}
+    ></div>
+  );
+}
+
+/**
+ * If you want to prevent an event from reaching parent components,
+ * you need to call e.stopPropagation() like this Button component does:
+ *
+ */
 function ButtonWithStopPropagation({ onClick, children }) {
   return (
     <button
@@ -30,7 +45,7 @@ function ButtonWithStopPropagation({ onClick, children }) {
   );
 }
 
-function Toolbar() {
+function Toolbar5() {
   return (
     <div
       style={{ padding: 5, background: "#aaa" }}
@@ -58,7 +73,7 @@ function Toolbar() {
   );
 }
 
-function Toolba4({ onPlayMovie, onUploadImage }) {
+function Toolbar4({ onPlayMovie, onUploadImage }) {
   return (
     <div>
       <Button onClick={onPlayMovie}>Play Movie</Button>
