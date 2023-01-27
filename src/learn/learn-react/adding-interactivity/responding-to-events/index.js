@@ -22,6 +22,7 @@ export default function Index() {
 function Toolbar() {
   return (
     <div
+      style={{ padding: 5, background: "#aaa", marginTop: 5 }}
       onClickCapture={function () {
         alert("Sent to analytics");
       }}
