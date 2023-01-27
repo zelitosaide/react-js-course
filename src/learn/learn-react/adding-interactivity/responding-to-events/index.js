@@ -33,6 +33,13 @@ function Toolbar() {
       >
         Play Movie
       </ButtonWithStopPropagation>
+      <ButtonWithStopPropagation
+        onClick={function () {
+          alert("Uploading!");
+        }}
+      >
+        Upload Image
+      </ButtonWithStopPropagation>
     </div>
   );
 }
