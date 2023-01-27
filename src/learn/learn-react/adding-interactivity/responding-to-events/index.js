@@ -4,7 +4,7 @@ export default function Index() {
       <Button2 />
       <Toolbar2 />
       <Toolbar3 />
-      <Toolbar
+      <Toolba4
         onPlayMovie={function () {
           alert("Playing!");
         }}
@@ -12,11 +12,24 @@ export default function Index() {
           alert("Uploading!");
         }}
       />
+      <Toolbar />
     </>
   );
 }
 
-function Toolbar({ onPlayMovie, onUploadImage }) {
+function Toolbar() {
+  return (
+    <div
+      onClick={function () {
+        alert("You clicked on the toolbar!");
+      }}
+    >
+      <button></button>
+    </div>
+  );
+}
+
+function Toolba4({ onPlayMovie, onUploadImage }) {
   return (
     <div>
       <Button onClick={onPlayMovie}>Play Movie</Button>
