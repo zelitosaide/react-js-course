@@ -13,12 +13,12 @@ export default function Index() {
         }}
       />
       <Toolbar5 />
-      <Toolbar />
+      <Toolbar6 />
     </>
   );
 }
 
-function Toolbar() {
+function Toolbar6() {
   return (
     <div
       style={{ padding: 5, background: "#aaa", marginTop: 5 }}
