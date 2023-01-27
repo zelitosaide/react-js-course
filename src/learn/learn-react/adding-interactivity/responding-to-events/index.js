@@ -25,7 +25,13 @@ function Toolbar() {
         alert("You clicked on the toolbar!");
       }}
     >
-      <button></button>
+      <button
+        onClick={function () {
+          alert("Playing!");
+        }}
+      >
+        Play Movie
+      </button>
     </div>
   );
 }
