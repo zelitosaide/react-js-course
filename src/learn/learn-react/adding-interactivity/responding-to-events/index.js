@@ -23,7 +23,15 @@ function Toolbar() {
       onClick={function () {
         alert("You clicked on the toolbar!");
       }}
-    ></div>
+    >
+      <ButtonWithStopPropagation
+        onClick={function () {
+          alert("Playing!");
+        }}
+      >
+        Play Movie
+      </ButtonWithStopPropagation>
+    </div>
   );
 }
 
