@@ -20,6 +20,7 @@ export default function Index() {
 function Toolbar() {
   return (
     <div
+      style={{ padding: 5, background: "#aaa" }}
       onClick={function () {
         alert("You clicked on the toolbar!");
       }}
