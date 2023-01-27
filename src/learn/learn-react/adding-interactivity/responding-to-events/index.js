@@ -2,8 +2,18 @@ export default function Index() {
   return (
     <>
       <Button2 />
+      <Toolbar2 />
       <Toolbar />
     </>
+  );
+}
+
+function Toolbar() {
+  return (
+    <div>
+      <PlayButton movieName="Kiki's Delivery Service" />
+      <UploadButton />
+    </div>
   );
 }
 
@@ -31,7 +41,7 @@ function Button({ onClick, children }) {
   return <button onClick={onClick}>{children}</button>;
 }
 
-function Toolbar() {
+function Toolbar2() {
   return (
     <div>
       <AlertButton message="Playing!">Play Movie</AlertButton>
