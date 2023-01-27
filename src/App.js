@@ -32,7 +32,9 @@
 
 // import KeepingComponentsPure from "./learn/learn-react/describing-the-ui/keeping-components-pure";
 
-import AddingInteractivity from "./learn/learn-react/adding-interactivity";
+// import AddingInteractivity from "./learn/learn-react/adding-interactivity";
+
+import RespondingToEvents from "./learn/learn-react/adding-interactivity/responding-to-events";
 
 function App() {
   return (
@@ -70,7 +72,9 @@ function App() {
 
       {/* <KeepingComponentsPure /> */}
 
-      <AddingInteractivity />
+      {/* <AddingInteractivity /> */}
+
+      <RespondingToEvents />
     </>
   );
 }
