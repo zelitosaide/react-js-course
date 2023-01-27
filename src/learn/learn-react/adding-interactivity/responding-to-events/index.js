@@ -20,6 +20,7 @@ export default function Index() {
 function Toolbar() {
   return (
     <div
+      style={{ padding: 5, background: "#aaa", margin: 5 }}
       onClick={function () {
         alert("You clicked on the toolbar!");
       }}
@@ -56,7 +57,7 @@ function ButtonWithStopPropagation({ onClick, children }) {
 function Toolbar5() {
   return (
     <div
-      style={{ padding: 5, background: "#aaa" }}
+      style={{ padding: 5, background: "#aaa", margin: 5 }}
       onClick={function () {
         alert("You clicked on the toolbar!");
       }}
