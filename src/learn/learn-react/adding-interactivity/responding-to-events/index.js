@@ -7,6 +7,14 @@ export default function Index() {
   );
 }
 
+function PlayButton({ movieName }) {
+  function handleClick() {
+    alert(`Playing ${movieName}`);
+  }
+
+  return <Button onClick={handleClick}>Play "{movieName}"</Button>;
+}
+
 function Button({ onClick, children }) {
   return <button onClick={onClick}>{children}</button>;
 }
