@@ -26,6 +26,7 @@ function Toolbar() {
       }}
     >
       <button
+        style={{ margin: 5 }}
         onClick={function () {
           alert("Playing!");
         }}
@@ -33,6 +34,7 @@ function Toolbar() {
         Play Movie
       </button>
       <button
+        style={{ margin: 5 }}
         onClick={function () {
           alert("Uploading!");
         }}
