@@ -30,11 +30,11 @@ function UploadButton() {
 }
 
 function PlayButton({ movieName }) {
-  function handleClick() {
+  function handlePlayClick() {
     alert(`Playing ${movieName}`);
   }
 
-  return <Button onClick={handleClick}>Play "{movieName}"</Button>;
+  return <Button onClick={handlePlayClick}>Play "{movieName}"</Button>;
 }
 
 function Button({ onClick, children }) {
