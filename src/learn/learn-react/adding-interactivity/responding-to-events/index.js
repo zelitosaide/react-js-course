@@ -1,10 +1,14 @@
 export default function Index() {
   return (
     <>
-      <Button />
+      <Button2 />
       <Toolbar />
     </>
   );
+}
+
+function Button({ onClick, children }) {
+  return <button onClick={onClick}>{children}</button>;
 }
 
 function Toolbar() {
@@ -28,7 +32,7 @@ function AlertButton({ message, children }) {
   );
 }
 
-function Button() {
+function Button2() {
   function handleClick() {
     alert("You clicked me!");
   }
