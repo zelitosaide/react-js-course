@@ -3,12 +3,29 @@ export default function Index() {
     <>
       <Button2 />
       <Toolbar2 />
-      <Toolbar />
+      <Toolbar3 />
+      <Toolbar
+        onPlayMovie={function () {
+          alert("Playing!");
+        }}
+        onUploadImage={function () {
+          alert("Uploading!");
+        }}
+      />
     </>
   );
 }
 
-function Toolbar() {
+function Toolbar({ onPlayMovie, onUploadImage }) {
+  return (
+    <div>
+      <Button onClick={onPlayMovie}>Play Movie</Button>
+      <Button onClick={onUploadImage}>Upload Image</Button>
+    </div>
+  );
+}
+
+function Toolbar3() {
   return (
     <div>
       <PlayButton movieName="Kiki's Delivery Service" />
