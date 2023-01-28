@@ -15,12 +15,27 @@ export default function Index() {
       <Toolbar5 />
       <Toolbar6 />
       <Toolbar />
+      <Signup2 />
       <Signup />
     </>
   );
 }
 
 function Signup() {
+  return (
+    <form
+      onSubmit={function (e) {
+        e.preventDefault();
+        alert("Submitting");
+      }}
+    >
+      <input />
+      <button>Send</button>
+    </form>
+  );
+}
+
+function Signup2() {
   return (
     <form
       onSubmit={function () {
