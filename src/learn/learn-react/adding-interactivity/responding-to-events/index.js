@@ -15,7 +15,21 @@ export default function Index() {
       <Toolbar5 />
       <Toolbar6 />
       <Toolbar />
+      <Signup />
     </>
+  );
+}
+
+function Signup() {
+  return (
+    <form
+      onSubmit={function () {
+        alert("Submitting");
+      }}
+    >
+      <input />
+      <button>Send</button>
+    </form>
   );
 }
 
