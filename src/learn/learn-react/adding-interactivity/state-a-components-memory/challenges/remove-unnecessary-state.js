@@ -25,5 +25,10 @@ function FeedbackForm() {
     alert(`Hello, ${name}`);
   }
 
-  return <button onClick={handleClick}>Greet</button>;
+  return (
+    <>
+      <button onClick={handleClick}>Greet</button>
+      <p>{name}</p>
+    </>
+  );
 }
