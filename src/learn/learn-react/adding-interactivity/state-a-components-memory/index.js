@@ -18,6 +18,10 @@ export default function Index() {
       <p>
         ({index + 1} of {sculptureList.length})
       </p>
+      <img
+        src={sculpture.url}
+        alt={sculpture.alt}
+      />
     </>
   );
 }
