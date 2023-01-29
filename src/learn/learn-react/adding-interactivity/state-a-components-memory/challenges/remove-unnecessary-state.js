@@ -11,17 +11,13 @@
  * Can you explain why this state variable was unnecessary?
  */
 
-import { useState } from "react";
-
 export default function Index() {
   return <FeedbackForm />;
 }
 
 function FeedbackForm() {
-  const [name, setName] = useState("");
-
   function handleClick() {
-    setName(prompt("What is your name?"));
+    const name = prompt("What is your name?");
     alert(`Hello, ${name}`);
   }
 
