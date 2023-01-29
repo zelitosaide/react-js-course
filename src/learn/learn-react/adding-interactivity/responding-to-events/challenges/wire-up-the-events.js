@@ -14,7 +14,12 @@ export default function Index() {
     bodyStyle.background = getRandomLightColor();
   }
 
-  function getRandomLightColor() {}
+  function getRandomLightColor() {
+    const r = 150 + Math.round(100 * Math.random());
+    const g = 150 + Math.round(100 * Math.random());
+    const b = 150 + Math.round(100 * Math.random());
+    return `rgb(${r}, ${g}, ${b})`;
+  }
 
   return (
     <div
