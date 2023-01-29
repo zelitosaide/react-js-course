@@ -13,4 +13,12 @@ export default function Index() {
   return <FeedbackForm />;
 }
 
-function FeedbackForm() {}
+function FeedbackForm() {
+  return (
+    <form
+      onSubmit={function (e) {
+        e.preventDefault();
+      }}
+    ></form>
+  );
+}
