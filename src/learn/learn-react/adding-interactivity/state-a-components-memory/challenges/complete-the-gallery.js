@@ -30,7 +30,9 @@ function Gallery() {
   }
 
   function handlePreviousClick() {
-    setIndex(index - 1);
+    if (hasPrevious) {
+      setIndex(index - 1);
+    }
   }
 
   function handleMoreClick() {
