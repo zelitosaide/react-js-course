@@ -21,6 +21,8 @@ function FeedbackForm() {
     <form
       onSubmit={function (e) {
         e.preventDefault();
+        alert(`Sending: ${message}`);
+        setIsSent(true);
       }}
     >
       <textarea
@@ -29,6 +31,8 @@ function FeedbackForm() {
           setMessage(e.target.value);
         }}
       />
+      <br />
+      <button type="submit">Send</button>
     </form>
   );
 }
