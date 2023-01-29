@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 /**
  * Challenge 1 of 4: Complete the gallery
  *
@@ -10,3 +12,11 @@
  * previous sculpture. It shouldn’t crash on the first sculpture.
  */
 export default function Index() {}
+
+function Gallery() {
+  const [index, setIndex] = useState(0);
+
+  function handleNextClick() {
+    setIndex(index + 1);
+  }
+}
