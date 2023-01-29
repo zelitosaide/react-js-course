@@ -5,8 +5,12 @@ import { sculptureList } from "../../../../data/data";
 export default function Index() {
   return (
     <>
-      <Gallery />
-      <Gallery />
+      <div>
+        <Gallery />
+      </div>
+      <div>
+        <Gallery />
+      </div>
     </>
   );
 }
