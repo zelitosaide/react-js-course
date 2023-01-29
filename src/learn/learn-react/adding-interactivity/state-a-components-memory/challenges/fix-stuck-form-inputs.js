@@ -18,17 +18,21 @@ function Form() {
 
   return (
     <form>
-      <input
-        placeholder="First name"
-        value={firstName}
-        onChange={handleFirstNameChange}
-        name="firstName"
-      />
-      <input
-        placeholder="Last Name"
-        value={lastName}
-        onChange={handleLastNameChange}
-      />
+      <p>
+        <input
+          placeholder="First name"
+          value={firstName}
+          onChange={handleFirstNameChange}
+          name="firstName"
+        />
+      </p>
+      <p>
+        <input
+          placeholder="Last Name"
+          value={lastName}
+          onChange={handleLastNameChange}
+        />
+      </p>
     </form>
   );
 }
