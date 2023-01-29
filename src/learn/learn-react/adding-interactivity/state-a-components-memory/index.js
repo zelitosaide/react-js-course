@@ -10,6 +10,10 @@ export default function Index() {
     setIndex(index + 1);
   }
 
+  function handleMoreClick() {
+    setShowMore(!showMore);
+  }
+
   let sculpture = sculptureList[index];
 
   return (
@@ -22,7 +26,9 @@ export default function Index() {
         ({index + 1} of {sculptureList.length})
       </p>
       <p>
-        <button>{showMore ? "Hide" : "Show"} details</button>
+        <button onClick={handleMoreClick}>
+          {showMore ? "Hide" : "Show"} details
+        </button>
       </p>
       {showMore && <p>{sculpture.description}</p>}
       <img
