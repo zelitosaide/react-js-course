@@ -119,3 +119,9 @@ td {
   border-radius: 20px;
   background: #fff;
 }
+
+.page > * {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
