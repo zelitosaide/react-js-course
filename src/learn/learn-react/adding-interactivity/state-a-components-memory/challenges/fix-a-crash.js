@@ -17,6 +17,10 @@ function FeedbackForm() {
   const [isSent, setIsSent] = useState(false);
   const [message, setMessage] = useState("");
 
+  if (isSent) {
+    return <h1>Thank you!</h1>;
+  }
+
   return (
     <form
       onSubmit={function (e) {
