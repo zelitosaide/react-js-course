@@ -3,15 +3,15 @@ import { useState } from "react";
 import { sculptureList } from "../../../../data/data";
 
 export default function Index() {
+  return <Page />;
+}
+
+function Page() {
   return (
-    <>
-      <div>
-        <Gallery />
-      </div>
-      <div>
-        <Gallery />
-      </div>
-    </>
+    <div className="page">
+      <Gallery />
+      <Gallery />
+    </div>
   );
 }
 
