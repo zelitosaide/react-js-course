@@ -1,4 +1,4 @@
-import LightSwitch from "./challenges/wire-up-the-events";
+import FixAnEventHandler from "./challenges/fix-an-event-handler";
 
 export default function Index() {
   return (
@@ -19,7 +19,7 @@ export default function Index() {
       <Toolbar />
       <Signup2 />
       <Signup />
-      <LightSwitch />
+      <FixAnEventHandler />
     </>
   );
 }
