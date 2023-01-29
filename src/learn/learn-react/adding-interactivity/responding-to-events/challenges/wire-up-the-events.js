@@ -34,4 +34,6 @@ export default function Index() {
   );
 }
 
-function ColorSwitch({ onChangeColor }) {}
+function ColorSwitch({ onChangeColor }) {
+  return <button onClick={onChangeColor}>Change color</button>;
+}
