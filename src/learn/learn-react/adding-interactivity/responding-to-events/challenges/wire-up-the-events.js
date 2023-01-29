@@ -15,6 +15,8 @@ export default function Index() {
       onClick={handleClickOutside}
     >
       <ColorSwitch />
+      <br />
+      <br />
       <h2>Clicks on the page: {clicks}</h2>
     </div>
   );
