@@ -22,4 +22,10 @@ function Gallery() {
   }
 
   let sculpture = sculptureList[index];
+
+  return (
+    <>
+      <button onClick={handleNextClick}>Next</button>
+    </>
+  );
 }
