@@ -30,7 +30,7 @@ function Gallery() {
   let sculpture = sculptureList[index];
 
   return (
-    <>
+    <section>
       <button onClick={handleClick}>Next</button>
       <h2>
         <i>{sculpture.name}</i> by {sculpture.artist}
@@ -48,6 +48,6 @@ function Gallery() {
         src={sculpture.url}
         alt={sculpture.alt}
       />
-    </>
+    </section>
   );
 }
