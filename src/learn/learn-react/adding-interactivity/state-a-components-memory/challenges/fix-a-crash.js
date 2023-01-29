@@ -9,4 +9,8 @@ import { useState } from "react";
  * saying “Rendered fewer hooks than expected”. Can you spot the mistake and fix it?
  */
 
-export default function Index() {}
+export default function Index() {
+  return <FeedbackForm />;
+}
+
+function FeedbackForm() {}
