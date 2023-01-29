@@ -1,4 +1,5 @@
 import FixAnEventHandler from "./challenges/fix-an-event-handler";
+import WireUpTheEvents from "./challenges/wire-up-the-events";
 
 export default function Index() {
   return (
@@ -20,6 +21,7 @@ export default function Index() {
       <Signup2 />
       <Signup />
       <FixAnEventHandler />
+      <WireUpTheEvents />
     </>
   );
 }
