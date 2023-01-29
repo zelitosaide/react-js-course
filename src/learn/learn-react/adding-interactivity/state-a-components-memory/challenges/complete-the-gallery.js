@@ -20,8 +20,12 @@ function Gallery() {
   const [index, setIndex] = useState(0);
   const [showMore, setShowMore] = useState(false);
 
+  const hasNext = index < sculptureList.length - 1;
+
   function handleNextClick() {
-    setIndex(index + 1);
+    if (hasNext) {
+      setIndex(index + 1);
+    }
   }
 
   function handleMoreClick() {
