@@ -9,7 +9,7 @@ function Form() {
   const [lastName, setLastName] = useState("");
 
   function handleFirstNameChange(e) {
-    console.log(e.target);
+    console.log(e.target.name);
   }
 
   return (
@@ -18,7 +18,7 @@ function Form() {
         placeholder="First name"
         value={firstName}
         onChange={handleFirstNameChange}
-        name="firtName"
+        name="firstName"
       />
     </form>
   );
