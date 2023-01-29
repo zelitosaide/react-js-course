@@ -36,7 +36,12 @@ function Gallery() {
 
   return (
     <>
-      <button onClick={handleNextClick}>Next</button>
+      <button
+        onClick={handleNextClick}
+        disabled={!hasNext}
+      >
+        Next
+      </button>
       <h2>
         <i>{sculpture.name}</i> by {sculpture.artist}
       </h2>
