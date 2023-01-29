@@ -17,7 +17,11 @@ function Form() {
   }
 
   return (
-    <form>
+    <form
+      onSubmit={function (e) {
+        e.preventDefault();
+      }}
+    >
       <p>
         <input
           placeholder="First name"
@@ -36,6 +40,7 @@ function Form() {
       <h1>
         Hi, {firstName} {lastName}
       </h1>
+      <button onClick={handleReset}>Reset</button>
     </form>
   );
 }
