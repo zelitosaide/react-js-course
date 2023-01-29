@@ -33,6 +33,9 @@ function Form() {
           onChange={handleLastNameChange}
         />
       </p>
+      <h1>
+        Hi, {firstName} {lastName}
+      </h1>
     </form>
   );
 }
