@@ -28,7 +28,7 @@ function FeedbackForm() {
   return (
     <>
       <button onClick={handleClick}>Greet</button>
-      <p>{name}</p>
+      {/* <p>{name}</p> */}
     </>
   );
 }
