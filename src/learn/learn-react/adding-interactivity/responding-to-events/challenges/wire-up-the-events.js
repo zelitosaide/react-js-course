@@ -9,7 +9,12 @@ export default function Index() {
     });
   }
 
-  function handleChangeColor() {}
+  function handleChangeColor() {
+    const bodyStyle = document.body.style;
+    bodyStyle.background = getRandomLightColor();
+  }
+
+  function getRandomLightColor() {}
 
   return (
     <div
