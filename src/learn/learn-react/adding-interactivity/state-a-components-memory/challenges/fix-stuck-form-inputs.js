@@ -16,6 +16,11 @@ function Form() {
     setLastName(e.target.value);
   }
 
+  function handleReset() {
+    setFirstName("");
+    setLastName("");
+  }
+
   return (
     <form
       onSubmit={function (e) {
