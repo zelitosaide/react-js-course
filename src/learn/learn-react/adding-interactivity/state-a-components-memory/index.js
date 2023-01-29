@@ -5,6 +5,7 @@ import { sculptureList } from "../../../../data/data";
 import CompleteTheGallery from "./challenges/complete-the-gallery";
 import FixStuckFormInputs from "./challenges/fix-stuck-form-inputs";
 import FixACrash from "./challenges/fix-a-crash";
+import RemoveUnnecessaryState from "./challenges/remove-unnecessary-state";
 
 export default function Index() {
   return (
@@ -13,6 +14,7 @@ export default function Index() {
       <CompleteTheGallery />
       <FixStuckFormInputs />
       <FixACrash />
+      <RemoveUnnecessaryState />
     </>
   );
 }
