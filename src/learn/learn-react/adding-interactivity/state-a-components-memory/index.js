@@ -7,9 +7,14 @@ export default function Index() {
     index = index + 1;
   }
 
+  let sculpture = sculptureList[index];
+
   return (
     <>
       <button onClick={handleClick}>Next</button>
+      <h2>
+        <i>{sculpture.name}</i> by {sculpture.artist}
+      </h2>
     </>
   );
 }
