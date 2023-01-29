@@ -4,6 +4,7 @@ import { sculptureList } from "../../../../data/data";
 
 import CompleteTheGallery from "./challenges/complete-the-gallery";
 import FixStuckFormInputs from "./challenges/fix-stuck-form-inputs";
+import FixACrash from "./challenges/fix-a-crash";
 
 export default function Index() {
   return (
@@ -11,6 +12,7 @@ export default function Index() {
       <Page />
       <CompleteTheGallery />
       <FixStuckFormInputs />
+      <FixACrash />
     </>
   );
 }
