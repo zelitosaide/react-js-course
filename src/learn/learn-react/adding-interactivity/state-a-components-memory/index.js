@@ -3,6 +3,10 @@ import { useState } from "react";
 import { sculptureList } from "../../../../data/data";
 
 export default function Index() {
+  return <Gallery />;
+}
+
+function Gallery() {
   const [index, setIndex] = useState(0);
   const [showMore, setShowMore] = useState(false);
 
