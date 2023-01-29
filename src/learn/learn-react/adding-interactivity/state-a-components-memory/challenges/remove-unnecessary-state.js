@@ -22,13 +22,13 @@ function FeedbackForm() {
 
   function handleClick() {
     setName(prompt("What is your name?"));
-    alert(`Hello, ${name}`);
+    // alert(`Hello, ${name}`);
   }
 
   return (
     <>
       <button onClick={handleClick}>Greet</button>
-      {/* <p>{name}</p> */}
+      <p>{name}</p>
     </>
   );
 }
