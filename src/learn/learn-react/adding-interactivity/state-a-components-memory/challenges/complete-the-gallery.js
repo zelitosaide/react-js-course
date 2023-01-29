@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { sculptureList } from "../../../../../data/data";
 
 /**
  * Challenge 1 of 4: Complete the gallery
@@ -19,4 +20,6 @@ function Gallery() {
   function handleNextClick() {
     setIndex(index + 1);
   }
+
+  let sculpture = sculptureList[index];
 }
