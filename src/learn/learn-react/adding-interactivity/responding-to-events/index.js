@@ -1,3 +1,5 @@
+import LightSwitch from "./challenges/wire-up-the-events";
+
 export default function Index() {
   return (
     <>
@@ -20,18 +22,6 @@ export default function Index() {
       <LightSwitch />
     </>
   );
-}
-
-function LightSwitch() {
-  function handleClick() {
-    const bodyStyle = document.body.style;
-    if (bodyStyle.background === "black") {
-      bodyStyle.background = "white";
-    } else {
-      bodyStyle.background = "black";
-    }
-  }
-  return <button onClick={handleClick}>Toggle the light</button>;
 }
 
 function Signup() {
