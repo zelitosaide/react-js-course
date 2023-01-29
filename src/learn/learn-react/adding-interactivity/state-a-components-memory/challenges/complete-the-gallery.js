@@ -18,6 +18,7 @@ export default function Index() {
 
 function Gallery() {
   const [index, setIndex] = useState(0);
+  const [showMore, setShowMore] = useState(false);
 
   function handleNextClick() {
     setIndex(index + 1);
@@ -34,6 +35,7 @@ function Gallery() {
       <p>
         ({index + 1} of {sculptureList.length})
       </p>
+      <button>{showMore ? "Hide" : "Show"} details</button>
     </>
   );
 }
