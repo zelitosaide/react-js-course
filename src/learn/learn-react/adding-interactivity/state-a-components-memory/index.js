@@ -21,6 +21,9 @@ export default function Index() {
       <p>
         ({index + 1} of {sculptureList.length})
       </p>
+      <p>
+        <button>{showMore ? "Hide" : "Show"} details</button>
+      </p>
       <img
         src={sculpture.url}
         alt={sculpture.alt}
