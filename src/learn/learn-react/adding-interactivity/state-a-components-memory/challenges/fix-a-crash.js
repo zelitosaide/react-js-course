@@ -30,6 +30,7 @@ function FeedbackForm() {
       }}
     >
       <textarea
+        placeholder="Message"
         value={message}
         onChange={function (e) {
           setMessage(e.target.value);
