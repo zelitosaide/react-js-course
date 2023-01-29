@@ -14,7 +14,10 @@ export default function Index() {
       style={{ width: "100%", height: "100%" }}
       onClick={handleClickOutside}
     >
+      <ColorSwitch />
       <h2>Clicks on the page: {clicks}</h2>
     </div>
   );
 }
+
+function ColorSwitch() {}
