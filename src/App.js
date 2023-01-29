@@ -34,7 +34,9 @@
 
 // import AddingInteractivity from "./learn/learn-react/adding-interactivity";
 
-import RespondingToEvents from "./learn/learn-react/adding-interactivity/responding-to-events";
+// import RespondingToEvents from "./learn/learn-react/adding-interactivity/responding-to-events";
+
+import StateAComponentsMemory from "./learn/learn-react/adding-interactivity/state-a-components-memory";
 
 function App() {
   return (
@@ -74,7 +76,9 @@ function App() {
 
       {/* <AddingInteractivity /> */}
 
-      <RespondingToEvents />
+      {/* <RespondingToEvents /> */}
+
+      <StateAComponentsMemory />
     </>
   );
 }
