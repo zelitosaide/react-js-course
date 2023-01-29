@@ -1,13 +1,16 @@
 import { useState } from "react";
 
 import { sculptureList } from "../../../../data/data";
+
 import CompleteTheGallery from "./challenges/complete-the-gallery";
+import FixStuckFormInputs from "./challenges/fix-stuck-form-inputs";
 
 export default function Index() {
   return (
     <>
       <Page />
       <CompleteTheGallery />
+      <FixStuckFormInputs />
     </>
   );
 }
