@@ -4,6 +4,7 @@ import { sculptureList } from "../../../../data/data";
 
 export default function Index() {
   const [index, setIndex] = useState(0);
+  const [showMore, setShowMore] = useState(false);
 
   function handleClick() {
     setIndex(index + 1);
