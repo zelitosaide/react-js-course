@@ -9,12 +9,14 @@ export default function Index() {
     });
   }
 
+  function handleChangeColor() {}
+
   return (
     <div
       style={{ width: "100%", height: "100%" }}
       onClick={handleClickOutside}
     >
-      <ColorSwitch />
+      <ColorSwitch onChangeColor={handleChangeColor} />
       <br />
       <br />
       <h2>Clicks on the page: {clicks}</h2>
@@ -22,4 +24,4 @@ export default function Index() {
   );
 }
 
-function ColorSwitch() {}
+function ColorSwitch({ onChangeColor }) {}
