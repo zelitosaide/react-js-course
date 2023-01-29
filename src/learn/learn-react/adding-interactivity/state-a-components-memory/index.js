@@ -24,11 +24,11 @@ export default function Index() {
       <p>
         <button>{showMore ? "Hide" : "Show"} details</button>
       </p>
+      {showMore && <p>{sculpture.description}</p>}
       <img
         src={sculpture.url}
         alt={sculpture.alt}
       />
-      <p>{sculpture.description}</p>
     </>
   );
 }
