@@ -9,7 +9,11 @@ function Form() {
   const [lastName, setLastName] = useState("");
 
   function handleFirstNameChange(e) {
-    console.log(e.target.name);
+    setFirstName(e.target.value);
+  }
+
+  function handleLastNameChange(e) {
+    setLastName(e.target.value);
   }
 
   return (
@@ -19,6 +23,11 @@ function Form() {
         value={firstName}
         onChange={handleFirstNameChange}
         name="firstName"
+      />
+      <input
+        placeholder="Last Name"
+        value={lastName}
+        onChange={handleLastNameChange}
       />
     </form>
   );
