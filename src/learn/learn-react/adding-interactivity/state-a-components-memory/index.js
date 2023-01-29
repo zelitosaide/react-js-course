@@ -1,7 +1,11 @@
 import { sculptureList } from "../../../../data/data";
 
 export default function Index() {
-  function handleClick() {}
+  let index = 0;
+
+  function handleClick() {
+    index = index + 1;
+  }
 
   return (
     <>
