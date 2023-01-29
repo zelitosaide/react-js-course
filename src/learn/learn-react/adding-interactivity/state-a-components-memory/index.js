@@ -3,7 +3,12 @@ import { useState } from "react";
 import { sculptureList } from "../../../../data/data";
 
 export default function Index() {
-  return <Gallery />;
+  return (
+    <>
+      <Gallery />
+      <Gallery />
+    </>
+  );
 }
 
 function Gallery() {
