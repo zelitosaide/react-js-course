@@ -18,6 +18,7 @@ function Form() {
         placeholder="First name"
         value={firstName}
         onChange={handleFirstNameChange}
+        name="firtName"
       />
     </form>
   );
