@@ -22,6 +22,13 @@ function FeedbackForm() {
       onSubmit={function (e) {
         e.preventDefault();
       }}
-    ></form>
+    >
+      <textarea
+        value={message}
+        onChange={function (e) {
+          setMessage(e.target.value);
+        }}
+      />
+    </form>
   );
 }
