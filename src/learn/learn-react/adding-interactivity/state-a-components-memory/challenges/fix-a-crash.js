@@ -14,6 +14,9 @@ export default function Index() {
 }
 
 function FeedbackForm() {
+  const [isSent, setIsSent] = useState(false);
+  const [message, setMessage] = useState("");
+
   return (
     <form
       onSubmit={function (e) {
