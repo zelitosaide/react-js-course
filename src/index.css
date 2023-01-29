@@ -126,7 +126,7 @@ td {
   padding: 10px;
 }
 
-.page > *::after {
+.page::after {
   content: "";
   display: table;
   clear: both;
