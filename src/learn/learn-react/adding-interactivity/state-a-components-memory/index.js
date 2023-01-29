@@ -22,6 +22,7 @@ export default function Index() {
         src={sculpture.url}
         alt={sculpture.alt}
       />
+      <p>{sculpture.description}</p>
     </>
   );
 }
