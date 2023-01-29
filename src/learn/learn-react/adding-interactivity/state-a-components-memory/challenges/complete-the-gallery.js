@@ -12,7 +12,9 @@ import { sculptureList } from "../../../../../data/data";
  * After fixing the crash, add a “Previous” button that shows the
  * previous sculpture. It shouldn’t crash on the first sculpture.
  */
-export default function Index() {}
+export default function Index() {
+  return <Gallery />;
+}
 
 function Gallery() {
   const [index, setIndex] = useState(0);

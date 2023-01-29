@@ -1,9 +1,15 @@
 import { useState } from "react";
 
 import { sculptureList } from "../../../../data/data";
+import CompleteTheGallery from "./challenges/complete-the-gallery";
 
 export default function Index() {
-  return <Page />;
+  return (
+    <>
+      <Page />
+      <CompleteTheGallery />
+    </>
+  );
 }
 
 function Page() {
