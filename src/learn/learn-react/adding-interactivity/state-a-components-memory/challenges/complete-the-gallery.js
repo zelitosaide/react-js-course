@@ -31,6 +31,9 @@ function Gallery() {
       <h2>
         <i>{sculpture.name}</i> by {sculpture.artist}
       </h2>
+      <p>
+        ({index + 1} of {sculptureList.length})
+      </p>
     </>
   );
 }
