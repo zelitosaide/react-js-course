@@ -13,6 +13,8 @@ export default function Index() {
     <div
       style={{ width: "100%", height: "100%" }}
       onClick={handleClickOutside}
-    ></div>
+    >
+      <h2>Clicks on the page: {clicks}</h2>
+    </div>
   );
 }
