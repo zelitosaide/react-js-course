@@ -36,7 +36,9 @@
 
 // import RespondingToEvents from "./learn/learn-react/adding-interactivity/responding-to-events";
 
-import StateAComponentsMemory from "./learn/learn-react/adding-interactivity/state-a-components-memory";
+// import StateAComponentsMemory from "./learn/learn-react/adding-interactivity/state-a-components-memory";
+
+import RenderAndCommit from "./learn/learn-react/adding-interactivity/render-and-commit";
 
 function App() {
   return (
@@ -78,7 +80,9 @@ function App() {
 
       {/* <RespondingToEvents /> */}
 
-      <StateAComponentsMemory />
+      {/* <StateAComponentsMemory /> */}
+
+      <RenderAndCommit />
     </>
   );
 }
