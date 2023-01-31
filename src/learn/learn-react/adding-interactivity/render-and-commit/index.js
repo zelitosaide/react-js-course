@@ -9,12 +9,12 @@ export default function Index() {
 
 function Gallery() {
   return (
-    <div>
+    <section>
       <h1>Inspiring Sculptures</h1>
       <Image />
       <Image />
       <Image />
-    </div>
+    </section>
   );
 }
 
