@@ -15,6 +15,15 @@ function Counter() {
   return (
     <>
       <h1>{number}</h1>
+      <button
+        onClick={function () {
+          setNumber(number + 5);
+          setNumber((n) => n + 1);
+          setNumber(42);
+        }}
+      >
+        Increase the number
+      </button>
     </>
   );
 }
