@@ -5,12 +5,33 @@ export default function Index() {
     <>
       <Form />
       <Counter2 />
+      <Counter3 />
       <Counter />
     </>
   );
 }
 
 function Counter() {
+  const [number, setNumber] = useState(0);
+
+  return (
+    <>
+      <h1>{number}</h1>
+      <button
+        onClick={function () {
+          setNumber(number + 5);
+          setTimeout(function () {
+            alert(number);
+          });
+        }}
+      >
+        +5
+      </button>
+    </>
+  );
+}
+
+function Counter3() {
   const [number, setNumber] = useState(0);
 
   return (
