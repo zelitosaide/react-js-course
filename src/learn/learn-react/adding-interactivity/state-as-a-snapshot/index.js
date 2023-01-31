@@ -22,7 +22,7 @@ function Counter() {
           setNumber(number + 5);
           setTimeout(function () {
             alert(number);
-          });
+          }, 1000);
         }}
       >
         +5
