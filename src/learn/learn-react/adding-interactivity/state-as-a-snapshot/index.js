@@ -22,7 +22,19 @@ function Form() {
     }, 5000);
   }
 
-  return <form onSubmit={handleSubmit}></form>;
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        To:{" "}
+        <select
+          value={to}
+          onChange={function (e) {
+            setTo(e.target.value);
+          }}
+        ></select>
+      </label>
+    </form>
+  );
 }
 
 function Counter() {
