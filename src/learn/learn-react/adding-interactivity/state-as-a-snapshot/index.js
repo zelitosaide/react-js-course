@@ -44,6 +44,7 @@ function Form() {
           setMessage(e.target.value);
         }}
       />
+      <button type="submit">Send</button>
     </form>
   );
 }
