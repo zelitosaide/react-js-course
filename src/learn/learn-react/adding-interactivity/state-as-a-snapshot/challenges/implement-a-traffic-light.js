@@ -8,12 +8,8 @@ function TrafficLight() {
   const [walk, setWalk] = useState(false);
 
   function handleClick() {
-    if (walk) {
-      alert("Stop is next");
-    } else {
-      alert("Walk is next");
-    }
     setWalk(!walk);
+    alert(walk ? "Stop is next" : "Walk is next");
   }
 
   return (
