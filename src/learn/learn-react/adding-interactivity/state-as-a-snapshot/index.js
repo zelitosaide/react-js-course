@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import ImplementATrafficLight from "./challenges/implement-a-traffic-light";
+
 export default function Index() {
   return (
     <>
@@ -8,6 +10,7 @@ export default function Index() {
       <Counter3 />
       <Counter />
       <Form />
+      <ImplementATrafficLight />
     </>
   );
 }
