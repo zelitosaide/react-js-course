@@ -10,7 +10,23 @@ export default function Index() {
   );
 }
 
-function Counter() {}
+function Counter() {
+  const [number, setNumber] = useState(0);
+
+  return (
+    <>
+      <h1>{number}</h1>
+      <button
+        onClick={function () {
+          setNumber(number + 5);
+          alert(number);
+        }}
+      >
+        +5
+      </button>
+    </>
+  );
+}
 
 function Counter2() {
   const [number, setNumber] = useState(0);
