@@ -4,12 +4,15 @@ export default function Index() {
   return (
     <>
       <Form />
+      <Counter2 />
       <Counter />
     </>
   );
 }
 
-function Counter() {
+function Counter() {}
+
+function Counter2() {
   const [number, setNumber] = useState(0);
 
   return (
