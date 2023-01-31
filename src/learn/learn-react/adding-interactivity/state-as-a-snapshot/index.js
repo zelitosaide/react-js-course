@@ -8,6 +8,10 @@ function Form() {
   const [isSent, setIsSent] = useState(false);
   const [message, setMessage] = useState("");
 
+  if (isSent) {
+    return <h1>Your message is on its way!</h1>;
+  }
+
   return (
     <form
       onSubmit={function (e) {
