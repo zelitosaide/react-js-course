@@ -1,7 +1,31 @@
 import { useState } from "react";
 
 export default function Index() {
-  return <Form />;
+  return (
+    <>
+      <Form />
+      <Counter />
+    </>
+  );
+}
+
+function Counter() {
+  const [number, setNumber] = useState(0);
+
+  return (
+    <>
+      <h1>{number}</h1>
+      <button
+        onClick={function () {
+          setNumber(number + 1);
+          setNumber(number + 1);
+          setNumber(number + 1);
+        }}
+      >
+        +3
+      </button>
+    </>
+  );
 }
 
 function Form() {
