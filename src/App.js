@@ -40,7 +40,9 @@
 
 // import RenderAndCommit from "./learn/learn-react/adding-interactivity/render-and-commit";
 
-import StateAsASnapshot from "./learn/learn-react/adding-interactivity/state-as-a-snapshot";
+// import StateAsASnapshot from "./learn/learn-react/adding-interactivity/state-as-a-snapshot";
+
+import QueueingASeriesOfStateUpdates from "./learn/learn-react/adding-interactivity/queueing-a-series-of-state-updates";
 
 function App() {
   return (
@@ -86,7 +88,9 @@ function App() {
 
       {/* <RenderAndCommit /> */}
 
-      <StateAsASnapshot />
+      {/* <StateAsASnapshot /> */}
+
+      <QueueingASeriesOfStateUpdates />
     </>
   );
 }
