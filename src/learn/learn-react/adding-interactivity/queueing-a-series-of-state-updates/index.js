@@ -4,12 +4,22 @@ export default function Index() {
   return (
     <>
       <Counter2 />
-      <Counter />
+      <Counter3 />
     </>
   );
 }
 
 function Counter() {
+  const [number, setNumber] = useState(0);
+
+  return (
+    <>
+      <h1>{number}</h1>
+    </>
+  );
+}
+
+function Counter3() {
   const [number, setNumber] = useState(0);
 
   return (
