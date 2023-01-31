@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-export default function Index() {}
+export default function Index() {
+  return <TrafficLight />;
+}
 
 function TrafficLight() {
   const [walk, setWalk] = useState(false);
