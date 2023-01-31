@@ -1,11 +1,14 @@
 import { useState } from "react";
 
+import FixARequestCounter from "./challenges/fix-a-request-counter";
+
 export default function Index() {
   return (
     <>
       <Counter2 />
       <Counter3 />
       <Counter />
+      <FixARequestCounter />
     </>
   );
 }
