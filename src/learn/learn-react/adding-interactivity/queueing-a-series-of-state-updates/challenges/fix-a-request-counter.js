@@ -14,6 +14,9 @@ function RequestTracker() {
   async function handleClick() {
     setPending(pending + 1);
     await delay(3000);
+    setPending(function (p) {
+      return p - 1;
+    });
   }
 
   return (
