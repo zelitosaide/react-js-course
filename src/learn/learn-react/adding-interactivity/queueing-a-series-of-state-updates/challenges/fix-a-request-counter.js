@@ -21,16 +21,21 @@ function RequestTracker() {
   const [completed, setCompleted] = useState(0);
 
   async function handleClick() {
-    setPending(function (p) {
-      return p + 1;
-    });
+    // setPending(function (p) {
+    //   return p + 1;
+    // });
+    // await delay(3000);
+    // setPending(function (p) {
+    //   return p - 1;
+    // });
+    // setCompleted(function (c) {
+    //   return c + 1;
+    // });
+
+    setPending(pending + 1);
     await delay(3000);
-    setPending(function (p) {
-      return p - 1;
-    });
-    setCompleted(function (c) {
-      return c + 1;
-    });
+    setPending(pending - 1);
+    setCompleted(completed + 1);
   }
 
   return (
