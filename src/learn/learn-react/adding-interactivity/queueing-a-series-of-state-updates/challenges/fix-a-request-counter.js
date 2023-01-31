@@ -17,6 +17,7 @@ function RequestTracker() {
     setPending(function (p) {
       return p - 1;
     });
+    setCompleted(completed + 1);
   }
 
   return (
