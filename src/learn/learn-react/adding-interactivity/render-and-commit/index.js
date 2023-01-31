@@ -1,5 +1,21 @@
 export default function Index() {
-  return <Image />;
+  return (
+    <>
+      <Image />
+      <Gallery />
+    </>
+  );
+}
+
+function Gallery() {
+  return (
+    <div>
+      <h1>Inspiring Sculptures</h1>
+      <Image />
+      <Image />
+      <Image />
+    </div>
+  );
 }
 
 function Image() {
