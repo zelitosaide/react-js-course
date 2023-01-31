@@ -1,23 +1,30 @@
 import { useState } from "react";
 
 export default function Index() {
+  return <Counter />;
+}
+
+function Counter() {
   const [number, setNumber] = useState(0);
-  const [isSent, setIsSent] = useState(false);
 
   return (
     <>
+      <h1>{number}</h1>
       <button
         onClick={function () {
-          setNumber(number + 1);
-          setTimeout(function () {
-            setIsSent(!isSent);
-          }, 5000);
+          setNumber(function (n) {
+            return n + 1;
+          });
+          setNumber(function (n) {
+            return n + 1;
+          });
+          setNumber(function (n) {
+            return n + 1;
+          });
         }}
       >
-        Click me
+        +3
       </button>
-      <p>{number}</p>
-      <p>{isSent && "Ola"}</p>
     </>
   );
 }
