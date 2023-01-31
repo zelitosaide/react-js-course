@@ -31,7 +31,10 @@ function Form() {
           onChange={function (e) {
             setTo(e.target.value);
           }}
-        ></select>
+        >
+          <option value="Alice">Alice</option>
+          <option value="Bob">Bob</option>
+        </select>
       </label>
     </form>
   );
