@@ -38,7 +38,9 @@
 
 // import StateAComponentsMemory from "./learn/learn-react/adding-interactivity/state-a-components-memory";
 
-import RenderAndCommit from "./learn/learn-react/adding-interactivity/render-and-commit";
+// import RenderAndCommit from "./learn/learn-react/adding-interactivity/render-and-commit";
+
+import StateAsASnapshot from "./learn/learn-react/adding-interactivity/state-as-a-snapshot";
 
 function App() {
   return (
@@ -82,7 +84,9 @@ function App() {
 
       {/* <StateAComponentsMemory /> */}
 
-      <RenderAndCommit />
+      {/* <RenderAndCommit /> */}
+
+      <StateAsASnapshot />
     </>
   );
 }

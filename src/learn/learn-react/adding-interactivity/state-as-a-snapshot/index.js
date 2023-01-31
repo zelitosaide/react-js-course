@@ -1,13 +1,21 @@
 import { useState } from "react";
 
-export default function Index() {}
+export default function Index() {
+  return <Form />;
+}
 
 function Form() {
   const [isSent, setIsSent] = useState(false);
   const [message, setMessage] = useState("");
 
   return (
-    <form>
+    <form
+      onSubmit={function (e) {
+        e.preventDefault();
+        setIsSent(true);
+        sendMessage(message);
+      }}
+    >
       <textarea
         value={message}
         onChange={function (e) {
@@ -20,4 +28,4 @@ function Form() {
   );
 }
 
-function sendMessage() {}
+function sendMessage(message) {}
