@@ -1,9 +1,13 @@
+import { useTime } from "../../../../utils/utils";
+
 export default function Index() {
+  const time = useTime();
+
   return (
     <>
       <Image />
       <Gallery />
-      <Clock />
+      <Clock time={time.toLocaleTimeString()} />
     </>
   );
 }
