@@ -7,6 +7,7 @@ export default function Index() {
       <Counter2 />
       <Counter3 />
       <Counter />
+      <Form />
     </>
   );
 }
