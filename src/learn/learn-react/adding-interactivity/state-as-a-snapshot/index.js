@@ -3,13 +3,15 @@ import { useState } from "react";
 export default function Index() {
   return (
     <>
-      <Form />
+      <Form2 />
       <Counter2 />
       <Counter3 />
       <Counter />
     </>
   );
 }
+
+// function Form
 
 function Counter() {
   const [number, setNumber] = useState(0);
@@ -68,7 +70,7 @@ function Counter2() {
   );
 }
 
-function Form() {
+function Form2() {
   const [isSent, setIsSent] = useState(false);
   const [message, setMessage] = useState("");
 
