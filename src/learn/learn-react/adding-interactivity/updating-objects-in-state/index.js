@@ -26,12 +26,15 @@ function Form() {
   function handleLastNameChange(e) {
     setPerson({
       ...person, // Copy the old fields
-      lastName: e.target.value, // But overrid this one
+      lastName: e.target.value, // But override this one
     });
   }
 
   function handleEmailChange(e) {
-    person.email = e.target.value;
+    setPerson({
+      ...person, // Copy the old fields
+      email: e.target.value, // But override this one
+    });
   }
 
   return (
