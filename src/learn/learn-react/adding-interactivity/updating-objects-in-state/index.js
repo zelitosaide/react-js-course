@@ -5,12 +5,24 @@ export default function Index() {
     <>
       <MovingDot />
       <Form2 />
+      <Form3 />
       <Form />
     </>
   );
 }
 
 function Form() {
+  const [person, setPerson] = useState({
+    name: "Niki de Saint Phalle",
+    artwork: {
+      title: "Blue Nana",
+      city: "Hamburg",
+      image: "https://i.imgur.com/Sd1AgUOm.jpg",
+    },
+  });
+}
+
+function Form3() {
   const [person, setPerson] = useState({
     firstName: "Zelito",
     lastName: "Saide",
