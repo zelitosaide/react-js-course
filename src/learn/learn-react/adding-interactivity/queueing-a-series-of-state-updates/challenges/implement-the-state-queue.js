@@ -2,7 +2,7 @@
  * Challenge 2 of 2: Implement the state queue yourself
  */
 
-import { getFinalState } from "../../../../../utils/utils";
+import { getFinalState, increment } from "../../../../../utils/utils";
 
 export default function Index() {
   return (
@@ -11,6 +11,18 @@ export default function Index() {
         baseState={0}
         queue={[1, 1, 1]}
         expected={1}
+      />
+      <hr />
+      <TestCase
+        baseState={0}
+        queue={[increment, increment, increment]}
+        expected={3}
+      />
+      <hr />
+      <TestCase
+        baseState={0}
+        queue={[5, increment]}
+        expected={6}
       />
     </>
   );
