@@ -34,6 +34,14 @@ function Form() {
           onChange={handleChange}
         />
       </label>
+      <label>
+        Last Name:{" "}
+        <input
+          name="lastName"
+          value={person.lastName}
+          onChange={handleChange}
+        />
+      </label>
     </>
   );
 }
