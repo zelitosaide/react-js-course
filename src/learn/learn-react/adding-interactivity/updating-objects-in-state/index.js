@@ -16,11 +16,17 @@ function Form() {
     email: "bhepworth@sculpture.com",
   });
 
-  function handleFirstNameChange(e) {}
+  function handleFirstNameChange(e) {
+    person.firstName = e.target.value;
+  }
 
-  function handleLastNameChange(e) {}
+  function handleLastNameChange(e) {
+    person.lastName = e.target.value;
+  }
 
-  function handleEmailChange(e) {}
+  function handleEmailChange(e) {
+    person.email = e.target.value;
+  }
 
   return (
     <>
