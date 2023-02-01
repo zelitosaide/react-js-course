@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import FixARequestCounter from "./challenges/fix-a-request-counter";
+import ImplementTheStateQueue from "./challenges/implement-the-state-queue";
 
 export default function Index() {
   return (
@@ -9,6 +10,7 @@ export default function Index() {
       <Counter3 />
       <Counter />
       <FixARequestCounter />
+      <ImplementTheStateQueue />
     </>
   );
 }
