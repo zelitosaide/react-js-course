@@ -7,8 +7,6 @@ export default function Index() {
 function MovingDot() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  console.log(position);
-
   return (
     <div
       style={{
