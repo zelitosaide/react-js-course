@@ -28,7 +28,11 @@ function Form() {
     });
   }
 
-  function handleTitleChange(e) {}
+  function handleTitleChange(e) {
+    const nextArtwork = { ...person.artwork, city: e.target.value };
+    const nextPerson = { ...person, artwork: nextArtwork };
+    setPerson(nextPerson);
+  }
 
   return (
     <>
