@@ -48,7 +48,7 @@ function TestCase({ baseState, queue, expected }) {
       <p>
         Expected result: <b>{expected}</b>
       </p>
-      <p>
+      <p style={{ color: actual === expected ? "green" : "red" }}>
         Your result: <b>{actual}</b> (
         {actual === expected ? "correct" : "wrong"})
       </p>
