@@ -16,6 +16,21 @@ function Form() {
     lastName: "Saide",
     email: "zelitosaide@gmail.com",
   });
+
+  function handleChange(e) {}
+
+  return (
+    <>
+      <label>
+        First Name{" "}
+        <input
+          name="firstName"
+          value={person.firstName}
+          onChange={handleChange}
+        />
+      </label>
+    </>
+  );
 }
 
 function Form2() {
