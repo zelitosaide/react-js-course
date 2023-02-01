@@ -20,6 +20,9 @@ function TestCase({ baseState, queue, expected }) {
       <p>
         Expected result: <b>{expected}</b>
       </p>
+      <p>
+        Your result: <b>{actual}</b>
+      </p>
     </>
   );
 }
