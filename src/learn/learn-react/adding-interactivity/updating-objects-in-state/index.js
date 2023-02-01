@@ -17,7 +17,10 @@ function Form() {
   });
 
   function handleFirstNameChange(e) {
-    person.firstName = e.target.value;
+    setPerson({
+      ...person, // Copy the old fields
+      firstName: e.target.value, // But override this one
+    });
   }
 
   function handleLastNameChange(e) {
