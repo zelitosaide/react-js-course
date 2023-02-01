@@ -4,12 +4,20 @@ export default function Index() {
   return (
     <>
       <MovingDot />
-      <Form />
+      <Form2 />
     </>
   );
 }
 
 function Form() {
+  const [person, setPerson] = useState({
+    firstName: "Zelito",
+    lastName: "Saide",
+    email: "zelitosaide@gmail.com",
+  });
+}
+
+function Form2() {
   const [person, setPerson] = useState({
     firstName: "Barbara",
     lastName: "Hepworth",
