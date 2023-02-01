@@ -9,7 +9,21 @@ export function formatDate(date) {
   return new Intl.DateTimeFormat("pt-PT", { weekday: "long" }).format(date);
 }
 
-export function getFinalState(baseState, queue) {}
+export function getFinalState(baseState, queue) {
+  let finalState = baseState;
+
+  for (const update of queue) {
+    if (typeof update === "function") {
+      // Apply the updater function.
+      finalState = update(finalState);
+    } else {
+      // Replace the next state.
+      finalState = update;
+    }
+  }
+
+  return finalState;
+}
 
 function increment(n) {
   return n + 1;
