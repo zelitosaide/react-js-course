@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 /**
  * Challenge 1 of 3: Fix incorrect state updates
  *
@@ -11,3 +13,11 @@
  * each of them happens.
  */
 export default function Index() {}
+
+function Scoreboard() {
+  const [player, setPlayer] = useState({
+    firstName: "Ranjani",
+    lastName: "Shettar",
+    score: 10,
+  });
+}
