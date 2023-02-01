@@ -1,7 +1,20 @@
 import { useState } from "react";
 
 export default function Index() {
-  return <MovingDot />;
+  return (
+    <>
+      <MovingDot />
+      <Form />
+    </>
+  );
+}
+
+function Form() {
+  const [person, setPerson] = useState({
+    firstName: "Barbara",
+    lastName: "Hepworth",
+    email: "bhepworth@sculpture.com",
+  });
 }
 
 function MovingDot() {
