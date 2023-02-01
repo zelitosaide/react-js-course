@@ -41,6 +41,12 @@ function Form() {
     });
   }
 
+  function handleImageChange(e) {
+    updatePerson(function (draft) {
+      draft.artwork.image = e.target.value;
+    });
+  }
+
   return (
     <>
       <label>
@@ -62,6 +68,13 @@ function Form() {
         <input
           value={person.artwork.city}
           onChange={handleCityChange}
+        />
+      </label>
+      <label>
+        Image:{" "}
+        <input
+          value={person.artwork.image}
+          onChange={handleImageChange}
         />
       </label>
     </>
