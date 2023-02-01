@@ -27,11 +27,25 @@ function Scoreboard() {
     player.score++;
   }
 
+  function handleFirstNameChange(e) {
+    setPlayer({
+      ...player,
+      firstName: e.target.value,
+    });
+  }
+
   return (
     <>
       <label>
         Score: <b>{player.score}</b>{" "}
         <button onClick={handlePlusClick}>+1</button>
+      </label>
+      <label>
+        First Name:{" "}
+        <input
+          value={player.firstName}
+          onChange={handleFirstNameChange}
+        />
       </label>
     </>
   );
