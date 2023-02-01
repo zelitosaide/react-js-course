@@ -29,6 +29,12 @@ function Form() {
     });
   }
 
+  function handleTitleChange(e) {
+    updatePerson(function (draft) {
+      draft.artwork.title = e.target.value;
+    });
+  }
+
   return (
     <>
       <label>
@@ -36,6 +42,13 @@ function Form() {
         <input
           value={person.name}
           onChange={handleNameChange}
+        />
+      </label>
+      <label>
+        Title:{" "}
+        <input
+          value={person.artwork.title}
+          onChange={handleTitleChange}
         />
       </label>
     </>
