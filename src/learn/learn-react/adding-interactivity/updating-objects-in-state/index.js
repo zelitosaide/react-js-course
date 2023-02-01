@@ -50,6 +50,9 @@ function Form() {
           onChange={handleChange}
         />
       </label>
+      <p>
+        {person.firstName} {person.lastName} ({person.email})
+      </p>
     </>
   );
 }
