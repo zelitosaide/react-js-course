@@ -20,6 +20,8 @@ function Form() {
 
   function handleLastNameChange(e) {}
 
+  function handleEmailChange(e) {}
+
   return (
     <>
       <label>
@@ -34,6 +36,13 @@ function Form() {
         <input
           value={person.lastName}
           onChange={handleLastNameChange}
+        />
+      </label>
+      <label>
+        Email{" "}
+        <input
+          value={person.email}
+          onChange={handleEmailChange}
         />
       </label>
     </>
