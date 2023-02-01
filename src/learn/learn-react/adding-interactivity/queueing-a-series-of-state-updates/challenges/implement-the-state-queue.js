@@ -24,6 +24,12 @@ export default function Index() {
         queue={[5, increment]}
         expected={6}
       />
+      <hr />
+      <TestCase
+        baseState={0}
+        queue={[5, increment, 42]}
+        expected={42}
+      />
     </>
   );
 }
