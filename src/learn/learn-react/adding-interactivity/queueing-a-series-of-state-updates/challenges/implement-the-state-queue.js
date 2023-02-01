@@ -21,7 +21,8 @@ function TestCase({ baseState, queue, expected }) {
         Expected result: <b>{expected}</b>
       </p>
       <p>
-        Your result: <b>{actual}</b>
+        Your result: <b>{actual}</b> (
+        {actual === expected ? "correct" : "wrong"})
       </p>
     </>
   );
