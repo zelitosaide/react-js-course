@@ -9,6 +9,8 @@ export function formatDate(date) {
   return new Intl.DateTimeFormat("pt-PT", { weekday: "long" }).format(date);
 }
 
+export function getFinalState(baseState, queue) {}
+
 export function useTime() {
   const [time, setTime] = useState(function () {
     return new Date();
