@@ -42,6 +42,14 @@ function Form() {
           onChange={handleChange}
         />
       </label>
+      <label>
+        Email{" "}
+        <input
+          name="email"
+          value={person.email}
+          onChange={handleChange}
+        />
+      </label>
     </>
   );
 }
