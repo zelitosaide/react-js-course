@@ -38,7 +38,10 @@ function Scoreboard() {
   }
 
   function handleLastNameChange(e) {
-    setPlayer({ lastName: e.target.value });
+    setPlayer({
+      ...player,
+      lastName: e.target.value,
+    });
   }
 
   return (
