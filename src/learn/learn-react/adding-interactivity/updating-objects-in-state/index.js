@@ -24,7 +24,10 @@ function Form() {
   }
 
   function handleLastNameChange(e) {
-    person.lastName = e.target.value;
+    setPerson({
+      ...person, // Copy the old fields
+      lastName: e.target.value, // But overrid this one
+    });
   }
 
   function handleEmailChange(e) {
