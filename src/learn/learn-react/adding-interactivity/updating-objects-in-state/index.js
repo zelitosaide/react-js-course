@@ -89,6 +89,10 @@ function Form() {
         <i>{person.artwork.title}</i> by {person.name} <br />
         (located in {person.artwork.city})
       </p>
+      <img
+        src={person.artwork.image}
+        alt={person.artwork.title}
+      />
     </>
   );
 }
