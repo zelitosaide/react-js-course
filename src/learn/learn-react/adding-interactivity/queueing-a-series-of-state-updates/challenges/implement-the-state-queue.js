@@ -4,7 +4,17 @@
 
 import { getFinalState } from "../../../../../utils/utils";
 
-export default function Index() {}
+export default function Index() {
+  return (
+    <>
+      <TestCase
+        baseState={0}
+        queue={[1, 1, 1]}
+        expected={1}
+      />
+    </>
+  );
+}
 
 function TestCase({ baseState, queue, expected }) {
   const actual = getFinalState(baseState, queue);
