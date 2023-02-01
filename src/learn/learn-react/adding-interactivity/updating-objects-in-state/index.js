@@ -34,6 +34,16 @@ function Form() {
     setPerson(nextPerson);
   }
 
+  function handleCityChange(e) {
+    setPerson({
+      ...person,
+      artwork: {
+        ...person.artwork,
+        city: e.target.value,
+      },
+    });
+  }
+
   return (
     <>
       <label>
@@ -44,10 +54,17 @@ function Form() {
         />
       </label>
       <label>
-        Title{" "}
+        Title:{" "}
         <input
           value={person.artwork.title}
           onChange={handleTitleChange}
+        />
+      </label>
+      <label>
+        City:{" "}
+        <input
+          value={person.artwork.city}
+          onChange={handleCityChange}
         />
       </label>
     </>
