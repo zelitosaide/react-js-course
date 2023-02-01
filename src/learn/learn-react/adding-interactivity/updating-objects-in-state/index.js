@@ -17,7 +17,10 @@ function MovingDot() {
         height: "100vh",
       }}
       onPointerMove={function (e) {
-        setPosition({ x: e.clientX, y: e.clientY });
+        setPosition({
+          x: e.clientX,
+          y: e.clientY,
+        });
       }}
     >
       <div
