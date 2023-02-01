@@ -108,6 +108,9 @@ function Form2() {
           onChange={handleEmailChange}
         />
       </label>
+      <p>
+        {person.firstName} {person.lastName} ({person.email})
+      </p>
     </>
   );
 }
