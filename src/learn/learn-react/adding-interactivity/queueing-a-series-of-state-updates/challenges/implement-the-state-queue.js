@@ -14,6 +14,9 @@ function TestCase({ baseState, queue, expected }) {
       <p>
         Base state: <b>{baseState}</b>
       </p>
+      <p>
+        Queue: <b>[{queue.join(", ")}]</b>
+      </p>
     </>
   );
 }
