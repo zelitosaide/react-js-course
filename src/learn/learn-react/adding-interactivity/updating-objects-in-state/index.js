@@ -17,12 +17,17 @@ function Form() {
     email: "zelitosaide@gmail.com",
   });
 
-  function handleChange(e) {}
+  function handleChange(e) {
+    setPerson({
+      ...person,
+      [e.target.name]: e.target.value,
+    });
+  }
 
   return (
     <>
       <label>
-        First Name{" "}
+        First Name:{" "}
         <input
           name="firstName"
           value={person.firstName}
