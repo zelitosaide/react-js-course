@@ -7,6 +7,8 @@ export default function Index() {
 function MovingDot() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
+  console.log(position);
+
   return (
     <div
       style={{
@@ -15,8 +17,7 @@ function MovingDot() {
         height: "100vh",
       }}
       onPointerMove={function (e) {
-        position.x = e.clientX;
-        position.y = e.clientY;
+        setPosition({ x: e.clientX, y: e.clientY });
       }}
     >
       <div
