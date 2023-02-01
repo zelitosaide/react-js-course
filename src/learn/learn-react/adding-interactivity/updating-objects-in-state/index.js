@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useImmer } from "use-immer";
 
+import FixIncorrectStateUpdates from "./challenges/fix-incorrect-state-updates";
+
 export default function Index() {
   return (
     <>
@@ -9,6 +11,7 @@ export default function Index() {
       <Form3 />
       <Form4 />
       <Form />
+      <FixIncorrectStateUpdates />
     </>
   );
 }

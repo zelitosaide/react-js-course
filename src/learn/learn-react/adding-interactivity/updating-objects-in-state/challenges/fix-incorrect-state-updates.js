@@ -12,7 +12,9 @@ import { useState } from "react";
  * Your task is to fix all of these bugs. As you fix them, explain why
  * each of them happens.
  */
-export default function Index() {}
+export default function Index() {
+  return <Scoreboard />;
+}
 
 function Scoreboard() {
   const [player, setPlayer] = useState({
@@ -21,7 +23,9 @@ function Scoreboard() {
     score: 10,
   });
 
-  function handlePlusClick() {}
+  function handlePlusClick() {
+    player.score++;
+  }
 
   return (
     <>
