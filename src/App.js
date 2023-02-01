@@ -42,7 +42,9 @@
 
 // import StateAsASnapshot from "./learn/learn-react/adding-interactivity/state-as-a-snapshot";
 
-import QueueingASeriesOfStateUpdates from "./learn/learn-react/adding-interactivity/queueing-a-series-of-state-updates";
+// import QueueingASeriesOfStateUpdates from "./learn/learn-react/adding-interactivity/queueing-a-series-of-state-updates";
+
+import UpdatingObjectsInState from "./learn/learn-react/adding-interactivity/updating-objects-in-state";
 
 function App() {
   return (
@@ -90,7 +92,9 @@ function App() {
 
       {/* <StateAsASnapshot /> */}
 
-      <QueueingASeriesOfStateUpdates />
+      {/* <QueueingASeriesOfStateUpdates /> */}
+
+      <UpdatingObjectsInState />
     </>
   );
 }
