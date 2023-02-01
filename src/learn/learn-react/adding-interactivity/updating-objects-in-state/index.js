@@ -5,6 +5,7 @@ export default function Index() {
     <>
       <MovingDot />
       <Form2 />
+      <Form />
     </>
   );
 }
