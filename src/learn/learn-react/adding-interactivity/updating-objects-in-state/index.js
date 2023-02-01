@@ -85,6 +85,10 @@ function Form() {
           onChange={handleImageChange}
         />
       </label>
+      <p>
+        <i>{person.artwork.title}</i> by {person.name} <br />
+        (located in {person.artwork.city})
+      </p>
     </>
   );
 }
