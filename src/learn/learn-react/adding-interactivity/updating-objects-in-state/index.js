@@ -20,6 +20,25 @@ function Form() {
       image: "https://i.imgur.com/Sd1AgUOm.jpg",
     },
   });
+
+  function handleNameChange(e) {
+    setPerson({
+      ...person,
+      name: e.target.value,
+    });
+  }
+
+  return (
+    <>
+      <label>
+        Name:{" "}
+        <input
+          value={person.name}
+          onChange={handleNameChange}
+        />
+      </label>
+    </>
+  );
 }
 
 function Form3() {
