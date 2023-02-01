@@ -36,10 +36,11 @@ function Form() {
 
   function handleCityChange(e) {
     setPerson({
-      ...person,
+      ...person, // Copy other fields
       artwork: {
-        ...person.artwork,
-        city: e.target.value,
+        // but replace the artwork
+        ...person.artwork, // with the same one
+        city: e.target.value, // but in New Delhi!
       },
     });
   }
