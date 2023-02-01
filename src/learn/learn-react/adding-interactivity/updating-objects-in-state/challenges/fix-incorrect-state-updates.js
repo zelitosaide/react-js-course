@@ -20,4 +20,15 @@ function Scoreboard() {
     lastName: "Shettar",
     score: 10,
   });
+
+  function handlePlusClick() {}
+
+  return (
+    <>
+      <label>
+        Score: <b>{player.score}</b>{" "}
+        <button onClick={handlePlusClick}>+1</button>
+      </label>
+    </>
+  );
 }
