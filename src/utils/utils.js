@@ -11,6 +11,16 @@ export function formatDate(date) {
 
 export function getFinalState(baseState, queue) {}
 
+function increment(n) {
+  return n + 1;
+}
+
+increment.toString = function () {
+  return "n => n + 1";
+};
+
+export { increment };
+
 export function useTime() {
   const [time, setTime] = useState(function () {
     return new Date();
