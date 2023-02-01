@@ -15,6 +15,20 @@ function Form() {
     lastName: "Hepworth",
     email: "bhepworth@sculpture.com",
   });
+
+  function handleFirstNameChange(e) {}
+
+  return (
+    <>
+      <label>
+        First Name:{" "}
+        <input
+          value={person.firstName}
+          onChange={handleFirstNameChange}
+        />
+      </label>
+    </>
+  );
 }
 
 function MovingDot() {
