@@ -23,7 +23,11 @@ function Form() {
     },
   });
 
-  function handleNameChange(e) {}
+  function handleNameChange(e) {
+    updatePerson(function (draft) {
+      draft.name = e.target.value;
+    });
+  }
 
   return (
     <>
