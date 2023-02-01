@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useImmer } from "use-immer";
 
 export default function Index() {
   return (
@@ -6,12 +7,38 @@ export default function Index() {
       <MovingDot />
       <Form2 />
       <Form3 />
+      <Form4 />
       <Form />
     </>
   );
 }
 
 function Form() {
+  const [person, updatePerson] = useImmer({
+    name: "Niki de Saint Phalle",
+    artwork: {
+      title: "Blue Nana",
+      city: "Hamburg",
+      image: "https://i.imgur.com/Sd1AgUOm.jpg",
+    },
+  });
+
+  function handleNameChange(e) {}
+
+  return (
+    <>
+      <label>
+        Name:{" "}
+        <input
+          value={person.name}
+          onChange={handleNameChange}
+        />
+      </label>
+    </>
+  );
+}
+
+function Form4() {
   const [person, setPerson] = useState({
     name: "Niki de Saint Phalle",
     artwork: {
