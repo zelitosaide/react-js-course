@@ -3,3 +3,5 @@
  */
 
 export default function Index() {}
+
+function TestCase({ baseState, queue, expected }) {}
