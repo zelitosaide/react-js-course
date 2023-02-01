@@ -34,6 +34,10 @@ function Scoreboard() {
     });
   }
 
+  function handleLastNameChange(e) {
+    setPlayer({ lastName: e.target.value });
+  }
+
   return (
     <>
       <label>
@@ -45,6 +49,13 @@ function Scoreboard() {
         <input
           value={player.firstName}
           onChange={handleFirstNameChange}
+        />
+      </label>
+      <label>
+        Last Name:{" "}
+        <input
+          value={player.lastName}
+          onChange={handleLastNameChange}
         />
       </label>
     </>
