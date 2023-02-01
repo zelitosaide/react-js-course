@@ -18,6 +18,15 @@ function MovingDot() {
         position.x = e.clientX;
         position.y = e.clientY;
       }}
-    ></div>
+    >
+      <div
+        style={{
+          position: "absolute",
+          background: "red",
+          borderRadius: "50%",
+          transform: `translate(${position.x}px, ${position.y}px)`,
+        }}
+      />
+    </div>
   );
 }
