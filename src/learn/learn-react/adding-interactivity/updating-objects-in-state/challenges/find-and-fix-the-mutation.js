@@ -37,7 +37,10 @@ function Canvas() {
     });
   }
 
-  function handleMove() {}
+  function handleMove(dx, dy) {
+    shape.position.x += dx;
+    shape.position.y += dy;
+  }
 
   return (
     <>
