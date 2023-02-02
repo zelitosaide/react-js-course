@@ -89,7 +89,17 @@ function Box({ children, color, position, onMove }) {
     });
   }
 
-  function handlePointerMove() {}
+  function handlePointerMove(e) {
+    if (lastCoordinates) {
+      setLastCoordinates({
+        x: e.clientX,
+        y: e.clientY,
+      });
+      const dx = e.clientX - lastCoordinates.x;
+      const dy = e.clientY - lastCoordinates.y;
+      onMove(dx, dy);
+    }
+  }
 
   function handlePointerUp() {
     setLastCoordinates(null);
