@@ -48,6 +48,7 @@ function Canvas() {
         <option value="aliceblue">aliceblue</option>
       </select>
       <Background position={initialPosition} />
+      <Box>Drag me!</Box>
     </>
   );
 }
@@ -65,3 +66,5 @@ function Background({ position }) {
     />
   );
 }
+
+function Box({ children }) {}
