@@ -16,8 +16,13 @@
 export default function Index() {}
 
 function Box({ children, color, position, onMove }) {
+  function handlePoinderDown() {}
+
+  function handlePointerMove() {}
   return (
     <div
+      onPointerDown={handlePoinderDown}
+      onPointerMove={handlePointerMove}
       style={{
         width: 100,
         height: 100,
