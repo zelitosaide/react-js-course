@@ -15,4 +15,18 @@
 
 export default function Index() {}
 
-function Box({ children, color, position, onMove }) {}
+function Box({ children, color, position, onMove }) {
+  return (
+    <div
+      style={{
+        width: 100,
+        height: 100,
+        cursor: "grab",
+        background: color,
+        position: "absolute",
+      }}
+    >
+      {children}
+    </div>
+  );
+}
