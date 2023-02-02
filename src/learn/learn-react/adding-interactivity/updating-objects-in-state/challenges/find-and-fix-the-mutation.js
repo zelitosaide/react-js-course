@@ -26,9 +26,14 @@ export default function Index() {
     position: initialPosition,
   });
 
+  function handleColorChange() {}
+
   return (
     <>
-      <select>
+      <select
+        value={shape.color}
+        onChange={handleColorChange}
+      >
         <option value="orange">orange</option>
         <option value="lightpink">lightpink</option>
         <option value="aliceblue">aliceblue</option>
