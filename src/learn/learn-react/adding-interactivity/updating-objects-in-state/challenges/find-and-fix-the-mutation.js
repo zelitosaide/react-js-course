@@ -14,3 +14,5 @@
  */
 
 export default function Index() {}
+
+function Box({ children, color, position, onMove }) {}
