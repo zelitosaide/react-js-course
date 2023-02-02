@@ -15,7 +15,27 @@
 
 import { useState } from "react";
 
-export default function Index() {}
+const initialPosition = {
+  x: 0,
+  y: 0,
+};
+
+export default function Index() {
+  const [shape, setShape] = useState({
+    color: "orange",
+    position: initialPosition,
+  });
+
+  return (
+    <>
+      <select>
+        <option value="orange">orange</option>
+        <option value="lightpink">lightpink</option>
+        <option value="aliceblue">aliceblue</option>
+      </select>
+    </>
+  );
+}
 
 function Background({ position }) {
   return (
