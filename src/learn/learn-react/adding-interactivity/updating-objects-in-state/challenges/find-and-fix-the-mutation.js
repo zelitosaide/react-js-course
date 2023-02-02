@@ -20,7 +20,9 @@ const initialPosition = {
   y: 0,
 };
 
-export default function Index() {}
+export default function Index() {
+  return <Canvas />;
+}
 
 function Canvas() {
   const [shape, setShape] = useState({
