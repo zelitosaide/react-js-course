@@ -59,6 +59,8 @@ function Background({ position }) {
         position: "absolute",
         transform: `translate(${position.x}px, ${position.y}px)`,
         width: 250,
+        height: 250,
+        background: "rgba(200, 200, 0, 0.2)",
       }}
     />
   );
