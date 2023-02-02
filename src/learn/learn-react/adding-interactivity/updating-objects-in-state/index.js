@@ -3,6 +3,7 @@ import { useImmer } from "use-immer";
 
 import FixIncorrectStateUpdates from "./challenges/fix-incorrect-state-updates";
 import FindAndFixTheMutation from "./challenges/find-and-fix-the-mutation";
+import UpdateAnObjectWithImmer from "./challenges/update-an-object-with-immer";
 
 export default function Index() {
   return (
@@ -14,6 +15,7 @@ export default function Index() {
       <Form />
       <FixIncorrectStateUpdates />
       <FindAndFixTheMutation />
+      <UpdateAnObjectWithImmer />
     </>
   );
 }
