@@ -24,6 +24,11 @@ function Box({ children, color, position, onMove }) {
         cursor: "grab",
         background: color,
         position: "absolute",
+        border: "1px solid black",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        transform: `translate(${position.x}px, ${position.y}px)`,
       }}
     >
       {children}
