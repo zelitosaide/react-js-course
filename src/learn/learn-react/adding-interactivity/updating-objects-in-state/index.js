@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useImmer } from "use-immer";
 
 import FixIncorrectStateUpdates from "./challenges/fix-incorrect-state-updates";
+import FindAndFixTheMutation from "./challenges/find-and-fix-the-mutation";
 
 export default function Index() {
   return (
@@ -12,6 +13,7 @@ export default function Index() {
       <Form4 />
       <Form />
       <FixIncorrectStateUpdates />
+      <FindAndFixTheMutation />
     </>
   );
 }
