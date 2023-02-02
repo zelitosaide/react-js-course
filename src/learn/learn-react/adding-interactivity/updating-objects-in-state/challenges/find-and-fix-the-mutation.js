@@ -91,6 +91,7 @@ function Box({ children, color, position, onMove }) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        transform: `translate(${position.x}px, ${position.y}px)`,
       }}
     >
       {children}
