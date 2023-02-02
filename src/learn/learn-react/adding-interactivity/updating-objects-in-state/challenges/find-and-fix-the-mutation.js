@@ -30,7 +30,7 @@ function Canvas() {
     position: initialPosition,
   });
 
-  function handleColorClick(e) {
+  function handleColorChange(e) {
     setShape({
       ...shape,
       color: e.target.value,
@@ -46,7 +46,7 @@ function Canvas() {
     <>
       <select
         value={shape.color}
-        onChange={handleColorClick}
+        onChange={handleColorChange}
       >
         <option value="orange">orange</option>
         <option value="lightpink">lightpink</option>
@@ -104,7 +104,7 @@ function Box({ children, color, position, onMove }) {
     }
   }
 
-  function handlePointerUp() {
+  function handlePointerUp(e) {
     setLastCoordinates(null);
   }
 
@@ -117,13 +117,16 @@ function Box({ children, color, position, onMove }) {
         width: 100,
         height: 100,
         cursor: "grab",
-        background: color,
+        backgroundColor: color,
         position: "absolute",
         border: "1px solid black",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        transform: `translate(${position.x}px, ${position.y}px)`,
+        transform: `translate(
+          ${position.x}px,
+          ${position.y}px
+        )`,
       }}
     >
       {children}
