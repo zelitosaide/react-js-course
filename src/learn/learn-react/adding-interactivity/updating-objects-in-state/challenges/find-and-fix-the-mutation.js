@@ -47,6 +47,9 @@ function Canvas() {
         <option value="lightpink">lightpink</option>
         <option value="aliceblue">aliceblue</option>
       </select>
+      <Background position={initialPosition} />
     </>
   );
 }
+
+function Background({ position }) {}
