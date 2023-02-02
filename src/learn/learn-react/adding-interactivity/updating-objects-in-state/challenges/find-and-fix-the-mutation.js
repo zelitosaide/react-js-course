@@ -28,9 +28,19 @@ function Canvas() {
     position: initialPosition,
   });
 
+  function handleColorClick(e) {
+    setShape({
+      ...shape,
+      color: e.target.value,
+    });
+  }
+
   return (
     <>
-      <select>
+      <select
+        value={shape.color}
+        onChange={handleColorClick}
+      >
         <option value="orange">orange</option>
         <option value="lightpink">lightpink</option>
         <option value="aliceblue">aliceblue</option>
