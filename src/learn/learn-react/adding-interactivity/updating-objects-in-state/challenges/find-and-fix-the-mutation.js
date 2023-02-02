@@ -79,8 +79,17 @@ function Background({ position }) {
 }
 
 function Box({ children, color, position, onMove }) {
+  function handlePointerDown() {}
+
+  function handlePointerMove() {}
+
+  function handlePointerUp() {}
+
   return (
     <div
+      onPointerDown={handlePointerDown}
+      onPointerMove={handlePointerMove}
+      onPointerUp={handlePointerUp}
       style={{
         width: 100,
         height: 100,
