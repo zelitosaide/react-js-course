@@ -27,4 +27,14 @@ function Canvas() {
     color: "orange",
     position: initialPosition,
   });
+
+  return (
+    <>
+      <select>
+        <option value="orange">orange</option>
+        <option value="lightpink">lightpink</option>
+        <option value="aliceblue">aliceblue</option>
+      </select>
+    </>
+  );
 }
