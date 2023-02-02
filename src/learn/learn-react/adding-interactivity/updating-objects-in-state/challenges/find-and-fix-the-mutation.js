@@ -78,4 +78,22 @@ function Background({ position }) {
   );
 }
 
-function Box({ children, color, position, onMove }) {}
+function Box({ children, color, position, onMove }) {
+  return (
+    <div
+      style={{
+        width: 100,
+        height: 100,
+        cursor: "grab",
+        background: color,
+        position: "absolute",
+        border: "1px solid black",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      {children}
+    </div>
+  );
+}
