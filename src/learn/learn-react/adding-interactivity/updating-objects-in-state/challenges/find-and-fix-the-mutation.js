@@ -27,7 +27,7 @@ export default function Index() {
 function Canvas() {
   const [shape, setShape] = useState({
     color: "orange",
-    position: initialPosition,
+    position: { ...initialPosition },
   });
 
   function handleColorChange(e) {
