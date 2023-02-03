@@ -132,6 +132,14 @@ function Task({ todo, onChange, onDelete }) {
           });
         }}
       />
+      {todoContent}
+      <button
+        onClick={function () {
+          onDelete(todo.id);
+        }}
+      >
+        Delete
+      </button>
     </label>
   );
 }
