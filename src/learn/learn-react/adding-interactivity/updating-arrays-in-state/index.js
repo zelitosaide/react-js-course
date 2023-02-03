@@ -37,7 +37,7 @@ function ShapeEditor() {
   }
 
   return (
-    <div style={{ position: "relative", background: "pink" }}>
+    <div style={{ position: "relative", background: "pink", height: 400 }}>
       <button onClick={handleClick}>Move circles down!</button>
       {shapes.map(function (shape) {
         return (
