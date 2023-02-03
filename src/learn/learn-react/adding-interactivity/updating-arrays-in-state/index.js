@@ -30,7 +30,11 @@ function List() {
   const [yourArtworkList, setYourArtworkList] = useState(initialArtworks);
 
   function handleToggleMyList(artworkId, nextSeen) {
-    console.log(artworkId, nextSeen);
+    const myNextArtworkList = [...myArtworkList];
+    const artwork = myNextArtworkList.find(function (a) {
+      return a.id === artworkId;
+    });
+    artwork.seen = nextSeen;
   }
 
   return (
