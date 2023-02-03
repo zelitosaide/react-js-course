@@ -35,6 +35,7 @@ function List() {
       return a.id === artworkId;
     });
     artwork.seen = nextSeen;
+    setMyArtworkList(myNextArtworkList);
   }
 
   return (
