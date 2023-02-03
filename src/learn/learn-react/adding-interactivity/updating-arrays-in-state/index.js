@@ -24,7 +24,18 @@ export default function Index() {
 function CounterList() {
   const [counters, setCounters] = useState(initialCounters);
 
-  function handleIncrementClick(index) {}
+  function handleIncrementClick(index) {
+    const nextCounters = counters.map(function (counter, i) {
+      if (i === index) {
+        // Increment the clicked counter
+        return counter + 1;
+      } else {
+        // The rest haven't changed
+        return counter;
+      }
+    });
+    setCounters(nextCounters);
+  }
 
   return (
     <ul>
