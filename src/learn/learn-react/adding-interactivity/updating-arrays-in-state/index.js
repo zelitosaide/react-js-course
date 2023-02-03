@@ -1,3 +1,5 @@
-export default function Index() {}
+export default function Index() {
+  return <List />;
+}
 
 function List() {}
