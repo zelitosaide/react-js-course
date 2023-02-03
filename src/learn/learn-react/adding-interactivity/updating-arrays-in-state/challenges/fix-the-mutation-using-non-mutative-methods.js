@@ -80,4 +80,6 @@ function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
   );
 }
 
-function Task({ todo, onChangeTodo, onDeleteTodo }) {}
+function Task({ todo, onChangeTodo, onDeleteTodo }) {
+  const [isEditing, setIsEditing] = useState(false);
+}
