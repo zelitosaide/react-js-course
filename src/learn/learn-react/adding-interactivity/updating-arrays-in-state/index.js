@@ -31,6 +31,12 @@ export default function Index() {
 function List() {
   const [myArtworkList, updateMyArtworkList] = useImmer(initialArtworks);
   const [yourArtworkList, updateYourArtworkList] = useImmer(initialArtworks);
+
+  return (
+    <>
+      <h1>Art Bucket List</h1>
+    </>
+  );
 }
 
 function List9() {
