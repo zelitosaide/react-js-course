@@ -15,7 +15,7 @@ export default function Index() {
 function ShoppingCart() {
   const [products, setProducts] = useState(initialProducts);
 
-  function handleIncreaseClick() {}
+  function handleIncreaseClick(productId) {}
 
   return (
     <ul>
@@ -23,7 +23,13 @@ function ShoppingCart() {
         return (
           <li key={product.id}>
             {product.name} (<b>{product.count}</b>){" "}
-            <button onClick={handleIncreaseClick}>+</button>
+            <button
+              onClick={function () {
+                handleIncreaseClick(product.id);
+              }}
+            >
+              +
+            </button>
           </li>
         );
       })}
