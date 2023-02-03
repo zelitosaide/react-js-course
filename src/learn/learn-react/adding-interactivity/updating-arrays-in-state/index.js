@@ -38,7 +38,14 @@ function List() {
     setMyArtworkList(myNextArtworkList);
   }
 
-  function handleToggleYourList(artworkId, nextSeen) {}
+  function handleToggleYourList(artworkId, nextSeen) {
+    const yourNextArtworkList = [...yourArtworkList];
+    const artwork = yourNextArtworkList.find(function (a) {
+      return a.id === artworkId;
+    });
+    artwork.seen = nextSeen;
+    setYourArtworkList(yourNextArtworkList);
+  }
 
   return (
     <>
