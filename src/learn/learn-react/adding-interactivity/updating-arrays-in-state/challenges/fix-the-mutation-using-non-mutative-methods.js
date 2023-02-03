@@ -18,7 +18,9 @@ export default function Index() {
 function TaskApp() {
   const [todos, setTodos] = useState(initialTodos);
 
-  function handleAddTodo() {}
+  function handleAddTodo(title) {
+    setTodos([...todos, { id: nextId++, title: title, done: false }]);
+  }
 
   function handleChangeTodo() {}
 
