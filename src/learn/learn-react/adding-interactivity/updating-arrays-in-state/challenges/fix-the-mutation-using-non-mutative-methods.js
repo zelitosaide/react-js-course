@@ -50,6 +50,14 @@ function AddTod({ onAddTodo }) {
           setTitle(e.target.value);
         }}
       />
+      <button
+        onClick={function () {
+          setTitle("");
+          onAddTodo(title);
+        }}
+      >
+        Add
+      </button>
     </>
   );
 }
