@@ -25,6 +25,12 @@ export default function Index() {
 function List() {
   const [name, setName] = useState("");
   const [artists, setArtists] = useState(initialArtists);
+
+  return (
+    <>
+      <h1>Inspiring sculptors:</h1>
+    </>
+  );
 }
 
 function CounterList() {
