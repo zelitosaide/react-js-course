@@ -36,6 +36,9 @@ function ShapeEditor() {
               position: "absolute",
               left: shape.x,
               top: shape.y,
+              width: 20,
+              height: 20,
+              borderRadius: shape.type === "circle" ? "50%" : "",
             }}
           />
         );
