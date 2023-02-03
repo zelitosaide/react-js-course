@@ -4,3 +4,6 @@
  * Fill in the handleIncreaseClick logic so that pressing ”+” increases
  * the corresponding number:
  */
+export default function Index() {}
+
+function ShoppingCart() {}
