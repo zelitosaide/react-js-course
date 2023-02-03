@@ -24,10 +24,23 @@ export default function Index() {
 function CounterList() {
   const [counters, setCounters] = useState(initialCounters);
 
+  function handleIncrementClick(index) {}
+
   return (
     <ul>
       {counters.map(function (counter, i) {
-        return <li key={i}>{counter}</li>;
+        return (
+          <li key={i}>
+            {counter}{" "}
+            <button
+              onClick={function () {
+                handleIncrementClick(i);
+              }}
+            >
+              +1
+            </button>
+          </li>
+        );
       })}
     </ul>
   );
