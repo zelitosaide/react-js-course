@@ -24,6 +24,14 @@ function List() {
           setName(e.target.value);
         }}
       />
+      <button
+        onClick={function () {
+          setName("");
+          setArtists([{ id: nextId++, name: name }, ...artists]);
+        }}
+      >
+        Add
+      </button>
     </>
   );
 }
