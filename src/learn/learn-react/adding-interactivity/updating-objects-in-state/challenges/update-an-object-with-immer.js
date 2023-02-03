@@ -21,6 +21,23 @@ function Canvas() {
     color: "orange",
     position: initialPosition,
   });
+
+  function handleColorChange(e) {
+    updateShape(function (draft) {
+      draft.color = e.target.value;
+    });
+  }
+
+  return (
+    <>
+      <select
+        value={shape.color}
+        onChange={handleColorChange}
+      >
+        <option value="orange">orange</option>
+      </select>
+    </>
+  );
 }
 
 function Background() {}
