@@ -11,7 +11,15 @@ export default function Index() {
 function ShoppingCart() {
   const [products, setProducts] = useState(initialProducts);
 
-  function handleIncreaseClick(productId) {}
+  function handleIncreaseClick(productId) {
+    setProducts(
+      products.map(function (product) {
+        if (product.id === productId) {
+          return { ...product, count: product.count + 1 };
+        }
+      })
+    );
+  }
 
   return (
     <ul>
