@@ -31,6 +31,9 @@ function ShoppingCart() {
         return product;
       }
     });
+    nextProducts = nextProducts.filter(function (product) {
+      return product.count > 0;
+    });
   }
 
   return (
