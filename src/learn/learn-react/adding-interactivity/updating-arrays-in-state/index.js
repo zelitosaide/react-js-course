@@ -29,12 +29,21 @@ function List() {
   const [myArtworkList, setMyArtworkList] = useState(initialArtworks);
   const [yourArtworkList, setYourArtworkList] = useState(initialArtworks);
 
+  function handleToggleMyList() {}
+
   return (
     <>
       <h1>Art Bucket List</h1>
+      <h2>My list of art to see:</h2>
+      <ItemList
+        artworks={myArtworkList}
+        onToggle={handleToggleMyList}
+      />
     </>
   );
 }
+
+function ItemList({ artworks, onToggle }) {}
 
 function List7() {
   const [artists, setArtists] = useState(initialArtists);
