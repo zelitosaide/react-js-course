@@ -7,11 +7,11 @@ import { useImmer } from "use-immer";
  * fix the mutation by using Immer. For your convenience, useImmer is
  * already imported, so you need to change the shape state variable to use it.
  */
-
 const initialPosition = {
   x: 0,
   y: 0,
 };
+
 export default function Index() {
   return <Canvas />;
 }
