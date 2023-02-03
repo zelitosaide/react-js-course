@@ -43,7 +43,13 @@ function AddTod({ onAddTodo }) {
 
   return (
     <>
-      <input placeholder="Add todo" />
+      <input
+        placeholder="Add todo"
+        value={title}
+        onChange={function (e) {
+          setTitle(e.target.value);
+        }}
+      />
     </>
   );
 }
