@@ -70,8 +70,8 @@ function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
           <li key={todo.id}>
             <Task
               todo={todo}
-              onChangeTodo={onChangeTodo}
-              onDeleteTodo={onDeleteTodo}
+              onChange={onChangeTodo}
+              onDelete={onDeleteTodo}
             />
           </li>
         );
@@ -80,7 +80,7 @@ function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
   );
 }
 
-function Task({ todo, onChangeTodo, onDeleteTodo }) {
+function Task({ todo, onChange, onDelete }) {
   const [isEditing, setIsEditing] = useState(false);
   let todoContent;
 
@@ -89,7 +89,12 @@ function Task({ todo, onChangeTodo, onDeleteTodo }) {
       <>
         <input
           value={todo.title}
-          onChange={function (e) {}}
+          onChange={function (e) {
+            onChange({
+              ...todo,
+              title: e.target.value,
+            });
+          }}
         />
       </>
     );
