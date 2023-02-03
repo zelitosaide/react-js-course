@@ -26,7 +26,9 @@ export default function Index() {
   );
 }
 
-function List() {}
+function List() {
+  const [myArtworkList, setMyArtworkList] = useState(initialArtworks);
+}
 
 function List8() {
   const [myArtworkList, setMyArtworkList] = useState(initialArtworks);
