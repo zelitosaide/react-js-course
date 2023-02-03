@@ -7,6 +7,7 @@ export default function Index() {
     <>
       <List2 />
       <List3 />
+      <List />
     </>
   );
 }
