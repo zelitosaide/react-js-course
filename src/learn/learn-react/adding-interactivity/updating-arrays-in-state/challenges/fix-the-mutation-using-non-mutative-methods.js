@@ -62,4 +62,16 @@ function AddTod({ onAddTodo }) {
   );
 }
 
-function TaskList({ todos, onChangeTodo, onDeleteTodo }) {}
+function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
+  return (
+    <ul>
+      {todos.map(function (todo) {
+        <li key={todo.id}>
+          <Task />
+        </li>;
+      })}
+    </ul>
+  );
+}
+
+function Task() {}
