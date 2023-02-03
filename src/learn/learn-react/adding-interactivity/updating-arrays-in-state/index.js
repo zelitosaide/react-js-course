@@ -25,9 +25,9 @@ function ShapeEditor() {
   function handleClick() {}
 
   return (
-    <>
+    <div style={{ position: "relative", background: "pink" }}>
       <button onClick={handleClick}>Move circles down!</button>
-    </>
+    </div>
   );
 }
 
