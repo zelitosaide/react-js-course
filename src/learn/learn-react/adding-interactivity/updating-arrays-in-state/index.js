@@ -46,6 +46,7 @@ function List() {
         artworks={myArtworkList}
         onToggle={handleToggleMyList}
       />
+      <h2>Your list of art to see:</h2>
     </>
   );
 }
