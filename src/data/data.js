@@ -13,6 +13,12 @@ export const person = {
   },
 };
 
+export const artists = [
+  { id: 0, name: "Marta Colvin Andrade" },
+  { id: 1, name: "Lamidi Olonade Fakeye" },
+  { id: 2, name: "Louise Nevelson" },
+];
+
 export const artworks = [
   { id: 0, title: "Big Bellies", seen: false },
   { id: 1, title: "Lunar Landscape", seen: false },
