@@ -96,6 +96,13 @@ function Task({ todo, onChange, onDelete }) {
             });
           }}
         />
+        <button
+          onClick={function () {
+            setIsEditing(false);
+          }}
+        >
+          Save
+        </button>
       </>
     );
   } else {
