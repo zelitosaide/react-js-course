@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+let nextId = 0;
+
 export default function Index() {
   return <List />;
 }
@@ -17,6 +19,17 @@ function List() {
           setName(e.target.value);
         }}
       />
+      <button
+        onClick={function () {
+          setName("");
+          artists.push({
+            id: nextId++,
+            name: name,
+          });
+        }}
+      >
+        Add
+      </button>
     </>
   );
 }
