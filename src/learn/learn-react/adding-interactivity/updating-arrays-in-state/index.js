@@ -10,6 +10,7 @@ import {
 
 import UpdateAnItemInTheShoppingCart from "./challenges/update-an-item-in-the-shopping-cart";
 import RemoveAnItemFromTheShoppingCart from "./challenges/remove-an-item-from-the-shopping-cart";
+import FixTheMutationUsingNonMutativeMethods from "./challenges/fix-the-mutation-using-non-mutative-methods";
 
 let nextId = 3;
 
@@ -29,6 +30,7 @@ export default function Index() {
       <List />
       <UpdateAnItemInTheShoppingCart />
       <RemoveAnItemFromTheShoppingCart />
+      <FixTheMutationUsingNonMutativeMethods />
     </>
   );
 }
