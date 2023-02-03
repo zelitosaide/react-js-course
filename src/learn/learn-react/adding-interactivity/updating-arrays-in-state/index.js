@@ -35,6 +35,8 @@ function List() {
       // Items after the insertion point:
       ...artists.slice(insertAt),
     ];
+    setArtists(nextArtists);
+    setName("");
   }
 
   return (
