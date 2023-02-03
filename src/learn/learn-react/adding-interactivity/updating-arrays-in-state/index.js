@@ -21,12 +21,12 @@ export default function Index() {
       <List6 />
       <List7 />
       <List8 />
-      <List />
+      <List9 />
     </>
   );
 }
 
-function List() {
+function List9() {
   const [myArtworkList, setMyArtworkList] = useState(initialArtworks);
   const [yourArtworkList, setYourArtworkList] = useState(initialArtworks);
 
