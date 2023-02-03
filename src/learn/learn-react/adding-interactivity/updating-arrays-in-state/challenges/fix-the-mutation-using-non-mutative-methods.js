@@ -119,4 +119,19 @@ function Task({ todo, onChange, onDelete }) {
       </>
     );
   }
+
+  return (
+    <label>
+      <input
+        type="checkbox"
+        value={todo.done}
+        onChange={function (e) {
+          onChange({
+            ...todo,
+            done: e.target.checked,
+          });
+        }}
+      />
+    </label>
+  );
 }
