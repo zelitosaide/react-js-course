@@ -38,6 +38,8 @@ function List() {
     setMyArtworkList(myNextArtworkList);
   }
 
+  function handleToggleYourList(artworkId, nextSeen) {}
+
   return (
     <>
       <h1>Art Bucket List</h1>
@@ -47,6 +49,10 @@ function List() {
         onToggle={handleToggleMyList}
       />
       <h2>Your list of art to see:</h2>
+      <ItemList
+        artworks={yourArtworkList}
+        onToggle={handleToggleYourList}
+      />
     </>
   );
 }
