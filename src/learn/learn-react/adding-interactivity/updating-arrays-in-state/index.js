@@ -3,6 +3,7 @@ import { useState } from "react";
 import {
   artists as initialArtists,
   shapes as initialShapes,
+  counters as initialCounters,
 } from "../../../../data/data";
 
 let nextId = 0;
@@ -17,6 +18,10 @@ export default function Index() {
       <ShapeEditor />
     </>
   );
+}
+
+function CounterList() {
+  const [counters, setCounters] = useState(initialCounters);
 }
 
 function ShapeEditor() {
