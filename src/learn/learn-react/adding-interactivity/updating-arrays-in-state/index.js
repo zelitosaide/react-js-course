@@ -6,7 +6,7 @@ import {
   counters as initialCounters,
 } from "../../../../data/data";
 
-let nextId = 0;
+let nextId = 3;
 
 export default function Index() {
   return (
