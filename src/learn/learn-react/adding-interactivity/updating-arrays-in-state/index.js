@@ -41,6 +41,10 @@ function List() {
         onToggle={() => {}}
       />
       <h2>Your list of art to see:</h2>
+      <ItemList
+        artworks={yourArtworkList}
+        onToggle={() => {}}
+      />
     </>
   );
 }
