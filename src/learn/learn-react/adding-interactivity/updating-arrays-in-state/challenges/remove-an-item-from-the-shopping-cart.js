@@ -23,6 +23,8 @@ function ShoppingCart() {
     );
   }
 
+  function handleDecreaseClick(productId) {}
+
   return (
     <ul>
       {products.map(function (product) {
@@ -35,6 +37,13 @@ function ShoppingCart() {
               }}
             >
               +
+            </button>
+            <button
+              onClick={function () {
+                handleDecreaseClick(product.id);
+              }}
+            >
+              -
             </button>
           </li>
         );
