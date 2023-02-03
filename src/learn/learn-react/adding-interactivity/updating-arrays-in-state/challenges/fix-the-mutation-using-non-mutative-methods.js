@@ -85,6 +85,14 @@ function Task({ todo, onChangeTodo, onDeleteTodo }) {
   let todoContent;
 
   if (isEditing) {
+    todoContent = (
+      <>
+        <input
+          value={todo.title}
+          onChange={function (e) {}}
+        />
+      </>
+    );
   } else {
     todoContent = (
       <>
