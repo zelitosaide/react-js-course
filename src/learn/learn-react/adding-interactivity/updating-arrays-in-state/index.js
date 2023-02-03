@@ -30,13 +30,27 @@ function List() {
   const [myArtworkList, setMyArtworkList] = useState(initialArtworks);
   const [yourArtworkList, setYourArtworkList] = useState(initialArtworks);
 
+  function handleToggleMyArtworkList(artworkId, nextSeen) {
+    setMyArtworkList(
+      myArtworkList.map(function (artwork) {
+        if (artwork.id === artworkId) {
+          // Create a *new* object with changes
+          return { ...artwork, seen: nextSeen };
+        } else {
+          // No changes
+          return artwork;
+        }
+      })
+    );
+  }
+
   return (
     <>
       <h1>Art Bucket List</h1>
       <h2>My list of art to see:</h2>
       <ItemList
         artworks={myArtworkList}
-        onToggle={function () {}}
+        onToggle={handleToggleMyArtworkList}
       />
       <h2>Your list of art to see:</h2>
       <ItemList
