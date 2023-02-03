@@ -22,7 +22,18 @@ export default function Index() {
 function ShapeEditor() {
   const [shapes, setShapes] = useState(initialShapes);
 
-  function handleClick() {}
+  function handleClick() {
+    const nextShapes = shapes.map(function (shape) {
+      if (shape.type === "circle") {
+        // Return a new circle 50px below
+        return { ...shape, y: shape.y + 50 };
+      } else {
+        // No change
+        return shape;
+      }
+    });
+    // Re-render with the new array
+  }
 
   return (
     <div style={{ position: "relative", background: "pink" }}>
