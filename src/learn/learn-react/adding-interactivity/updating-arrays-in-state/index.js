@@ -10,6 +10,7 @@ export default function Index() {
       <List2 />
       <List3 />
       <List4 />
+      <List />
     </>
   );
 }
@@ -22,7 +23,11 @@ function List() {
       <h1>Inspiring sculptors:</h1>
       <ul>
         {artists.map(function (artist) {
-          return <li key={artist.id}>{artist.name}</li>;
+          return (
+            <li key={artist.id}>
+              {artist.name} <button>Delete</button>
+            </li>
+          );
         })}
       </ul>
     </>
