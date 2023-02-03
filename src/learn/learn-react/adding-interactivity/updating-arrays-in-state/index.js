@@ -25,7 +25,18 @@ function List() {
         {artists.map(function (artist) {
           return (
             <li key={artist.id}>
-              {artist.name} <button>Delete</button>
+              {artist.name}{" "}
+              <button
+                onClick={function () {
+                  setArtists(
+                    artists.filter(function (a) {
+                      return a.id !== artist.id;
+                    })
+                  );
+                }}
+              >
+                Delete
+              </button>
             </li>
           );
         })}
