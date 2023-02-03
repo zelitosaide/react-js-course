@@ -13,6 +13,12 @@ export const person = {
   },
 };
 
+export const shapes = [
+  { id: 0, type: "circle", x: 50, y: 100 },
+  { id: 1, type: "square", x: 150, y: 100 },
+  { id: 2, type: "circle", x: 250, y: 100 },
+];
+
 export const artists = [
   { id: 0, name: "Marta Colvin Andrade" },
   { id: 1, name: "Lamidi Olonade Fakeye" },
