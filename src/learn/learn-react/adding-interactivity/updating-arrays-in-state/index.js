@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { artists } from "../../../../data/data";
+import { artists as initialArtists } from "../../../../data/data";
 
 let nextId = 0;
 
@@ -15,11 +15,16 @@ export default function Index() {
 }
 
 function List() {
-  const [artists, setArtists] = useState(artists);
+  const [artists, setArtists] = useState(initialArtists);
 
   return (
     <>
       <h1>Inspiring sculptors:</h1>
+      <ul>
+        {artists.map(function (artist) {
+          return <li key={artist.id}>{artist.name}</li>;
+        })}
+      </ul>
     </>
   );
 }
