@@ -29,7 +29,9 @@ function List() {
   const [myArtworkList, setMyArtworkList] = useState(initialArtworks);
   const [yourArtworkList, setYourArtworkList] = useState(initialArtworks);
 
-  function handleToggleMyList() {}
+  function handleToggleMyList(artworkId, nextSeen) {
+    console.log(artworkId, nextSeen);
+  }
 
   return (
     <>
