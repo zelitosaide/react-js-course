@@ -38,6 +38,14 @@ function TaskApp() {
   );
 }
 
-function AddTod({ onAddTodo }) {}
+function AddTod({ onAddTodo }) {
+  const [title, setTitle] = useState("");
+
+  return (
+    <>
+      <input placeholder="Add todo" />
+    </>
+  );
+}
 
 function TaskList({ todos, onChangeTodo, onDeleteTodo }) {}
