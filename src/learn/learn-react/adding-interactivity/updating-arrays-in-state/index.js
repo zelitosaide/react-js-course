@@ -14,11 +14,17 @@ export default function Index() {
       <List2 />
       <List3 />
       <List4 />
-      <List />
+      <List5 />
       <ShapeEditor />
       <CounterList />
+      <List />
     </>
   );
+}
+
+function List() {
+  const [name, setName] = useState("");
+  const [artists, setArtists] = useState(initialArtists);
 }
 
 function CounterList() {
@@ -97,7 +103,7 @@ function ShapeEditor() {
   );
 }
 
-function List() {
+function List5() {
   const [artists, setArtists] = useState(initialArtists);
 
   return (
