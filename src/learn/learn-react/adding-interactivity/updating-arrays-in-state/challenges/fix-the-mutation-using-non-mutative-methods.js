@@ -20,11 +20,19 @@ function TaskApp() {
 
   function handleAddTodo() {}
 
+  function handleChangeTodo() {}
+
   return (
     <>
       <AddTod onAddTodo={handleAddTodo} />
+      <TaskList
+        todos={todos}
+        onChangeTodo={handleChangeTodo}
+      />
     </>
   );
 }
 
 function AddTod({ onAddTodo }) {}
+
+function TaskList({ todos, onChangeTodo, onDeleteTodo }) {}
