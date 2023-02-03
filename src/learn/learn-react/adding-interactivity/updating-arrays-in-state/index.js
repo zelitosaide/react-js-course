@@ -27,6 +27,19 @@ function ShapeEditor() {
   return (
     <div style={{ position: "relative", background: "pink" }}>
       <button onClick={handleClick}>Move circles down!</button>
+      {shapes.map(function (shape) {
+        return (
+          <div
+            key={shape.id}
+            style={{
+              background: "purple",
+              position: "absolute",
+              left: shape.x,
+              top: shape.y,
+            }}
+          />
+        );
+      })}
     </div>
   );
 }
