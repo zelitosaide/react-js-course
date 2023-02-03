@@ -11,10 +11,17 @@ export default function Index() {
 function ShoppingCart() {
   const [products, setProducts] = useState(initialProducts);
 
+  function handleIncreaseClick() {}
+
   return (
     <ul>
       {products.map(function (product) {
-        return <li key={product.id}>{product.name}</li>;
+        return (
+          <li key={product.id}>
+            {product.name} (<b>{product.count}</b>){" "}
+            <button onClick={handleIncreaseClick}>+</button>
+          </li>
+        );
       })}
     </ul>
   );
