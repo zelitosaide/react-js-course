@@ -22,9 +22,12 @@ export default function Index() {
       <List7 />
       <List8 />
       <List9 />
+      <List />
     </>
   );
 }
+
+function List() {}
 
 function List9() {
   const [myArtworkList, setMyArtworkList] = useState(initialArtworks);
