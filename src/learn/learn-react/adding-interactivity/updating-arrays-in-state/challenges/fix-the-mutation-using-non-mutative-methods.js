@@ -82,4 +82,21 @@ function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
 
 function Task({ todo, onChangeTodo, onDeleteTodo }) {
   const [isEditing, setIsEditing] = useState(false);
+  let todoContent;
+
+  if (isEditing) {
+  } else {
+    todoContent = (
+      <>
+        {todo.title}{" "}
+        <button
+          onClick={function () {
+            setIsEditing(true);
+          }}
+        >
+          Edit
+        </button>
+      </>
+    );
+  }
 }
