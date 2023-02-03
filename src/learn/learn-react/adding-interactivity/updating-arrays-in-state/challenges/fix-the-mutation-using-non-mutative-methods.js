@@ -5,4 +5,6 @@
  * result, editing and deleting todos doesn’t work. Rewrite handleAddTodo,
  * handleChangeTodo, and handleDeleteTodo to use the non-mutative methods:
  */
+let nextId = 3;
+
 export default function Index() {}
