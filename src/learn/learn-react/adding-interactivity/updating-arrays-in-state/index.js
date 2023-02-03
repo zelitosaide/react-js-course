@@ -22,6 +22,23 @@ export default function Index() {
   );
 }
 
+function List() {
+  const [artists, setArtists] = useState(initialArtists);
+
+  function handleClick() {}
+
+  return (
+    <>
+      <button onClick={handleClick}>Reverse</button>
+      <ul>
+        {artists.map(function (artist) {
+          return <li key={artist.id}>{artist.name}</li>;
+        })}
+      </ul>
+    </>
+  );
+}
+
 function List6() {
   const [name, setName] = useState("");
   const [artists, setArtists] = useState(initialArtists);
