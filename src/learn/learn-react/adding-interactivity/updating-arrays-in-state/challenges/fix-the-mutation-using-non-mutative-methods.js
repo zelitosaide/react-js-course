@@ -68,7 +68,11 @@ function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
       {todos.map(function (todo) {
         return (
           <li key={todo.id}>
-            <Task />
+            <Task
+              todo={todo}
+              onChangeTodo={onChangeTodo}
+              onDeleteTodo={onDeleteTodo}
+            />
           </li>
         );
       })}
@@ -76,4 +80,4 @@ function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
   );
 }
 
-function Task() {}
+function Task({ todo, onChangeTodo, onDeleteTodo }) {}
