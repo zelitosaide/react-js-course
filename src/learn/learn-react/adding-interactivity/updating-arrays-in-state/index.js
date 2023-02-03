@@ -49,7 +49,16 @@ function ItemList({ artworks, onToggle }) {
       {artworks.map(function (artwork) {
         return (
           <li key={artwork.id}>
-            <label>{artwork.title}</label>
+            <label>
+              <input
+                type="checkbox"
+                checked={artwork.seen}
+                onChange={function (e) {
+                  onToggle(artwork.id, e.target.checked);
+                }}
+              />{" "}
+              {artwork.title}
+            </label>
           </li>
         );
       })}
