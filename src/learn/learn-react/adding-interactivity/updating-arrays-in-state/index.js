@@ -33,6 +33,7 @@ function ShapeEditor() {
       }
     });
     // Re-render with the new array
+    setShapes(nextShapes);
   }
 
   return (
