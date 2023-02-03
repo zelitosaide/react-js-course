@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useImmer } from "use-immer";
 
 /**
@@ -58,8 +59,37 @@ function Canvas() {
 }
 
 function Box({ children, color, position, onMove }) {
+  const [lastCoordinates, setLastCoordinates] = useState(null);
+
+  function handlePointerDown(e) {
+    e.target.setPointerCapture(e.pointerId);
+    setLastCoordinates({
+      x: e.clientX,
+      y: e.clientY,
+    });
+  }
+
+  function handlePointerMove(e) {
+    if (lastCoordinates) {
+      setLastCoordinates({
+        x: e.clientX,
+        y: e.clientY,
+      });
+      const dx = e.clientX - lastCoordinates.x;
+      const dy = e.clientY - lastCoordinates.y;
+      onMove(dx, dy);
+    }
+  }
+
+  function handlePointerUp() {
+    setLastCoordinates(null);
+  }
+
   return (
     <div
+      onPointerDown={handlePointerDown}
+      onPointerMove={handlePointerMove}
+      onPointerUp={handlePointerUp}
       style={{
         width: 100,
         height: 100,
