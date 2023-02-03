@@ -23,7 +23,15 @@ function ShoppingCart() {
     );
   }
 
-  function handleDecreaseClick(productId) {}
+  function handleDecreaseClick(productId) {
+    let nextProducts = products.map(function (product) {
+      if (product.id === productId) {
+        return { ...product, count: product.count - 1 };
+      } else {
+        return product;
+      }
+    });
+  }
 
   return (
     <ul>
