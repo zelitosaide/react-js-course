@@ -11,6 +11,12 @@ function List() {
   return (
     <>
       <h1>Inspiring sculptors:</h1>
+      <input
+        value={name}
+        onChange={function (e) {
+          setName(e.target.value);
+        }}
+      />
     </>
   );
 }
