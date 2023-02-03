@@ -29,6 +29,12 @@ export default function Index() {
 function List() {
   const [myArtworkList, setMyArtworkList] = useState(initialArtworks);
   const [yourArtworkList, setYourArtworkList] = useState(initialArtworks);
+
+  return (
+    <>
+      <h1></h1>
+    </>
+  );
 }
 
 function List8() {
