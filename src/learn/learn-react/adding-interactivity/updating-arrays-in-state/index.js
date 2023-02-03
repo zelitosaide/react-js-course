@@ -23,6 +23,14 @@ export default function Index() {
 
 function CounterList() {
   const [counters, setCounters] = useState(initialCounters);
+
+  return (
+    <ul>
+      {counters.map(function (counter, i) {
+        return <li key={i}>{counter}</li>;
+      })}
+    </ul>
+  );
 }
 
 function ShapeEditor() {
