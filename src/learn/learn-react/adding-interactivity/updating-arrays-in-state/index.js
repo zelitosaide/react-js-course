@@ -26,6 +26,17 @@ function List() {
   const [name, setName] = useState("");
   const [artists, setArtists] = useState(initialArtists);
 
+  function handleClick() {
+    const insertAt = 1; // Could be an index
+    const nextArtists = [
+      // Items before the insertion point:
+      ...artists.slice(0, insertAt),
+      { id: nextId++, name: name },
+      // Items after the insertion point:
+      ...artists.slice(insertAt),
+    ];
+  }
+
   return (
     <>
       <h1>Inspiring sculptors:</h1>
@@ -35,6 +46,7 @@ function List() {
           setName(e.target.value);
         }}
       />
+      <button onClick={handleClick}>Insert</button>
     </>
   );
 }
