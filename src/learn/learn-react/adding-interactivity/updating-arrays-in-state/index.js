@@ -6,12 +6,12 @@ export default function Index() {
   return (
     <>
       <List2 />
-      <List />
+      <List3 />
     </>
   );
 }
 
-function List() {
+function List3() {
   const [name, setName] = useState("");
   const [artists, setArtists] = useState([]);
 
