@@ -44,7 +44,9 @@
 
 // import QueueingASeriesOfStateUpdates from "./learn/learn-react/adding-interactivity/queueing-a-series-of-state-updates";
 
-import UpdatingObjectsInState from "./learn/learn-react/adding-interactivity/updating-objects-in-state";
+// import UpdatingObjectsInState from "./learn/learn-react/adding-interactivity/updating-objects-in-state";
+
+import UpdatingArraysInState from "./learn/learn-react/adding-interactivity/updating-arrays-in-state";
 
 function App() {
   return (
@@ -94,7 +96,8 @@ function App() {
 
       {/* <QueueingASeriesOfStateUpdates /> */}
 
-      <UpdatingObjectsInState />
+      {/* <UpdatingObjectsInState /> */}
+      <UpdatingArraysInState />
     </>
   );
 }
