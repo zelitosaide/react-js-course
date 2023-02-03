@@ -1,6 +1,9 @@
 import { useState } from "react";
 
-import { artists as initialArtists } from "../../../../data/data";
+import {
+  artists as initialArtists,
+  shapes as initialShapes,
+} from "../../../../data/data";
 
 let nextId = 0;
 
@@ -17,7 +20,15 @@ export default function Index() {
 }
 
 function ShapeEditor() {
-  return <></>;
+  const [shapes, setShapes] = useState(initialShapes);
+
+  function handleClick() {}
+
+  return (
+    <>
+      <button onClick={handleClick}>Move circles down!</button>
+    </>
+  );
 }
 
 function List() {
