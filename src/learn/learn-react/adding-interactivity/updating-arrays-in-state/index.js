@@ -8,6 +8,8 @@ import {
   artworks as initialArtworks,
 } from "../../../../data/data";
 
+import UpdateAnItemInTheShoppingCart from "./challenges/update-an-item-in-the-shopping-cart";
+
 let nextId = 3;
 
 export default function Index() {
@@ -24,6 +26,7 @@ export default function Index() {
       <List8 />
       <List9 />
       <List />
+      <UpdateAnItemInTheShoppingCart />
     </>
   );
 }
