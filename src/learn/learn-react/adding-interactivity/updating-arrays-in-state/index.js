@@ -20,7 +20,7 @@ export default function Index() {
       <CounterList />
       <List6 />
       <List7 />
-      {/* <List8 /> */}
+      <List8 />
       <List />
     </>
   );
@@ -98,67 +98,44 @@ function ItemList({ artworks, onToggle }) {
   );
 }
 
-// function List8() {
-//   const [myArtworkList, setMyArtworkList] = useState(initialArtworks);
-//   const [yourArtworkList, setYourArtworkList] = useState(initialArtworks);
+function List8() {
+  const [myArtworkList, setMyArtworkList] = useState(initialArtworks);
+  const [yourArtworkList, setYourArtworkList] = useState(initialArtworks);
 
-//   function handleToggleMyList(artworkId, nextSeen) {
-//     const myNextArtworkList = [...myArtworkList];
-//     const artwork = myNextArtworkList.find(function (a) {
-//       return a.id === artworkId;
-//     });
-//     artwork.seen = nextSeen;
-//     setMyArtworkList(myNextArtworkList);
-//   }
+  function handleToggleMyList(artworkId, nextSeen) {
+    const myNextArtworkList = [...myArtworkList];
+    const artwork = myNextArtworkList.find(function (a) {
+      return a.id === artworkId;
+    });
+    artwork.seen = nextSeen;
+    setMyArtworkList(myNextArtworkList);
+  }
 
-//   function handleToggleYourList(artworkId, nextSeen) {
-//     const yourNextArtworkList = [...yourArtworkList];
-//     const artwork = yourNextArtworkList.find(function (a) {
-//       return a.id === artworkId;
-//     });
-//     artwork.seen = nextSeen;
-//     setYourArtworkList(yourNextArtworkList);
-//   }
+  function handleToggleYourList(artworkId, nextSeen) {
+    const yourNextArtworkList = [...yourArtworkList];
+    const artwork = yourNextArtworkList.find(function (a) {
+      return a.id === artworkId;
+    });
+    artwork.seen = nextSeen;
+    setYourArtworkList(yourNextArtworkList);
+  }
 
-//   return (
-//     <>
-//       <h1>Art Bucket List</h1>
-//       <h2>My list of art to see:</h2>
-//       <ItemList
-//         artworks={myArtworkList}
-//         onToggle={handleToggleMyList}
-//       />
-//       <h2>Your list of art to see:</h2>
-//       <ItemList
-//         artworks={yourArtworkList}
-//         onToggle={handleToggleYourList}
-//       />
-//     </>
-//   );
-// }
-
-// function ItemList({ artworks, onToggle }) {
-//   return (
-//     <ul>
-//       {artworks.map(function (artwork) {
-//         return (
-//           <li key={artwork.id}>
-//             <label>
-//               <input
-//                 type="checkbox"
-//                 checked={artwork.seen}
-//                 onChange={function (e) {
-//                   onToggle(artwork.id, e.target.checked);
-//                 }}
-//               />{" "}
-//               {artwork.title}
-//             </label>
-//           </li>
-//         );
-//       })}
-//     </ul>
-//   );
-// }
+  return (
+    <>
+      <h1>Art Bucket List</h1>
+      <h2>My list of art to see:</h2>
+      <ItemList
+        artworks={myArtworkList}
+        onToggle={handleToggleMyList}
+      />
+      <h2>Your list of art to see:</h2>
+      <ItemList
+        artworks={yourArtworkList}
+        onToggle={handleToggleYourList}
+      />
+    </>
+  );
+}
 
 function List7() {
   const [artists, setArtists] = useState(initialArtists);
