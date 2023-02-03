@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { artists } from "../../../../data/data";
+
 let nextId = 0;
 
 export default function Index() {
@@ -7,12 +9,22 @@ export default function Index() {
     <>
       <List2 />
       <List3 />
-      <List />
+      <List4 />
     </>
   );
 }
 
 function List() {
+  const [artists, setArtists] = useState(artists);
+
+  return (
+    <>
+      <h1>Inspiring sculptors:</h1>
+    </>
+  );
+}
+
+function List4() {
   const [name, setName] = useState("");
   const [artists, setArtists] = useState([]);
 
