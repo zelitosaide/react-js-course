@@ -14,7 +14,7 @@ export default function Index() {
       <Form4 />
       <Form />
       <FixIncorrectStateUpdates />
-      <FindAndFixTheMutation />
+      {/* <FindAndFixTheMutation /> */}
       <UpdateAnObjectWithImmer />
     </>
   );

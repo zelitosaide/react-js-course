@@ -28,6 +28,13 @@ function Canvas() {
     });
   }
 
+  function handleMove(dx, dy) {
+    updateShape(function (draft) {
+      draft.position.x += dx;
+      draft.position.y += dy;
+    });
+  }
+
   return (
     <>
       <select
@@ -39,9 +46,18 @@ function Canvas() {
         <option value="aliceblue">aliceblue</option>
       </select>
       <Background position={initialPosition} />
+      <Box
+        color={shape.color}
+        position={shape.position}
+        onMove={handleMove}
+      >
+        Drag me!
+      </Box>
     </>
   );
 }
+
+function Box({ children, color, position, onMove }) {}
 
 function Background({ position }) {
   return (
