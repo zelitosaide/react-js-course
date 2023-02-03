@@ -1,3 +1,7 @@
+import { useState } from "react";
+
+import { todos as initialTodos } from "../../../../../data/data";
+
 /**
  * Challenge 3 of 4: Fix the mutations using non-mutative methods
  *
@@ -8,3 +12,7 @@
 let nextId = 3;
 
 export default function Index() {}
+
+function TaskApp() {
+  const [todos, setTodos] = useState(initialTodos);
+}
