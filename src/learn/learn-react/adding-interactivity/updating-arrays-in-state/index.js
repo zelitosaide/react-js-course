@@ -4,6 +4,7 @@ import {
   artists as initialArtists,
   shapes as initialShapes,
   counters as initialCounters,
+  artworks as initialArtworks,
 } from "../../../../data/data";
 
 let nextId = 3;
@@ -18,12 +19,24 @@ export default function Index() {
       <ShapeEditor />
       <CounterList />
       <List6 />
+      <List7 />
       <List />
     </>
   );
 }
 
 function List() {
+  const [myArtworkList, setMyArtworkList] = useState(initialArtworks);
+  const [yourArtworkList, setYourArtworkList] = useState(initialArtworks);
+
+  return (
+    <>
+      <h1>Art Bucket List</h1>
+    </>
+  );
+}
+
+function List7() {
   const [artists, setArtists] = useState(initialArtists);
 
   function handleClick() {
