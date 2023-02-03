@@ -11,7 +11,9 @@ import { todos as initialTodos } from "../../../../../data/data";
  */
 let nextId = 3;
 
-export default function Index() {}
+export default function Index() {
+  return <TaskApp />;
+}
 
 function TaskApp() {
   const [todos, setTodos] = useState(initialTodos);
