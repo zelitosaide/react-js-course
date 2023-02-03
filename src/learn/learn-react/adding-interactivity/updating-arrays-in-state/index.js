@@ -32,7 +32,9 @@ function List() {
 
   return (
     <>
-      <h1></h1>
+      <h1>Art Bucket List</h1>
+      <h2>My list of art to see:</h2>
+      <h2>Your list of art to see:</h2>
     </>
   );
 }
