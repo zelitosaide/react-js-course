@@ -32,13 +32,22 @@ function List() {
   const [myArtworkList, updateMyArtworkList] = useImmer(initialArtworks);
   const [yourArtworkList, updateYourArtworkList] = useImmer(initialArtworks);
 
+  function handleToggleMyArtworkList(artworkId, nextSeen) {
+    updateMyArtworkList(function (draft) {
+      const artwork = draft.find(function (a) {
+        return a.id === artworkId;
+      });
+      artwork.seen = nextSeen;
+    });
+  }
+
   return (
     <>
       <h1>Art Bucket List</h1>
       <h2>My list of art to see:</h2>
       <ItemList
         artworks={myArtworkList}
-        onToggle={() => {}}
+        onToggle={handleToggleMyArtworkList}
       />
       <h2>Your list of art to see:</h2>
       <ItemList
