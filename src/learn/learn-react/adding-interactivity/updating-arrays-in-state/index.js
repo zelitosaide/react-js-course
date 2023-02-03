@@ -26,7 +26,11 @@ export default function Index() {
 function List() {
   const [artists, setArtists] = useState(initialArtists);
 
-  function handleClick() {}
+  function handleClick() {
+    const nextArtists = [...artists];
+    nextArtists.reverse();
+    setArtists(nextArtists);
+  }
 
   return (
     <>
