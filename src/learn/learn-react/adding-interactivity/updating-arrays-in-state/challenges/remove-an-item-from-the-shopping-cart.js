@@ -34,6 +34,8 @@ function ShoppingCart() {
     nextProducts = nextProducts.filter(function (product) {
       return product.count > 0;
     });
+
+    setProducts(nextProducts);
   }
 
   return (
