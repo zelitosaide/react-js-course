@@ -11,8 +11,13 @@ export default function Index() {
       <List3 />
       <List4 />
       <List />
+      <ShapeEditor />
     </>
   );
+}
+
+function ShapeEditor() {
+  return <></>;
 }
 
 function List() {
