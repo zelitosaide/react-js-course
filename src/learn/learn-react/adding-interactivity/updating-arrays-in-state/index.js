@@ -16,6 +16,7 @@ export default function Index() {
       <List4 />
       <List />
       <ShapeEditor />
+      <CounterList />
     </>
   );
 }
