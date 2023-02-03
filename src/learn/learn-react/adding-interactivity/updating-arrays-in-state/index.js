@@ -47,7 +47,15 @@ function List() {
   );
 }
 
-function ItemList({ artworks, onToggle }) {}
+function ItemList({ artworks, onToggle }) {
+  return (
+    <ul>
+      {artworks.map(function (artwork) {
+        return <li key={artwork.id}></li>;
+      })}
+    </ul>
+  );
+}
 
 // function List8() {
 //   const [myArtworkList, setMyArtworkList] = useState(initialArtworks);
