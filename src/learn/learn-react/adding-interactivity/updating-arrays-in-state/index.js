@@ -17,12 +17,12 @@ export default function Index() {
       <List5 />
       <ShapeEditor />
       <CounterList />
-      <List />
+      <List6 />
     </>
   );
 }
 
-function List() {
+function List6() {
   const [name, setName] = useState("");
   const [artists, setArtists] = useState(initialArtists);
 
