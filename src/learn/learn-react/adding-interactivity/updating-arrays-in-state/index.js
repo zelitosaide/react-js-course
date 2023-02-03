@@ -32,6 +32,11 @@ function List() {
       >
         Add
       </button>
+      <ul>
+        {artists.map(function (artist) {
+          return <li key={artist.id}>{artist.name}</li>;
+        })}
+      </ul>
     </>
   );
 }
