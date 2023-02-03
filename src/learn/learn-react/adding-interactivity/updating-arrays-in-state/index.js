@@ -41,6 +41,15 @@ function List() {
     });
   }
 
+  function handleToggleYourArtworkList(artworkId, nextSeen) {
+    updateYourArtworkList(function (draft) {
+      const artwork = draft.find(function (a) {
+        return a.id === artworkId;
+      });
+      artwork.seen = nextSeen;
+    });
+  }
+
   return (
     <>
       <h1>Art Bucket List</h1>
@@ -52,7 +61,7 @@ function List() {
       <h2>Your list of art to see:</h2>
       <ItemList
         artworks={yourArtworkList}
-        onToggle={() => {}}
+        onToggle={handleToggleYourArtworkList}
       />
     </>
   );
