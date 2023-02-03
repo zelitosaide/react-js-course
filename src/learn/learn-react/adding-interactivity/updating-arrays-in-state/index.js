@@ -49,6 +49,11 @@ function List() {
         }}
       />
       <button onClick={handleClick}>Insert</button>
+      <ul>
+        {artists.map(function (artist) {
+          return <li key={artist.id}>{artist.name}</li>;
+        })}
+      </ul>
     </>
   );
 }
