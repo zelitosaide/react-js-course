@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useImmer } from "use-immer";
 
 import {
   artists as initialArtists,
@@ -27,7 +28,10 @@ export default function Index() {
   );
 }
 
-function List() {}
+function List() {
+  const [myArtworkList, updateMyArtworkList] = useImmer(initialArtworks);
+  const [yourArtworkList, updateYourArtworkList] = useImmer(initialArtworks);
+}
 
 function List9() {
   const [myArtworkList, setMyArtworkList] = useState(initialArtworks);
