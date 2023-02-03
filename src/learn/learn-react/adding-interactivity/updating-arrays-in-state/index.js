@@ -44,6 +44,20 @@ function List() {
     );
   }
 
+  function handleToggleYourArtworkList(artworkId, nextSeen) {
+    setYourArtworkList(
+      yourArtworkList.map(function (artwork) {
+        if (artwork.id === artworkId) {
+          // Create a *new* object with changes
+          return { ...artwork, seen: nextSeen };
+        } else {
+          // No changes
+          return artwork;
+        }
+      })
+    );
+  }
+
   return (
     <>
       <h1>Art Bucket List</h1>
@@ -55,7 +69,7 @@ function List() {
       <h2>Your list of art to see:</h2>
       <ItemList
         artworks={yourArtworkList}
-        onToggle={function () {}}
+        onToggle={handleToggleYourArtworkList}
       />
     </>
   );
