@@ -82,7 +82,7 @@ function Task({ todo, onChange, onDelete }) {
   return (
     <>
       <label>
-        <input value={todo.title} />
+        <input value={todo.done} />
       </label>
     </>
   );
