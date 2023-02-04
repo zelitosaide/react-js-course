@@ -16,10 +16,12 @@ function Form() {
 
   function handleFirstNameChange(e) {
     setFirstName(e.target.value);
+    setFullName(e.target.value + " " + lastName);
   }
 
   function handleLastNameChange(e) {
     setLastName(e.target.value);
+    setFullName(firstName + " " + e.target.value);
   }
 
   return (
@@ -39,6 +41,9 @@ function Form() {
           onChange={handleLastNameChange}
         />
       </label>
+      <p>
+        Your ticket will be issued to: <b>{fullName}</b>
+      </p>
     </>
   );
 }
