@@ -9,6 +9,8 @@ import { todos as initialTodos } from "../../../../../data/data";
  * the mutations by using Immer. For your convenience, useImmer is already
  * imported, so you need to change the todos state variable to use it.
  */
+let nextId = 3;
+
 export default function Index() {
   return <TaskApp />;
 }
@@ -16,7 +18,9 @@ export default function Index() {
 function TaskApp() {
   const [todos, setTodos] = useState(initialTodos);
 
-  function handleAddTodo() {}
+  function handleAddTodo(title) {
+    setTodos([...todos, { id: nextId++, title: title, done: false }]);
+  }
 
   return (
     <>
