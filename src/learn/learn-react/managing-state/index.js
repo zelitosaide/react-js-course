@@ -4,12 +4,12 @@ export default function Index() {
   return (
     <>
       <Form2 />
-      <Form />
+      <Form3 />
     </>
   );
 }
 
-function Form() {
+function Form3() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [fullName, setFullName] = useState("");
