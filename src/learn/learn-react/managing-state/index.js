@@ -27,7 +27,10 @@ function Messager() {
         }}
         selectedContact={to}
       />
-      <Chat contact={to} />
+      <Chat
+        key={to.email}
+        contact={to}
+      />
     </div>
   );
 }
