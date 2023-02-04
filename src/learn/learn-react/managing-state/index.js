@@ -27,6 +27,7 @@ function Form() {
         <textarea
           value={answer}
           onChange={handleTextareaChange}
+          disabled={status === "submitting"}
         />
       </form>
     </>
