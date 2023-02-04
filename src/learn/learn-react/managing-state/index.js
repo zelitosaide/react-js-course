@@ -12,6 +12,7 @@ export default function Index() {
 }
 
 function Accordion() {
+  const [activeIndex, setActiveIndex] = useState(0);
   return (
     <>
       <h2>Almaty, Kazakhstan</h2>
