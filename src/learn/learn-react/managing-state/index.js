@@ -21,12 +21,17 @@ export default function Index() {
 function TaskApp() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
 
+  function handleAddTask(text) {}
+
   return (
     <>
       <h1>Prague itinerary</h1>
+      <AddTask onAddTask={handleAddTask} />
     </>
   );
 }
+
+function AddTask({ onAddTask }) {}
 
 function tasksReducer(tasks, action) {}
 
