@@ -19,7 +19,10 @@ function Messager() {
 
   return (
     <div>
-      <ContactList />
+      <ContactList
+        contacts={contacts}
+        selectedContact={to}
+      />
     </div>
   );
 }
