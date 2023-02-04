@@ -52,6 +52,12 @@ function TaskApp() {
     //     return todo.id !== todoId;
     //   })
     // );
+    updateTodos(function (draft) {
+      const index = draft.findIndex(function (todo) {
+        return todo.id === todoId;
+      });
+      draft.splice(index, 1);
+    });
   }
 
   return (
