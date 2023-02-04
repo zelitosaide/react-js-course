@@ -37,7 +37,9 @@ function AddTodo({ onAddTodo }) {
       <input
         placeholder="Add todo"
         value={title}
-        onChange={function (e) {}}
+        onChange={function (e) {
+          setTitle(e.target.value);
+        }}
       />
     </>
   );
