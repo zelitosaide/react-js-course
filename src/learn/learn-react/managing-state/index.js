@@ -37,11 +37,14 @@ function Chat({ contact }) {
   return (
     <section>
       <textarea
+        placeholder={"Chat to " + contact.name}
         value={text}
         onChange={function (e) {
           setText(e.target.value);
         }}
       />
+      <br />
+      <button>Send to {contact.email}</button>
     </section>
   );
 }
