@@ -15,13 +15,20 @@ function Form() {
 
   function handleSubmit(e) {}
 
+  function handleTextareaChange(e) {}
+
   return (
     <>
       <h2>City quiz</h2>
       <p>
         In which city is there a billboard that turns air into drinkable water?
       </p>
-      <form onSubmit={handleSubmit}></form>
+      <form onSubmit={handleSubmit}>
+        <textarea
+          value={answer}
+          onChange={handleTextareaChange}
+        />
+      </form>
     </>
   );
 }
