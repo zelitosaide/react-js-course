@@ -30,7 +30,17 @@ function Messager() {
   );
 }
 
-function ContactList({ contacts, selectedContact, onSelect }) {}
+function ContactList({ contacts, selectedContact, onSelect }) {
+  return (
+    <section>
+      <ul>
+        {contacts.map(function (contact) {
+          return <li key={contact.email}>{contact.name}</li>;
+        })}
+      </ul>
+    </section>
+  );
+}
 
 function Accordion() {
   const [activeIndex, setActiveIndex] = useState(0);
