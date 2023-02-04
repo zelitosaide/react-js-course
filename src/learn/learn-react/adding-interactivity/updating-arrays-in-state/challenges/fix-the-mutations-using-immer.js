@@ -79,7 +79,15 @@ function Task({ todo, onChange, onDelete }) {
   if (isEditing) {
     todoContent = (
       <>
-        <input value={todo.title} />
+        <input
+          value={todo.title}
+          onChange={function (e) {
+            onChange({
+              ...todo,
+              title: e.target.value,
+            });
+          }}
+        />
         <button
           onClick={function () {
             setIsEditing(false);
