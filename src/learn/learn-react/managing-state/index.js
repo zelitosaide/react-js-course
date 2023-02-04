@@ -17,7 +17,15 @@ export default function Index() {
 
 function Messager() {
   const [to, setTo] = useState(contacts[0]);
+
+  return (
+    <div>
+      <ContactList />
+    </div>
+  );
 }
+
+function ContactList() {}
 
 function Messager2() {
   const [to, setTo] = useState(contacts[0]);
