@@ -17,7 +17,13 @@ function Accordion() {
   return (
     <>
       <h2>Almaty, Kazakhstan</h2>
-      <Panel>
+      <Panel
+        title="About"
+        isActive={activeIndex === 0}
+        onShow={function () {
+          setActiveIndex(0);
+        }}
+      >
         With a population of about 2 million, Almaty is Kazakhstan's largest
         city. From 1929 to 1997, it was its capital city.
       </Panel>
@@ -32,7 +38,7 @@ function Accordion() {
   );
 }
 
-function Panel({ children }) {}
+function Panel({ children, title, isActive, onShow }) {}
 
 function Form() {
   const [firstName, setFirstName] = useState("");
