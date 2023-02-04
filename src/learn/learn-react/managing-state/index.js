@@ -48,6 +48,7 @@ function Panel({ children, title, isActive, onShow }) {
   return (
     <section style={{ padding: 10, border: "1px solid #aaa" }}>
       <h3>{title}</h3>
+      {isActive ? <p>{children}</p> : <button onClick={onShow}>Show</button>}
     </section>
   );
 }
