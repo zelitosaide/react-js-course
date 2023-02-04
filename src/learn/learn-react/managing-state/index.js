@@ -51,4 +51,7 @@ function Form() {
   );
 }
 
-function submitForm(answer) {}
+function submitForm(answer) {
+  // Pretend it's hitting the network.
+  return new Promise(function (resolve, reject) {});
+}
