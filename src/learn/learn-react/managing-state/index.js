@@ -11,7 +11,13 @@ export default function Index() {
   );
 }
 
-function Accordion() {}
+function Accordion() {
+  return (
+    <>
+      <h2>Almaty, Kazakhstan</h2>
+    </>
+  );
+}
 
 function Form() {
   const [firstName, setFirstName] = useState("");
