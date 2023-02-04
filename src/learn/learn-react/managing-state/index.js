@@ -27,7 +27,23 @@ function Messager() {
         }}
         selectedContact={to}
       />
+      <Chat />
     </div>
+  );
+}
+
+function Chat({ contact }) {
+  const [text, setText] = useState("");
+
+  return (
+    <section>
+      <textarea
+        value={text}
+        onChange={function (e) {
+          setText(e.target.value);
+        }}
+      />
+    </section>
   );
 }
 
