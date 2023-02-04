@@ -41,6 +41,13 @@ function AddTodo({ onAddTodo }) {
           setTitle(e.target.value);
         }}
       />
+      <button
+        onClick={function () {
+          onAddTodo(title);
+        }}
+      >
+        Add
+      </button>
     </>
   );
 }
