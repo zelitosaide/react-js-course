@@ -44,7 +44,7 @@ function TaskApp() {
 
   return (
     <>
-      <AddTod onAddTodo={handleAddTodo} />
+      <AddTodo onAddTodo={handleAddTodo} />
       <TaskList
         todos={todos}
         onChangeTodo={handleChangeTodo}
@@ -54,7 +54,7 @@ function TaskApp() {
   );
 }
 
-function AddTod({ onAddTodo }) {
+function AddTodo({ onAddTodo }) {
   const [title, setTitle] = useState("");
 
   return (
