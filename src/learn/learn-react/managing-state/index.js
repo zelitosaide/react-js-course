@@ -25,6 +25,7 @@ function Messager() {
         onSelect={function (contact) {
           setTo(contact);
         }}
+        selectedContact={to}
       />
     </div>
   );
