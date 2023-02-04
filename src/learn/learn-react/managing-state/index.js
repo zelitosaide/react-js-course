@@ -22,6 +22,8 @@ function Form() {
     setLastName(e.target.value);
   }
 
+  const fullName = firstName + " " + lastName;
+
   return (
     <>
       <h2>Let's check you in</h2>
@@ -39,6 +41,9 @@ function Form() {
           onChange={handleLastNameChange}
         />
       </label>
+      <p>
+        Your ticket will be issued to: <b>{fullName}</b>
+      </p>
     </>
   );
 }
