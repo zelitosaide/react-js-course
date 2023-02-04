@@ -44,6 +44,7 @@ function AddTodo({ onAddTodo }) {
       <button
         onClick={function () {
           onAddTodo(title);
+          setTitle("");
         }}
       >
         Add
