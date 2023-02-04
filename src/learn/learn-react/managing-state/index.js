@@ -16,6 +16,13 @@ function Form() {
   async function handleSubmit(e) {
     e.preventDefault();
     setStatus("submitting");
+    try {
+      await submitForm(answer);
+      setStatus("success");
+    } catch (error) {
+      setStatus("typing");
+      setError(error);
+    }
   }
 
   function handleTextareaChange(e) {
@@ -43,3 +50,5 @@ function Form() {
     </>
   );
 }
+
+function submitForm(answer) {}
