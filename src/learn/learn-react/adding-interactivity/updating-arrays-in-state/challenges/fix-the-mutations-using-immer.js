@@ -23,7 +23,11 @@ function TaskApp() {
   function handleAddTodo(title) {
     // setTodos([...todos, { id: nextId++, title: title, done: false }]);
     updateTodos(function (draft) {
-      draft.push({ id: nextId++, title: title, done: false });
+      draft.push({
+        id: nextId++,
+        title: title,
+        done: false,
+      });
     });
   }
 
