@@ -10,9 +10,12 @@ export default function Index() {
       <Form />
       <Accordion />
       <Messager2 />
+      <Messager />
     </>
   );
 }
+
+function Messager() {}
 
 function Messager2() {
   const [to, setTo] = useState(contacts[0]);
