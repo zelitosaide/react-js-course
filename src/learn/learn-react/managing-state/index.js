@@ -53,5 +53,14 @@ function Form() {
 
 function submitForm(answer) {
   // Pretend it's hitting the network.
-  return new Promise(function (resolve, reject) {});
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      let shouldError = answer.toLowerCase() !== "lima";
+      if (shouldError) {
+        reject(new Error("Good guess but a wrong answer. Try again!"));
+      } else {
+        resolve();
+      }
+    }, 3000);
+  });
 }
