@@ -4,6 +4,12 @@ export const user = {
   imageSize: 90,
 };
 
+export const contacts = [
+  { name: "Taylor", email: "taylor@mail.com" },
+  { name: "Alice", email: "alice@mail.com" },
+  { name: "Bob", email: "bob@mail.com" },
+];
+
 export const todos = [
   { id: 0, title: "Buy milk", done: true },
   { id: 1, title: "Eat tacos", done: false },
