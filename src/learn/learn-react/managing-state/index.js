@@ -31,7 +31,20 @@ function TaskApp() {
   );
 }
 
-function AddTask({ onAddTask }) {}
+function AddTask({ onAddTask }) {
+  const [text, setText] = useState("");
+
+  return (
+    <>
+      <input
+        value={text}
+        onChange={function (e) {
+          setText(e.target.value);
+        }}
+      />
+    </>
+  );
+}
 
 function tasksReducer(tasks, action) {}
 
