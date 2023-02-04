@@ -2,6 +2,8 @@ import { useState, useReducer } from "react";
 
 import { contacts, tasks as initialTasks } from "../../../data/data";
 
+let nextId = 3;
+
 export default function Index() {
   return (
     <>
@@ -18,6 +20,12 @@ export default function Index() {
 
 function TaskApp() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
+
+  return (
+    <>
+      <h1>Prague itinerary</h1>
+    </>
+  );
 }
 
 function tasksReducer(tasks, action) {}
