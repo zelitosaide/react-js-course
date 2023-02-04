@@ -9,6 +9,13 @@ import { todos as initialTodos } from "../../../../../data/data";
  * This is the same example as in the previous challenge. This time, fix
  * the mutations by using Immer. For your convenience, useImmer is already
  * imported, so you need to change the todos state variable to use it.
+ *
+ * Solution: You can also mix and match the mutative and non-mutative approaches
+ * with Immer.
+ *
+ * For example, in this version handleAddTodo is implemented by mutating the
+ * Immer draft, while handleChangeTodo and handleDeleteTodo use the non-mutative
+ * map and filter methods:
  */
 let nextId = 3;
 
