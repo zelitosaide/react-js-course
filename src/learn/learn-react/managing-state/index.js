@@ -44,6 +44,8 @@ function Chat({ contact }) {
           setText(e.target.value);
         }}
       />
+      <br />
+      <button>Send to {contact.email}</button>
     </section>
   );
 }
