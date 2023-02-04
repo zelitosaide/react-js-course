@@ -84,7 +84,7 @@ function Task({ todo, onChange, onDelete }) {
       <label>
         <input
           type="checkbox"
-          value={todo.done}
+          checked={todo.done}
           onChange={function (e) {
             onChange({
               ...todo,
