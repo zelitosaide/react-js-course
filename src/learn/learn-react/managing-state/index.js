@@ -15,7 +15,9 @@ export default function Index() {
   );
 }
 
-function Messager() {}
+function Messager() {
+  const [to, setTo] = useState(contacts[0]);
+}
 
 function Messager2() {
   const [to, setTo] = useState(contacts[0]);
