@@ -12,4 +12,10 @@ function Form() {
   if (status === "success") {
     return <h1>That's right!</h1>;
   }
+
+  return (
+    <>
+      <h2>City quiz</h2>
+    </>
+  );
 }
