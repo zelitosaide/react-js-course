@@ -77,6 +77,19 @@ function Task({ todo, onChange, onDelete }) {
   let todoContent;
 
   if (isEditing) {
+    todoContent = (
+      <>
+        <input value={todo.title} />
+        <button
+          onClick={function () {
+            setIsEditing(false);
+          }}
+        >
+          Save
+        </button>
+      </>
+    );
+  } else {
   }
 
   return (
@@ -92,6 +105,7 @@ function Task({ todo, onChange, onDelete }) {
             });
           }}
         />
+        {todoContent}
         <button
           onClick={function () {
             onDelete(todo.id);
