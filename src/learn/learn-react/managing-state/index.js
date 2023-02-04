@@ -31,7 +31,15 @@ function Messager() {
   );
 }
 
-function Chat({ contact }) {}
+function Chat({ contact }) {
+  const [text, setText] = useState("");
+
+  return (
+    <section>
+      <textarea value={text} />
+    </section>
+  );
+}
 
 function ContactList({ contacts, selectedContact, onSelect }) {
   return (
