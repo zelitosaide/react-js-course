@@ -32,7 +32,7 @@ function Form() {
           disabled={status === "submitting"}
         />
         <button disabled={answer.length === 0 || status === "submitting"}>
-          Send
+          Submit
         </button>
         {error !== null && <p className="Error">{error.message}</p>}
       </form>
