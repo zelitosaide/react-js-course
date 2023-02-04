@@ -11,9 +11,12 @@ export default function Index() {
       <Accordion />
       <Messager2 />
       <Messager />
+      <TaskApp />
     </>
   );
 }
+
+function TaskApp() {}
 
 function Messager() {
   const [to, setTo] = useState(contacts[0]);
