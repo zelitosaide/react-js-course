@@ -16,7 +16,15 @@ export default function Index() {
 
 function Messager() {
   const [to, setTo] = useState(contacts[0]);
+
+  return (
+    <div>
+      <ContactList />
+    </div>
+  );
 }
+
+function ContactList() {}
 
 function Accordion() {
   const [activeIndex, setActiveIndex] = useState(0);
