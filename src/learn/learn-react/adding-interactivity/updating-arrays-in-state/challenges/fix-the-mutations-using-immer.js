@@ -22,10 +22,18 @@ function TaskApp() {
     setTodos([...todos, { id: nextId++, title: title, done: false }]);
   }
 
+  function handleChangeTodo() {}
+
+  function handleDeleteTodo() {}
+
   return (
     <>
       <AddTodo onAddTodo={handleAddTodo} />
-      <TaskList />
+      <TaskList
+        todos={todos}
+        onChangeTodo={handleChangeTodo}
+        onDeleteTodo={handleDeleteTodo}
+      />
     </>
   );
 }
