@@ -1,6 +1,6 @@
 import { useState, useReducer } from "react";
 
-import { contacts } from "../../../data/data";
+import { contacts, tasks as initialTasks } from "../../../data/data";
 
 export default function Index() {
   return (
@@ -17,7 +17,7 @@ export default function Index() {
 }
 
 function TaskApp() {
-  const [tasks, dispatch] = useReducer();
+  const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
 }
 
 function tasksReducer(tasks, action) {}
