@@ -5,9 +5,12 @@ export default function Index() {
     <>
       <Form2 />
       <Form3 />
+      <Form />
     </>
   );
 }
+
+function Form() {}
 
 function Form3() {
   const [firstName, setFirstName] = useState("");
