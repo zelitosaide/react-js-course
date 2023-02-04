@@ -37,7 +37,13 @@ function TaskApp() {
     //     }
     //   })
     // );
-    updateTodos(function (draft) {});
+    updateTodos(function (draft) {
+      const todo = draft.find(function (t) {
+        return (t.id = nextTodo.id);
+      });
+      todo.title = nextTodo.title;
+      todo.done = nextTodo.done;
+    });
   }
 
   function handleDeleteTodo(todoId) {
