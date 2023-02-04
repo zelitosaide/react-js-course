@@ -34,6 +34,7 @@ function Form() {
         <button disabled={answer.length === 0 || status === "submitting"}>
           Send
         </button>
+        {error !== null && <p className="Error">{error.message}</p>}
       </form>
     </>
   );
