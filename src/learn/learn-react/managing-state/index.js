@@ -18,14 +18,25 @@ function Form() {
     setFirstName(e.target.value);
   }
 
+  function handleLastNameChange(e) {
+    setLastName(e.target.value);
+  }
+
   return (
     <>
       <h2>Let's check you in</h2>
       <label>
-        First Name{" "}
+        First Name:{" "}
         <input
           value={firstName}
           onChange={handleFirstNameChange}
+        />
+      </label>
+      <label>
+        Last Name:{" "}
+        <input
+          value={lastName}
+          onChange={handleLastNameChange}
         />
       </label>
     </>
