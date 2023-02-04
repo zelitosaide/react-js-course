@@ -16,6 +16,8 @@ import { todos as initialTodos } from "../../../../../data/data";
  * For example, in this version handleAddTodo is implemented by mutating the
  * Immer draft, while handleChangeTodo and handleDeleteTodo use the non-mutative
  * map and filter methods:
+ *
+ * With Immer, you can pick the style that feels the most natural for each separate case.
  */
 let nextId = 3;
 
