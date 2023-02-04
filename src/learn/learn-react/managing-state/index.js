@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { contacts } from "../../../data/data";
+
 export default function Index() {
   return (
     <>
@@ -12,7 +14,9 @@ export default function Index() {
   );
 }
 
-function Messager() {}
+function Messager() {
+  const [to, setTo] = useState(contacts[0]);
+}
 
 function Accordion() {
   const [activeIndex, setActiveIndex] = useState(0);
