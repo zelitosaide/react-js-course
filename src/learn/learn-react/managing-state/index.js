@@ -9,29 +9,29 @@ export default function Index() {
       <Form3 />
       <Form />
       <Accordion />
-      <Messager />
+      <Messager2 />
     </>
   );
 }
 
-function Messager() {
+function Messager2() {
   const [to, setTo] = useState(contacts[0]);
 
   return (
     <div>
-      <ContactList
+      <ContactList2
         contacts={contacts}
         selectedContact={to}
         onSelect={function (contact) {
           setTo(contact);
         }}
       />
-      <Chat contact={to} />
+      <Chat2 contact={to} />
     </div>
   );
 }
 
-function Chat({ contact }) {
+function Chat2({ contact }) {
   const [text, setText] = useState("");
 
   return (
@@ -49,7 +49,7 @@ function Chat({ contact }) {
   );
 }
 
-function ContactList({ contacts, selectedContact, onSelect }) {
+function ContactList2({ contacts, selectedContact, onSelect }) {
   return (
     <section>
       <ul>
