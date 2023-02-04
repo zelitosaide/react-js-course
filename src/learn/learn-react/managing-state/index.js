@@ -13,6 +13,12 @@ export default function Index() {
 function Form() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+
+  return (
+    <>
+      <h2>Let's check you in</h2>
+    </>
+  );
 }
 
 function Form3() {
