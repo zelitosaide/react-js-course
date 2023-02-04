@@ -31,7 +31,21 @@ function Messager() {
   );
 }
 
-function ContactList({ contacts, onSelect, selectedContact }) {}
+function ContactList({ contacts, onSelect, selectedContact }) {
+  return (
+    <section>
+      <ul>
+        {contacts.map(function (contact) {
+          return (
+            <li key={contact.email}>
+              <button>{contact.name}</button>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
 
 function Messager2() {
   const [to, setTo] = useState(contacts[0]);
