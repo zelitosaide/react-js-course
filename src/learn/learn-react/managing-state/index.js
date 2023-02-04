@@ -1,10 +1,14 @@
 import { useState } from "react";
 
 export default function Index() {
-  return <Form />;
+  return (
+    <>
+      <Form2 />
+    </>
+  );
 }
 
-function Form() {
+function Form2() {
   const [answer, setAnswer] = useState("");
   const [error, setError] = useState(null);
   const [status, setStatus] = useState("typing");
