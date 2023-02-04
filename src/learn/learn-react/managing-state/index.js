@@ -13,7 +13,10 @@ function Form() {
     return <h1>That's right!</h1>;
   }
 
-  function handleSubmit(e) {}
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setStatus("submitting");
+  }
 
   function handleTextareaChange(e) {
     setAnswer(e.target.value);
