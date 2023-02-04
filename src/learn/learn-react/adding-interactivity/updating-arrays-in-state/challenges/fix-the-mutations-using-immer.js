@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useImmer } from "use-immer";
 
 import { todos as initialTodos } from "../../../../../data/data";
 
@@ -16,30 +17,31 @@ export default function Index() {
 }
 
 function TaskApp() {
-  const [todos, setTodos] = useState(initialTodos);
+  // const [todos, setTodos] = useState(initialTodos);
+  const [todos, updateTodos] = useImmer(initialTodos);
 
   function handleAddTodo(title) {
-    setTodos([...todos, { id: nextId++, title: title, done: false }]);
+    // setTodos([...todos, { id: nextId++, title: title, done: false }]);
   }
 
   function handleChangeTodo(nextTodo) {
-    setTodos(
-      todos.map(function (todo) {
-        if (todo.id === nextTodo.id) {
-          return nextTodo;
-        } else {
-          return todo;
-        }
-      })
-    );
+    // setTodos(
+    //   todos.map(function (todo) {
+    //     if (todo.id === nextTodo.id) {
+    //       return nextTodo;
+    //     } else {
+    //       return todo;
+    //     }
+    //   })
+    // );
   }
 
   function handleDeleteTodo(todoId) {
-    setTodos(
-      todos.filter(function (todo) {
-        return todo.id !== todoId;
-      })
-    );
+    // setTodos(
+    //   todos.filter(function (todo) {
+    //     return todo.id !== todoId;
+    //   })
+    // );
   }
 
   return (
