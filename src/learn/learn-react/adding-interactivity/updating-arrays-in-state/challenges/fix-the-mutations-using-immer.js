@@ -25,9 +25,12 @@ function TaskApp() {
   return (
     <>
       <AddTodo onAddTodo={handleAddTodo} />
+      <TaskList />
     </>
   );
 }
+
+function TaskList({ todos, onChangeTodo, onDeleteTodo }) {}
 
 function AddTodo({ onAddTodo }) {
   const [title, setTitle] = useState("");
