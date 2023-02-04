@@ -13,12 +13,17 @@ export default function Index() {
 
 function Accordion() {
   const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <>
       <h2>Almaty, Kazakhstan</h2>
+      <Panel></Panel>
+      <Panel></Panel>
     </>
   );
 }
+
+function Panel({ children }) {}
 
 function Form() {
   const [firstName, setFirstName] = useState("");
