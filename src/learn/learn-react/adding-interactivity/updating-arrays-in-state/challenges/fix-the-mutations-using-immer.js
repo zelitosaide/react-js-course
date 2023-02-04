@@ -22,7 +22,17 @@ function TaskApp() {
     setTodos([...todos, { id: nextId++, title: title, done: false }]);
   }
 
-  function handleChangeTodo() {}
+  function handleChangeTodo(nextTodo) {
+    setTodos(
+      todos.map(function (todo) {
+        if (todo.id === nextTodo.id) {
+          return nextTodo;
+        } else {
+          return todo;
+        }
+      })
+    );
+  }
 
   function handleDeleteTodo() {}
 
