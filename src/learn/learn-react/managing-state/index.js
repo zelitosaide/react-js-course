@@ -15,7 +15,9 @@ function Form() {
 
   function handleSubmit(e) {}
 
-  function handleTextareaChange(e) {}
+  function handleTextareaChange(e) {
+    setAnswer(e.target.value);
+  }
 
   return (
     <>
