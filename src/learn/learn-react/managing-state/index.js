@@ -44,7 +44,13 @@ function Accordion() {
   );
 }
 
-function Panel({ children, title, isActive, onShow }) {}
+function Panel({ children, title, isActive, onShow }) {
+  return (
+    <section style={{ padding: 10, border: "1px solid #aaa" }}>
+      <h3>{title}</h3>
+    </section>
+  );
+}
 
 function Form() {
   const [firstName, setFirstName] = useState("");
