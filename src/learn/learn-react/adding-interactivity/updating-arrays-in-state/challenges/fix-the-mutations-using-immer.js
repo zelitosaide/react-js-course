@@ -72,7 +72,21 @@ function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
   );
 }
 
-function Task({ todo, onChange, onDelete }) {}
+function Task({ todo, onChange, onDelete }) {
+  const [isEditing, setIsEditing] = useState(false);
+  let todoContent;
+
+  if (isEditing) {
+  }
+
+  return (
+    <>
+      <label>
+        <input value={todo.title} />
+      </label>
+    </>
+  );
+}
 
 function AddTodo({ onAddTodo }) {
   const [title, setTitle] = useState("");
