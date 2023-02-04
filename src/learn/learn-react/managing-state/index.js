@@ -14,7 +14,9 @@ function Form() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
 
-  function handleFirstNameChange(e) {}
+  function handleFirstNameChange(e) {
+    setFirstName(e.target.value);
+  }
 
   return (
     <>
