@@ -20,12 +20,17 @@ function Messager() {
 
   return (
     <div>
-      <ContactList />
+      <ContactList
+        contacts={contacts}
+        onSelect={function (contact) {
+          setTo(contact);
+        }}
+      />
     </div>
   );
 }
 
-function ContactList() {}
+function ContactList({ contacts, onSelect, selectedContact }) {}
 
 function Messager2() {
   const [to, setTo] = useState(contacts[0]);
