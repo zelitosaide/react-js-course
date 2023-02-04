@@ -34,7 +34,13 @@ function TaskApp() {
     );
   }
 
-  function handleDeleteTodo() {}
+  function handleDeleteTodo(todoId) {
+    setTodos(
+      todos.filter(function (todo) {
+        return todo.id !== todoId;
+      })
+    );
+  }
 
   return (
     <>
