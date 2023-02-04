@@ -37,6 +37,7 @@ function TaskApp() {
     //     }
     //   })
     // );
+    updateTodos(function (draft) {});
   }
 
   function handleDeleteTodo(todoId) {
