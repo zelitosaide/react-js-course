@@ -35,7 +35,17 @@ function ContactList({ contacts, selectedContact, onSelect }) {
     <section>
       <ul>
         {contacts.map(function (contact) {
-          return <li key={contact.email}>{contact.name}</li>;
+          return (
+            <li key={contact.email}>
+              <button
+                onClick={function () {
+                  onSelect(contact);
+                }}
+              >
+                {contact.name}
+              </button>
+            </li>
+          );
         })}
       </ul>
     </section>
