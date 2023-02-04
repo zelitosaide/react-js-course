@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useReducer } from "react";
 
 import { contacts } from "../../../data/data";
 
@@ -16,7 +16,11 @@ export default function Index() {
   );
 }
 
-function TaskApp() {}
+function TaskApp() {
+  const [tasks, dispatch] = useReducer();
+}
+
+function tasksReducer(tasks, action) {}
 
 function Messager() {
   const [to, setTo] = useState(contacts[0]);
