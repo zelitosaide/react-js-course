@@ -22,6 +22,8 @@ function Form() {
     } catch (error) {
       setStatus("typing");
       setError(error);
+    } finally {
+      setAnswer("");
     }
   }
 
