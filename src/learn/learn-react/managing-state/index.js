@@ -36,7 +36,12 @@ function Chat({ contact }) {
 
   return (
     <section>
-      <textarea value={text} />
+      <textarea
+        value={text}
+        onChange={function (e) {
+          setText(e.target.value);
+        }}
+      />
     </section>
   );
 }
