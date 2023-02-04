@@ -60,7 +60,11 @@ function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
       {todos.map(function (todo) {
         return (
           <li key={todo.id}>
-            <Task />
+            <Task
+              todo={todo}
+              onChange={onChangeTodo}
+              onDelete={onDeleteTodo}
+            />
           </li>
         );
       })}
@@ -68,7 +72,7 @@ function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
   );
 }
 
-function Task() {}
+function Task({ todo, onChange, onDelete }) {}
 
 function AddTodo({ onAddTodo }) {
   const [title, setTitle] = useState("");
