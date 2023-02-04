@@ -31,6 +31,9 @@ function Form() {
           onChange={handleTextareaChange}
           disabled={status === "submitting"}
         />
+        <button disabled={answer.length === 0 || status === "submitting"}>
+          Send
+        </button>
       </form>
     </>
   );
