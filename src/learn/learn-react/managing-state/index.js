@@ -24,7 +24,7 @@ function Messager() {
   );
 }
 
-function ContactList() {}
+function ContactList({ contacts, selectedContact, onSelect }) {}
 
 function Accordion() {
   const [activeIndex, setActiveIndex] = useState(0);
