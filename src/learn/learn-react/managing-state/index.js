@@ -7,9 +7,12 @@ export default function Index() {
       <Form3 />
       <Form />
       <Accordion />
+      <Messager />
     </>
   );
 }
+
+function Messager() {}
 
 function Accordion() {
   const [activeIndex, setActiveIndex] = useState(0);
