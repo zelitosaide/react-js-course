@@ -13,6 +13,12 @@ function Form() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [fullName, setFullName] = useState("");
+
+  return (
+    <>
+      <h2>Let's check you in</h2>
+    </>
+  );
 }
 
 function Form2() {
