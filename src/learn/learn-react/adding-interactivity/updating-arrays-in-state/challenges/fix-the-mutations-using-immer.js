@@ -98,6 +98,18 @@ function Task({ todo, onChange, onDelete }) {
       </>
     );
   } else {
+    todoContent = (
+      <>
+        {todo.title}{" "}
+        <button
+          onClick={function () {
+            setIsEditing(true);
+          }}
+        >
+          Edit
+        </button>
+      </>
+    );
   }
 
   return (
