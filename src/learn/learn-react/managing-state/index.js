@@ -6,9 +6,12 @@ export default function Index() {
       <Form2 />
       <Form3 />
       <Form />
+      <Accordion />
     </>
   );
 }
+
+function Accordion() {}
 
 function Form() {
   const [firstName, setFirstName] = useState("");
