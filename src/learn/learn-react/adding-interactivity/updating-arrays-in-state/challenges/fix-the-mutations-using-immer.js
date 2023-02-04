@@ -39,7 +39,7 @@ function TaskApp() {
     // );
     updateTodos(function (draft) {
       const todo = draft.find(function (t) {
-        return (t.id = nextTodo.id);
+        return t.id === nextTodo.id;
       });
       todo.title = nextTodo.title;
       todo.done = nextTodo.done;
