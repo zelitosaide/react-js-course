@@ -12,6 +12,7 @@ import UpdateAnItemInTheShoppingCart from "./challenges/update-an-item-in-the-sh
 import RemoveAnItemFromTheShoppingCart from "./challenges/remove-an-item-from-the-shopping-cart";
 import FixTheMutationUsingNonMutativeMethods from "./challenges/fix-the-mutation-using-non-mutative-methods";
 import FixTheMutationsUsingImmer from "./challenges/fix-the-mutations-using-immer";
+import FixTheMutationsUsingImmerV2 from "./challenges/fix-the-mutations-using-immer-v2";
 
 let nextId = 3;
 
@@ -33,6 +34,7 @@ export default function Index() {
       <RemoveAnItemFromTheShoppingCart />
       <FixTheMutationUsingNonMutativeMethods />
       <FixTheMutationsUsingImmer />
+      <FixTheMutationsUsingImmerV2 />
     </>
   );
 }
