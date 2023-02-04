@@ -15,4 +15,14 @@ export default function Index() {
 
 function TaskApp() {
   const [todos, setTodos] = useState(initialTodos);
+
+  function handleAddTodo() {}
+
+  return (
+    <>
+      <AddTodo onAddTodo={handleAddTodo} />
+    </>
+  );
 }
+
+function AddTodo({ onAddTodo }) {}
