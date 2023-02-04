@@ -26,9 +26,12 @@ function Messager() {
           setTo(contact);
         }}
       />
+      <Chat contact={to} />
     </div>
   );
 }
+
+function Chat({ contact }) {}
 
 function ContactList({ contacts, selectedContact, onSelect }) {
   return (
