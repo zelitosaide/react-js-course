@@ -100,7 +100,10 @@ function Task({ task }) {
           onChange={function (e) {
             dispatch({
               type: "changed",
-              task: { ...task, text: e.target.value },
+              task: {
+                ...task,
+                text: e.target.value,
+              },
             });
           }}
         />
