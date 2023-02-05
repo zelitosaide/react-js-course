@@ -51,6 +51,18 @@ function AddTask() {
           setText(e.target.value);
         }}
       />
+      <button
+        onClick={function () {
+          setText("");
+          dispatch({
+            type: "added",
+            id: nextId++,
+            text: text,
+          });
+        }}
+      >
+        Add
+      </button>
     </>
   );
 }
