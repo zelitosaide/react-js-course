@@ -29,11 +29,16 @@ function TaskApp() {
     });
   }
 
+  function handleChangeTask() {}
+
   return (
     <>
       <h1>Prague itinerary</h1>
       <AddTask onAddTask={handleAddTask} />
-      <TaskList tasks={tasks} />
+      <TaskList
+        tasks={tasks}
+        onChangeTask={handleChangeTask}
+      />
     </>
   );
 }
