@@ -3,6 +3,8 @@ import { useState, useReducer, createContext, useContext } from "react";
 import { contacts, tasks as initialTasks } from "../../../data/data";
 
 const LevelContext = createContext(0);
+const TasksContext = createContext(null);
+const TasksDispatchContext = createContext(null);
 
 let nextId = 3;
 
