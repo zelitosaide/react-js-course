@@ -34,6 +34,12 @@ function TaskApp() {
 
 function TasksProvider() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
+
+  return (
+    <TasksContext.Provider>
+      <TasksDispatchContext.Provider></TasksDispatchContext.Provider>
+    </TasksContext.Provider>
+  );
 }
 
 function tasksReducer() {}
