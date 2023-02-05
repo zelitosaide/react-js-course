@@ -29,6 +29,11 @@ function Page() {
         <Heading>Heading</Heading>
         <Heading>Heading</Heading>
         <Heading>Heading</Heading>
+        <Section>
+          <Heading>Sub-heading</Heading>
+          <Heading>Sub-heading</Heading>
+          <Heading>Sub-heading</Heading>
+        </Section>
       </Section>
     </Section>
   );
