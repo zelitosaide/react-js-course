@@ -22,7 +22,15 @@ export default function Index() {
   );
 }
 
-function TaskApp() {}
+function TaskApp() {
+  return (
+    <TasksProvider>
+      <h1>Day off in Kyoto</h1>
+    </TasksProvider>
+  );
+}
+
+function TasksProvider() {}
 
 function Page() {
   return (
