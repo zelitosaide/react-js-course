@@ -29,7 +29,12 @@ function TaskApp() {
     });
   }
 
-  function handleChangeTask() {}
+  function handleChangeTask(task) {
+    dispatch({
+      type: "changed",
+      task: task,
+    });
+  }
 
   function handleDeleteTask() {}
 
