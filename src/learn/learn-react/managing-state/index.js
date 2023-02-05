@@ -18,6 +18,8 @@ export default function Index() {
   );
 }
 
+function Page() {}
+
 function TaskApp() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
 
