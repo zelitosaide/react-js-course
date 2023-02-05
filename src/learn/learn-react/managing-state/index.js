@@ -25,6 +25,12 @@ function Page() {}
 
 function Section({ children }) {
   const level = useContext(LevelContext);
+
+  return (
+    <section className="section">
+      <LevelContext.Provider></LevelContext.Provider>
+    </section>
+  );
 }
 
 function TaskApp() {
