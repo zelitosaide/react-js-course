@@ -85,6 +85,14 @@ function Task({ task, onChange, onDelete }) {
           });
         }}
       />
+      {taskContent}
+      <button
+        onClick={function () {
+          onDelete(task.id);
+        }}
+      >
+        Delete
+      </button>
     </label>
   );
 }
