@@ -75,7 +75,16 @@ function Task({ task, onChange, onDelete }) {
 
   return (
     <label>
-      <input type="checkbox" />
+      <input
+        type="checkbox"
+        checked={task.done}
+        onChange={function (e) {
+          onChange({
+            ...task,
+            done: e.target.checked,
+          });
+        }}
+      />
     </label>
   );
 }
