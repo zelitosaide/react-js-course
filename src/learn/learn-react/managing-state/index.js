@@ -96,7 +96,7 @@ function Task({ task }) {
     taskContent = (
       <>
         <input
-          value={task}
+          value={task.text}
           onChange={function (e) {
             dispatch({
               type: "changed",
