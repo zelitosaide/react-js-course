@@ -17,9 +17,12 @@ export default function Index() {
       <Messager />
       <TaskApp2 />
       <Page />
+      <TaskApp />
     </>
   );
 }
+
+function TaskApp() {}
 
 function Page() {
   return (
