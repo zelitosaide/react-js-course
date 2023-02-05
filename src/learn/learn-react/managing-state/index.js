@@ -51,7 +51,25 @@ function TaskApp() {
   );
 }
 
-function TaskList({ tasks, onChangeTask, onDeleteTask }) {}
+function TaskList({ tasks, onChangeTask, onDeleteTask }) {
+  return (
+    <ul>
+      {tasks.map(function (task) {
+        return (
+          <li key={task.id}>
+            <Task
+              task={task}
+              onChange={onChangeTask}
+              onDelete={onDeleteTask}
+            />
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function Task({ task, onChange, onDelete }) {}
 
 function AddTask({ onAddTask }) {
   const [text, setText] = useState("");
