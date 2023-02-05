@@ -24,10 +24,12 @@ export default function Index() {
 function Page() {
   return (
     <Section>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.{" "}
-      </p>
+      <Heading>Title</Heading>
+      <Section>
+        <Heading>Heading</Heading>
+        <Heading>Heading</Heading>
+        <Heading>Heading</Heading>
+      </Section>
     </Section>
   );
 }
