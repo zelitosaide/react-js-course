@@ -39,7 +39,20 @@ function useTasksDispatch() {
 }
 
 function AddTask() {
+  const [text, setText] = useState("");
   const dispatch = useTasksDispatch();
+
+  return (
+    <>
+      <input
+        placeholder="Add task"
+        value={text}
+        onChange={function (e) {
+          setText(e.target.value);
+        }}
+      />
+    </>
+  );
 }
 
 function TaskList() {}
