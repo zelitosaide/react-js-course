@@ -69,7 +69,16 @@ function TaskList({ tasks, onChangeTask, onDeleteTask }) {
   );
 }
 
-function Task({ task, onChange, onDelete }) {}
+function Task({ task, onChange, onDelete }) {
+  const [isEditing, setIsEditing] = useState(false);
+  let taskContent;
+
+  return (
+    <label>
+      <input type="checkbox" />
+    </label>
+  );
+}
 
 function AddTask({ onAddTask }) {
   const [text, setText] = useState("");
