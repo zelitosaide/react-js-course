@@ -1,6 +1,8 @@
-import { useState, useReducer } from "react";
+import { useState, useReducer, createContext } from "react";
 
 import { contacts, tasks as initialTasks } from "../../../data/data";
+
+const LevelContext = createContext(0);
 
 let nextId = 3;
 
