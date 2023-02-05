@@ -28,7 +28,9 @@ function Section({ children }) {
 
   return (
     <section className="section">
-      <LevelContext.Provider></LevelContext.Provider>
+      <LevelContext.Provider value={level + 1}>
+        {children}
+      </LevelContext.Provider>
     </section>
   );
 }
