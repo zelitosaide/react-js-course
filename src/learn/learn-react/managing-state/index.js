@@ -34,7 +34,13 @@ function TaskApp() {
   );
 }
 
-function AddTask() {}
+function useTasksDispatch() {
+  return useContext(TasksDispatchContext);
+}
+
+function AddTask() {
+  const dispatch = useTasksDispatch();
+}
 
 function TaskList() {}
 
