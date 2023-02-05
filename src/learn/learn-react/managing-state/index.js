@@ -33,9 +33,12 @@ function TaskApp() {
     <>
       <h1>Prague itinerary</h1>
       <AddTask onAddTask={handleAddTask} />
+      <TaskList tasks={tasks} />
     </>
   );
 }
+
+function TaskList({ tasks, onChangeTask, onDeleteTask }) {}
 
 function AddTask({ onAddTask }) {
   const [text, setText] = useState("");
