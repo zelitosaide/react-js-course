@@ -33,8 +33,10 @@ function TaskApp() {
 }
 
 function TasksProvider() {
-  const [tasks, dispatch] = useReducer();
+  const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
 }
+
+function tasksReducer() {}
 
 function Page() {
   return (
