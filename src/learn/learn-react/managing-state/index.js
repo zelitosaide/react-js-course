@@ -38,6 +38,10 @@ function useTasksDispatch() {
   return useContext(TasksDispatchContext);
 }
 
+function useTasks() {
+  return useContext(TasksContext);
+}
+
 function AddTask() {
   const [text, setText] = useState("");
   const dispatch = useTasksDispatch();
@@ -67,7 +71,23 @@ function AddTask() {
   );
 }
 
-function TaskList() {}
+function TaskList() {
+  const tasks = useTasks();
+
+  return (
+    <ul>
+      {tasks.map(function (task) {
+        return (
+          <li key={task.id}>
+            <Task task={task} />
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function Task({ task }) {}
 
 function TasksProvider({ children }) {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
