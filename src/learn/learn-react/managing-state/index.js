@@ -107,6 +107,13 @@ function Task({ task }) {
             });
           }}
         />
+        <button
+          onClick={function () {
+            setIsEditing(false);
+          }}
+        >
+          Save
+        </button>
       </>
     );
   }
