@@ -1,4 +1,4 @@
-import { useState, useReducer, createContext } from "react";
+import { useState, useReducer, createContext, useContext } from "react";
 
 import { contacts, tasks as initialTasks } from "../../../data/data";
 
@@ -23,7 +23,9 @@ export default function Index() {
 
 function Page() {}
 
-function Section({ children }) {}
+function Section({ children }) {
+  const level = useContext(LevelContext);
+}
 
 function TaskApp() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
