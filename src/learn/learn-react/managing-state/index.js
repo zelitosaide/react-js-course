@@ -32,7 +32,9 @@ function TaskApp() {
   );
 }
 
-function TasksProvider() {}
+function TasksProvider() {
+  const [tasks, dispatch] = useReducer();
+}
 
 function Page() {
   return (
@@ -93,7 +95,7 @@ function Heading({ children }) {
 }
 
 function TaskApp2() {
-  const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
+  const [tasks, dispatch] = useReducer(tasksReducer2, initialTasks);
 
   function handleAddTask(text) {
     dispatch({
@@ -235,7 +237,7 @@ function AddTask2({ onAddTask }) {
   );
 }
 
-function tasksReducer(tasks, action) {
+function tasksReducer2(tasks, action) {
   switch (action.type) {
     case "added": {
       return [
