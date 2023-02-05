@@ -81,7 +81,10 @@ function TasksProvider({ children }) {
   );
 }
 
-function tasksReducer() {}
+function tasksReducer(tasks, action) {
+  switch (action.type) {
+  }
+}
 
 function Page() {
   return (
