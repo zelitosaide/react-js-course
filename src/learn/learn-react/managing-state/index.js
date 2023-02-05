@@ -31,6 +31,8 @@ function TaskApp() {
 
   function handleChangeTask() {}
 
+  function handleDeleteTask() {}
+
   return (
     <>
       <h1>Prague itinerary</h1>
@@ -38,6 +40,7 @@ function TaskApp() {
       <TaskList
         tasks={tasks}
         onChangeTask={handleChangeTask}
+        onDeleteTask={handleDeleteTask}
       />
     </>
   );
