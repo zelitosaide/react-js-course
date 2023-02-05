@@ -87,7 +87,17 @@ function TaskList() {
   );
 }
 
-function Task({ task }) {}
+function Task({ task }) {
+  const [isEditing, setIsEditing] = useState(false);
+  const dispatch = useTasksDispatch();
+  let taskContent;
+
+  return (
+    <label>
+      <input type="checkbox" />
+    </label>
+  );
+}
 
 function TasksProvider({ children }) {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
