@@ -116,6 +116,19 @@ function Task({ task }) {
         </button>
       </>
     );
+  } else {
+    taskContent = (
+      <>
+        {task.text}{" "}
+        <button
+          onClick={function () {
+            setIsEditing(true);
+          }}
+        >
+          Edit
+        </button>
+      </>
+    );
   }
 
   return (
