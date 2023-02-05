@@ -94,7 +94,27 @@ function Task({ task }) {
 
   return (
     <label>
-      <input type="checkbox" />
+      <input
+        type="checkbox"
+        checked={task.done}
+        onChange={function (e) {
+          dispatch({
+            type: "changed",
+            task: {
+              ...task,
+              done: e.target.checked,
+            },
+          });
+        }}
+      />
+      {taskContent}
+      <button
+        onClick={function () {
+          dispatch({ type: "deleted", id: task.id });
+        }}
+      >
+        Delete
+      </button>
     </label>
   );
 }
