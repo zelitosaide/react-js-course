@@ -3,7 +3,7 @@ import { statuses } from "../../../../data/data";
 export default function Index() {
   return (
     <>
-      <Form status="empty" />
+      <Form2 status="empty" />
       <DisplayingManyVisualStatesAtOnce />
     </>
   );
@@ -14,7 +14,10 @@ function DisplayingManyVisualStatesAtOnce() {
     <>
       {statuses.map(function (status) {
         return (
-          <section key={status}>
+          <section
+            style={{ marginTop: 32 }}
+            key={status}
+          >
             <h4>Form ({status}):</h4>
             <Form status={status} />
           </section>
@@ -24,7 +27,9 @@ function DisplayingManyVisualStatesAtOnce() {
   );
 }
 
-function Form({ status }) {
+function Form({ status }) {}
+
+function Form2({ status }) {
   if (status === "success") {
     return <h1>That's right!</h1>;
   }
