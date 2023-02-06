@@ -16,13 +16,11 @@ function DisplayingManyVisualStatesAtOnce() {
         return (
           <section
             style={{
-              marginTop: 32,
               borderTop: "1px solid #aaa",
               padding: 20,
             }}
             key={status}
           >
-            <hr />
             <h4>Form ({status}):</h4>
             <Form status={status} />
           </section>
