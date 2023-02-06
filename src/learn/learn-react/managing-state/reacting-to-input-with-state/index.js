@@ -2,6 +2,8 @@ export default function Index() {
   return <Form status="empty" />;
 }
 
+function DisplayingManyVisualStatesAtOnce() {}
+
 function Form({ status }) {
   if (status === "success") {
     return <h1>That's right!</h1>;
