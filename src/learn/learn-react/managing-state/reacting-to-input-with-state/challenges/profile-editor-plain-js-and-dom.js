@@ -15,6 +15,12 @@ function handleFirstNameChange() {
     "Hello " + firstNameInput.value + " " + lastNameInput.value + "!";
 }
 
+function handleLastNameChange() {
+  lastNameText.textContent = lastNameInput.value;
+  helloText.textContent =
+    "Hello " + firstNameInput.value + " " + lastNameInput.value + "!";
+}
+
 function hide(el) {
   el.style.display = "none";
 }
@@ -33,3 +39,4 @@ let form = document.getElementById("form");
 
 form.onsubmit = handleFormSubmit;
 firstNameInput.oninput = handleFirstNameChange;
+lastNameInput.oninput = handleLastNameChange;
