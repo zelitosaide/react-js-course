@@ -43,6 +43,7 @@ function disable(el) {
 }
 
 let loadingMessage = document.getElementById("loading");
+let errorMessage = document.getElementById("error");
 let textarea = document.getElementById("textarea");
 let button = document.getElementById("button");
 let form = document.getElementById("form");
