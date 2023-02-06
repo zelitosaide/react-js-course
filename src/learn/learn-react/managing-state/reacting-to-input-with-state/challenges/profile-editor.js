@@ -45,6 +45,9 @@ function ProfileEditor() {
       <button type="submit">
         {isEditing ? "Save Profile" : "Edit Profile"}
       </button>
+      <p>
+        Hello, {firstName} {lastName}!
+      </p>
     </form>
   );
 }
