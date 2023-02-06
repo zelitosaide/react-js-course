@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 /**
  * Challenge 1 of 3: Add and remove a CSS class
  *
@@ -15,10 +17,14 @@ export default function Index() {
 }
 
 function Picture() {
+  const [active, setActive] = useState(false);
+  let backgroundClassName = "background";
+  let pictureClassName = "picture";
+
   return (
-    <div className="background">
+    <div className={backgroundClassName}>
       <img
-        className="picture"
+        className={pictureClassName}
         alt="Rainbow houses in Kampung Pelangi, Indonesia"
         src="https://i.imgur.com/5qwVYb1.jpeg"
       />
