@@ -16,13 +16,17 @@ function ProfileEditor() {
   return (
     <form onSubmit={handleFormSubmit}>
       <label>
-        First Name: <b>{firstName}</b>
-        <input
-          value={firstName}
-          onChange={function (e) {
-            setFirstName(e.target.value);
-          }}
-        />
+        First Name:{" "}
+        {isEditing ? (
+          <input
+            value={firstName}
+            onChange={function (e) {
+              setFirstName(e.target.value);
+            }}
+          />
+        ) : (
+          <b>{firstName}</b>
+        )}
       </label>
       <label>
         Last Name: <b>{lastName}</b>
