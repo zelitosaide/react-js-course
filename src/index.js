@@ -10,7 +10,16 @@
 //   </React.StrictMode>
 // );
 
-async function handleFormSubmit(e) {}
+async function handleFormSubmit(e) {
+  e.preventDefault();
+  disable(textarea);
+  disable(button);
+  show(loadingMessage);
+}
+
+function show(el) {
+  el.style.display = "";
+}
 
 function handleTextareaChange() {
   if (textarea.value.length === 0) {
@@ -28,6 +37,7 @@ function disable(el) {
   el.disabled = true;
 }
 
+let loadingMessage = document.getElementById("loading");
 let textarea = document.getElementById("textarea");
 let button = document.getElementById("button");
 let form = document.getElementById("form");
