@@ -2,6 +2,8 @@ function handleFormSubmit(e) {
   e.preventDefault();
   if (editButton.textContent === "Edit Profile") {
     editButton.textContent = "Save Profile";
+    hide(firstNameText);
+    hide(lastNameText);
   }
 }
 
