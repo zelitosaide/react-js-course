@@ -48,7 +48,9 @@
 
 // import UpdatingArraysInState from "./learn/learn-react/adding-interactivity/updating-arrays-in-state";
 
-import ManagingState from "./learn/learn-react/managing-state";
+// import ManagingState from "./learn/learn-react/managing-state";
+
+import ReactingToInputWithState from "./learn/learn-react/managing-state/reacting-to-input-with-state";
 
 function App() {
   return (
@@ -102,7 +104,9 @@ function App() {
 
       {/* <UpdatingArraysInState /> */}
 
-      <ManagingState />
+      {/* <ManagingState /> */}
+
+      <ReactingToInputWithState />
     </>
   );
 }
