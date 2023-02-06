@@ -10,4 +10,8 @@
  * purple background and highlights the picture border. Clicking outside
  * the picture highlights the background, but removes the picture border highlight.
  */
-export default function Index() {}
+export default function Index() {
+  return <Picture />;
+}
+
+function Picture() {}
