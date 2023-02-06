@@ -10,6 +10,8 @@
 //   </React.StrictMode>
 // );
 
+function handleFormSubmit(e) {}
+
 function handleTextareaChange() {
   if (textarea.value.length === 0) {
     disable(button);
@@ -28,5 +30,7 @@ function disable(el) {
 
 let textarea = document.getElementById("textarea");
 let button = document.getElementById("button");
+let form = document.getElementById("form");
 
 textarea.oninput = handleTextareaChange;
+form.onsubmit = handleFormSubmit;
