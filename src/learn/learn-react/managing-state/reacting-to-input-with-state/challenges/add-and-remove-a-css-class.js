@@ -14,4 +14,14 @@ export default function Index() {
   return <Picture />;
 }
 
-function Picture() {}
+function Picture() {
+  return (
+    <div className="background">
+      <img
+        className="picture"
+        alt="Rainbow houses in Kampung Pelangi, Indonesia"
+        src="https://i.imgur.com/5qwVYb1.jpeg"
+      />
+    </div>
+  );
+}
