@@ -32,6 +32,14 @@ function Form({ status }) {
   if (status === "success") {
     return <h1>That's right!</h1>;
   }
+
+  return (
+    <>
+      <form>
+        <textarea disabled={status === "submitting"} />
+      </form>
+    </>
+  );
 }
 
 function Form2({ status }) {
