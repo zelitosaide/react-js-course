@@ -17,9 +17,15 @@ export default function Index() {
 }
 
 function Picture() {
-  const [active, setActive] = useState(false);
+  const [isActive, setIsActive] = useState(false);
   let backgroundClassName = "background";
   let pictureClassName = "picture";
+
+  if (isActive) {
+    pictureClassName += " picture--active";
+  } else {
+    backgroundClassName += " background--active";
+  }
 
   return (
     <div className={backgroundClassName}>
