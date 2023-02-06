@@ -11,6 +11,7 @@ function ProfileEditor() {
 
   function handleFormSubmit(e) {
     e.preventDefault();
+    setIsEditing(!isEditing);
   }
 
   return (
