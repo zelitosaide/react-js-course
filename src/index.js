@@ -23,7 +23,13 @@ async function handleFormSubmit(e) {
 
 function submitForm(answer) {
   return new Promise(function (resolve, reject) {
-    setTimeout(function () {}, 5000);
+    setTimeout(function () {
+      if (answer.toLowerCase() === "istanbul") {
+        resolve();
+      } else {
+        reject(new Error("Good guess but a wrong answer. Try again!"));
+      }
+    }, 5000);
   });
 }
 
