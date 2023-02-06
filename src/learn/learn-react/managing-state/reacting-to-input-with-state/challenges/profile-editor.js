@@ -7,6 +7,7 @@ export default function Index() {
 function ProfileEditor() {
   const [firstName, setFirstName] = useState("Jane");
   const [lastName, setLastName] = useState("Jacobs");
+  const [isEditing, setIsEditing] = useState(false);
 
   return (
     <form>
@@ -28,6 +29,7 @@ function ProfileEditor() {
           }}
         />
       </label>
+      <button></button>
     </form>
   );
 }
