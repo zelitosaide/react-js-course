@@ -8,7 +8,12 @@ function DisplayingManyVisualStatesAtOnce() {
   return (
     <>
       {statuses.map(function (status) {
-        return <section key={status}></section>;
+        return (
+          <section key={status}>
+            <h4>Form ({status}):</h4>
+            <Form status={status} />
+          </section>
+        );
       })}
     </>
   );
