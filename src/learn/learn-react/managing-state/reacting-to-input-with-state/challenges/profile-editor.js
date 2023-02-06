@@ -9,8 +9,12 @@ function ProfileEditor() {
   const [lastName, setLastName] = useState("Jacobs");
   const [isEditing, setIsEditing] = useState(false);
 
+  function handleFormSubmit(e) {
+    e.preventDefault();
+  }
+
   return (
-    <form>
+    <form onSubmit={handleFormSubmit}>
       <label>
         First Name: <b>{firstName}</b>
         <input
