@@ -16,6 +16,7 @@ async function handleFormSubmit(e) {
   disable(button);
   show(loadingMessage);
   hide(errorMessage);
+  hide(form);
   try {
     await submitForm(textarea.value);
     show(successMessage);
