@@ -25,13 +25,25 @@ function Form() {
     setAnswer(e.target.value);
   }
 
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setStatus("submitting");
+    try {
+      await submitForm(answer);
+      setStatus("success");
+    } catch (error) {
+      setStatus("typing");
+      setError(error);
+    }
+  }
+
   return (
     <>
       <h2>City quiz</h2>
       <p>
         In which city is there a billboard that turns air into drinkable water?
       </p>
-      <form>
+      <form onSubmit={handleSubmit}>
         <textarea
           disabled={status === "submitting"}
           onChange={handleTextareaChange}
@@ -115,4 +127,8 @@ function Form2({ status }) {
       </form>
     </>
   );
+}
+
+function submitForm(answer) {
+  return new Promise();
 }
