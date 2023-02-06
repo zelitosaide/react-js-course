@@ -21,6 +21,10 @@ function Form() {
     return <h1>That's right!</h1>;
   }
 
+  function handleTextareaChange(e) {
+    setAnswer(e.target.value);
+  }
+
   return (
     <>
       <h2>City quiz</h2>
@@ -28,7 +32,10 @@ function Form() {
         In which city is there a billboard that turns air into drinkable water?
       </p>
       <form>
-        <textarea disabled={status === "submitting"} />
+        <textarea
+          disabled={status === "submitting"}
+          onChange={handleTextareaChange}
+        />
         <br />
         <button disabled={answer.length === 0 || status === "submitting"}>
           Submit
