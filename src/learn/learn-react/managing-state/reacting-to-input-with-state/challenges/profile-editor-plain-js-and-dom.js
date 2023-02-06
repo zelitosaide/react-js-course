@@ -9,7 +9,9 @@ function handleFormSubmit(e) {
   }
 }
 
-function handleFirstNameChange() {}
+function handleFirstNameChange() {
+  firstNameText.textContent = firstNameInput.value;
+}
 
 function hide(el) {
   el.style.display = "none";
