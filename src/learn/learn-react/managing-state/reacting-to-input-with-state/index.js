@@ -15,7 +15,11 @@ function DisplayingManyVisualStatesAtOnce() {
       {statuses.map(function (status) {
         return (
           <section
-            style={{ marginTop: 32 }}
+            style={{
+              marginTop: 32,
+              borderTop: "1px solid #aaa",
+              padding: 20,
+            }}
             key={status}
           >
             <hr />
