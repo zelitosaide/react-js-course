@@ -5,6 +5,16 @@ function handleFormSubmit(e) {
   }
 }
 
+function hide(el) {
+  el.style.display = "none";
+}
+
+function show(el) {
+  el.style.display = "";
+}
+
+let firstNameText = document.getElementById("firstNameText");
+let lastNameText = document.getElementById("lastNameText");
 let editButton = document.getElementById("editButton");
 let form = document.getElementById("form");
 
