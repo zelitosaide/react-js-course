@@ -1,7 +1,12 @@
 import { statuses } from "../../../../data/data";
 
 export default function Index() {
-  return <Form status="empty" />;
+  return (
+    <>
+      <Form status="empty" />
+      <DisplayingManyVisualStatesAtOnce />
+    </>
+  );
 }
 
 function DisplayingManyVisualStatesAtOnce() {
