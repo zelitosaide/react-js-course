@@ -11,6 +11,8 @@ function handleFormSubmit(e) {
 
 function handleFirstNameChange() {
   firstNameText.textContent = firstNameInput.value;
+  helloText.textContent =
+    "Hello " + firstNameInput.value + " " + lastNameInput.value + "!";
 }
 
 function hide(el) {
@@ -26,6 +28,7 @@ let lastNameInput = document.getElementById("lastNameInput");
 let firstNameText = document.getElementById("firstNameText");
 let lastNameText = document.getElementById("lastNameText");
 let editButton = document.getElementById("editButton");
+let helloText = document.getElementById("helloText");
 let form = document.getElementById("form");
 
 form.onsubmit = handleFormSubmit;
