@@ -46,7 +46,9 @@ function ProfileEditor() {
         {isEditing ? "Save Profile" : "Edit Profile"}
       </button>
       <p>
-        Hello, {firstName} {lastName}!
+        <i>
+          Hello, {firstName} {lastName}!
+        </i>
       </p>
     </form>
   );
