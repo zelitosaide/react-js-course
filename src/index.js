@@ -18,6 +18,7 @@ async function handleFormSubmit(e) {
   hide(errorMessage);
   try {
     await submitForm(textarea.value);
+    show(successMessage);
   } catch (error) {}
 }
 
@@ -57,6 +58,7 @@ function disable(el) {
   el.disabled = true;
 }
 
+let successMessage = document.getElementById("success");
 let loadingMessage = document.getElementById("loading");
 let errorMessage = document.getElementById("error");
 let textarea = document.getElementById("textarea");
