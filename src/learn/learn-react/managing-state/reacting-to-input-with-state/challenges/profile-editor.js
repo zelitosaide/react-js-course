@@ -6,15 +6,25 @@ export default function Index() {
 
 function ProfileEditor() {
   const [firstName, setFirstName] = useState("Jane");
+  const [lastName, setLastName] = useState("Jacobs");
 
   return (
     <form>
       <label>
-        First Name: <b>{firstName}</b>{" "}
+        First Name: <b>{firstName}</b>
         <input
           value={firstName}
           onChange={function (e) {
             setFirstName(e.target.value);
+          }}
+        />
+      </label>
+      <label>
+        Last Name: <b>{lastName}</b>
+        <input
+          value={lastName}
+          onChange={function (e) {
+            setLastName(e.target.value);
           }}
         />
       </label>
