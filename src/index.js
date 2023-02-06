@@ -15,10 +15,15 @@ async function handleFormSubmit(e) {
   disable(textarea);
   disable(button);
   show(loadingMessage);
+  hide(errorMessage);
 }
 
 function show(el) {
   el.style.display = "";
+}
+
+function hide(el) {
+  el.style.display = "none";
 }
 
 function handleTextareaChange() {
