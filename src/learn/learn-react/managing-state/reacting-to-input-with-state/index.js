@@ -1,8 +1,18 @@
+import { statuses } from "../../../../data/data";
+
 export default function Index() {
   return <Form status="empty" />;
 }
 
-function DisplayingManyVisualStatesAtOnce() {}
+function DisplayingManyVisualStatesAtOnce() {
+  return (
+    <>
+      {statuses.map(function (status) {
+        return <section key={status}></section>;
+      })}
+    </>
+  );
+}
 
 function Form({ status }) {
   if (status === "success") {
