@@ -16,7 +16,7 @@ function ProfileEditor() {
 
   return (
     <form onSubmit={handleFormSubmit}>
-      <label>
+      <label style={{ display: "block", marginBottom: 20 }}>
         First Name:{" "}
         {isEditing ? (
           <input
@@ -29,7 +29,7 @@ function ProfileEditor() {
           <b>{firstName}</b>
         )}
       </label>
-      <label>
+      <label style={{ display: "block", marginBottom: 20 }}>
         Last Name:{" "}
         {isEditing ? (
           <input
