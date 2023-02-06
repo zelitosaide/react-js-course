@@ -1,5 +1,7 @@
 import { useState } from "react";
+
 import { statuses } from "../../../../data/data";
+import AddAndRemoveACssClass from "./challenges/add-and-remove-a-css-class";
 
 export default function Index() {
   return (
@@ -8,6 +10,7 @@ export default function Index() {
       <br />
       <DisplayingManyVisualStatesAtOnce />
       <Form />
+      <AddAndRemoveACssClass />
     </>
   );
 }
