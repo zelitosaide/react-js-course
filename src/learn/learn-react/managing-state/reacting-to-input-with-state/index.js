@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { statuses } from "../../../../data/data";
 import AddAndRemoveACssClass from "./challenges/add-and-remove-a-css-class";
+import ProfileEditor from "./challenges/profile-editor";
 
 export default function Index() {
   return (
@@ -11,6 +12,7 @@ export default function Index() {
       <DisplayingManyVisualStatesAtOnce />
       <Form />
       <AddAndRemoveACssClass />
+      <ProfileEditor />
     </>
   );
 }
