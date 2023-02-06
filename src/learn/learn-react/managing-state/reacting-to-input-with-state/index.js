@@ -130,5 +130,14 @@ function Form2({ status }) {
 }
 
 function submitForm(answer) {
-  return new Promise();
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      let shouldError = answer.toLowerCase() !== "lima";
+      if (shouldError) {
+        reject(new Error("Good guess but a wrong answer. Try again!"));
+      } else {
+        resolve();
+      }
+    }, 5000);
+  });
 }
