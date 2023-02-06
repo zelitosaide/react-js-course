@@ -23,6 +23,10 @@ async function handleFormSubmit(e) {
   } catch (error) {
     show(errorMessage);
     errorMessage.textContent = error.message;
+  } finally {
+    hide(loadingMessage);
+    enable(textarea);
+    enable(button);
   }
 }
 
