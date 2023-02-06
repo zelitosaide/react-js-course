@@ -29,13 +29,17 @@ function ProfileEditor() {
         )}
       </label>
       <label>
-        Last Name: <b>{lastName}</b>
-        <input
-          value={lastName}
-          onChange={function (e) {
-            setLastName(e.target.value);
-          }}
-        />
+        Last Name:{" "}
+        {isEditing ? (
+          <input
+            value={lastName}
+            onChange={function (e) {
+              setLastName(e.target.value);
+            }}
+          />
+        ) : (
+          <b>{lastName}</b>
+        )}
       </label>
       <button type="submit">
         {isEditing ? "Save Profile" : "Edit Profile"}
