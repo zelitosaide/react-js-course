@@ -16,6 +16,15 @@ async function handleFormSubmit(e) {
   disable(button);
   show(loadingMessage);
   hide(errorMessage);
+  try {
+    await submitForm(textarea.value);
+  } catch (error) {}
+}
+
+function submitForm(answer) {
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {}, 5000);
+  });
 }
 
 function show(el) {
