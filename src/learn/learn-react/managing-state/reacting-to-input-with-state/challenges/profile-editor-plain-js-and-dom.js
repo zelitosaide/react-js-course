@@ -9,6 +9,8 @@ function handleFormSubmit(e) {
   }
 }
 
+function handleFirstNameChange() {}
+
 function hide(el) {
   el.style.display = "none";
 }
@@ -25,3 +27,4 @@ let editButton = document.getElementById("editButton");
 let form = document.getElementById("form");
 
 form.onsubmit = handleFormSubmit;
+firstNameInput.oninput = handleFirstNameChange;
