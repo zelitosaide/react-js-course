@@ -18,6 +18,7 @@ function DisplayingManyVisualStatesAtOnce() {
             style={{ marginTop: 32 }}
             key={status}
           >
+            <hr />
             <h4>Form ({status}):</h4>
             <Form status={status} />
           </section>
