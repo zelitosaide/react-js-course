@@ -4,6 +4,7 @@ export default function Index() {
   return (
     <>
       <Form2 status="empty" />
+      <br />
       <DisplayingManyVisualStatesAtOnce />
     </>
   );
