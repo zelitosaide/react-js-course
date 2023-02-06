@@ -44,6 +44,11 @@ function Form({ status }) {
         <button disabled={status === "empty" || status === "submitting"}>
           Submit
         </button>
+        {status === "error" && (
+          <p style={{ color: "red" }}>
+            Good guess but a wrong answer. Try again!
+          </p>
+        )}
       </form>
     </>
   );
