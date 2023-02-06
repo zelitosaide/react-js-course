@@ -13,7 +13,9 @@ function ProfileEditor() {
         First Name: <b>{firstName}</b>{" "}
         <input
           value={firstName}
-          onChange={function (e) {}}
+          onChange={function (e) {
+            setFirstName(e.target.value);
+          }}
         />
       </label>
     </form>
