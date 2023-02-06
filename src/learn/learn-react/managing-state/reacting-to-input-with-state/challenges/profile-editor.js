@@ -42,9 +42,7 @@ function ProfileEditor() {
           <b>{lastName}</b>
         )}
       </label>
-      <button type="submit">
-        {isEditing ? "Save Profile" : "Edit Profile"}
-      </button>
+      <button type="submit">{isEditing ? "Save" : "Edit"} Profile</button>
       <p>
         <i>
           Hello, {firstName} {lastName}!
