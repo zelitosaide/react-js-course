@@ -37,6 +37,9 @@ function Form({ status }) {
     <>
       <form>
         <textarea disabled={status === "submitting"} />
+        <button disabled={status === "empty" || status === "submitting"}>
+          Submit
+        </button>
       </form>
     </>
   );
