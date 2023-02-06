@@ -16,11 +16,14 @@ async function handleFormSubmit(e) {
   disable(button);
   show(loadingMessage);
   hide(errorMessage);
-  hide(form);
   try {
     await submitForm(textarea.value);
     show(successMessage);
-  } catch (error) {}
+    hide(form);
+  } catch (error) {
+    show(errorMessage);
+    errorMessage.textContent = error.message;
+  }
 }
 
 function submitForm(answer) {
