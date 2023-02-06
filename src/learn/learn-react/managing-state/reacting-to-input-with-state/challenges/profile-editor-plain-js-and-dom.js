@@ -4,6 +4,8 @@ function handleFormSubmit(e) {
     editButton.textContent = "Save Profile";
     hide(firstNameText);
     hide(lastNameText);
+    show(firstNameInput);
+    show(lastNameInput);
   }
 }
 
@@ -15,6 +17,8 @@ function show(el) {
   el.style.display = "";
 }
 
+let firstNameInput = document.getElementById("firstNameInput");
+let lastNameInput = document.getElementById("lastNameInput");
 let firstNameText = document.getElementById("firstNameText");
 let lastNameText = document.getElementById("lastNameText");
 let editButton = document.getElementById("editButton");
