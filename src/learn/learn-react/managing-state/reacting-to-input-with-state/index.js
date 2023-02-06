@@ -33,6 +33,7 @@ function Form() {
         <button disabled={answer.length === 0 || status === "submitting"}>
           Submit
         </button>
+        {error !== null && <p style={{ color: "red" }}>{error.message}</p>}
       </form>
     </>
   );
