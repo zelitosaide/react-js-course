@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { statuses } from "../../../../data/data";
 
 export default function Index() {
@@ -6,8 +7,15 @@ export default function Index() {
       <Form2 status="empty" />
       <br />
       <DisplayingManyVisualStatesAtOnce />
+      <Form />
     </>
   );
+}
+
+function Form() {
+  const [answer, setAnswer] = useState("");
+  const [error, setError] = useState(null);
+  const [status, setStatus] = useState("typing");
 }
 
 function DisplayingManyVisualStatesAtOnce() {
@@ -23,7 +31,7 @@ function DisplayingManyVisualStatesAtOnce() {
             key={status}
           >
             <h4>Form ({status}):</h4>
-            <Form status={status} />
+            <Form3 status={status} />
           </section>
         );
       })}
@@ -31,7 +39,7 @@ function DisplayingManyVisualStatesAtOnce() {
   );
 }
 
-function Form({ status }) {
+function Form3({ status }) {
   if (status === "success") {
     return <h1>That's right!</h1>;
   }
