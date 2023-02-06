@@ -10,7 +10,7 @@
 //   </React.StrictMode>
 // );
 
-function handleFormSubmit(e) {}
+async function handleFormSubmit(e) {}
 
 function handleTextareaChange() {
   if (textarea.value.length === 0) {
