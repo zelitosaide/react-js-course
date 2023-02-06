@@ -28,7 +28,11 @@ function DisplayingManyVisualStatesAtOnce() {
   );
 }
 
-function Form({ status }) {}
+function Form({ status }) {
+  if (status === "success") {
+    return <h1>That's right!</h1>;
+  }
+}
 
 function Form2({ status }) {
   if (status === "success") {
