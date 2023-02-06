@@ -29,7 +29,9 @@ function ProfileEditor() {
           }}
         />
       </label>
-      <button></button>
+      <button type="submit">
+        {isEditing ? "Save Profile" : "Edit Profile"}
+      </button>
     </form>
   );
 }
