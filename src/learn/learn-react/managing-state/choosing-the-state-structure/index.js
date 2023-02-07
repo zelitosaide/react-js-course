@@ -29,6 +29,7 @@ function Menu() {
   return (
     <>
       <h2>What's your travel snack?</h2>
+      <p>You picked {selectedItem.title}</p>
     </>
   );
 }
