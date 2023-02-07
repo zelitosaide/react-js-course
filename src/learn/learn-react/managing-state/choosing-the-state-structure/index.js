@@ -29,14 +29,14 @@ function Form() {
   return (
     <>
       <h2>Let's check you in</h2>
-      <label>
+      <label style={{ display: "block" }}>
         First Name:{" "}
         <input
           value={firstName}
           onChange={handleFirstNameChange}
         />
       </label>
-      <label>
+      <label style={{ display: "block" }}>
         Last Name:{" "}
         <input
           value={lastName}
