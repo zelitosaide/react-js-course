@@ -23,6 +23,12 @@ function Menu() {
   function handleItemChange(id, e) {
     setItems(
       items.map(function (item) {
+        if (item.id === selectedItem.id) {
+          setSelectedItem({
+            ...selectedItem,
+            title: e.target.value,
+          });
+        }
         if (item.id === id) {
           return {
             ...item,
