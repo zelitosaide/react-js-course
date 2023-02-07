@@ -17,9 +17,18 @@ function Form() {
 
   const fullName = firstName + " " + lastName;
 
+  function handleFirstNamechange(e) {}
+
   return (
     <>
       <h2>Let's check you in</h2>
+      <label style={{ display: "block" }}>
+        First Name:{" "}
+        <input
+          value={firstName}
+          onChange={handleFirstNamechange}
+        />
+      </label>
       <p>
         Your ticket will be issued to: <b>{fullName}</b>
       </p>
