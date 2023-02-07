@@ -16,9 +16,15 @@ function Form() {
   const [lastName, setLastName] = useState("");
   const [fullName, setFullName] = useState("");
 
-  function handleFirstNameChange(e) {}
+  function handleFirstNameChange(e) {
+    setFirstName(e.target.value);
+    setFullName(e.target.value + " " + lastName);
+  }
 
-  function handleLastNameChange(e) {}
+  function handleLastNameChange(e) {
+    setLastName(e.target.value);
+    setFullName(firstName + " " + e.target.value);
+  }
 
   return (
     <>
