@@ -9,6 +9,12 @@ function MovingDot() {
 
   return (
     <div
+      onPointerMove={function (e) {
+        setPosition({
+          x: e.clientX,
+          y: e.clientY,
+        });
+      }}
       style={{
         position: "relative",
         width: "100vw",
