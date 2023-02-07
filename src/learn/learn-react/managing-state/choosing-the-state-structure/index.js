@@ -16,6 +16,10 @@ function FeedbackForm() {
 
   const isSending = status === "sending";
   const isSent = status === "sent";
+
+  if (isSent) {
+    return <h1>Thanks for feedback!</h1>;
+  }
 }
 
 function FeedbackForm2() {
