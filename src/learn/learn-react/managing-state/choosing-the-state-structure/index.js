@@ -11,8 +11,14 @@ export default function Index() {
       <Form2 />
       <Form />
       <Menu2 />
+      <Menu />
     </>
   );
+}
+
+function Menu() {
+  const [items, setItems] = useState(initialItems);
+  const [selectedItem, setSelectedItem] = useState(items[0]);
 }
 
 function Menu2() {
