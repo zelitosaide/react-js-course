@@ -1,6 +1,9 @@
 import { useState } from "react";
 
-import { menu as initialItems } from "../../../../data/data";
+import {
+  menu as initialItems,
+  travelPlan as initialTravelPlan,
+} from "../../../../data/data";
 
 export default function Index() {
   return (
@@ -19,7 +22,9 @@ export default function Index() {
   );
 }
 
-function TravelPlan() {}
+function TravelPlan() {
+  const [plan, setPlan] = useState();
+}
 
 function Menu() {
   const [items, setItems] = useState(initialItems);
