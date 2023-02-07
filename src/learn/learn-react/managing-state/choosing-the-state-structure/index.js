@@ -15,7 +15,9 @@ export default function Index() {
   );
 }
 
-function Menu() {}
+function Menu() {
+  const [items, setItems] = useState(initialItems);
+}
 
 function Form() {
   const [firstName, setFirstName] = useState("");
