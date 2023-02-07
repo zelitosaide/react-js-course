@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { menu as initialItems } from "../../../../data/data";
+
 export default function Index() {
   return (
     <>
@@ -8,9 +10,12 @@ export default function Index() {
       <FeedbackForm />
       <Form2 />
       <Form />
+      <Menu />
     </>
   );
 }
+
+function Menu() {}
 
 function Form() {
   const [firstName, setFirstName] = useState("");
