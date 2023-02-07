@@ -30,10 +30,12 @@ function FeedbackForm() {
       <p>How was your stay at the Prancing Pony?</p>
       <textarea
         value={text}
+        disabled={isSending}
         onChange={function (e) {
           setText(e.target.value);
         }}
       />
+      <br />
     </form>
   );
 }
