@@ -31,6 +31,14 @@ function updateDOM() {
   }
 }
 
+function hide(el) {
+  el.style.display = "none";
+}
+
+function show(el) {
+  el.style.display = "";
+}
+
 let form = document.getElementById("form");
 let editButton = document.getElementById("editButton");
 
