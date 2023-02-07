@@ -23,6 +23,19 @@ function Menu() {
   return (
     <>
       <h2>What's your travel snack?</h2>
+      <ul>
+        {items.map(function (item) {
+          return (
+            <li key={item.id}>
+              <input
+                value={item.title}
+                onChange={function () {}}
+              />
+            </li>
+          );
+        })}
+      </ul>
+      <p>You picked {selectedItem.title}.</p>
     </>
   );
 }
