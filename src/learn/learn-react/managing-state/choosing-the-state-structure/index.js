@@ -11,7 +11,11 @@ export default function Index() {
   );
 }
 
-function Form() {}
+function Form() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [fullName, setFullName] = useState("");
+}
 
 function FeedbackForm() {
   const [text, setText] = useState("");
