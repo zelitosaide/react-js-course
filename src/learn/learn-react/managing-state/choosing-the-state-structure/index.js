@@ -28,6 +28,10 @@ function MovingDot() {
           backgroundColor: "red",
           width: 20,
           height: 20,
+          top: -10,
+          left: -10,
+          transform: `translate(${position.x}px, ${position.y}px)`,
+          borderRadius: "50%",
         }}
       />
     </div>
