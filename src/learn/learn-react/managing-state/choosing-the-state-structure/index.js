@@ -16,6 +16,61 @@ export default function Index() {
   );
 }
 
+function Menu() {
+  const [items, setItems] = useState(initialItems);
+  const [selectedItem, setSelectedItem] = useState(items[0]);
+
+  function handleItemChange(id, e) {
+    if (id === selectedItem.id) {
+      setSelectedItem({
+        ...selectedItem,
+        title: e.target.value,
+      });
+    }
+
+    setItems(
+      items.map(function (item) {
+        if (item.id === id) {
+          return {
+            ...item,
+            title: e.target.value,
+          };
+        } else {
+          return item;
+        }
+      })
+    );
+  }
+
+  return (
+    <>
+      <h2>What's your travel snack?</h2>
+      <ul>
+        {items.map(function (item) {
+          return (
+            <li key={item.id}>
+              <input
+                value={item.title}
+                onChange={function (e) {
+                  handleItemChange(item.id, e);
+                }}
+              />{" "}
+              <button
+                onClick={function () {
+                  setSelectedItem(item);
+                }}
+              >
+                Choose
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+      <p>You picked {selectedItem.title}.</p>
+    </>
+  );
+}
+
 function Menu3() {
   const [items, setItems] = useState(initialItems);
   const [selectedItem, setSelectedItem] = useState(items[0]);
@@ -23,12 +78,6 @@ function Menu3() {
   function handleItemChange(id, e) {
     setItems(
       items.map(function (item) {
-        if (id === selectedItem.id) {
-          setSelectedItem({
-            ...selectedItem,
-            title: e.target.value,
-          });
-        }
         if (item.id === id) {
           return {
             ...item,
