@@ -26,7 +26,17 @@ function Menu() {
     return item.id === selectedId;
   });
 
-  function handleItemChange(id, e) {}
+  function handleItemChange(id, e) {
+    setItems(
+      items.map(function (item) {
+        if (item.id === id) {
+          return { ...item, title: e.target.value };
+        } else {
+          return item;
+        }
+      })
+    );
+  }
 
   return (
     <>
