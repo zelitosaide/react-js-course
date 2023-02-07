@@ -28,6 +28,13 @@ function FeedbackForm() {
           setText(e.target.value);
         }}
       />
+      <br />
+      <button
+        disabled={isSending}
+        type="submit"
+      >
+        Send
+      </button>
     </form>
   );
 }
