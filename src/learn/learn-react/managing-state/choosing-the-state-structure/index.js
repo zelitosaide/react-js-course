@@ -13,9 +13,12 @@ export default function Index() {
       <Menu2 />
       <Menu3 />
       <Menu4 />
+      <Menu />
     </>
   );
 }
+
+function Menu() {}
 
 function Menu4() {
   const [items, setItems] = useState(initialItems);
