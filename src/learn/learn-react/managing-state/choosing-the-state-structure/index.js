@@ -35,6 +35,7 @@ function FeedbackForm() {
       >
         Send
       </button>
+      {isSending && <p>Sending...</p>}
     </form>
   );
 }
