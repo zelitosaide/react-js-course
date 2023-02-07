@@ -25,7 +25,11 @@ function FeedbackForm() {
     e.preventDefault();
   }
 
-  return <form onSubmit={handleSubmit}></form>;
+  return (
+    <form onSubmit={handleSubmit}>
+      <p>How was your stay at the Prancing Pony?</p>
+    </form>
+  );
 }
 
 function FeedbackForm2() {
