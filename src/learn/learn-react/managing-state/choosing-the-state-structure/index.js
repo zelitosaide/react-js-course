@@ -4,12 +4,12 @@ export default function Index() {
   return (
     <>
       <MovingDot />
-      <FeedbackForm />
+      <FeedbackForm2 />
     </>
   );
 }
 
-function FeedbackForm() {
+function FeedbackForm2() {
   const [text, setText] = useState("");
   const [isSending, setIsSending] = useState(false);
   const [isSent, setIsSent] = useState(false);
