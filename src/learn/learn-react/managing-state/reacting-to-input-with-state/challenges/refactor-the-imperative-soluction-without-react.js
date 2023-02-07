@@ -22,6 +22,15 @@ function handleFirstNameChange(e) {
   setFirstName(e.target.value);
 }
 
+function handleLastNameChange(e) {
+  setLastName(e.target.value);
+}
+
+function setLastName(value) {
+  lastName = value;
+  updateDOM();
+}
+
 function setFirstName(value) {
   firstName = value;
   updateDOM();
@@ -67,3 +76,4 @@ let firstNameInput = document.getElementById("firstNameInput");
 
 form.onsubmit = handleFormSubmit;
 firstNameInput.oninput = handleFirstNameChange;
+lastNameInput.oninput = handleLastNameChange;
