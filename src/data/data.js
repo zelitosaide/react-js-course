@@ -4,6 +4,12 @@ export const user = {
   imageSize: 90,
 };
 
+export const menu = [
+  { title: "pretzels", id: 0 },
+  { title: "crispy seaweed", id: 1 },
+  { title: "granola bar", id: 2 },
+];
+
 export const statuses = ["empty", "typing", "submitting", "success", "error"];
 
 export const tasks = [
