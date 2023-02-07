@@ -21,6 +21,10 @@ function FeedbackForm() {
   return (
     <form>
       <p>How was your stay at The Prancing Pony?</p>
+      <textarea
+        value={text}
+        disabled={isSending}
+      />
     </form>
   );
 }
