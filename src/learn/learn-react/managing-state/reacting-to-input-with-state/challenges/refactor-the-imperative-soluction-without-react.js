@@ -23,8 +23,15 @@ function setIsEditing(value) {
   updateDOM();
 }
 
-function updateDOM() {}
+function updateDOM() {
+  if (isEditing) {
+    editButton.textContent = "Save Profile";
+  } else {
+    editButton.textContent = "Edit Profile";
+  }
+}
 
 let form = document.getElementById("form");
+let editButton = document.getElementById("editButton");
 
 form.onsubmit = handleFormSubmit;
