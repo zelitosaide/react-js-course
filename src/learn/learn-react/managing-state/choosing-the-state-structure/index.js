@@ -24,7 +24,10 @@ function Menu() {
     setItems(
       items.map(function (item) {
         if (item.id === id) {
-          return { ...item, text: e.target.value };
+          return {
+            ...item,
+            title: e.target.value,
+          };
         } else {
           return item;
         }
