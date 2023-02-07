@@ -18,7 +18,12 @@ function handleFormSubmit(e) {
   setIsEditing(!isEditing);
 }
 
-function setIsEditing() {}
+function setIsEditing(value) {
+  isEditing = value;
+  updateDOM();
+}
+
+function updateDOM() {}
 
 let form = document.getElementById("form");
 
