@@ -20,6 +20,18 @@ function Menu() {
   const [items, setItems] = useState(initialItems);
   const [selectedItem, setSelectedItem] = useState(items[0]);
 
+  function handleItemChange(id, e) {
+    setItems(
+      items.map(function (item) {
+        if (item.id === id) {
+          return { ...item, text: e.target.value };
+        } else {
+          return item;
+        }
+      })
+    );
+  }
+
   return (
     <>
       <h2>What's your travel snack?</h2>
@@ -29,7 +41,9 @@ function Menu() {
             <li key={item.id}>
               <input
                 value={item.title}
-                onChange={function () {}}
+                onChange={function () {
+                  handleItemChange(item.id, e);
+                }}
               />
             </li>
           );
