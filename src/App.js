@@ -50,7 +50,9 @@
 
 // import ManagingState from "./learn/learn-react/managing-state";
 
-import ReactingToInputWithState from "./learn/learn-react/managing-state/reacting-to-input-with-state";
+// import ReactingToInputWithState from "./learn/learn-react/managing-state/reacting-to-input-with-state";
+
+import ChoosingTheStateStructure from "./learn/learn-react/managing-state/choosing-the-state-structure";
 
 function App() {
   return (
@@ -106,7 +108,9 @@ function App() {
 
       {/* <ManagingState /> */}
 
-      <ReactingToInputWithState />
+      {/* <ReactingToInputWithState /> */}
+
+      <ChoosingTheStateStructure />
     </>
   );
 }
