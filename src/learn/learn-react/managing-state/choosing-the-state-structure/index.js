@@ -7,6 +7,7 @@ export default function Index() {
       <FeedbackForm2 />
       <FeedbackForm />
       <Form2 />
+      <Form />
     </>
   );
 }
