@@ -24,8 +24,8 @@ function MovingDot() {
       }}
       style={{
         position: "relative",
-        width: "100vw",
-        height: "100vh",
+        width: "80vw",
+        height: "50vh",
         backgroundColor: "lightblue",
       }}
     >
