@@ -40,7 +40,7 @@ function Menu() {
                 onChange={function (e) {
                   handleItemChange(item.id, e);
                 }}
-              />
+              />{" "}
               <button
                 onClick={function () {
                   setSelectedId(item.id);
