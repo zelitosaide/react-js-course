@@ -21,6 +21,10 @@ export default function Index() {
 function Menu() {
   const [items, setItems] = useState(initialItems);
   const [selectedId, setSelectedId] = useState(0);
+
+  const selectedItem = items.find(function (item) {
+    return item.id === selectedId;
+  });
 }
 
 function Menu4() {
