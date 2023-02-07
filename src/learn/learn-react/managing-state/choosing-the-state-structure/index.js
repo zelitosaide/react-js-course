@@ -44,7 +44,7 @@ function Menu() {
             <li key={item.id}>
               <input
                 value={item.title}
-                onChange={function () {
+                onChange={function (e) {
                   handleItemChange(item.id, e);
                 }}
               />
