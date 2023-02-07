@@ -20,6 +20,9 @@ function Form() {
   return (
     <>
       <h2>Let's check you in</h2>
+      <p>
+        Your ticket will be issued to: <b>{fullName}</b>
+      </p>
     </>
   );
 }
