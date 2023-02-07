@@ -18,6 +18,15 @@ function handleFormSubmit(e) {
   setIsEditing(!isEditing);
 }
 
+function handleFirstNameChange(e) {
+  setFirstName(e.target.value);
+}
+
+function setFirstName(value) {
+  firstName = value;
+  updateDOM();
+}
+
 function setIsEditing(value) {
   isEditing = value;
   updateDOM();
@@ -55,3 +64,4 @@ let lastNameInput = document.getElementById("lastNameInput");
 let firstNameInput = document.getElementById("firstNameInput");
 
 form.onsubmit = handleFormSubmit;
+firstNameInput.oninput = handleFirstNameChange;
