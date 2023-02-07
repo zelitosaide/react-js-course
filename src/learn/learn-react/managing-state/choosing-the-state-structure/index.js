@@ -14,12 +14,16 @@ function FeedbackForm() {
   const [isSending, setIsSending] = useState(false);
   const [isSent, setIsSent] = useState(false);
 
+  async function handleSubmit(e) {
+    e.preventDefault();
+  }
+
   if (isSent) {
     return <h1>Thanks for feedback!</h1>;
   }
 
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <p>How was your stay at The Prancing Pony?</p>
       <textarea
         value={text}
