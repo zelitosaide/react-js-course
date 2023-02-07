@@ -21,6 +21,15 @@ function MovingDot() {
         height: "100vh",
         backgroundColor: "lightblue",
       }}
-    ></div>
+    >
+      <div
+        style={{
+          position: "absolute",
+          backgroundColor: "red",
+          width: 20,
+          height: 20,
+        }}
+      />
+    </div>
   );
 }
