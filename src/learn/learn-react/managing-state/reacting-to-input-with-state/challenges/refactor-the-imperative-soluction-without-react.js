@@ -46,6 +46,7 @@ function updateDOM() {
     show(firstNameText);
     show(lastNameText);
   }
+  helloText.textContent = "Hello " + firstName + " " + lastName + "!";
 }
 
 function hide(el) {
@@ -57,6 +58,7 @@ function show(el) {
 }
 
 let form = document.getElementById("form");
+let helloText = document.getElementById("helloText");
 let editButton = document.getElementById("editButton");
 let lastNameText = document.getElementById("lastNameText");
 let firstNameText = document.getElementById("firstNameText");
