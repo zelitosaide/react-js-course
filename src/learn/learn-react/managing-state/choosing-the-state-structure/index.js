@@ -28,6 +28,12 @@ function FeedbackForm() {
   return (
     <form onSubmit={handleSubmit}>
       <p>How was your stay at the Prancing Pony?</p>
+      <textarea
+        value={text}
+        onChange={function (e) {
+          setText(e.target.value);
+        }}
+      />
     </form>
   );
 }
