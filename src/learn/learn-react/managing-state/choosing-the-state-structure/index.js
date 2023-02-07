@@ -9,7 +9,11 @@ export default function Index() {
   );
 }
 
-function FeedbackForm() {}
+function FeedbackForm() {
+  const [text, setText] = useState("");
+  const [isSending, setIsSending] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+}
 
 function MovingDot() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
