@@ -24,6 +24,9 @@ function FeedbackForm() {
       <textarea
         value={text}
         disabled={isSending}
+        onChange={function (e) {
+          setText(e.target.value);
+        }}
       />
     </form>
   );
