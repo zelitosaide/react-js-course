@@ -55,6 +55,8 @@ function updateDOM() {
     show(firstNameText);
     show(lastNameText);
   }
+  firstNameText.textContent = firstName;
+  lastNameText.textContent = lastName;
   helloText.textContent = "Hello " + firstName + " " + lastName + "!";
 }
 
