@@ -36,6 +36,13 @@ function FeedbackForm() {
         }}
       />
       <br />
+      <button
+        disabled={isSending}
+        type="submit"
+      >
+        Send
+      </button>
+      {isSending && <p>Loading...</p>}
     </form>
   );
 }
