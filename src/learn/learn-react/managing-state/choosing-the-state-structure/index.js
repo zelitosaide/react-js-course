@@ -23,7 +23,7 @@ export default function Index() {
 }
 
 function TravelPlan() {
-  const [plan, setPlan] = useState();
+  const [plan, setPlan] = useState(initialTravelPlan);
 }
 
 function Menu() {
