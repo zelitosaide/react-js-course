@@ -16,6 +16,8 @@ function FeedbackForm() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    setIsSending(true);
+    await sendMessage(text);
   }
 
   if (isSent) {
@@ -42,6 +44,12 @@ function FeedbackForm() {
       {isSending && <p>Sending...</p>}
     </form>
   );
+}
+
+function sendMessage(text) {
+  return new Promise(function (resolve) {
+    setTimeout(resolve, 2000);
+  });
 }
 
 function MovingDot() {
