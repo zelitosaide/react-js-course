@@ -25,6 +25,12 @@ function Menu() {
   const selectedItem = items.find(function (item) {
     return item.id === selectedId;
   });
+
+  return (
+    <>
+      <h2>What's your travel snack?</h2>
+    </>
+  );
 }
 
 function Menu4() {
