@@ -12,12 +12,12 @@ export default function Index() {
       <Form />
       <Menu2 />
       <Menu3 />
-      <Menu />
+      <Menu4 />
     </>
   );
 }
 
-function Menu() {
+function Menu4() {
   const [items, setItems] = useState(initialItems);
   const [selectedItem, setSelectedItem] = useState(items[0]);
 
