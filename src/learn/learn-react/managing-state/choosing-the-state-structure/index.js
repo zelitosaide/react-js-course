@@ -37,6 +37,9 @@ function Form() {
           onChange={handleLastNameChange}
         />
       </label>
+      <p>
+        Your ticket will be issued to: <b>{fullName}</b>
+      </p>
     </>
   );
 }
