@@ -13,6 +13,16 @@ function FeedbackForm() {
   const [text, setText] = useState("");
   const [isSending, setIsSending] = useState(false);
   const [isSent, setIsSent] = useState(false);
+
+  if (isSent) {
+    return <h1>Thanks for feedback!</h1>;
+  }
+
+  return (
+    <form>
+      <p>How was your stay at The Prancing Pony?</p>
+    </form>
+  );
 }
 
 function MovingDot() {
