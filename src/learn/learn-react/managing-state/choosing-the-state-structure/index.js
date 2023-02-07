@@ -10,12 +10,12 @@ export default function Index() {
       <FeedbackForm />
       <Form2 />
       <Form />
-      <Menu />
+      <Menu2 />
     </>
   );
 }
 
-function Menu() {
+function Menu2() {
   const [items, setItems] = useState(initialItems);
   const [selectedItem, setSelectedItem] = useState(items[0]);
 
