@@ -41,6 +41,13 @@ function Menu() {
                   handleItemChange(item.id, e);
                 }}
               />
+              <button
+                onClick={function () {
+                  setSelectedId(item.id);
+                }}
+              >
+                Choose
+              </button>
             </li>
           );
         })}
