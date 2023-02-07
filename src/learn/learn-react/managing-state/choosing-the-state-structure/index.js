@@ -19,6 +19,12 @@ export default function Index() {
 function Menu() {
   const [items, setItems] = useState(initialItems);
   const [selectedItem, setSelectedItem] = useState(items[0]);
+
+  return (
+    <>
+      <h2>What's your travel snack?</h2>
+    </>
+  );
 }
 
 function Menu2() {
