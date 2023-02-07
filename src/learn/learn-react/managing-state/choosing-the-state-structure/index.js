@@ -18,6 +18,8 @@ function FeedbackForm() {
     e.preventDefault();
     setIsSending(true);
     await sendMessage(text);
+    setIsSending(false);
+    setIsSent(true);
   }
 
   if (isSent) {
