@@ -29,9 +29,21 @@ function TravelPlan() {
   return (
     <>
       <h2>Places to visit</h2>
+      <ol>
+        {planets.map(function (place) {
+          return (
+            <PlaceTree
+              key={place.id}
+              place={place}
+            />
+          );
+        })}
+      </ol>
     </>
   );
 }
+
+function PlaceTree({ place }) {}
 
 function Menu() {
   const [items, setItems] = useState(initialItems);
