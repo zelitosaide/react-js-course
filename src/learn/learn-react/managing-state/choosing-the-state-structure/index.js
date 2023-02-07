@@ -46,7 +46,23 @@ function TravelPlan() {
 function PlaceTree({ place }) {
   const childPlaces = place.childPlaces;
 
-  return <li>{place.title}</li>;
+  return (
+    <li>
+      {place.title}{" "}
+      {childPlaces.length > 0 && (
+        <ol>
+          {childPlaces.map(function (place) {
+            return (
+              <PlaceTree
+                key={place.id}
+                place={place}
+              />
+            );
+          })}
+        </ol>
+      )}
+    </li>
+  );
 }
 
 function Menu() {
