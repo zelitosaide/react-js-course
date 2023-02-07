@@ -23,6 +23,9 @@ function FeedbackForm() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    setStatus("sending");
+    await sendMessage(text);
+    setStatus("sent");
   }
 
   return (
