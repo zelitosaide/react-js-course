@@ -12,3 +12,14 @@
 let firstName = "Jane";
 let lastName = "Jacobs";
 let isEditing = false;
+
+function handleFormSubmit(e) {
+  e.preventDefault();
+  setIsEditing(!isEditing);
+}
+
+function setIsEditing() {}
+
+let form = document.getElementById("form");
+
+form.onsubmit = handleFormSubmit;
