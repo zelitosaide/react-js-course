@@ -18,7 +18,9 @@ function Form() {
 
   const fullName = firstName + " " + lastName;
 
-  function handleFirstNamechange(e) {}
+  function handleFirstNamechange(e) {
+    setFirstName(e.target.value);
+  }
 
   return (
     <>
