@@ -10,7 +10,13 @@ export default function Index() {
   );
 }
 
-function FeedbackForm() {}
+function FeedbackForm() {
+  const [text, setText] = useState("");
+  const [status, setStatus] = useState("typing");
+
+  const isSending = status === "sending";
+  const isSent = status === "sent";
+}
 
 function FeedbackForm2() {
   const [text, setText] = useState("");
