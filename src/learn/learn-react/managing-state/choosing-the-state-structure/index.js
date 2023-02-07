@@ -38,6 +38,7 @@ function Menu() {
           );
         })}
       </ul>
+      <p>You picked {selectedItem.title}.</p>
     </>
   );
 }
