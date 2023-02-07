@@ -17,6 +17,29 @@ export default function Index() {
 
 function Menu() {
   const [items, setItems] = useState(initialItems);
+  const [selectedItem, setSelectedItem] = useState(items[0]);
+
+  return (
+    <>
+      <h2>What's your travel snack?</h2>
+      <ul>
+        {items.map(function (item) {
+          return (
+            <li key={item.id}>
+              {item.title}{" "}
+              <button
+                onClick={function () {
+                  setSelectedItem(item);
+                }}
+              >
+                Choose
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+    </>
+  );
 }
 
 function Form() {
