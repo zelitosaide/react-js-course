@@ -9,3 +9,6 @@
  * has most of the structure in place. If you start here, fill in the
  * missing logic in the updateDOM function. (Refer to the original code where needed.)
  */
+let firstName = "Jane";
+let lastName = "Jacobs";
+let isEditing = false;
