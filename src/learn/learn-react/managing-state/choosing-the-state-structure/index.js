@@ -5,9 +5,12 @@ export default function Index() {
     <>
       <MovingDot />
       <FeedbackForm2 />
+      <FeedbackForm />
     </>
   );
 }
+
+function FeedbackForm() {}
 
 function FeedbackForm2() {
   const [text, setText] = useState("");
