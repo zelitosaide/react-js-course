@@ -6,12 +6,12 @@ export default function Index() {
       <MovingDot />
       <FeedbackForm2 />
       <FeedbackForm />
-      <Form />
+      <Form2 />
     </>
   );
 }
 
-function Form() {
+function Form2() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [fullName, setFullName] = useState("");
