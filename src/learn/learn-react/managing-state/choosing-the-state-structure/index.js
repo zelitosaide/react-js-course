@@ -16,9 +16,18 @@ function Form() {
   const [lastName, setLastName] = useState("");
   const [fullName, setFullName] = useState("");
 
+  function handleFirstNameChange(e) {}
+
   return (
     <>
       <h2>Let's check you in</h2>
+      <label>
+        First Name:{" "}
+        <input
+          value={firstName}
+          onChange={handleFirstNameChange}
+        />
+      </label>
     </>
   );
 }
