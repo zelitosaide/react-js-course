@@ -12,6 +12,7 @@ export default function Index() {
       <Form />
       <Menu2 />
       <Menu3 />
+      <Menu />
     </>
   );
 }
