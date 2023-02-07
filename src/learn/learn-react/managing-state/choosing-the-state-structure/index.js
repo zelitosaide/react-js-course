@@ -43,7 +43,11 @@ function TravelPlan() {
   );
 }
 
-function PlaceTree({ place }) {}
+function PlaceTree({ place }) {
+  const childPlaces = place.childPlaces;
+
+  return <li>{place.title}</li>;
+}
 
 function Menu() {
   const [items, setItems] = useState(initialItems);
