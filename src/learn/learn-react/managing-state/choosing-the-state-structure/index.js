@@ -20,6 +20,12 @@ function FeedbackForm() {
   if (isSent) {
     return <h1>Thanks for feedback!</h1>;
   }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+  }
+
+  return <form onSubmit={handleSubmit}></form>;
 }
 
 function FeedbackForm2() {
