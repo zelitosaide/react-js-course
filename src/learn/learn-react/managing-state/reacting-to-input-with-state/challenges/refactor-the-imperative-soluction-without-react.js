@@ -26,6 +26,10 @@ function setIsEditing(value) {
 function updateDOM() {
   if (isEditing) {
     editButton.textContent = "Save Profile";
+    hide(firstNameText);
+    hide(lastNameText);
+    show(firstNameInput);
+    show(lastNameInput);
   } else {
     editButton.textContent = "Edit Profile";
   }
@@ -41,5 +45,9 @@ function show(el) {
 
 let form = document.getElementById("form");
 let editButton = document.getElementById("editButton");
+let lastNameText = document.getElementById("lastNameText");
+let firstNameText = document.getElementById("firstNameText");
+let lastNameInput = document.getElementById("lastNameInput");
+let firstNameInput = document.getElementById("firstNameInput");
 
 form.onsubmit = handleFormSubmit;
