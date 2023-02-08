@@ -53,7 +53,10 @@ function TravelPlan() {
   );
 }
 
-function PlaceTree({ id, parentId, placesById, onComplete }) {}
+function PlaceTree({ id, parentId, placesById, onComplete }) {
+  const place = placesById[id];
+  const childIds = place.childIds;
+}
 
 function TravelPlan3() {
   const [plan, setPlan] = useState(initialFlatTravelPlan);
