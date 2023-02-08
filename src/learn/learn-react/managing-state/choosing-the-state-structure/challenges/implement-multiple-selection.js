@@ -6,7 +6,12 @@ import { letters as initialLetters } from "../../../../../data/data";
  * Challenge 4 of 4: Implement multiple selection
  */
 export default function Index() {
-  return <MailClient2 />;
+  return (
+    <>
+      <MailClient2 />
+      <MailClient />
+    </>
+  );
 }
 
 function MailClient() {
