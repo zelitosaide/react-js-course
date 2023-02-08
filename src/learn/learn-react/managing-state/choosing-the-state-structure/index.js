@@ -9,6 +9,7 @@ import {
 
 import FixAComponentThatIsNotUpdating from "./challenges/fix-a-component-that-is-not-updating";
 import FixABrokenPackingList from "./challenges/fix-a-broken-packing-list";
+import FixTheDisappearingSelection from "./challenges/fix-the-disappearing-selection";
 
 export default function Index() {
   return (
@@ -27,6 +28,7 @@ export default function Index() {
       <TravelPlan />
       <FixAComponentThatIsNotUpdating />
       <FixABrokenPackingList />
+      <FixTheDisappearingSelection />
     </>
   );
 }
