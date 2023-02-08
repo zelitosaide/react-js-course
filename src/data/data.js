@@ -4,7 +4,7 @@ export const user = {
   imageSize: 90,
 };
 
-export const packingList = [
+export const packingItems = [
   { id: 0, title: "Warm socks", packed: true },
   { id: 1, title: "Travel journal", packed: false },
   { id: 2, title: "Watercolors", packed: false },

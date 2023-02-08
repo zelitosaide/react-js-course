@@ -8,7 +8,7 @@
  * it’s always correct.
  */
 import { useState } from "react";
-import { packingList as initialItems } from "../../../../../data/data";
+import { packingItems as initialItems } from "../../../../../data/data";
 
 let nextId = 3;
 
