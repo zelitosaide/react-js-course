@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export default function Index() {
   return <Accordion />;
 }
@@ -21,4 +23,6 @@ function Accordion() {
   );
 }
 
-function Panel({ title, children }) {}
+function Panel({ title, children }) {
+  const [isActive, setIsActive] = useState(false);
+}
