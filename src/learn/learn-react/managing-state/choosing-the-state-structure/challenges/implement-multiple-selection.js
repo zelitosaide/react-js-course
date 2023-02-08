@@ -17,7 +17,7 @@ function MailClient() {
 
   function handleToggle(toggledId) {
     // TODO: allow multiple selection
-    if (selectedIds.includes(toggledId) > 0) {
+    if (selectedIds.includes(toggledId)) {
       setSelectedIds(
         selectedIds.filter(function (id) {
           return id !== toggledId;
@@ -39,7 +39,7 @@ function MailClient() {
               letter={letter}
               isSelected={
                 // TODO: allow multiple selection
-                letter.id === selectedId
+                selectedIds.includes(letter.id)
               }
               onToggle={handleToggle}
             />
