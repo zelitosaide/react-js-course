@@ -37,8 +37,6 @@ export default function Index() {
   );
 }
 
-function Clock(props) {
-  const color = props.color;
-
-  return <h1 style={{ color: color }}>{props.time}</h1>;
+function Clock({ color, time }) {
+  return <h1 style={{ color: color }}>{time}</h1>;
 }
