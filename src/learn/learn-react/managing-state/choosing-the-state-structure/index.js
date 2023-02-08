@@ -22,48 +22,7 @@ export default function Index() {
   );
 }
 
-function TravelPlan() {
-  const [plan, setPlan] = useState(initialTravelPlan);
-  const planets = plan.childPlaces;
-
-  return (
-    <>
-      <h2>Places to visit</h2>
-      <ol>
-        {planets.map(function (place) {
-          return (
-            <PlaceTree
-              key={place.id}
-              place={place}
-            />
-          );
-        })}
-      </ol>
-    </>
-  );
-}
-
-function PlaceTree({ place }) {
-  const childPlaces = place.childPlaces;
-
-  return (
-    <li>
-      {place.title}{" "}
-      {childPlaces.length > 0 && (
-        <ol>
-          {childPlaces.map(function (place) {
-            return (
-              <PlaceTree
-                key={place.id}
-                place={place}
-              />
-            );
-          })}
-        </ol>
-      )}
-    </li>
-  );
-}
+function TravelPlan() {}
 
 function Menu() {
   const [items, setItems] = useState(initialItems);
