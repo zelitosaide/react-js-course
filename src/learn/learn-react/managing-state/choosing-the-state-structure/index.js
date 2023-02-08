@@ -34,6 +34,12 @@ function TravelPlan() {
     const parent = plan[parentId];
     // Create a new version of the parent place
     // that doesn't include this child ID.
+    const nextParent = {
+      ...parent,
+      childIds: parent.childIds.filter(function (id) {
+        return id !== childId;
+      }),
+    };
   }
 
   return (
