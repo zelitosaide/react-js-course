@@ -29,6 +29,18 @@ function MailClient() {
     setHighlightedLetter(letter);
   }
 
+  function handleToggleStar(starred) {
+    setLetters(
+      letters.map(function (letter) {
+        if (letter.id === starred.id) {
+          return starred;
+        } else {
+          return letter;
+        }
+      })
+    );
+  }
+
   return (
     <>
       <h2>Inboxs</h2>
@@ -40,6 +52,7 @@ function MailClient() {
               letter={letter}
               isHighlighted={letter === highlightedLetter}
               onHover={handleHover}
+              onToggleStar={handleToggleStar}
             />
           );
         })}
