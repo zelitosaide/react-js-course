@@ -48,7 +48,21 @@ function MailClient() {
     </>
   );
 }
-function Letter({ letter, isSelected, onToggle }) {}
+function Letter({ letter, isSelected, onToggle }) {
+  return (
+    <li>
+      <label>
+        <input
+          type="checkbox"
+          checked={isSelected}
+          onChange={function () {
+            onToggle(letter.id);
+          }}
+        />
+      </label>
+    </li>
+  );
+}
 
 function MailClient2() {
   const [selectedIds, setSelectedIds] = useState([]);
