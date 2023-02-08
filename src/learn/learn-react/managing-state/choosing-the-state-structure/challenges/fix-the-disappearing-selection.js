@@ -13,4 +13,14 @@
  * with keyboard. Why is this happening? Fix it so that the highlighting
  * doesn’t disappear after the button click.
  */
-export default function Index() {}
+import { useState } from "react";
+
+import { letters as initialLetters } from "../../../../../data/data";
+
+export default function Index() {
+  return <MailClient />;
+}
+
+function MailClient() {
+  const [letters, setLetters] = useState(initialLetters);
+}
