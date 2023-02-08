@@ -27,7 +27,7 @@ function MailClient() {
     } else {
       nextIds.add(toggledId);
     }
-    selectedIds(nextIds);
+    setSelectedIds(nextIds);
   }
 
   return (
