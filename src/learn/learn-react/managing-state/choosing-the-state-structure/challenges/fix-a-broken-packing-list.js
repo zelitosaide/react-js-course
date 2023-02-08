@@ -43,7 +43,13 @@ export default function Index() {
     );
   }
 
-  function handleDeleteItem() {}
+  function handleDeleteItem(itemId) {
+    setItems(
+      items.filter(function (item) {
+        return item.id !== itemId;
+      })
+    );
+  }
 
   return (
     <>
