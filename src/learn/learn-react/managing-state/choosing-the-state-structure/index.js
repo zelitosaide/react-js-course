@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useImmer } from "use-immer";
 
 import {
   menu as initialItems,
@@ -20,8 +21,13 @@ export default function Index() {
       <Menu />
       <TravelPlan2 />
       <TravelPlan3 />
+      <TravelPlan />
     </>
   );
+}
+
+function TravelPlan() {
+  const [plan, updatePlan] = useImmer(initialFlatTravelPlan);
 }
 
 function TravelPlan3() {
