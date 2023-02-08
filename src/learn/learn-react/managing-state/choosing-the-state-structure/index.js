@@ -35,9 +35,16 @@ function TravelPlan() {
   return (
     <>
       <h2>Places to visit</h2>
+      <ol>
+        {planetIds.map(function (id) {
+          return <PlaceTree key={id} />;
+        })}
+      </ol>
     </>
   );
 }
+
+function PlaceTree() {}
 
 function TravelPlan3() {
   const [plan, setPlan] = useState(initialFlatTravelPlan);
