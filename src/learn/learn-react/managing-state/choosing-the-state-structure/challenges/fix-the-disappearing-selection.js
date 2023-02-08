@@ -66,7 +66,12 @@ function MailClient() {
 
 function Letter({ letter, isHighlighted, onHover, onToggleStar }) {
   return (
-    <li>
+    <li
+      className={isHighlighted ? "highlighted" : ""}
+      onPointerMove={function () {
+        onHover(letter.id);
+      }}
+    >
       <button
         onClick={function () {
           onToggleStar(letter);
