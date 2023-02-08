@@ -15,6 +15,7 @@ let nextId = 3;
 
 export default function Index() {
   const [items, setItems] = useState(initialItems);
+
   const packed = items.filter(function (item) {
     return item.packed;
   }).length;
@@ -30,7 +31,17 @@ export default function Index() {
     ]);
   }
 
-  function handleChangeItem(nextItem) {}
+  function handleChangeItem(nextItem) {
+    setItems(
+      items.map(function (item) {
+        if (item.id === nextItem.id) {
+          return nextItem;
+        } else {
+          return item;
+        }
+      })
+    );
+  }
 
   function handleDeleteItem() {}
 
