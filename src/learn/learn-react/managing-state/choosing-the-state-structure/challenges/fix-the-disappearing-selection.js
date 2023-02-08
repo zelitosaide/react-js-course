@@ -37,4 +37,4 @@ function MailClient() {
   );
 }
 
-function Letter() {}
+function Letter({ letter, isHighlighted, onHover, onToggleStar }) {}
