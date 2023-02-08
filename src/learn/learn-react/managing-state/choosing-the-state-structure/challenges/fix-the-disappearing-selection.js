@@ -25,7 +25,9 @@ function MailClient() {
   const [letters, setLetters] = useState(initialLetters);
   const [highlightedLetter, setHighlightedLetter] = useState(null);
 
-  function handleHover() {}
+  function handleHover(letter) {
+    setHighlightedLetter(letter);
+  }
 
   return (
     <>
