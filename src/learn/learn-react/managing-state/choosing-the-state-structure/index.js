@@ -68,8 +68,16 @@ function PlaceTree({ id, parentId, placesById, onComplete }) {
       </button>
       {childIds.length > 0 && (
         <ol>
-          {childIds.map(function (id) {
-            return <PlaceTree />;
+          {childIds.map(function (childId) {
+            return (
+              <PlaceTree
+                key={childId}
+                id={childId}
+                parentId={id}
+                placesById={placesById}
+                onComplete={onComplete}
+              />
+            );
           })}
         </ol>
       )}
