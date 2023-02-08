@@ -28,6 +28,18 @@ function TravelPlan() {
   const [plan, setPlan] = useState(initialFlatTravelPlan);
 
   const root = plan[0];
+  const planetIds = root.childIds;
+
+  return (
+    <>
+      <h2>Places to visit</h2>
+      <ol>
+        {planetIds.map(function (id) {
+          return <li key={id}>{id}</li>;
+        })}
+      </ol>
+    </>
+  );
 }
 
 function TravelPlan2() {
