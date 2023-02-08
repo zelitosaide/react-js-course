@@ -25,6 +25,8 @@ function MailClient() {
   const [letters, setLetters] = useState(initialLetters);
   const [highlightedLetter, setHighlightedLetter] = useState(null);
 
+  function handleHover() {}
+
   return (
     <>
       <h2>Inboxs</h2>
@@ -35,6 +37,7 @@ function MailClient() {
               key={letter.id}
               letter={letter}
               isHighlighted={letter === highlightedLetter}
+              onHover={handleHover}
             />
           );
         })}
