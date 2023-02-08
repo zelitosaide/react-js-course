@@ -26,6 +26,8 @@ export default function Index() {
 
 function TravelPlan() {
   const [plan, setPlan] = useState(initialFlatTravelPlan);
+
+  const root = plan[0];
 }
 
 function TravelPlan2() {
