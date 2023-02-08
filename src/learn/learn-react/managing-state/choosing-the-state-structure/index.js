@@ -32,7 +32,7 @@ function TravelPlan() {
   const root = plan[0];
   const planetIds = root.childIds;
 
-  function handleComplete() {}
+  function handleComplete(parentId, childId) {}
 
   return (
     <>
