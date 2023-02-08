@@ -19,12 +19,12 @@ export default function Index() {
       <Menu4 />
       <Menu />
       <TravelPlan2 />
-      <TravelPlan />
+      <TravelPlan3 />
     </>
   );
 }
 
-function TravelPlan() {
+function TravelPlan3() {
   const [plan, setPlan] = useState(initialFlatTravelPlan);
 
   const root = plan[0];
@@ -54,7 +54,7 @@ function TravelPlan() {
       <ol>
         {planetIds.map(function (id) {
           return (
-            <PlaceTree
+            <PlaceTree3
               key={id}
               id={id}
               parentId={0}
@@ -68,7 +68,7 @@ function TravelPlan() {
   );
 }
 
-function PlaceTree({ id, parentId, placesById, onComplete }) {
+function PlaceTree3({ id, parentId, placesById, onComplete }) {
   const place = placesById[id];
   const childIds = place.childIds;
 
@@ -86,7 +86,7 @@ function PlaceTree({ id, parentId, placesById, onComplete }) {
         <ol>
           {childIds.map(function (childId) {
             return (
-              <PlaceTree
+              <PlaceTree3
                 key={childId}
                 id={childId}
                 parentId={id}
