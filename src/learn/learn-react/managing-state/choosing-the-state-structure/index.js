@@ -35,7 +35,12 @@ function TravelPlan() {
       <h2>Places to visit</h2>
       <ol>
         {planetIds.map(function (id) {
-          return <li key={id}>{id}</li>;
+          return (
+            <PlaceTree
+              key={id}
+              id={id}
+            />
+          );
         })}
       </ol>
     </>
