@@ -66,6 +66,13 @@ function PlaceTree({ id, parentId, placesById, onComplete }) {
       >
         Complete
       </button>
+      {childIds.length > 0 && (
+        <ol>
+          {childIds.map(function (id) {
+            return <PlaceTree />;
+          })}
+        </ol>
+      )}
     </li>
   );
 }
