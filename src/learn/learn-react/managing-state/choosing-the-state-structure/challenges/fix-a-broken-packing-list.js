@@ -8,6 +8,7 @@
  * it’s always correct.
  */
 import { useState } from "react";
+
 import { packingItems as initialItems } from "../../../../../data/data";
 
 let nextId = 3;
@@ -39,6 +40,19 @@ export default function Index() {
   );
 }
 
-function AddItem({ onAddItem }) {}
+function AddItem({ onAddItem }) {
+  const [title, setTitle] = useState("");
+
+  return (
+    <>
+      <input
+        value={title}
+        onChange={function (e) {
+          setTitle(e.target.value);
+        }}
+      />
+    </>
+  );
+}
 
 function PackingList({ items, onChangeItem, onDeleteItem }) {}
