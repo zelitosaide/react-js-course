@@ -52,7 +52,9 @@
 
 // import ReactingToInputWithState from "./learn/learn-react/managing-state/reacting-to-input-with-state";
 
-import ChoosingTheStateStructure from "./learn/learn-react/managing-state/choosing-the-state-structure";
+// import ChoosingTheStateStructure from "./learn/learn-react/managing-state/choosing-the-state-structure";
+
+import SharingStateBetweenComponents from "./learn/learn-react/managing-state/sharing-state-between-components";
 
 function App() {
   return (
@@ -110,7 +112,9 @@ function App() {
 
       {/* <ReactingToInputWithState /> */}
 
-      <ChoosingTheStateStructure />
+      {/* <ChoosingTheStateStructure /> */}
+
+      <SharingStateBetweenComponents />
     </>
   );
 }
