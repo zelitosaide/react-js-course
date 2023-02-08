@@ -12,6 +12,8 @@ export default function Index() {
 function MailClient() {
   const [selectedId, setSelectedId] = useState(null);
 
+  function handleToggle() {}
+
   return (
     <>
       <h2>Inbox</h2>
@@ -25,6 +27,7 @@ function MailClient() {
                 // TODO: allow multiple selection
                 letter.id === selectedId
               }
+              onToggle={handleToggle}
             />
           );
         })}
