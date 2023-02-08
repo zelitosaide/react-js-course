@@ -19,11 +19,22 @@ export default function Index() {
 
   function handleAddItem() {}
 
+  function handleChangeItem() {}
+
+  function handleDeleteItem() {}
+
   return (
     <>
       <AddItem onAddItem={handleAddItem} />
+      <PackingList
+        items={items}
+        onChangeItem={handleChangeItem}
+        onDeleteItem={handleDeleteItem}
+      />
     </>
   );
 }
 
 function AddItem({ onAddItem }) {}
+
+function PackingList() {}
