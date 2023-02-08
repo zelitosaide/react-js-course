@@ -21,4 +21,7 @@ export default function Index() {
   return <MailClient />;
 }
 
-function MailClient() {}
+function MailClient() {
+  const [letters, setLetters] = useState(initialLetters);
+  const [highlightedId, setHighlightedId] = useState(null);
+}
