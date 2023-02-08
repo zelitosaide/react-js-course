@@ -21,6 +21,10 @@ function MailClient() {
             <Letter
               key={letter.id}
               letter={letter}
+              isSelected={
+                // TODO: allow multiple selection
+                letter.id === selectedId
+              }
             />
           );
         })}
