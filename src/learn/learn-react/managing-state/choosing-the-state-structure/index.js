@@ -52,7 +52,23 @@ function TravelPlan() {
   );
 }
 
-function PlaceTree({ id, parentId, placesById, onComplete }) {}
+function PlaceTree({ id, parentId, placesById, onComplete }) {
+  const place = placesById[id];
+  const childIds = place.childIds;
+
+  return (
+    <li>
+      {place.title}{" "}
+      <button
+        onClick={function () {
+          onComplete(parentId, id);
+        }}
+      >
+        Complte
+      </button>
+    </li>
+  );
+}
 
 function TravelPlan2() {
   const [plan, setPlan] = useState(initialTravelPlan);
