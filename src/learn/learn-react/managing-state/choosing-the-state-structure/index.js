@@ -25,6 +25,12 @@ export default function Index() {
 function TravelPlan() {
   const [plan, setPlan] = useState(initialTravelPlan);
   const planets = plan.childPlaces;
+
+  return (
+    <>
+      <h2>Places to visit</h2>
+    </>
+  );
 }
 
 function Menu() {
