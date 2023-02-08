@@ -31,6 +31,10 @@ export default function Index() {
         onChangeItem={handleChangeItem}
         onDeleteItem={handleDeleteItem}
       />
+      <hr />
+      <p>
+        {packed} out of {total} packed!
+      </p>
     </>
   );
 }
