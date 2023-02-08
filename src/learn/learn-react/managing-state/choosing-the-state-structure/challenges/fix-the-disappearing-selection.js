@@ -29,6 +29,8 @@ function MailClient() {
     setHighlightedId(letterId);
   }
 
+  function handleToggleStar(starred) {}
+
   return (
     <>
       <h2>Inbox</h2>
@@ -40,6 +42,7 @@ function MailClient() {
               letter={letter}
               isHighlighted={letter.id === highlightedId}
               onHover={handleHover}
+              onToggleStar={handleToggleStar}
             />
           );
         })}
