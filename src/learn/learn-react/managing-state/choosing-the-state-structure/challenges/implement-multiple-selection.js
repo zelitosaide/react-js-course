@@ -13,7 +13,7 @@ function MailClient() {
   const [selectedIds, setSelectedIds] = useState([]);
 
   // TODO: allow multiple selection
-  const selectedCount = 1;
+  const selectedCount = selectedIds.length;
 
   function handleToggle(toggledId) {
     // TODO: allow multiple selection
@@ -47,9 +47,11 @@ function MailClient() {
         })}
       </ul>
       <hr />
-      <p>
-        <b>You selected {selectedCount} letters</b>
-      </p>
+      {selectedCount > 0 && (
+        <p>
+          <b>You selected {selectedCount} letters</b>
+        </p>
+      )}
     </>
   );
 }
