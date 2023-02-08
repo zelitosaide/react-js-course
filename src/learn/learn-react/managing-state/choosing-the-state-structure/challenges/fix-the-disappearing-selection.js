@@ -23,10 +23,10 @@ export default function Index() {
 
 function MailClient() {
   const [letters, setLetters] = useState(initialLetters);
-  const [highlightedLetter, setHighlightedLetter] = useState(null);
+  const [highlightedId, setHighlightedId] = useState(null);
 
-  function handleHover(letter) {
-    setHighlightedLetter(letter);
+  function handleHover(letterId) {
+    setHighlightedId(letterId);
   }
 
   function handleToggleStar(starred) {
@@ -53,7 +53,7 @@ function MailClient() {
             <Letter
               key={letter.id}
               letter={letter}
-              isHighlighted={letter === highlightedLetter}
+              isHighlighted={letter.id === highlightedId}
               onHover={handleHover}
               onToggleStar={handleToggleStar}
             />
@@ -69,10 +69,10 @@ function Letter({ letter, isHighlighted, onHover, onToggleStar }) {
     <li
       className={isHighlighted ? "highlighted" : ""}
       onPointerMove={function () {
-        onHover(letter);
+        onHover(letter.id);
       }}
       onFocus={function () {
-        onHover(letter);
+        onHover(letter.id);
       }}
     >
       <button
