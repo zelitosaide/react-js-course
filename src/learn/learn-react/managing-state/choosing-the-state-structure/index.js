@@ -22,7 +22,10 @@ export default function Index() {
   );
 }
 
-function TravelPlan() {}
+function TravelPlan() {
+  const [plan, setPlan] = useState(initialTravelPlan);
+  const planets = plan.childPlaces;
+}
 
 function Menu() {
   const [items, setItems] = useState(initialItems);
