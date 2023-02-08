@@ -29,6 +29,11 @@ function TravelPlan() {
   return (
     <>
       <h2>Places to visit</h2>
+      <ol>
+        {planets.map(function (place) {
+          return <li key={place.id}>{place.title}</li>;
+        })}
+      </ol>
     </>
   );
 }
