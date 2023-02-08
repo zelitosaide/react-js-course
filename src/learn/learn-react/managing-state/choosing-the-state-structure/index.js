@@ -7,6 +7,8 @@ import {
   flatTravelPlan as initialFlatTravelPlan,
 } from "../../../../data/data";
 
+import FixAComponentThatIsNotUpdating from "./challenges/fix-a-component-that-is-not-updating";
+
 export default function Index() {
   return (
     <>
@@ -22,6 +24,7 @@ export default function Index() {
       <TravelPlan2 />
       <TravelPlan3 />
       <TravelPlan />
+      <FixAComponentThatIsNotUpdating />
     </>
   );
 }
