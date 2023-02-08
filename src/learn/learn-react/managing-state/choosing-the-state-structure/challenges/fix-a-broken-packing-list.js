@@ -37,4 +37,4 @@ export default function Index() {
 
 function AddItem({ onAddItem }) {}
 
-function PackingList() {}
+function PackingList({ items, onChangeItem, onDeleteItem }) {}
