@@ -42,6 +42,7 @@ function TravelPlan() {
           return (
             <PlaceTree
               key={id}
+              id={id}
               parentId={0}
               placesById={plan}
               onComplete={handleComplete}
@@ -56,7 +57,7 @@ function TravelPlan() {
 function PlaceTree({ id, parentId, placesById, onComplete }) {
   const place = placesById[id];
   const childIds = place.childIds;
-  // return <li>{place.title}</li>;
+  return <li>{place.title}</li>;
 }
 
 function TravelPlan3() {
