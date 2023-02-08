@@ -82,9 +82,21 @@ function PackingList({ items, onChangeItem, onDeleteItem }) {
               <input
                 type="checkbox"
                 checked={item.packed}
-                onChange={function (e) {}}
+                onChange={function (e) {
+                  onChangeItem({
+                    ...item,
+                    packed: e.target.checked,
+                  });
+                }}
               />
             </label>
+            <button
+              onClick={function () {
+                onDeleteItem(item.id);
+              }}
+            >
+              Delete
+            </button>
           </li>
         );
       })}
