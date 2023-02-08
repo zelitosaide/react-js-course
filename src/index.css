@@ -161,3 +161,8 @@ td {
 .selected {
   background: #d2eaff;
 }
+
+.panel {
+  padding: 10px;
+  border: 1px solid #aaa;
+}
