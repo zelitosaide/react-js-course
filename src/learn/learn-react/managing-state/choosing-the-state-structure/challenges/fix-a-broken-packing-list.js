@@ -103,7 +103,7 @@ function PackingList({ items, onChangeItem, onDeleteItem }) {
                 }}
               />{" "}
               {item.title}
-            </label>
+            </label>{" "}
             <button
               onClick={function () {
                 onDeleteItem(item.id);
