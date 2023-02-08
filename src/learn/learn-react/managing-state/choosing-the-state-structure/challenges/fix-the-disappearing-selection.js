@@ -30,7 +30,13 @@ function MailClient() {
       <h2>Inboxs</h2>
       <ul>
         {letters.map(function (letter) {
-          return <Letter key={letter.id} />;
+          return (
+            <Letter
+              key={letter.id}
+              letter={letter}
+              isHighlighted={letter === highlightedLetter}
+            />
+          );
         })}
       </ul>
     </>
