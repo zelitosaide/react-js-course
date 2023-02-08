@@ -6,10 +6,10 @@ import { letters as initialLetters } from "../../../../../data/data";
  * Challenge 4 of 4: Implement multiple selection
  */
 export default function Index() {
-  return <MailClient />;
+  return <MailClient2 />;
 }
 
-function MailClient() {
+function MailClient2() {
   const [selectedIds, setSelectedIds] = useState([]);
 
   // TODO: allow multiple selection
@@ -36,7 +36,7 @@ function MailClient() {
       <ul>
         {initialLetters.map(function (letter) {
           return (
-            <Letter
+            <Letter2
               key={letter.id}
               letter={letter}
               isSelected={
@@ -58,7 +58,7 @@ function MailClient() {
   );
 }
 
-function Letter({ letter, isSelected, onToggle }) {
+function Letter2({ letter, isSelected, onToggle }) {
   return (
     <li className={isSelected ? "selected" : ""}>
       <label>
