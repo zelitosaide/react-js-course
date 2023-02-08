@@ -29,7 +29,20 @@ function MailClient() {
     setHighlightedId(letterId);
   }
 
-  function handleToggleStar(starred) {}
+  function handleToggleStar(starred) {
+    setLetters(
+      letters.map(function (letter) {
+        if (letter.id === starred.id) {
+          return {
+            ...starred,
+            isStarred: !starred.isStarred,
+          };
+        } else {
+          return letter;
+        }
+      })
+    );
+  }
 
   return (
     <>
