@@ -29,13 +29,13 @@ function MailClient() {
     setHighlightedId(letterId);
   }
 
-  function handleToggleStar(starred) {
+  function handleToggleStar(letterId) {
     setLetters(
       letters.map(function (letter) {
-        if (letter.id === starred.id) {
+        if (letter.id === letterId) {
           return {
-            ...starred,
-            isStarred: !starred.isStarred,
+            ...letter,
+            isStarred: !letter.isStarred,
           };
         } else {
           return letter;
@@ -80,7 +80,7 @@ function Letter({ letter, isHighlighted, onHover, onToggleStar }) {
     >
       <button
         onClick={function () {
-          onToggleStar(letter);
+          onToggleStar(letter.id);
         }}
       >
         {letter.isStarred ? "Unstar" : "Star"}
