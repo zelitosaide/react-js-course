@@ -33,7 +33,10 @@ function MailClient() {
     setLetters(
       letters.map(function (letter) {
         if (letter.id === starred.id) {
-          return starred;
+          return {
+            ...starred,
+            isStarred: !starred.isStarred,
+          };
         } else {
           return letter;
         }
