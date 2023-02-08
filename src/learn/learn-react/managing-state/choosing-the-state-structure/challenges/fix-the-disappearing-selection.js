@@ -71,6 +71,9 @@ function Letter({ letter, isHighlighted, onHover, onToggleStar }) {
       onPointerMove={function () {
         onHover(letter.id);
       }}
+      onPointerOut={function () {
+        onHover(null);
+      }}
     >
       <button
         onClick={function () {
