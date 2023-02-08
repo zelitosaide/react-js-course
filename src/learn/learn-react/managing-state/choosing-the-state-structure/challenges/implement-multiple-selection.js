@@ -46,4 +46,18 @@ function MailClient() {
   );
 }
 
-function Letter({ letter, isSelected, onToggle }) {}
+function Letter({ letter, isSelected, onToggle }) {
+  return (
+    <li className={isSelected ? "selected" : ""}>
+      <label>
+        <input
+          type="checkbox"
+          checked={isSelected}
+          onChange={function () {
+            onToggle(letter.id);
+          }}
+        />
+      </label>
+    </li>
+  );
+}
