@@ -15,10 +15,18 @@ let nextId = 3;
 
 export default function Index() {
   const [items, setItems] = useState(initialItems);
-  const [total, setTotal] = useState(3);
   const [packed, setPacked] = useState(1);
 
-  function handleAddItem() {}
+  function handleAddItem(title) {
+    setItems([
+      ...items,
+      {
+        id: nextId++,
+        title: title,
+        packed: false,
+      },
+    ]);
+  }
 
   function handleChangeItem() {}
 
@@ -34,7 +42,7 @@ export default function Index() {
       />
       <hr />
       <p>
-        {packed} out of {total} packed!
+        {packed} out of {items.length} packed!
       </p>
     </>
   );
