@@ -31,12 +31,19 @@ function TravelPlan() {
       <h2>Places to visit</h2>
       <ol>
         {planets.map(function (place) {
-          return <li key={place.id}>{place.title}</li>;
+          return (
+            <PlaceTree
+              key={place.id}
+              place={place}
+            />
+          );
         })}
       </ol>
     </>
   );
 }
+
+function PlaceTree({ place }) {}
 
 function Menu() {
   const [items, setItems] = useState(initialItems);
