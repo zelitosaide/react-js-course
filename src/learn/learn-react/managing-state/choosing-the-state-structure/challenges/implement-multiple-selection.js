@@ -45,9 +45,16 @@ function MailClient() {
           );
         })}
       </ul>
+      <hr />
+      {selectedCount > 0 && (
+        <p>
+          <b>You selected {selectedCount} letters</b>
+        </p>
+      )}
     </>
   );
 }
+
 function Letter({ letter, isSelected, onToggle }) {
   return (
     <li className={isSelected ? "selected" : ""}>
