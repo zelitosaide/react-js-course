@@ -15,7 +15,9 @@ let nextId = 3;
 
 export default function Index() {
   const [items, setItems] = useState(initialItems);
-  const [packed, setPacked] = useState(1);
+  const packed = items.filter(function (item) {
+    return item.packed;
+  }).length;
 
   function handleAddItem(title) {
     setItems([
@@ -28,7 +30,7 @@ export default function Index() {
     ]);
   }
 
-  function handleChangeItem() {}
+  function handleChangeItem(nextItem) {}
 
   function handleDeleteItem() {}
 
