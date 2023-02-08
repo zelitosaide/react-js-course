@@ -3,6 +3,7 @@ import { useState } from "react";
 import {
   menu as initialItems,
   travelPlan as initialTravelPlan,
+  flatTravelPlan as initialFlatTravelPlan,
 } from "../../../../data/data";
 
 export default function Index() {
@@ -23,7 +24,9 @@ export default function Index() {
   );
 }
 
-function TravelPlan() {}
+function TravelPlan() {
+  const [plan, setPlan] = useState(initialFlatTravelPlan);
+}
 
 function TravelPlan2() {
   const [plan, setPlan] = useState(initialTravelPlan);
