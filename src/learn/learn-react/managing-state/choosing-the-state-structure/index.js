@@ -32,19 +32,28 @@ function TravelPlan() {
   const root = plan[0];
   const planetIds = root.childIds;
 
+  function handleComplete() {}
+
   return (
     <>
       <h2>Places to visit</h2>
       <ol>
         {planetIds.map(function (id) {
-          return <PlaceTree key={id} />;
+          return (
+            <PlaceTree
+              key={id}
+              parentId={0}
+              placesById={plan}
+              onComplete={handleComplete}
+            />
+          );
         })}
       </ol>
     </>
   );
 }
 
-function PlaceTree() {}
+function PlaceTree({ id, parentId, placesById, onComplete }) {}
 
 function TravelPlan3() {
   const [plan, setPlan] = useState(initialFlatTravelPlan);
