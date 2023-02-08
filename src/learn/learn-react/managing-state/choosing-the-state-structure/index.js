@@ -10,6 +10,7 @@ import {
 import FixAComponentThatIsNotUpdating from "./challenges/fix-a-component-that-is-not-updating";
 import FixABrokenPackingList from "./challenges/fix-a-broken-packing-list";
 import FixTheDisappearingSelection from "./challenges/fix-the-disappearing-selection";
+import ImplementMultipleSelection from "./challenges/implement-multiple-selection";
 
 export default function Index() {
   return (
@@ -29,6 +30,7 @@ export default function Index() {
       <FixAComponentThatIsNotUpdating />
       <FixABrokenPackingList />
       <FixTheDisappearingSelection />
+      <ImplementMultipleSelection />
     </>
   );
 }
