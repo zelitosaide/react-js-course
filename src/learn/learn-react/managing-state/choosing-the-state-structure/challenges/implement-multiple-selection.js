@@ -9,6 +9,18 @@ export default function Index() {
   return <MailClient2 />;
 }
 
+function MailClient() {
+  const [selectedIds, setSelectedIds] = useState(new Set());
+
+  const selectedCount = selectedIds.size;
+
+  return (
+    <>
+      <h2>Inbox</h2>
+    </>
+  );
+}
+
 function MailClient2() {
   const [selectedIds, setSelectedIds] = useState([]);
 
