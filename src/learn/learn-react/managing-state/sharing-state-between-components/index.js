@@ -29,7 +29,17 @@ function Panel({ title, children }) {
   return (
     <section className="panel">
       <h3>{title}</h3>
-      {isActive ? <p>{children}</p> : <button>Show</button>}
+      {isActive ? (
+        <p>{children}</p>
+      ) : (
+        <button
+          onClick={function () {
+            setIsActive(true);
+          }}
+        >
+          Show
+        </button>
+      )}
     </section>
   );
 }
