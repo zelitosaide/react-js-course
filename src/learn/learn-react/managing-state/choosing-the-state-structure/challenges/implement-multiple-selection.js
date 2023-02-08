@@ -58,7 +58,8 @@ function Letter({ letter, isSelected, onToggle }) {
           onChange={function () {
             onToggle(letter.id);
           }}
-        />
+        />{" "}
+        {letter.subject}
       </label>
     </li>
   );
