@@ -39,6 +39,14 @@ function TravelPlan() {
       parent.childIds = parent.childIds.filter(function (id) {
         return id !== childId;
       });
+
+      // Forget this place and all its subtree.
+      deleteAllChildren(childId);
+      function deleteAllChildren(id) {
+        const place = draft[id];
+        place.childIds.forEach(deleteAllChildren);
+        delete draft[id];
+      }
     });
   }
 
