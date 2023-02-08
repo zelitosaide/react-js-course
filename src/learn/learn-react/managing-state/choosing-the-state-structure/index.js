@@ -64,7 +64,7 @@ function PlaceTree({ id, parentId, placesById, onComplete }) {
           onComplete(parentId, id);
         }}
       >
-        Complte
+        Complete
       </button>
     </li>
   );
