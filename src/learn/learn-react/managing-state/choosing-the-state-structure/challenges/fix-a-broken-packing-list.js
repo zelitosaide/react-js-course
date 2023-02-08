@@ -47,6 +47,7 @@ function AddItem({ onAddItem }) {
     <>
       <input
         value={title}
+        placeholder="Add item"
         onChange={function (e) {
           setTitle(e.target.value);
         }}
