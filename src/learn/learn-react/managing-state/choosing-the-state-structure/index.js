@@ -8,6 +8,7 @@ import {
 } from "../../../../data/data";
 
 import FixAComponentThatIsNotUpdating from "./challenges/fix-a-component-that-is-not-updating";
+import FixABrokenPackingList from "./challenges/fix-a-broken-packing-list";
 
 export default function Index() {
   return (
@@ -25,6 +26,7 @@ export default function Index() {
       <TravelPlan3 />
       <TravelPlan />
       <FixAComponentThatIsNotUpdating />
+      <FixABrokenPackingList />
     </>
   );
 }
