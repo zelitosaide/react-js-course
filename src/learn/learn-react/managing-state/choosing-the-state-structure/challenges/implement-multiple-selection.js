@@ -19,7 +19,16 @@ function MailClient() {
 
   const selectedCount = selectedIds.size;
 
-  function handleToggle(toggledId) {}
+  function handleToggle(toggledId) {
+    // Create a copy (to avoid mutation).
+    const nextIds = new Set(selectedIds);
+    if (nextIds.has(toggledId)) {
+      nextIds.delete(toggledId);
+    } else {
+      nextIds.add(toggledId);
+    }
+    selectedIds(nextIds);
+  }
 
   return (
     <>
