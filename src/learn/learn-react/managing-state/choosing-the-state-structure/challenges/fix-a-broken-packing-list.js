@@ -72,4 +72,22 @@ function AddItem({ onAddItem }) {
   );
 }
 
-function PackingList({ items, onChangeItem, onDeleteItem }) {}
+function PackingList({ items, onChangeItem, onDeleteItem }) {
+  return (
+    <ul>
+      {items.map(function (item) {
+        return (
+          <li key={item.id}>
+            <label>
+              <input
+                type="checkbox"
+                checked={item.packed}
+                onChange={function (e) {}}
+              />
+            </label>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
