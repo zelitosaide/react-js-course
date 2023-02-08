@@ -51,7 +51,15 @@ function AddItem({ onAddItem }) {
         onChange={function (e) {
           setTitle(e.target.value);
         }}
-      />
+      />{" "}
+      <button
+        onClick={function () {
+          setTitle("");
+          onAddItem(title);
+        }}
+      >
+        Add
+      </button>
     </>
   );
 }
