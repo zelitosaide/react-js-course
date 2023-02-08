@@ -4,6 +4,12 @@ export const user = {
   imageSize: 90,
 };
 
+export const packingList = [
+  { id: 0, title: "Warm socks", packed: true },
+  { id: 1, title: "Travel journal", packed: false },
+  { id: 2, title: "Watercolors", packed: false },
+];
+
 export const flatTravelPlan = {
   0: {
     id: 0,
