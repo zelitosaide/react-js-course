@@ -10,14 +10,22 @@ export default function Index() {
 }
 
 function MailClient() {
-  const [selectedId, setSelectedId] = useState(null);
+  const [selectedIds, setSelectedIds] = useState([]);
 
   // TODO: allow multiple selection
   const selectedCount = 1;
 
   function handleToggle(toggledId) {
     // TODO: allow multiple selection
-    setSelectedId(toggledId);
+    if (selectedIds.includes(toggledId) > 0) {
+      setSelectedIds(
+        selectedIds.filter(function (id) {
+          return id !== toggledId;
+        })
+      );
+    } else {
+      setSelectedIds([...selectedIds, toggledId]);
+    }
   }
 
   return (
