@@ -6,4 +6,12 @@
  * receives a different color prop from its parent component. However,
  * for some reason, the displayed color doesn’t update. Why? Fix the problem.
  */
-export default function Index() {}
+export default function Index() {
+  return <Clock />;
+}
+
+function Clock(props) {
+  const color = props.color;
+
+  return <h1 style={{ color: color }}>{props.time}</h1>;
+}
