@@ -23,4 +23,11 @@ export default function Index() {
 
 function MailClient() {
   const [letters, setLetters] = useState(initialLetters);
+  const [highlightedLetter, setHighlightedLetter] = useState(null);
+
+  return (
+    <>
+      <h2>Inbox</h2>
+    </>
+  );
 }
