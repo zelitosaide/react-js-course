@@ -50,7 +50,7 @@ function MailClient() {
 }
 function Letter({ letter, isSelected, onToggle }) {
   return (
-    <li>
+    <li className={isSelected ? "selected" : ""}>
       <label>
         <input
           type="checkbox"
