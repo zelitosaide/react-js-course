@@ -4,6 +4,7 @@ export default function Index() {
   return (
     <>
       <Accordion2 />
+      <Accordion />
     </>
   );
 }
