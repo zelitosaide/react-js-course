@@ -67,7 +67,14 @@ function MailClient() {
 function Letter({ letter, isHighlighted, onHover, onToggleStar }) {
   return (
     <li>
-      <button>{letter.isStarred ? "Unstar" : "Star"}</button> {letter.subject}
+      <button
+        onClick={function () {
+          onToggleStar(letter);
+        }}
+      >
+        {letter.isStarred ? "Unstar" : "Star"}
+      </button>{" "}
+      {letter.subject}
     </li>
   );
 }
