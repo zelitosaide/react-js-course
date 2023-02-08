@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { useTime } from "../../../../../utils/utils";
 
 /**
@@ -10,8 +12,14 @@ import { useTime } from "../../../../../utils/utils";
  */
 export default function Index() {
   const time = useTime();
+  const [color, setColor] = useState("lightcoral");
 
-  return <Clock time={time.toLocaleTimeString()} />;
+  return (
+    <Clock
+      time={time.toLocaleTimeString()}
+      color={color}
+    />
+  );
 }
 
 function Clock(props) {
