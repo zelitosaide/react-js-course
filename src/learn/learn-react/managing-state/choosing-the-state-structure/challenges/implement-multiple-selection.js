@@ -15,6 +15,13 @@ function MailClient() {
   return (
     <>
       <h2>Inbox</h2>
+      <ul>
+        {initialLetters.map(function (letter) {
+          return <Letter key={letter.id} />;
+        })}
+      </ul>
     </>
   );
 }
+
+function Letter({}) {}
