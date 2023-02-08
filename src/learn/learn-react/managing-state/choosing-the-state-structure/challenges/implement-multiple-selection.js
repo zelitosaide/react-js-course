@@ -24,4 +24,4 @@ function MailClient() {
   );
 }
 
-function Letter({}) {}
+function Letter({ letter, isSelected, onToggle }) {}
