@@ -17,4 +17,8 @@ import { useState } from "react";
 
 import { letters as initialLetters } from "../../../../../data/data";
 
-export default function Index() {}
+export default function Index() {
+  return <MailClient />;
+}
+
+function MailClient() {}
