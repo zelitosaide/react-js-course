@@ -40,6 +40,12 @@ function TravelPlan() {
         return id !== childId;
       }),
     };
+    // Update the root state object...
+    setPlan({
+      ...plan,
+      // ...so that it has the updated parent.
+      [parentId]: nextParent,
+    });
   }
 
   return (
