@@ -12,6 +12,9 @@ export default function Index() {
 function MailClient() {
   const [selectedId, setSelectedId] = useState(null);
 
+  // TODO: allow multiple selection
+  const selectedCount = 1;
+
   function handleToggle() {}
 
   return (
@@ -32,6 +35,10 @@ function MailClient() {
           );
         })}
       </ul>
+      <hr />
+      <p>
+        <b>You selected {selectedCount} letters</b>
+      </p>
     </>
   );
 }
