@@ -29,10 +29,10 @@ function MailClient() {
     setHighlightedId(letterId);
   }
 
-  function handleToggleStar(letterId) {
+  function handleToggleStar(starredId) {
     setLetters(
       letters.map(function (letter) {
-        if (letter.id === letterId) {
+        if (letter.id === starredId) {
           return {
             ...letter,
             isStarred: !letter.isStarred,
