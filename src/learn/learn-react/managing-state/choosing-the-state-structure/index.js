@@ -43,7 +43,27 @@ function TravelPlan() {
   );
 }
 
-function PlaceTree({ place }) {}
+function PlaceTree({ place }) {
+  const childPlaces = place.childPlaces;
+
+  return (
+    <li>
+      {place.title}
+      {childPlaces.length > 0 && (
+        <ol>
+          {childPlaces.map(function (place) {
+            return (
+              <PlaceTree
+                key={place.id}
+                place={place}
+              />
+            );
+          })}
+        </ol>
+      )}
+    </li>
+  );
+}
 
 function Menu() {
   const [items, setItems] = useState(initialItems);
