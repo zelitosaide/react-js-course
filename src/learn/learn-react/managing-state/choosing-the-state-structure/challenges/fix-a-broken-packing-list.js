@@ -7,6 +7,13 @@
  * it, the counter will not be updated correctly. Fix the counter so that
  * it’s always correct.
  */
+import { useState } from "react";
 import { packingList as initialItems } from "../../../../../data/data";
 
-export default function Index() {}
+let nextId = 3;
+
+export default function Index() {
+  const [items, setItems] = useState(initialItems);
+  const [total, setTotal] = useState(3);
+  const [packed, setPacked] = useState(1);
+}
