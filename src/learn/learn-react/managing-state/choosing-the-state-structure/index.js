@@ -30,6 +30,8 @@ function TravelPlan() {
   const root = plan[0];
   const planetIds = root.childIds;
 
+  function handleComplete() {}
+
   return (
     <>
       <h2>Places to visit</h2>
@@ -39,6 +41,9 @@ function TravelPlan() {
             <PlaceTree
               key={id}
               id={id}
+              parentId={0}
+              placesById={plan}
+              onComplete={handleComplete}
             />
           );
         })}
