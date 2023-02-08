@@ -18,7 +18,12 @@ export default function Index() {
     <div>
       <p>
         Pick a color:{" "}
-        <select>
+        <select
+          value={color}
+          onChange={function (e) {
+            setColor(e.target.value);
+          }}
+        >
           <option value="lightcoral">lightcoral</option>
           <option value="midnightblue">midnightblue</option>
           <option value="rebeccapurple">rebeccapurple</option>
