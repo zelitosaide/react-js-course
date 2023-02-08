@@ -154,3 +154,7 @@ td {
 .picture--active {
   border: 5px solid #a6b5ff;
 }
+
+.highlighted {
+  background: #d2eaff;
+}
