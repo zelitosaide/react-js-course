@@ -16,4 +16,14 @@ export default function Index() {
   const [items, setItems] = useState(initialItems);
   const [total, setTotal] = useState(3);
   const [packed, setPacked] = useState(1);
+
+  function handleAddItem() {}
+
+  return (
+    <>
+      <AddItem onAddItem={handleAddItem} />
+    </>
+  );
 }
+
+function AddItem({ onAddItem }) {}
