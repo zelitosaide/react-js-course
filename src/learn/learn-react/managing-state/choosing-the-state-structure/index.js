@@ -32,7 +32,15 @@ function TravelPlan() {
   const root = plan[0];
   const planetIds = root.childIds;
 
-  function handleComplete(parentId, childId) {}
+  function handleComplete(parentId, childId) {
+    updatePlan(function (draft) {
+      // Remove from the parent place's child IDs.
+      const parent = draft[parentId];
+      parent.childIds = parent.childIds.filter(function (id) {
+        return id !== childId;
+      });
+    });
+  }
 
   return (
     <>
