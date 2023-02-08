@@ -15,10 +15,20 @@ export default function Index() {
   const [color, setColor] = useState("lightcoral");
 
   return (
-    <Clock
-      time={time.toLocaleTimeString()}
-      color={color}
-    />
+    <div>
+      <p>
+        Pick a color:{" "}
+        <select>
+          <option value="lightcoral">lightcoral</option>
+          <option value="midnightblue">midnightblue</option>
+          <option value="rebeccapurple">rebeccapurple</option>
+        </select>
+      </p>
+      <Clock
+        time={time.toLocaleTimeString()}
+        color={color}
+      />
+    </div>
   );
 }
 
