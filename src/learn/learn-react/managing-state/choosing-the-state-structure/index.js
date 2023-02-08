@@ -30,7 +30,11 @@ function TravelPlan() {
   const root = plan[0];
   const planetIds = root.childIds;
 
-  function handleComplete(parentId, childId) {}
+  function handleComplete(parentId, childId) {
+    const parent = plan[parentId];
+    // Create a new version of the parent place
+    // that doesn't include this child ID.
+  }
 
   return (
     <>
