@@ -15,7 +15,10 @@ function MailClient() {
   // TODO: allow multiple selection
   const selectedCount = 1;
 
-  function handleToggle() {}
+  function handleToggle(toggledId) {
+    // TODO: allow multiple selection
+    setSelectedId(toggledId);
+  }
 
   return (
     <>
