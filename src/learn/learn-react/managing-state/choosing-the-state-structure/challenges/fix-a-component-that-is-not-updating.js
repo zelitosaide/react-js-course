@@ -1,3 +1,5 @@
+import { useTime } from "../../../../../utils/utils";
+
 /**
  * Challenge 1 of 4: Fix a component that’s not updating
  *
@@ -7,7 +9,9 @@
  * for some reason, the displayed color doesn’t update. Why? Fix the problem.
  */
 export default function Index() {
-  return <Clock />;
+  const time = useTime();
+
+  return <Clock time={time.toLocaleTimeString()} />;
 }
 
 function Clock(props) {
