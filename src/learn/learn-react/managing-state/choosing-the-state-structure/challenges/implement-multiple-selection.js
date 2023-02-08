@@ -16,14 +16,16 @@ function MailClient() {
   const selectedCount = selectedIds.length;
 
   function handleToggle(toggledId) {
-    // TODO: allow multiple selection
+    // Was it previously selected?
     if (selectedIds.includes(toggledId)) {
+      // Then remove this ID from the array.
       setSelectedIds(
         selectedIds.filter(function (id) {
           return id !== toggledId;
         })
       );
     } else {
+      // Otherwise, add this ID to the array
       setSelectedIds([...selectedIds, toggledId]);
     }
   }
