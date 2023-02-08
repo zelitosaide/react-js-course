@@ -42,6 +42,8 @@ function TravelPlan() {
   );
 }
 
+function PlaceTree({ id, parentId, placesById, onComplete }) {}
+
 function TravelPlan2() {
   const [plan, setPlan] = useState(initialTravelPlan);
   const planets = plan.childPlaces;
