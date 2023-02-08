@@ -101,8 +101,9 @@ function PackingList({ items, onChangeItem, onDeleteItem }) {
                     packed: e.target.checked,
                   });
                 }}
-              />
-            </label>{" "}
+              />{" "}
+              {item.title}
+            </label>
             <button
               onClick={function () {
                 onDeleteItem(item.id);
