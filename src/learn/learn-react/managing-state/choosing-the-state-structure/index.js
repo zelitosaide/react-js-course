@@ -18,9 +18,12 @@ export default function Index() {
       <Menu4 />
       <Menu />
       <TravelPlan2 />
+      <TravelPlan />
     </>
   );
 }
+
+function TravelPlan() {}
 
 function TravelPlan2() {
   const [plan, setPlan] = useState(initialTravelPlan);
