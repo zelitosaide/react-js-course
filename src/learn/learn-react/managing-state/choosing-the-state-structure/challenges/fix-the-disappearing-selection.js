@@ -27,7 +27,14 @@ function MailClient() {
 
   return (
     <>
-      <h2>Inbox</h2>
+      <h2>Inboxs</h2>
+      <ul>
+        {letters.map(function (letter) {
+          return <Letter key={letter.id} />;
+        })}
+      </ul>
     </>
   );
 }
+
+function Letter() {}
