@@ -7,4 +7,6 @@
  * it, the counter will not be updated correctly. Fix the counter so that
  * it’s always correct.
  */
+import { packingList as initialItems } from "../../../../../data/data";
+
 export default function Index() {}
