@@ -19,12 +19,27 @@ function MailClient() {
 
   const selectedCount = selectedIds.size;
 
+  function handleToggle(toggledId) {}
+
   return (
     <>
       <h2>Inbox</h2>
+      <ul>
+        {initialLetters.map(function (letter) {
+          return (
+            <Letter
+              key={letter.id}
+              letter={letter}
+              isSelected={selectedIds.has(letter.id)}
+              onToggle={handleToggle}
+            />
+          );
+        })}
+      </ul>
     </>
   );
 }
+function Letter({ letter, isSelected, onToggle }) {}
 
 function MailClient2() {
   const [selectedIds, setSelectedIds] = useState([]);
