@@ -17,12 +17,12 @@ export default function Index() {
       <Menu3 />
       <Menu4 />
       <Menu />
-      <TravelPlan />
+      <TravelPlan2 />
     </>
   );
 }
 
-function TravelPlan() {
+function TravelPlan2() {
   const [plan, setPlan] = useState(initialTravelPlan);
   const planets = plan.childPlaces;
 
@@ -32,7 +32,7 @@ function TravelPlan() {
       <ol>
         {planets.map(function (place) {
           return (
-            <PlaceTree
+            <PlaceTree2
               key={place.id}
               place={place}
             />
@@ -43,7 +43,7 @@ function TravelPlan() {
   );
 }
 
-function PlaceTree({ place }) {
+function PlaceTree2({ place }) {
   const childPlaces = place.childPlaces;
 
   return (
@@ -53,7 +53,7 @@ function PlaceTree({ place }) {
         <ol>
           {childPlaces.map(function (place) {
             return (
-              <PlaceTree
+              <PlaceTree2
                 key={place.id}
                 place={place}
               />
