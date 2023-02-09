@@ -11,15 +11,6 @@ export default function Index() {
 }
 
 function SyncedInputs() {
-  return (
-    <>
-      <Input label="First input" />
-      <Input label="Second input" />
-    </>
-  );
-}
-
-function Input({ label }) {
   const [text, setText] = useState("");
 
   function handleChange(e) {
@@ -27,11 +18,28 @@ function Input({ label }) {
   }
 
   return (
+    <>
+      <Input
+        label="First input"
+        text={text}
+        onChange={handleChange}
+      />
+      <Input
+        label="Second input"
+        text={text}
+        onChange={handleChange}
+      />
+    </>
+  );
+}
+
+function Input({ label, text, onChange }) {
+  return (
     <label style={{ display: "block" }}>
       {label}{" "}
       <input
         value={text}
-        onChange={handleChange}
+        onChange={onChange}
       />
     </label>
   );
