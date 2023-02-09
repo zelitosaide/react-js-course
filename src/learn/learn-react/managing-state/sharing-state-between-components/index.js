@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import SyncedInputs from "./challenges/synced-inputs";
+import FilteringAList from "./challenges/filtering-a-list";
 
 export default function Index() {
   return (
@@ -8,6 +9,7 @@ export default function Index() {
       <Accordion2 />
       <Accordion />
       <SyncedInputs />
+      <FilteringAList />
     </>
   );
 }
