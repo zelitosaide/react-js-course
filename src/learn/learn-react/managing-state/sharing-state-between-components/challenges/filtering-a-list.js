@@ -3,7 +3,18 @@ import { useState } from "react";
 /**
  * Challenge 2 of 2: Filtering a list
  */
-export default function Index() {}
+export default function Index() {
+  return <FilterableList />;
+}
+
+function FilterableList() {
+  return (
+    <>
+      <SearchBar />
+      <hr />
+    </>
+  );
+}
 
 function SearchBar() {
   const [query, setQuery] = useState("");
