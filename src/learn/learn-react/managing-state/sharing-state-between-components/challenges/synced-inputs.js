@@ -21,24 +21,24 @@ function SyncedInputs() {
     <>
       <Input
         label="First input"
-        text={text}
+        value={text}
         onChange={handleChange}
       />
       <Input
         label="Second input"
-        text={text}
+        value={text}
         onChange={handleChange}
       />
     </>
   );
 }
 
-function Input({ label, text, onChange }) {
+function Input({ label, value, onChange }) {
   return (
     <label style={{ display: "block" }}>
       {label}{" "}
       <input
-        value={text}
+        value={value}
         onChange={onChange}
       />
     </label>
