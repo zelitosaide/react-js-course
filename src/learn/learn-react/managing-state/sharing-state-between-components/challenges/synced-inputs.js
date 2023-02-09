@@ -22,7 +22,9 @@ function SyncedInputs() {
 function Input({ label }) {
   const [text, setText] = useState("");
 
-  function handleChange(e) {}
+  function handleChange(e) {
+    setText(e.target.value);
+  }
 
   return (
     <label style={{ display: "block" }}>
