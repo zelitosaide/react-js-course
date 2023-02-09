@@ -27,4 +27,10 @@ function Accordion() {
   );
 }
 
-function Panel() {}
+function Panel({ title, children }) {
+  return (
+    <section className="panel">
+      <h3>{title}</h3>
+    </section>
+  );
+}
