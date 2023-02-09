@@ -50,7 +50,7 @@ function List({ items }) {
 function SearchBar({ query, onChange }) {
   return (
     <label>
-      Seach{" "}
+      Search:{" "}
       <input
         value={query}
         onChange={onChange}
