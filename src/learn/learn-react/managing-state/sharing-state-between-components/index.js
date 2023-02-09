@@ -14,7 +14,6 @@ function Accordion() {
     <>
       <h2>Almaty, Kazakhstan</h2>
       <Panel>
-        {" "}
         With a population of about 2 million, Almaty is Kazakhstan's largest
         city. From 1929 to 1997, it was its capital city.
       </Panel>
@@ -32,7 +31,7 @@ function Accordion() {
 function Panel({ title, children, isActive }) {
   return (
     <>
-      <h3>{children}</h3>
+      <h3>{title}</h3>
       {isActive ? <p>{children}</p> : <button>Show</button>}
     </>
   );
