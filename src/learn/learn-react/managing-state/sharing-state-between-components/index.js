@@ -10,19 +10,27 @@ export default function Index() {
 }
 
 function Accordion() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <>
       <h2>Almaty, Kazakhstan</h2>
       <Panel
         title="About"
-        isActive={true}
+        isActive={activeIndex === 0}
+        onShow={function () {
+          setActiveIndex(0);
+        }}
       >
         With a population of about 2 million, Almaty is Kazakhstan's largest
         city. From 1929 to 1997, it was its capital city.
       </Panel>
       <Panel
         title="Etymology"
-        isActive={true}
+        isActive={activeIndex === 1}
+        onShow={function () {
+          setActiveIndex(1);
+        }}
       >
         The name comes from <span lang="kk-KZ">алма</span>, the Kazakh word for
         "apple" and is often translated as "full of apples". In fact, the region
