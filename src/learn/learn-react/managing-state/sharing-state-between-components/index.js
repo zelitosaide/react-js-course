@@ -4,9 +4,14 @@ export default function Index() {
   return (
     <>
       <Accordion2 />
+      <Accordion />
     </>
   );
 }
+
+function Accordion() {}
+
+function Panel() {}
 
 function Accordion2() {
   return (
