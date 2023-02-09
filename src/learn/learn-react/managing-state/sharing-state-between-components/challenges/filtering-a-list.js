@@ -12,21 +12,20 @@ export default function Index() {
 
 function FilterableList() {
   const [query, setQuery] = useState("");
+  const results = filterItems(foods, query);
 
   function handleChange(e) {
     setQuery(e.target.value);
   }
 
-  const items = filterItems(foods, query);
-
   return (
     <>
       <SearchBar
         onChange={handleChange}
-        value={query}
+        query={query}
       />
       <hr />
-      <List items={items} />
+      <List items={results} />
     </>
   );
 }
@@ -48,12 +47,12 @@ function List({ items }) {
   );
 }
 
-function SearchBar({ value, onChange }) {
+function SearchBar({ query, onChange }) {
   return (
     <label>
       Seach{" "}
       <input
-        value={value}
+        value={query}
         onChange={onChange}
       />
     </label>
