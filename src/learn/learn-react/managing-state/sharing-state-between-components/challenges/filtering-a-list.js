@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { foods } from "../../../../../data/data";
+import { filterItems } from "../../../../../utils/utils";
 
 /**
  * Challenge 2 of 2: Filtering a list
@@ -10,11 +11,20 @@ export default function Index() {
 }
 
 function FilterableList() {
+  const [query, setQuery] = useState("");
+
+  function handleChange(e) {
+    setQuery(e.target.value);
+  }
+
   return (
     <>
-      <SearchBar />
+      <SearchBar
+        onChange={handleChange}
+        value={query}
+      />
       <hr />
-      <List items={foods} />
+      <List items={filterItems(foods, query)} />
     </>
   );
 }
@@ -36,19 +46,13 @@ function List({ items }) {
   );
 }
 
-function SearchBar() {
-  const [query, setQuery] = useState("");
-
-  function handleChange(e) {
-    setQuery(e.target.value);
-  }
-
+function SearchBar({ value, onChange }) {
   return (
     <label>
       Seach{" "}
       <input
-        value={query}
-        onChange={handleChange}
+        value={value}
+        onChange={onChange}
       />
     </label>
   );
