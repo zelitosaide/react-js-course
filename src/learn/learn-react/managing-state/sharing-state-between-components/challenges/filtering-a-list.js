@@ -17,6 +17,8 @@ function FilterableList() {
     setQuery(e.target.value);
   }
 
+  const items = filterItems(foods, query);
+
   return (
     <>
       <SearchBar
@@ -24,7 +26,7 @@ function FilterableList() {
         value={query}
       />
       <hr />
-      <List items={filterItems(foods, query)} />
+      <List items={items} />
     </>
   );
 }
