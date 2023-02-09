@@ -12,7 +12,24 @@ function FilterableList() {
     <>
       <SearchBar />
       <hr />
+      <List />
     </>
+  );
+}
+
+function List({ items }) {
+  return (
+    <table>
+      <tbody>
+        {items.map(function (food) {
+          return (
+            <tr key={food.id}>
+              <td>{food.name}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
   );
 }
 
