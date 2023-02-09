@@ -55,7 +55,9 @@
 
 // import ChoosingTheStateStructure from "./learn/learn-react/managing-state/choosing-the-state-structure";
 
-import SharingStateBetweenComponents from "./learn/learn-react/managing-state/sharing-state-between-components";
+// import SharingStateBetweenComponents from "./learn/learn-react/managing-state/sharing-state-between-components";
+
+import PreservingAndResettingState from "./learn/learn-react/managing-state/preserving-and-resetting-state";
 
 function App() {
   return (
@@ -115,7 +117,9 @@ function App() {
 
       {/* <ChoosingTheStateStructure /> */}
 
-      <SharingStateBetweenComponents />
+      {/* <SharingStateBetweenComponents /> */}
+
+      <PreservingAndResettingState />
     </>
   );
 }
