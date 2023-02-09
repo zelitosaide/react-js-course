@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { foods } from "../../../../../data/data";
+
 /**
  * Challenge 2 of 2: Filtering a list
  */
@@ -12,7 +14,7 @@ function FilterableList() {
     <>
       <SearchBar />
       <hr />
-      <List />
+      <List items={foods} />
     </>
   );
 }
@@ -25,6 +27,7 @@ function List({ items }) {
           return (
             <tr key={food.id}>
               <td>{food.name}</td>
+              <td>{food.description}</td>
             </tr>
           );
         })}
