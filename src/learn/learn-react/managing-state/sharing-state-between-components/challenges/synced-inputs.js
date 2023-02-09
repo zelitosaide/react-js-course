@@ -8,4 +8,13 @@ export default function Index() {
   return <SyncedInputs />;
 }
 
-function SyncedInputs() {}
+function SyncedInputs() {
+  return (
+    <>
+      <Input label="First input" />
+      <Input label="Second input" />
+    </>
+  );
+}
+
+function Input({ label }) {}
