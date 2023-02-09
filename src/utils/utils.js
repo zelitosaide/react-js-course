@@ -9,6 +9,13 @@ export function formatDate(date) {
   return new Intl.DateTimeFormat("pt-PT", { weekday: "long" }).format(date);
 }
 
+export function filterItems(items, query) {
+  query = query.toLowerCase();
+  return items.filter((item) =>
+    item.name.split(" ").some((word) => word.toLowerCase().startsWith(query))
+  );
+}
+
 export function getFinalState(baseState, queue) {
   let finalState = baseState;
 
