@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 /**
  * Challenge 1 of 2: Synced inputs
  *
@@ -17,4 +19,6 @@ function SyncedInputs() {
   );
 }
 
-function Input({ label }) {}
+function Input({ label }) {
+  const [text, setText] = useState("");
+}
