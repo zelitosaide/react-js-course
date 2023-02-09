@@ -1,10 +1,13 @@
 import { useState } from "react";
 
+import SyncedInputs from "./challenges/synced-inputs";
+
 export default function Index() {
   return (
     <>
       <Accordion2 />
       <Accordion />
+      <SyncedInputs />
     </>
   );
 }
