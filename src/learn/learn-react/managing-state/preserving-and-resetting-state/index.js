@@ -26,7 +26,18 @@ export default function Index() {
 
 function Messenger() {
   const [to, setTo] = useState(contacts[0]);
+
+  return (
+    <div>
+      <ContactList />
+      <Chat />
+    </div>
+  );
 }
+
+function ContactList({ contacts, selectedContact, onSelect }) {}
+
+function Chat({ contact }) {}
 
 function Scoreboard() {
   const [isPlayerA, setIsPlayerA] = useState(false);
