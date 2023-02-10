@@ -20,7 +20,14 @@ function CounterContainer() {
 
   return (
     <div>
-      {isFancy ? <Counter isFancy={true} /> : <Counter isFancy={false} />}
+      {isFancy ? (
+        <Counter
+          isFancy={true}
+          p={1}
+        />
+      ) : (
+        <Counter isFancy={false} />
+      )}
       <label style={{ display: "block", clear: "both" }}>
         <input
           type="checkbox"
@@ -35,7 +42,7 @@ function CounterContainer() {
   );
 }
 
-function Counter({ isFancy }) {
+function Counter({ isFancy, p }) {
   const [score, setScore] = useState(0);
   const [hover, setHover] = useState(false);
 
