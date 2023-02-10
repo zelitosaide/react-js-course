@@ -74,6 +74,9 @@ function Chat({ contact }) {
       <textarea
         value={text}
         placeholder={"Chat to " + contact.name}
+        onChange={function (e) {
+          setText(e.target.value);
+        }}
       />
     </section>
   );
