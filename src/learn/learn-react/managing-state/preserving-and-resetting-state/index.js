@@ -42,6 +42,11 @@ function Counter({ person }) {
   const [hover, setHover] = useState(false);
 
   let className = "counter";
+  if (hover) {
+    className += " hover";
+  }
+
+  return <div className={className}></div>;
 }
 
 function MyComponent() {
