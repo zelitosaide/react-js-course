@@ -22,6 +22,12 @@ function Counter({ isFancy }) {
   const [hover, setHover] = useState(false);
 
   let className = "counter";
+  if (hover) {
+    className += " hover";
+  }
+  if (isFancy) {
+    className += " fancy";
+  }
 
   return (
     <div
