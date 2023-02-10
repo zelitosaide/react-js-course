@@ -41,7 +41,9 @@ function Messenger() {
   );
 }
 
-function ContactList({ contacts, selectedContact, onSelect }) {}
+function ContactList({ contacts, selectedContact, onSelect }) {
+  return <section className="contact-ist"></section>;
+}
 
 function Chat({ contact }) {}
 

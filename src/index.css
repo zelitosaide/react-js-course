@@ -185,3 +185,9 @@ td {
   border: 5px solid gold;
   color: #ff6767;
 }
+
+.chat,
+.contact-list {
+  float: left;
+  margin-bottom: 20px;
+}
