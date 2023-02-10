@@ -37,7 +37,12 @@ function Scoreboard() {
   );
 }
 
-function Counter({ person }) {}
+function Counter({ person }) {
+  const [score, setScore] = useState(0);
+  const [hover, setHover] = useState(false);
+
+  let className = "counter";
+}
 
 function MyComponent() {
   const [counter, setCounter] = useState(0);
