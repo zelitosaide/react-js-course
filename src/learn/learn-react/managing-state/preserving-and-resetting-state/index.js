@@ -29,7 +29,7 @@ function Messenger() {
   const [to, setTo] = useState(contacts[0]);
 
   return (
-    <div>
+    <div style={{ clear: "both" }}>
       <ContactList
         contacts={contacts}
         selectedContact={to}
