@@ -18,9 +18,12 @@ export default function Index() {
       <Scoreboard2 />
       <Scoreboard3 />
       <Scoreboard />
+      <Messenger />
     </div>
   );
 }
+
+function Messenger() {}
 
 function Scoreboard() {
   const [isPlayerA, setIsPlayerA] = useState(false);
