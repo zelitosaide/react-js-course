@@ -23,6 +23,7 @@ function CounterContainer() {
       {showB && <Counter />}
       <label>
         <input
+          type="checkbox"
           checked={showB}
           onChange={function (e) {
             setShowB(e.target.checked);
