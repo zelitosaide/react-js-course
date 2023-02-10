@@ -20,6 +20,16 @@ function CounterContainer() {
   return (
     <div>
       <Counter />
+      {showB && <Counter />}
+      <label>
+        <input
+          checked={showB}
+          onChange={function (e) {
+            setShowB(e.target.checked);
+          }}
+        />{" "}
+        Render the second counter
+      </label>
     </div>
   );
 }
