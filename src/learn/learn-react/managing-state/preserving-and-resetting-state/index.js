@@ -28,6 +28,13 @@ function Scoreboard() {
     <div>
       {isPlayerA && <Counter person="Taylor" />}
       {!isPlayerA && <Counter person="Sarah" />}
+      <button
+        onClick={function () {
+          setIsPlayerA(!isPlayerA);
+        }}
+      >
+        Next player!
+      </button>
     </div>
   );
 }
