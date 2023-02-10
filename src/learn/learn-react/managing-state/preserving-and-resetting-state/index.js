@@ -24,6 +24,22 @@ export default function Index() {
   );
 }
 
+function Messenger() {
+  const [to, setTo] = useState(contacts[0]);
+
+  return (
+    <div>
+      <ContactList
+        contacts={contacts}
+        selectedContact={to}
+        onSelect={function (contact) {
+          setTo(contact);
+        }}
+      />
+    </div>
+  );
+}
+
 function Messenger2() {
   const [to, setTo] = useState(contacts[0]);
 
