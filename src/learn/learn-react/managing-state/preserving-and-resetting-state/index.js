@@ -37,6 +37,14 @@ function Scoreboard() {
           key="Sarah"
         />
       )}
+      <button
+        style={{ display: "block", clear: "both" }}
+        onClick={function () {
+          setIsPlayerA(!isPlayerA);
+        }}
+      >
+        Next player!
+      </button>
     </div>
   );
 }
