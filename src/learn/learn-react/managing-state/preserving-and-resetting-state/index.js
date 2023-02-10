@@ -39,6 +39,18 @@ function Messenger() {
     return m.email === to.email;
   });
 
+  function handleTextChange(msg, email) {
+    setMessages(
+      messages.map(function (pm) {
+        if (pm.email === email) {
+          return { ...pm, text: msg };
+        } else {
+          return pm;
+        }
+      })
+    );
+  }
+
   return (
     <div style={{ clear: "both" }}>
       <ContactList
@@ -51,17 +63,7 @@ function Messenger() {
       <ChatLiftStateUp
         contact={to}
         text={text}
-        onTextChange={function (msg, email) {
-          setMessages(
-            messages.map(function (pm) {
-              if (pm.email === email) {
-                return { ...pm, text: msg };
-              } else {
-                return pm;
-              }
-            })
-          );
-        }}
+        onTextChange={handleTextChange}
       />
     </div>
   );
