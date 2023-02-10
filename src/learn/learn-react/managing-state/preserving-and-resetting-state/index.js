@@ -29,7 +29,13 @@ function Messenger() {
 
   return (
     <div>
-      <ContactList />
+      <ContactList
+        contacts={contacts}
+        selectedContact={to}
+        onSelect={function (contact) {
+          setTo(contact);
+        }}
+      />
       <Chat />
     </div>
   );
