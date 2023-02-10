@@ -46,7 +46,17 @@ function Counter({ person }) {
     className += " hover";
   }
 
-  return <div className={className}></div>;
+  return (
+    <div
+      className={className}
+      onPointerEnter={function () {
+        setHover(true);
+      }}
+      onPointerLeave={function () {
+        setHover(false);
+      }}
+    ></div>
+  );
 }
 
 function MyComponent() {
