@@ -15,7 +15,15 @@ export default function Index() {
   );
 }
 
-function CounterContainer() {}
+function CounterContainer() {
+  const [isFancy, setIsFancy] = useState(false);
+
+  return (
+    <div>
+      {isFancy ? <Counter isFancy={true} /> : <Counter isFancy={false} />}
+    </div>
+  );
+}
 
 function Counter({ isFancy }) {
   const [score, setScore] = useState(0);
