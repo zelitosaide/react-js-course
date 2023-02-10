@@ -29,6 +29,7 @@ function Scoreboard() {
       {isPlayerA && <Counter person="Taylor" />}
       {!isPlayerA && <Counter person="Sarah" />}
       <button
+        style={{ display: "block", clear: "both" }}
         onClick={function () {
           setIsPlayerA(!isPlayerA);
         }}
