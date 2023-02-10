@@ -29,11 +29,27 @@ export default function Index() {
 
 function Messenger() {
   const [to, setTo] = useState(contacts[0]);
-  const [pendingMessages, setPendingMessages] = useState(
+  const [messages, setMessages] = useState(
     contacts.map(function (c) {
       return { email: c.email, text: "" };
     })
   );
+
+  const { text } = messages.find(function (m) {
+    return m.email === to.email;
+  });
+
+  function handleTextChange(nextText, email) {
+    setMessages(
+      messages.map(function (m) {
+        if (m.email === email) {
+          return { ...m, text: nextText };
+        } else {
+          return m;
+        }
+      })
+    );
+  }
 
   return (
     <div style={{ clear: "both" }}>
@@ -46,35 +62,21 @@ function Messenger() {
       />
       <ChatLiftStateUp
         contact={to}
-        message={
-          pendingMessages.find(function (m) {
-            return m.email === to.email;
-          }).text
-        }
-        onChange={function (msg, email) {
-          setPendingMessages(
-            pendingMessages.map(function (pm) {
-              if (pm.email === email) {
-                return { ...pm, text: msg };
-              } else {
-                return pm;
-              }
-            })
-          );
-        }}
+        message={text}
+        onTextChange={handleTextChange}
       />
     </div>
   );
 }
 
-function ChatLiftStateUp({ contact, message, onChange }) {
+function ChatLiftStateUp({ contact, text, onTextChange }) {
   return (
     <section className="chat">
       <textarea
-        value={message}
+        value={text}
         placeholder={"Chat to " + contact.name}
         onChange={function (e) {
-          onChange(e.target.value, contact.email);
+          onTextChange(e.target.value, contact.email);
         }}
       />
       <br />
