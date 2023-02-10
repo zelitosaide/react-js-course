@@ -14,8 +14,26 @@ export default function Index() {
       <CounterContainer4 />
       <CounterContainer5 />
       <CounterContainer />
+      <MyComponent />
     </div>
   );
+}
+
+function MyComponent() {
+  const [counter, setCounter] = useState(0);
+
+  function MyTextField() {
+    const [text, setText] = useState("");
+
+    return (
+      <input
+        value={text}
+        onChange={function (e) {
+          setText(e.target.value);
+        }}
+      />
+    );
+  }
 }
 
 function CounterContainer() {
