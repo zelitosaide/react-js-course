@@ -56,11 +56,11 @@ function CounterContainer() {
     <div>
       {isFancy ? (
         <div>
-          <Counter isFancy={true} />
+          <Counter3 isFancy={true} />
         </div>
       ) : (
         <section>
-          <Counter isFancy={false} />
+          <Counter3 isFancy={false} />
         </section>
       )}
       <label style={{ display: "block", clear: "both" }}>
@@ -103,7 +103,7 @@ function CounterContainer4() {
   if (isFancy) {
     return (
       <div>
-        <Counter isFancy={true} />
+        <Counter3 isFancy={true} />
         <label style={{ display: "block", clear: "both" }}>
           <input
             type="checkbox"
@@ -120,7 +120,7 @@ function CounterContainer4() {
 
   return (
     <div>
-      <Counter isFancy={false} />
+      <Counter3 isFancy={false} />
       <label style={{ display: "block", clear: "both" }}>
         <input
           type="checkbox"
@@ -141,12 +141,12 @@ function CounterContainer3() {
   return (
     <div>
       {isFancy ? (
-        <Counter
+        <Counter3
           isFancy={true}
           p={1}
         />
       ) : (
-        <Counter isFancy={false} />
+        <Counter3 isFancy={false} />
       )}
       <label style={{ display: "block", clear: "both" }}>
         <input
@@ -162,7 +162,7 @@ function CounterContainer3() {
   );
 }
 
-function Counter({ isFancy, p }) {
+function Counter3({ isFancy, p }) {
   const [score, setScore] = useState(0);
   const [hover, setHover] = useState(false);
 
