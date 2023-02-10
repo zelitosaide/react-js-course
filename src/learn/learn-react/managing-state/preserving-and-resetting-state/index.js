@@ -49,7 +49,9 @@ function ContactList({ contacts, selectedContact, onSelect }) {
           return (
             <li key={contact.email}>
               <button
-                style={{ color: selectedContact === contact ? "green" : "" }}
+                style={{
+                  color: selectedContact === contact ? "green" : "",
+                }}
                 onClick={function () {
                   onSelect(contact);
                 }}
