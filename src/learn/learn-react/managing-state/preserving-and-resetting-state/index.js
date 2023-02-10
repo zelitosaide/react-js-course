@@ -15,8 +15,10 @@ function Counter() {
   const [score, setScore] = useState(0);
   const [hover, setHover] = useState(false);
 
+  let className = "counter";
+
   return (
-    <div>
+    <div className={className}>
       <h1>{score}</h1>
       <button
         onClick={function () {
