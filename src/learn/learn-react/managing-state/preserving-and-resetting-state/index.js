@@ -21,6 +21,26 @@ export default function Index() {
   );
 }
 
+function Scoreboard() {
+  const [isPlayerA, setIsPlayerA] = useState(false);
+
+  return (
+    <div>
+      {isPlayerA ? (
+        <Counter
+          person="Taylor"
+          key="Taylor"
+        />
+      ) : (
+        <Counter
+          person="Sarah"
+          key="Sarah"
+        />
+      )}
+    </div>
+  );
+}
+
 function Scoreboard3() {
   const [isPlayerA, setIsPlayerA] = useState(false);
 
