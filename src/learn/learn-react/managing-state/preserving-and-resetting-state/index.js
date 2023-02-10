@@ -29,6 +29,11 @@ export default function Index() {
 
 function Messenger() {
   const [to, setTo] = useState(contacts[0]);
+  const [pendingMessages, setPendingMessages] = useState(
+    contacts.map(function (c) {
+      return { email: c.email, text: "" };
+    })
+  );
 
   return (
     <div style={{ clear: "both" }}>
