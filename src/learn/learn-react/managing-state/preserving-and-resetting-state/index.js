@@ -21,7 +21,7 @@ function CounterContainer() {
     <div>
       <Counter />
       {showB && <Counter />}
-      <label>
+      <label style={{ display: "block" }}>
         <input
           type="checkbox"
           checked={showB}
