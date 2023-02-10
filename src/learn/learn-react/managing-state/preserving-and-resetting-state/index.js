@@ -34,6 +34,19 @@ function MyComponent() {
       />
     );
   }
+
+  return (
+    <>
+      <MyTextField />
+      <button
+        onClick={function () {
+          setCounter(counter + 1);
+        }}
+      >
+        Clicked {counter} times
+      </button>
+    </>
+  );
 }
 
 function CounterContainer() {
