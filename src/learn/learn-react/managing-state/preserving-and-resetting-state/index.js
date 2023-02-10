@@ -14,7 +14,15 @@ export default function Index() {
   );
 }
 
-function CounterApp() {}
+function CounterApp() {
+  const [showB, setShowB] = useState(false);
+
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
+}
 
 function Counter() {
   const [score, setScore] = useState(0);
