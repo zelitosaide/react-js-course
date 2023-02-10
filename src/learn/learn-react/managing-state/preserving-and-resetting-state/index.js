@@ -26,6 +26,13 @@ function Scoreboard() {
   return (
     <div>
       {isPlayerA ? <Counter person="Taylor" /> : <Counter person="Sarah" />}
+      <button
+        onClick={function () {
+          setIsPlayerA(!isPlayerA);
+        }}
+      >
+        Next player!
+      </button>
     </div>
   );
 }
