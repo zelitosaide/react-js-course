@@ -27,6 +27,7 @@ function Scoreboard() {
     <div>
       {isPlayerA ? <Counter person="Taylor" /> : <Counter person="Sarah" />}
       <button
+        style={{ display: "block", clear: "both" }}
         onClick={function () {
           setIsPlayerA(!isPlayerA);
         }}
