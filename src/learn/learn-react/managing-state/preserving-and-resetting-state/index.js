@@ -26,6 +26,13 @@ function Counter({ isFancy }) {
   return (
     <div className={className}>
       <h1>{score}</h1>
+      <button
+        onClick={function () {
+          setScore(score + 1);
+        }}
+      >
+        Add one
+      </button>
     </div>
   );
 }
