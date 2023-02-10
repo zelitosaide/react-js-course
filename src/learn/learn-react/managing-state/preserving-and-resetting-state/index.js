@@ -24,7 +24,12 @@ function Counter({ isFancy }) {
   let className = "counter";
 
   return (
-    <div className={className}>
+    <div
+      className={className}
+      onPointerEnter={function () {
+        setHover(true);
+      }}
+    >
       <h1>{score}</h1>
       <button
         onClick={function () {
