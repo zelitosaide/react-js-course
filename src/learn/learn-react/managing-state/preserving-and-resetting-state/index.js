@@ -66,7 +66,18 @@ function ContactList({ contacts, selectedContact, onSelect }) {
   );
 }
 
-function Chat({ contact }) {}
+function Chat({ contact }) {
+  const [text, setText] = useState("");
+
+  return (
+    <section className="chat">
+      <textarea
+        value={text}
+        placeholder={"Chat to " + contact.name}
+      />
+    </section>
+  );
+}
 
 function Scoreboard() {
   const [isPlayerA, setIsPlayerA] = useState(false);
