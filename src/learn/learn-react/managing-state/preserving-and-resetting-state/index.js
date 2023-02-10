@@ -7,6 +7,8 @@ export default function Index() {
     <div>
       {counter}
       {counter}
+      <Counter />
+      <Counter />
     </div>
   );
 }
