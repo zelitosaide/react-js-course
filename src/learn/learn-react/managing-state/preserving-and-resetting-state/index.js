@@ -9,12 +9,12 @@ export default function Index() {
       {counter}
       <Counter />
       <Counter />
-      <CounterApp />
+      <CounterContainer />
     </div>
   );
 }
 
-function CounterApp() {
+function CounterContainer() {
   const [showB, setShowB] = useState(false);
 
   return (
