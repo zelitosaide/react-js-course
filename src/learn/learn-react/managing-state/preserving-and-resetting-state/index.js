@@ -42,7 +42,25 @@ function Messenger() {
 }
 
 function ContactList({ contacts, selectedContact, onSelect }) {
-  return <section className="contact-ist"></section>;
+  return (
+    <section className="contact-ist">
+      <ul>
+        {contacts.map(function (contact) {
+          return (
+            <li key={contact.id}>
+              <button
+                onClick={function () {
+                  onSelect(contact);
+                }}
+              >
+                {contact.name}
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
 }
 
 function Chat({ contact }) {}
