@@ -17,6 +17,7 @@ export default function Index() {
       <MyComponent />
       <Scoreboard2 />
       <Scoreboard3 />
+      <Scoreboard />
     </div>
   );
 }
