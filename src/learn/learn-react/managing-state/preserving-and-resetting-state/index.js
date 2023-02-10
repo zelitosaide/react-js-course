@@ -20,6 +20,7 @@ export default function Index() {
       <Scoreboard3 />
       <Scoreboard />
       <Messenger2 />
+      <Messenger />
     </div>
   );
 }
