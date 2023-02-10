@@ -15,9 +15,12 @@ export default function Index() {
       <CounterContainer5 />
       <CounterContainer />
       <MyComponent />
+      <Scoreboard />
     </div>
   );
 }
+
+function Scoreboard() {}
 
 function MyComponent() {
   const [counter, setCounter] = useState(0);
