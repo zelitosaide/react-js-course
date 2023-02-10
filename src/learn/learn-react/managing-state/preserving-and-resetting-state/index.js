@@ -79,7 +79,7 @@ function Chat({ contact }) {
         }}
       />
       <br />
-      <button>Send to {contact.name}</button>
+      <button>Send to {contact.email}</button>
     </section>
   );
 }
