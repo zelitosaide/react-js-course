@@ -166,3 +166,17 @@ td {
   padding: 10px;
   border: 1px solid #aaa;
 }
+
+.counter {
+  width: 100px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 0 20px 20px 0;
+  float: left;
+}
+
+.hover {
+  background: #ffffd8;
+}
