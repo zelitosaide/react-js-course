@@ -35,6 +35,10 @@ function Messenger() {
     })
   );
 
+  const { text } = messages.find(function (m) {
+    return m.email === to.email;
+  });
+
   return (
     <div style={{ clear: "both" }}>
       <ContactList
@@ -46,11 +50,7 @@ function Messenger() {
       />
       <ChatLiftStateUp
         contact={to}
-        message={
-          messages.find(function (m) {
-            return m.email === to.email;
-          }).text
-        }
+        text={text}
         onTextChange={function (msg, email) {
           setMessages(
             messages.map(function (pm) {
