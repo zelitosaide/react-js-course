@@ -22,9 +22,12 @@ export default function Index() {
       <Messenger2 />
       <Messenger3 />
       <Messenger4 />
+      <Messenger />
     </div>
   );
 }
+
+function Messenger() {}
 
 function Messenger4() {
   const [to, setTo] = useState(contacts[0]);
