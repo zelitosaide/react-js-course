@@ -70,7 +70,7 @@ function Counter({ isFancy, p }) {
           setScore(score + 1);
         }}
       >
-        Add one
+        Add one {p}
       </button>
     </div>
   );
