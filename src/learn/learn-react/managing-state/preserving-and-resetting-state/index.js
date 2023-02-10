@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export default function Index() {
   const counter = <Counter />;
 
@@ -9,4 +11,13 @@ export default function Index() {
   );
 }
 
-function Counter() {}
+function Counter() {
+  const [score, setScore] = useState(0);
+  const [hover, setHover] = useState(false);
+
+  return (
+    <div>
+      <h1>{score}</h1>
+    </div>
+  );
+}
