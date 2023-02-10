@@ -47,7 +47,7 @@ function ContactList({ contacts, selectedContact, onSelect }) {
       <ul>
         {contacts.map(function (contact) {
           return (
-            <li key={contact.id}>
+            <li key={contact.email}>
               <button
                 onClick={function () {
                   onSelect(contact);
