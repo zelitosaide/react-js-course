@@ -17,7 +17,11 @@ export default function Index() {
   );
 }
 
-function CounterContainer() {}
+function CounterContainer() {
+  const [isPaused, setIsPaused] = useState(false);
+
+  return <div>{isPaused ? <p>See you later!</p> : <Counter2 />}</div>;
+}
 
 function CounterContainer4() {
   const [isFancy, setIsFancy] = useState(false);
