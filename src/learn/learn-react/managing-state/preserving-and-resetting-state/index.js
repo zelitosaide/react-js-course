@@ -20,7 +20,21 @@ export default function Index() {
 function CounterContainer() {
   const [isPaused, setIsPaused] = useState(false);
 
-  return <div>{isPaused ? <p>See you later!</p> : <Counter2 />}</div>;
+  return (
+    <div>
+      {isPaused ? <p>See you later!</p> : <Counter2 />}
+      <label style={{ display: "block", clear: "both" }}>
+        <input
+          type="checkbox"
+          checked={isPaused}
+          onChange={function (e) {
+            setIsPaused(e.target.checked);
+          }}
+        />{" "}
+        Take a break
+      </label>
+    </div>
+  );
 }
 
 function CounterContainer4() {
