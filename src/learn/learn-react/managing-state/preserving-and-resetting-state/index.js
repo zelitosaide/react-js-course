@@ -16,12 +16,12 @@ export default function Index() {
       <CounterContainer />
       <MyComponent />
       <Scoreboard2 />
-      <Scoreboard />
+      <Scoreboard3 />
     </div>
   );
 }
 
-function Scoreboard() {
+function Scoreboard3() {
   const [isPlayerA, setIsPlayerA] = useState(false);
 
   return (
