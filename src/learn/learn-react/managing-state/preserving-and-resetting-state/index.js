@@ -38,11 +38,38 @@ function Messenger() {
           setTo(contact);
         }}
       />
-      <Chat
-        key={to.email}
-        contact={to}
-      />
+
+      {contacts.map(function (contact) {
+        return (
+          <ChatRenderAll
+            key={contact.email}
+            contact={contact}
+            isSelected={contact === to}
+          />
+        );
+      })}
     </div>
+  );
+}
+
+function ChatRenderAll({ contact, isSelected }) {
+  const [text, setText] = useState("");
+
+  return (
+    <section
+      className="chat"
+      style={{ display: !isSelected ? "none" : "" }}
+    >
+      <textarea
+        value={text}
+        placeholder={"Chat to " + contact.name}
+        onChange={function (e) {
+          setText(e.target.value);
+        }}
+      />
+      <br />
+      <button>Send to {contact.email}</button>
+    </section>
   );
 }
 
