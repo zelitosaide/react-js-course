@@ -20,12 +20,15 @@ export default function Index() {
       <Scoreboard3 />
       <Scoreboard />
       <Messenger2 />
+      <Messenger3 />
       <Messenger />
     </div>
   );
 }
 
-function Messenger() {
+function Messenger() {}
+
+function Messenger3() {
   const [to, setTo] = useState(contacts[0]);
 
   return (
