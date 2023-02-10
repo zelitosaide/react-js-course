@@ -23,7 +23,11 @@ function Counter({ isFancy }) {
 
   let className = "counter";
 
-  return <div className={className}></div>;
+  return (
+    <div className={className}>
+      <h1>{score}</h1>
+    </div>
+  );
 }
 
 function CounterContainer2() {
