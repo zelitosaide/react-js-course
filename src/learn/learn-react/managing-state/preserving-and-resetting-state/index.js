@@ -20,7 +20,17 @@ export default function Index() {
   );
 }
 
-function Scoreboard() {}
+function Scoreboard() {
+  const [isPlayerA, setIsPlayerA] = useState(false);
+
+  return (
+    <div>
+      {isPlayerA ? <Counter person="Taylor" /> : <Counter person="Sarah" />}
+    </div>
+  );
+}
+
+function Counter({ person }) {}
 
 function MyComponent() {
   const [counter, setCounter] = useState(0);
