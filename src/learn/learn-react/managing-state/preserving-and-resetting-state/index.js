@@ -21,7 +21,7 @@ function CounterContainer() {
   return (
     <div>
       {isFancy ? <Counter isFancy={true} /> : <Counter isFancy={false} />}
-      <label>
+      <label style={{ display: "block" }}>
         <input
           type="checkbox"
           checked={isFancy}
