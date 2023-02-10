@@ -16,9 +16,17 @@ function Counter() {
   const [hover, setHover] = useState(false);
 
   let className = "counter";
+  if (hover) {
+    className += " hover";
+  }
 
   return (
-    <div className={className}>
+    <div
+      className={className}
+      onPointerEnter={function () {
+        setHover(true);
+      }}
+    >
       <h1>{score}</h1>
       <button
         onClick={function () {
