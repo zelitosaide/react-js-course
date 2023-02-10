@@ -15,7 +15,7 @@ export default function Index() {
 }
 
 function CounterContainer() {
-  const [showB, setShowB] = useState(false);
+  const [showB, setShowB] = useState(true);
 
   return (
     <div>
