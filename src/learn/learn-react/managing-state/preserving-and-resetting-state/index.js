@@ -1,14 +1,14 @@
 import { useState } from "react";
 
 export default function Index() {
-  const counter = <Counter />;
+  const counter = <Counter2 />;
 
   return (
     <div>
       {counter}
       {counter}
-      <Counter />
-      <Counter />
+      <Counter2 />
+      <Counter2 />
       <CounterContainer />
     </div>
   );
@@ -19,8 +19,8 @@ function CounterContainer() {
 
   return (
     <div>
-      <Counter />
-      {showB && <Counter />}
+      <Counter2 />
+      {showB && <Counter2 />}
       <label style={{ display: "block", clear: "both" }}>
         <input
           type="checkbox"
@@ -35,7 +35,7 @@ function CounterContainer() {
   );
 }
 
-function Counter() {
+function Counter2() {
   const [score, setScore] = useState(0);
   const [hover, setHover] = useState(false);
 
