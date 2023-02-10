@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { contacts } from "../../../../data/data";
 
 export default function Index() {
   const counter = <Counter2 />;
@@ -23,7 +24,9 @@ export default function Index() {
   );
 }
 
-function Messenger() {}
+function Messenger() {
+  const [to, setTo] = useState(contacts[0]);
+}
 
 function Scoreboard() {
   const [isPlayerA, setIsPlayerA] = useState(false);
