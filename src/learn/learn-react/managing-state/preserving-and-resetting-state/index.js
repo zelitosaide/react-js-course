@@ -10,12 +10,12 @@ export default function Index() {
       <Counter2 />
       <Counter2 />
       <CounterContainer2 />
-      <CounterContainer />
+      <CounterContainer3 />
     </div>
   );
 }
 
-function CounterContainer() {
+function CounterContainer3() {
   const [isFancy, setIsFancy] = useState(false);
 
   return (
