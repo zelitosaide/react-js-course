@@ -67,16 +67,14 @@ function Messenger() {
   );
 }
 
-function ChatLiftStateUp({ contact }) {
-  const [text, setText] = useState("");
-
+function ChatLiftStateUp({ contact, message, onChange }) {
   return (
     <section className="chat">
       <textarea
-        value={text}
+        value={message}
         placeholder={"Chat to " + contact.name}
         onChange={function (e) {
-          setText(e.target.value);
+          onChange(e.target.value, contact.email);
         }}
       />
       <br />
