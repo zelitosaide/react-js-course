@@ -55,7 +55,11 @@ function Counter({ person }) {
       onPointerLeave={function () {
         setHover(false);
       }}
-    ></div>
+    >
+      <h1>
+        {person}'s score: {score}
+      </h1>
+    </div>
   );
 }
 
