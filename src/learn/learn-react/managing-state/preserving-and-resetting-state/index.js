@@ -36,7 +36,10 @@ function Messenger() {
           setTo(contact);
         }}
       />
-      <Chat contact={to} />
+      <Chat
+        key={to.email}
+        contact={to}
+      />
     </div>
   );
 }
