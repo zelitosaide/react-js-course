@@ -12,12 +12,12 @@ export default function Index() {
       <CounterContainer2 />
       <CounterContainer3 />
       <CounterContainer4 />
-      <CounterContainer />
+      <CounterContainer5 />
     </div>
   );
 }
 
-function CounterContainer() {
+function CounterContainer5() {
   const [isPaused, setIsPaused] = useState(false);
 
   return (
