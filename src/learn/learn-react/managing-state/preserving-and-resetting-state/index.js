@@ -26,6 +26,9 @@ function Counter() {
       onPointerEnter={function () {
         setHover(true);
       }}
+      onPointerLeave={function () {
+        setHover(false);
+      }}
     >
       <h1>{score}</h1>
       <button
