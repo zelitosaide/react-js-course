@@ -11,8 +11,21 @@ export default function Index() {
       <Counter2 />
       <CounterContainer2 />
       <CounterContainer3 />
+      <CounterContainer />
     </div>
   );
+}
+
+function CounterContainer() {
+  const [isFancy, setIsFancy] = useState(false);
+
+  if (isFancy) {
+    return (
+      <div>
+        <Counter isFancy={true} />
+      </div>
+    );
+  }
 }
 
 function CounterContainer3() {
