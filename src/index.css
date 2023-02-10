@@ -180,3 +180,8 @@ td {
 .hover {
   background: #ffffd8;
 }
+
+.fancy {
+  border: 5px solid gold;
+  color: #ff6767;
+}
