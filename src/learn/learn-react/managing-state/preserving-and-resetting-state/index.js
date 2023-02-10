@@ -39,13 +39,13 @@ function Messenger() {
     return m.email === to.email;
   });
 
-  function handleTextChange(msg, email) {
+  function handleTextChange(nextText, email) {
     setMessages(
-      messages.map(function (pm) {
-        if (pm.email === email) {
-          return { ...pm, text: msg };
+      messages.map(function (m) {
+        if (m.email === email) {
+          return { ...m, text: nextText };
         } else {
-          return pm;
+          return m;
         }
       })
     );
