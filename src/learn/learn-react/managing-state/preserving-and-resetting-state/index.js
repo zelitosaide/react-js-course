@@ -51,6 +51,17 @@ function Messenger() {
             return m.email === to.email;
           }).text
         }
+        onChange={function (msg, email) {
+          setPendingMessages(
+            pendingMessages.map(function (pm) {
+              if (pm.email === email) {
+                return { ...pm, text: msg };
+              } else {
+                return pm;
+              }
+            })
+          );
+        }}
       />
     </div>
   );
