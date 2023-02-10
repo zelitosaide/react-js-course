@@ -40,6 +40,16 @@ function CounterContainer() {
   return (
     <div>
       <Counter isFancy={false} />
+      <label style={{ display: "block", clear: "both" }}>
+        <input
+          type="checkbox"
+          checked={isFancy}
+          onChange={function (e) {
+            setIsFancy(e.target.checked);
+          }}
+        />{" "}
+        Use fancy styling
+      </label>
     </div>
   );
 }
