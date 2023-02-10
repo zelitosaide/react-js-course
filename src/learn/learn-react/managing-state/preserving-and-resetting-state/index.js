@@ -9,9 +9,12 @@ export default function Index() {
       {counter}
       <Counter />
       <Counter />
+      <CounterApp />
     </div>
   );
 }
+
+function CounterApp() {}
 
 function Counter() {
   const [score, setScore] = useState(0);
