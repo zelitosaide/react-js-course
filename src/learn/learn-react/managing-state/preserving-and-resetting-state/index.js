@@ -59,6 +59,13 @@ function Counter({ person }) {
       <h1>
         {person}'s score: {score}
       </h1>
+      <button
+        onClick={function () {
+          setScore(score + 1);
+        }}
+      >
+        Add one
+      </button>
     </div>
   );
 }
