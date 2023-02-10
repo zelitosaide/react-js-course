@@ -29,27 +29,11 @@ export default function Index() {
 
 function Messenger() {
   const [to, setTo] = useState(contacts[0]);
-  const [messages, setMessages] = useState(
+  const [pendingMessages, setPendingMessages] = useState(
     contacts.map(function (c) {
       return { email: c.email, text: "" };
     })
   );
-
-  const { text } = messages.find(function (m) {
-    return m.email === to.email;
-  });
-
-  function handleTextChange(nextText, email) {
-    setMessages(
-      messages.map(function (m) {
-        if (m.email === email) {
-          return { ...m, text: nextText };
-        } else {
-          return m;
-        }
-      })
-    );
-  }
 
   return (
     <div style={{ clear: "both" }}>
@@ -62,8 +46,22 @@ function Messenger() {
       />
       <ChatLiftStateUp
         contact={to}
-        message={text}
-        onTextChange={handleTextChange}
+        message={
+          pendingMessages.find(function (m) {
+            return m.email === to.email;
+          }).text
+        }
+        onTextChange={function (msg, email) {
+          setPendingMessages(
+            pendingMessages.map(function (pm) {
+              if (pm.email === email) {
+                return { ...pm, text: msg };
+              } else {
+                return pm;
+              }
+            })
+          );
+        }}
       />
     </div>
   );
