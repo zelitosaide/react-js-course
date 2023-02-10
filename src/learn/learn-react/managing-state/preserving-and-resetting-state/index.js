@@ -29,6 +29,9 @@ function Counter({ isFancy }) {
       onPointerEnter={function () {
         setHover(true);
       }}
+      onPointerLeave={function () {
+        setHover(false);
+      }}
     >
       <h1>{score}</h1>
       <button
