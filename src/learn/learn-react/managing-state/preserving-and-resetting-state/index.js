@@ -27,7 +27,21 @@ export default function Index() {
   );
 }
 
-function Messenger() {}
+function Messenger() {
+  const [to, setTo] = useState(contacts[0]);
+
+  return (
+    <div>
+      <ContactList
+        contacts={contacts}
+        selectedContact={to}
+        onSelect={function (contact) {
+          setTo(contact);
+        }}
+      />
+    </div>
+  );
+}
 
 function Messenger4() {
   const [to, setTo] = useState(contacts[0]);
@@ -41,7 +55,6 @@ function Messenger4() {
           setTo(contact);
         }}
       />
-
       {contacts.map(function (contact) {
         return (
           <ChatRenderAll
