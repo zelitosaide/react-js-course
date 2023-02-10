@@ -36,6 +36,12 @@ function CounterContainer() {
       </div>
     );
   }
+
+  return (
+    <div>
+      <Counter isFancy={false} />
+    </div>
+  );
 }
 
 function CounterContainer3() {
