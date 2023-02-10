@@ -44,7 +44,33 @@ function Messenger() {
           setTo(contact);
         }}
       />
+      <ChatLiftStateUp
+        contact={to}
+        message={
+          pendingMessages.find(function (m) {
+            return m.email === to.email;
+          }).text
+        }
+      />
     </div>
+  );
+}
+
+function ChatLiftStateUp({ contact }) {
+  const [text, setText] = useState("");
+
+  return (
+    <section className="chat">
+      <textarea
+        value={text}
+        placeholder={"Chat to " + contact.name}
+        onChange={function (e) {
+          setText(e.target.value);
+        }}
+      />
+      <br />
+      <button>Send to {contact.email}</button>
+    </section>
   );
 }
 
