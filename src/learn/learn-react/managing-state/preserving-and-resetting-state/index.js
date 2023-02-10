@@ -9,12 +9,24 @@ export default function Index() {
       {counter}
       <Counter2 />
       <Counter2 />
+      <CounterContainer2 />
       <CounterContainer />
     </div>
   );
 }
 
-function CounterContainer() {
+function CounterContainer() {}
+
+function Counter({ isFancy }) {
+  const [score, setScore] = useState(0);
+  const [hover, setHover] = useState(false);
+
+  let className = "counter";
+
+  return <div className={className}></div>;
+}
+
+function CounterContainer2() {
   const [showB, setShowB] = useState(true);
 
   return (
