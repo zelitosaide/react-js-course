@@ -11,12 +11,23 @@ function TaskApp() {
 
   function handleAddTask() {}
 
+  function handleChangeTask() {}
+
+  function handleDeleteTask() {}
+
   return (
     <>
       <h1>Prague itinerary</h1>
       <AddTask onAddTask={handleAddTask} />
+      <TaskList
+        tasks={tasks}
+        onChangeTask={handleChangeTask}
+        onDeleteTask={handleDeleteTask}
+      />
     </>
   );
 }
 
 function AddTask({ onAddTask }) {}
+
+function TaskList({ tasks, onChangeTask, onDeleteTask }) {}
