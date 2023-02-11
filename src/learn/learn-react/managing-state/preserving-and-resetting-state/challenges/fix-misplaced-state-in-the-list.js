@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 /**
  * Challenge 5 of 5: Fix misplaced state in the list
  *
@@ -10,4 +12,10 @@
  * Fix it so that the expanded state is associated with each contact, regardless
  * of the chosen ordering.
  */
-export default function Index() {}
+export default function Index() {
+  return <ContactList />;
+}
+
+function ContactList() {
+  const [reverse, setReverse] = useState(false);
+}
