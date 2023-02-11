@@ -1,20 +1,19 @@
 export function tasksReducerWithImmer(draft, action) {
   switch (action.type) {
     case "added": {
-      return draft.push({
+      draft.push({
         id: action.id,
         text: action.text,
         done: false,
       });
+      break;
     }
     case "changed": {
-      return draft.map(function (t) {
-        if (t.id === action.task.id) {
-          return action.task;
-        } else {
-          return t;
-        }
+      const index = draft.findIndex(function (t) {
+        return t.id === action.task.id;
       });
+      draft[index] = action.task;
+      break;
     }
     case "deleted": {
       return draft.filter(function (t) {
