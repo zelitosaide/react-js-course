@@ -40,6 +40,13 @@ function AddTask({ onAddTask }) {
           setText(e.target.value);
         }}
       />
+      <button
+        onClick={function () {
+          setText("");
+        }}
+      >
+        Add
+      </button>
     </>
   );
 }
