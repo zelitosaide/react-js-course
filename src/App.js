@@ -57,7 +57,9 @@
 
 // import SharingStateBetweenComponents from "./learn/learn-react/managing-state/sharing-state-between-components";
 
-import PreservingAndResettingState from "./learn/learn-react/managing-state/preserving-and-resetting-state";
+// import PreservingAndResettingState from "./learn/learn-react/managing-state/preserving-and-resetting-state";
+
+import ExtractingStateLogicIntoAReducer from "./learn/learn-react/managing-state/extracting-state-logic-into-a-reducer";
 
 function App() {
   return (
@@ -119,7 +121,9 @@ function App() {
 
       {/* <SharingStateBetweenComponents /> */}
 
-      <PreservingAndResettingState />
+      {/* <PreservingAndResettingState /> */}
+
+      <ExtractingStateLogicIntoAReducer />
     </>
   );
 }
