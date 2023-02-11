@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { contactsV2 } from "../../../../../data/data";
+
 /**
  * Challenge 5 of 5: Fix misplaced state in the list
  *
@@ -19,6 +21,8 @@ export default function Index() {
 function ContactList() {
   const [reverse, setReverse] = useState(false);
 
+  const displayedContacts = [...contactsV2];
+
   return (
     <>
       <label style={{ display: "block" }}>
@@ -31,6 +35,17 @@ function ContactList() {
         />{" "}
         Show in reverse order
       </label>
+      <ul>
+        {displayedContacts.map(function (contact) {
+          return (
+            <li key={contact.id}>
+              <Contact contact={contact} />
+            </li>
+          );
+        })}
+      </ul>
     </>
   );
 }
+
+function Contact({ contact }) {}
