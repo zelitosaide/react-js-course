@@ -20,6 +20,10 @@ function ContactManager() {
   const [contacts, setContacts] = useState(initialContacts);
   const [selectedId, setSelectedId] = useState(0);
 
+  const selectedContact = contacts.find(function (c) {
+    return c.id === selectedId;
+  });
+
   return (
     <div>
       <ContactList
