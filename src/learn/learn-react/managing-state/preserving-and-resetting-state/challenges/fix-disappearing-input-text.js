@@ -11,12 +11,12 @@ export default function Index() {
   return (
     <>
       <FixDisappearingInputText2 />
-      <FixDisappearingInputText />
+      <FixDisappearingInputText3 />
     </>
   );
 }
 
-function FixDisappearingInputText() {
+function FixDisappearingInputText3() {
   const [showHint, setShowHint] = useState(false);
 
   return (
