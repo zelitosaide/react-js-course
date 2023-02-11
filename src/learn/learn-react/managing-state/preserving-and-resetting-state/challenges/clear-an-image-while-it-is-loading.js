@@ -27,12 +27,18 @@ function Gallery() {
     }
   }
 
+  let image = images[index];
+
   return (
     <>
       <button onClick={handleClick}>Next</button>
       <h3>
         Image {index + 1} of {images.length}
       </h3>
+      <img
+        src={image.src}
+        alt={image.place}
+      />
     </>
   );
 }
