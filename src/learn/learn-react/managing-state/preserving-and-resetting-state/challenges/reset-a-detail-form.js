@@ -31,7 +31,9 @@ function ContactManager() {
       <ContactList
         contacts={contacts}
         selectedId={selectedId}
-        onSelect={() => {}}
+        onSelect={function (id) {
+          setSelectedId(id);
+        }}
       />
       <hr />
       <EditContact
