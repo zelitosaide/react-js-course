@@ -23,6 +23,10 @@ function ContactList() {
 
   const displayedContacts = [...contactsV2];
 
+  if (reverse) {
+    displayedContacts.reverse();
+  }
+
   return (
     <>
       <label style={{ display: "block" }}>
