@@ -1,3 +1,7 @@
+import { useState } from "react";
+
+import { images } from "../../../../../data/data";
+
 /**
  * Challenge 4 of 5: Clear an image while it’s loading
  *
@@ -8,3 +12,8 @@
  * the moment you press “Next”, the previous image immediately clears.
  */
 export default function Index() {}
+
+function Gallery() {
+  const [index, setIndex] = useState(0);
+  const hasNext = index < images.length - 1;
+}
