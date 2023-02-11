@@ -22,7 +22,17 @@ function TaskApp() {
     ]);
   }
 
-  function handleChangeTask() {}
+  function handleChangeTask(task) {
+    setTasks(
+      tasks.map(function (t) {
+        if (t.id === task.id) {
+          return task;
+        } else {
+          return t;
+        }
+      })
+    );
+  }
 
   function handleDeleteTask(taskId) {
     setTasks(
@@ -90,6 +100,12 @@ function TaskList({ tasks, onChangeTask, onDeleteTask }) {
 function Task({ task, onChange, onDelete }) {
   const [isEditing, setIsEditing] = useState(false);
   let taskContent;
+
+  // if (isEditing) {
+  //   taskContent = <>
+  //     <input value={task.text} onChange={function(e) {}} />
+  //   </>
+  // }
 
   return (
     <label>
