@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useReducer, useState } from "react";
 
 import { tasks as initialTasks } from "../../../../data/data";
 
@@ -13,6 +13,8 @@ export default function Index() {
   );
 }
 function TaskApp() {
+  const [tasks] = useReducer(function () {}, initialTasks);
+
   function handleAddTask(text) {}
 
   function handleChangeTask(task) {}
@@ -24,7 +26,7 @@ function TaskApp() {
       <h1>Prague itinerary</h1>
       <AddTask onAddTask={handleAddTask} />
       <TaskList
-        tasks={[]}
+        tasks={tasks}
         onChangeTask={handleChangeTask}
         onDeleteTask={handleDeleteTask}
       />
