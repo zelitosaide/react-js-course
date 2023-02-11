@@ -36,6 +36,7 @@ function Gallery() {
         Image {index + 1} of {images.length}
       </h3>
       <img
+        style={{ width: 150, height: 150 }}
         src={image.src}
         alt={image.place}
       />
