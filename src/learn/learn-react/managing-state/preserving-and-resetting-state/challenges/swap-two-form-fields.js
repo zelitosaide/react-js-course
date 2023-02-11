@@ -31,4 +31,24 @@ function SwapTwoFormFields() {
       Reverse order
     </label>
   );
+
+  if (reverse) {
+    return (
+      <>
+        <Field label="Last name" />
+        <Field label="First name" />
+        {checkbox}
+      </>
+    );
+  } else {
+    return (
+      <>
+        <Field label="First name" />
+        <Field label="Last name" />
+        {checkbox}
+      </>
+    );
+  }
 }
+
+function Field() {}
