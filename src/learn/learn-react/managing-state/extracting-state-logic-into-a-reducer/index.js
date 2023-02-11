@@ -13,7 +13,7 @@ export default function Index() {
   );
 }
 function TaskApp() {
-  const [tasks, dispatch] = useReducer(function () {}, initialTasks);
+  const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
 
   function handleAddTask(text) {
     dispatch({
