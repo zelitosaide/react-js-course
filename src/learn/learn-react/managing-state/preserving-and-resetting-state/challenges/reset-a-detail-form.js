@@ -70,4 +70,7 @@ function ContactList({ contacts, selectedId, onSelect }) {
   );
 }
 
-function EditContact({ initialData, onSave }) {}
+function EditContact({ initialData, onSave }) {
+  const [name, setName] = useState(initialData.name);
+  const [email, setEmail] = useState(initialData.email);
+}
