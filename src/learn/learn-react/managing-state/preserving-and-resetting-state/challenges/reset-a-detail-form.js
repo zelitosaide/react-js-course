@@ -109,6 +109,14 @@ function EditContact({ initialData, onSave }) {
       >
         Save
       </button>
+      <button
+        onClick={function () {
+          setName(initialData.name);
+          setEmail(initialData.email);
+        }}
+      >
+        Reset
+      </button>
     </section>
   );
 }
