@@ -202,3 +202,16 @@ function Task({ task, onChange, onDelete }) {
     </label>
   );
 }
+
+function tasksReducer(tasks, action) {
+  if (action.type === "added") {
+    return [
+      ...tasks,
+      {
+        id: action.id,
+        text: action.text,
+        done: false,
+      },
+    ];
+  }
+}
