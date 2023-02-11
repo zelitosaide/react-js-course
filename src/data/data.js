@@ -4,6 +4,12 @@ export const user = {
   imageSize: 90,
 };
 
+export const contactsv2 = [
+  { id: 0, name: "Taylor", email: "taylor@mail.com" },
+  { id: 1, name: "Alice", email: "alice@mail.com" },
+  { id: 2, name: "Bob", email: "bob@mail.com" },
+];
+
 export const foods = [
   {
     id: 0,
