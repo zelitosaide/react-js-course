@@ -21,7 +21,16 @@ function ContactList() {
 
   return (
     <>
-      <label style={{ display: "block" }}></label>
+      <label style={{ display: "block" }}>
+        <input
+          type="checkbox"
+          value={reverse}
+          onChange={function (e) {
+            setReverse(e.target.checked);
+          }}
+        />{" "}
+        Show in reverse order
+      </label>
     </>
   );
 }
