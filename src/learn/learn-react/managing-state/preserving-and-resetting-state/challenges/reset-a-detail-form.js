@@ -73,4 +73,19 @@ function ContactList({ contacts, selectedId, onSelect }) {
 function EditContact({ initialData, onSave }) {
   const [name, setName] = useState(initialData.name);
   const [email, setEmail] = useState(initialData.email);
+
+  return (
+    <section>
+      <label>
+        Name:{" "}
+        <input
+          type="text"
+          value={name}
+          onChange={function (e) {
+            setName(e.target.value);
+          }}
+        />
+      </label>
+    </section>
+  );
 }
