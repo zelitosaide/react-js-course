@@ -12,4 +12,12 @@ export default function Index() {
   return <ContactManager />;
 }
 
-function ContactManager() {}
+function ContactManager() {
+  return (
+    <div>
+      <ContactList />
+    </div>
+  );
+}
+
+function ContactList() {}
