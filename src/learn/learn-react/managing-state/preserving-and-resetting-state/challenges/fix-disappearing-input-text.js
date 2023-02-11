@@ -16,7 +16,19 @@ export default function Index() {
   );
 }
 
-function FixDisappearingInputText() {}
+function FixDisappearingInputText() {
+  const [showHint, setShowHint] = useState(false);
+
+  return (
+    <div>
+      {showHint && (
+        <p>
+          <i>Your favorite city?</i>
+        </p>
+      )}
+    </div>
+  );
+}
 
 function FixDisappearingInputText2() {
   const [showHint, setShowHint] = useState(false);
