@@ -36,11 +36,11 @@ function SwapTwoFormFields() {
     return (
       <>
         <Field
-          key="Last name"
+          key="lastName"
           label="Last name"
         />
         <Field
-          key="First name"
+          key="firstName"
           label="First name"
         />
         {checkbox}
@@ -50,11 +50,11 @@ function SwapTwoFormFields() {
     return (
       <>
         <Field
-          key="First name"
+          key="firstName"
           label="First name"
         />
         <Field
-          key="Last name"
+          key="lastName"
           label="Last name"
         />
         {checkbox}
