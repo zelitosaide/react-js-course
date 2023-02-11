@@ -17,6 +17,13 @@ export default function Index() {
           <i>Your favorite city?</i>
         </p>
         <Form />
+        <button
+          onClick={function () {
+            setShowHint(false);
+          }}
+        >
+          Hide hint
+        </button>
       </div>
     );
   }
