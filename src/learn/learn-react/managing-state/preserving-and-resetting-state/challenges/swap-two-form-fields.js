@@ -61,6 +61,9 @@ function Field({ label }) {
         type="text"
         value={text}
         placeholder={label}
+        onChange={function (e) {
+          setText(e.target.value);
+        }}
       />
     </label>
   );
