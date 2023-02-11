@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 /**
  * Challenge 2 of 5: Swap two form fields
  *
@@ -10,4 +12,10 @@
  * is now “Last name”). Fix it so that the input text also moves when you
  * reverse the order.
  */
-export default function Index() {}
+export default function Index() {
+  return <SwapTwoFormFields />;
+}
+
+function SwapTwoFormFields() {
+  const [reverse, setReverse] = useState(false);
+}
