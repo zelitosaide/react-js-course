@@ -7,3 +7,4 @@
  * it’s important for the text to always match the image. Change it so that
  * the moment you press “Next”, the previous image immediately clears.
  */
+export default function Index() {}
