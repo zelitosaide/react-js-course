@@ -24,7 +24,16 @@ function ContactManager() {
     return c.id === selectedId;
   });
 
-  function handleSave() {}
+  function handleSave(updatedData) {
+    const nextContacts = contacts.map(function (c) {
+      if (c.id === updatedData.id) {
+        return updatedData;
+      } else {
+        return c;
+      }
+    });
+    setContacts(nextContacts);
+  }
 
   return (
     <div>
