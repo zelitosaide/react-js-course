@@ -36,9 +36,9 @@ function ContactList() {
         Show in reverse order
       </label>
       <ul>
-        {displayedContacts.map(function (contact) {
+        {displayedContacts.map(function (contact, i) {
           return (
-            <li key={contact.id}>
+            <li key={i}>
               <Contact contact={contact} />
             </li>
           );
