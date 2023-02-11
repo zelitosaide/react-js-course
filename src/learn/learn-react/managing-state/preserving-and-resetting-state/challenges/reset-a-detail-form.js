@@ -16,8 +16,12 @@ function ContactManager() {
   return (
     <div>
       <ContactList />
+      <hr />
+      <EditContact />
     </div>
   );
 }
 
 function ContactList() {}
+
+function EditContact() {}
