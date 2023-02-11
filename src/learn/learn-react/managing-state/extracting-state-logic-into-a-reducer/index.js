@@ -13,11 +13,22 @@ export default function Index() {
   );
 }
 function TaskApp() {
-  const [tasks] = useReducer(function () {}, initialTasks);
+  const [tasks, dispatch] = useReducer(function () {}, initialTasks);
 
-  function handleAddTask(text) {}
+  function handleAddTask(text) {
+    dispatch({
+      type: "added",
+      id: nextId++,
+      text: text,
+    });
+  }
 
-  function handleChangeTask(task) {}
+  function handleChangeTask(task) {
+    dispatch({
+      type: "changed",
+      task: task,
+    });
+  }
 
   function handleDeleteTask(taskId) {}
 
