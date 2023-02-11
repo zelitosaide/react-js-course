@@ -48,4 +48,14 @@ function ContactList() {
   );
 }
 
-function Contact({ contact }) {}
+function Contact({ contact }) {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <>
+      <p>
+        <b>{contact.name}</b>
+      </p>
+    </>
+  );
+}
