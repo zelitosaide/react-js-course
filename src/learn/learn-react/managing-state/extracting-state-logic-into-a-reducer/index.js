@@ -8,4 +8,10 @@ export default function Index() {
 
 function TaskApp() {
   const [tasks, setTasks] = useState(initialTasks);
+
+  return (
+    <>
+      <h1>Prague itinerary</h1>
+    </>
+  );
 }
