@@ -48,7 +48,7 @@ function ContactManager() {
       <EditContact
         initialData={selectedContact}
         onSave={handleSave}
-        key={selectedContact.id}
+        key={selectedId}
       />
     </div>
   );
