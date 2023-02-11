@@ -16,6 +16,12 @@ function TaskApp() {
   return (
     <>
       <h1>Prague itinerary</h1>
+      <AddTask onAddTask={function () {}} />
+      <TaskList
+        tasks={[]}
+        onChangeTask={function () {}}
+        onDeleteTask={function () {}}
+      />
     </>
   );
 }
