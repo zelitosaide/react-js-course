@@ -27,6 +27,19 @@ export default function Index() {
       </div>
     );
   }
+
+  return (
+    <div>
+      <Form />
+      <button
+        onClick={function () {
+          setShowHint(true);
+        }}
+      >
+        Show hint
+      </button>
+    </div>
+  );
 }
 
 function Form() {}
