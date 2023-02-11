@@ -16,4 +16,12 @@ export default function Index() {}
 function Gallery() {
   const [index, setIndex] = useState(0);
   const hasNext = index < images.length - 1;
+
+  function handleClick() {}
+
+  return (
+    <>
+      <button onClick={handleClick}>Next</button>
+    </>
+  );
 }
