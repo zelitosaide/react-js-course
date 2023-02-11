@@ -87,6 +87,16 @@ function EditContact({ initialData, onSave }) {
           }}
         />
       </label>
+      <label>
+        Email:{" "}
+        <input
+          type="email"
+          value={email}
+          onChange={function (e) {
+            setEmail(e.target.value);
+          }}
+        />
+      </label>
     </section>
   );
 }
