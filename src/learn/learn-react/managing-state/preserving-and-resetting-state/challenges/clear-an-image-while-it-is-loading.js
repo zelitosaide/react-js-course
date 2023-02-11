@@ -39,6 +39,7 @@ function Gallery() {
         src={image.src}
         alt={image.place}
       />
+      <p>{image.place}</p>
     </>
   );
 }
