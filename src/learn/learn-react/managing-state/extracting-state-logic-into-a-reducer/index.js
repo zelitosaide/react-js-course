@@ -113,7 +113,7 @@ function Task({ task, onChange, onDelete }) {
         type="checkbox"
         checked={task.done}
         onChange={function (e) {
-          onchange({
+          onChange({
             ...task,
             done: e.target.checked,
           });
