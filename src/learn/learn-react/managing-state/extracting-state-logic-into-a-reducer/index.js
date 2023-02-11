@@ -221,5 +221,11 @@ function tasksReducer(tasks, action) {
         return t;
       }
     });
+  } else if (action.type === "deleted") {
+    return tasks.filter(function (t) {
+      return t.id !== action.id;
+    });
+  } else {
+    throw new Error("Unknown action: " + action.type);
   }
 }
