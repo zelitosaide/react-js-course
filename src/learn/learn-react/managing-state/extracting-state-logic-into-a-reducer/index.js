@@ -13,14 +13,20 @@ export default function Index() {
   );
 }
 function TaskApp() {
+  function handleAddTask(text) {}
+
+  function handleChangeTask(task) {}
+
+  function handleDeleteTask(taskId) {}
+
   return (
     <>
       <h1>Prague itinerary</h1>
-      <AddTask onAddTask={function () {}} />
+      <AddTask onAddTask={handleAddTask} />
       <TaskList
         tasks={[]}
-        onChangeTask={function () {}}
-        onDeleteTask={function () {}}
+        onChangeTask={handleChangeTask}
+        onDeleteTask={handleDeleteTask}
       />
     </>
   );
