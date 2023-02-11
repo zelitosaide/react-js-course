@@ -16,7 +16,10 @@ export default function Index() {
         <p>
           <i>Your favorite city?</i>
         </p>
+        <Form />
       </div>
     );
   }
 }
+
+function Form() {}
