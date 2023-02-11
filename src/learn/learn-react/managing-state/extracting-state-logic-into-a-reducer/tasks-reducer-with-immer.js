@@ -16,9 +16,14 @@ export function tasksReducerWithImmer(draft, action) {
       break;
     }
     case "deleted": {
-      return draft.filter(function (t) {
-        return t.id !== action.id;
+      const index = draft.findIndex(function (t) {
+        return t.id === action.id;
       });
+      draft.splite(index, 1);
+      // return draft.filter(function (t) {
+      //   return t.id !== action.id;
+      // });
+      break;
     }
     default: {
       throw new Error("Unknown action: " + action.type);
