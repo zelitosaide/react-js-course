@@ -77,7 +77,7 @@ function EditContact({ initialData, onSave }) {
 
   return (
     <section>
-      <label>
+      <label style={{ display: "block" }}>
         Name:{" "}
         <input
           type="text"
@@ -87,7 +87,7 @@ function EditContact({ initialData, onSave }) {
           }}
         />
       </label>
-      <label>
+      <label style={{ display: "block" }}>
         Email:{" "}
         <input
           type="email"
