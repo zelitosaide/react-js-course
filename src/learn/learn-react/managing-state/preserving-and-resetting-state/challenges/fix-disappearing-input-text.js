@@ -12,7 +12,7 @@ export default function Index() {
 
   if (showHint) {
     return (
-      <div>
+      <div style={{ clear: "both" }}>
         <p>
           <i>Your favorite city?</i>
         </p>
@@ -29,7 +29,7 @@ export default function Index() {
   }
 
   return (
-    <div>
+    <div style={{ clear: "both" }}>
       <Form />
       <button
         onClick={function () {
