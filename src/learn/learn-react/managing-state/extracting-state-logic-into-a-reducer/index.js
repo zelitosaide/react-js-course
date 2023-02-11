@@ -204,6 +204,23 @@ function Task({ task, onChange, onDelete }) {
 }
 
 function tasksReducer(tasks, action) {
+  switch (action.type) {
+    case "added": {
+      return;
+    }
+    case "changed": {
+      return;
+    }
+    case "deleted": {
+      return;
+    }
+    default: {
+      throw new Error("Unknown action: " + action.type);
+    }
+  }
+}
+
+function tasksReducer2(tasks, action) {
   if (action.type === "added") {
     return [
       ...tasks,
