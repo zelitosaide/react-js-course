@@ -26,7 +26,7 @@ function FixDisappearingInputText() {
         <p>
           <i>Your favorite city?</i>
         </p>
-        <Form key="form" />
+        <Form />
         <button
           onClick={function () {
             setShowHint(false);
@@ -41,7 +41,7 @@ function FixDisappearingInputText() {
   return (
     <div style={{ clear: "both" }}>
       {null}
-      <Form key="form" />
+      <Form />
       <button
         onClick={function () {
           setShowHint(true);
