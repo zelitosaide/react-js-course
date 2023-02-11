@@ -51,4 +51,17 @@ function SwapTwoFormFields() {
   }
 }
 
-function Field() {}
+function Field({ label }) {
+  const [text, setText] = useState("");
+
+  return (
+    <label>
+      {label}:{" "}
+      <input
+        type="text"
+        value={text}
+        placeholder={label}
+      />
+    </label>
+  );
+}
