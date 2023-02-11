@@ -12,7 +12,44 @@ export default function Index() {
     <>
       <FixDisappearingInputText2 />
       <FixDisappearingInputText3 />
+      <FixDisappearingInputText />
     </>
+  );
+}
+
+function FixDisappearingInputText() {
+  const [showHint, setShowHint] = useState(false);
+
+  if (showHint) {
+    return (
+      <div style={{ clear: "both" }}>
+        <p>
+          <i>Your favorite city?</i>
+        </p>
+        <Form key="form" />
+        <button
+          onClick={function () {
+            setShowHint(false);
+          }}
+        >
+          Hide hint
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <div style={{ clear: "both" }}>
+      {null}
+      <Form key="form" />
+      <button
+        onClick={function () {
+          setShowHint(true);
+        }}
+      >
+        Show hint
+      </button>
+    </div>
   );
 }
 
