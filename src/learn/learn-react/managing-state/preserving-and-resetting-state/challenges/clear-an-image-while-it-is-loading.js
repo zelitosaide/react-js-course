@@ -17,7 +17,13 @@ function Gallery() {
   const [index, setIndex] = useState(0);
   const hasNext = index < images.length - 1;
 
-  function handleClick() {}
+  function handleClick() {
+    if (hasNext) {
+      setIndex(index + 1);
+    } else {
+      setIndex(0);
+    }
+  }
 
   return (
     <>
