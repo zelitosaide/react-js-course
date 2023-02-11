@@ -5,10 +5,15 @@ import { tasks as initialTasks } from "../../../../data/data";
 let nextId = 3;
 
 export default function Index() {
-  return <TaskApp />;
+  return (
+    <>
+      <TaskApp2 />
+    </>
+  );
 }
+function TaskApp() {}
 
-function TaskApp() {
+function TaskApp2() {
   const [tasks, setTasks] = useState(initialTasks);
 
   function handleAddTask(text) {
