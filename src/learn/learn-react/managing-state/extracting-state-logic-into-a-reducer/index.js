@@ -30,7 +30,12 @@ function TaskApp() {
     });
   }
 
-  function handleDeleteTask(taskId) {}
+  function handleDeleteTask(taskId) {
+    dispatch({
+      type: "deleted",
+      id: taskId,
+    });
+  }
 
   return (
     <>
