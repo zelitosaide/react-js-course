@@ -36,7 +36,13 @@ function FixDisappearingInputText() {
           Hide hint
         </button>
       ) : (
-        <button>Show hint</button>
+        <button
+          onClick={function () {
+            setShowHint(true);
+          }}
+        >
+          Show hint
+        </button>
       )}
     </div>
   );
