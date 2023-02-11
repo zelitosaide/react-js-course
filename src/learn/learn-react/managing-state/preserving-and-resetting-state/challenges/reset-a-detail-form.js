@@ -24,6 +24,8 @@ function ContactManager() {
     return c.id === selectedId;
   });
 
+  function handleSave() {}
+
   return (
     <div>
       <ContactList
@@ -32,11 +34,14 @@ function ContactManager() {
         onSelect={() => {}}
       />
       <hr />
-      <EditContact />
+      <EditContact
+        initialData={selectedContact}
+        onSave={handleSave}
+      />
     </div>
   );
 }
 
 function ContactList({ contacts, selectedId, onSelect }) {}
 
-function EditContact() {}
+function EditContact({ initialData, onSave }) {}
