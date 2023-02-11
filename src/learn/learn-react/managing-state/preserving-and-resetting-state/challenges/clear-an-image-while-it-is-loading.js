@@ -39,6 +39,7 @@ function Gallery() {
         style={{ width: 150, height: 150 }}
         src={image.src}
         alt={image.place}
+        key={image.src}
       />
       <p>{image.place}</p>
     </>
