@@ -55,7 +55,7 @@ function Field({ label }) {
   const [text, setText] = useState("");
 
   return (
-    <label>
+    <label style={{ display: "block" }}>
       {label}:{" "}
       <input
         type="text"
