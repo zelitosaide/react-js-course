@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import { tasks as initialTasks } from "../../../../data/data";
 
+let nextId = 3;
+
 export default function Index() {
   return <TaskApp />;
 }
@@ -9,7 +11,16 @@ export default function Index() {
 function TaskApp() {
   const [tasks, setTasks] = useState(initialTasks);
 
-  function handleAddTask() {}
+  function handleAddTask(text) {
+    setTasks([
+      ...tasks,
+      {
+        id: nextId++,
+        text: text,
+        done: false,
+      },
+    ]);
+  }
 
   function handleChangeTask() {}
 
@@ -43,6 +54,7 @@ function AddTask({ onAddTask }) {
       <button
         onClick={function () {
           setText("");
+          onAddTask(text);
         }}
       >
         Add
