@@ -44,6 +44,24 @@ function ContactManager() {
   );
 }
 
-function ContactList({ contacts, selectedId, onSelect }) {}
+function ContactList({ contacts, selectedId, onSelect }) {
+  return (
+    <section>
+      <ul>
+        {contacts.map(function (contact) {
+          return (
+            <li key={contact.id}>
+              <button
+                onClick={function () {
+                  onSelect(contact.id);
+                }}
+              ></button>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
 
 function EditContact({ initialData, onSave }) {}
