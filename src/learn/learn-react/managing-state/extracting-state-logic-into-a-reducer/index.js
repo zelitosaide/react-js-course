@@ -101,11 +101,21 @@ function Task({ task, onChange, onDelete }) {
   const [isEditing, setIsEditing] = useState(false);
   let taskContent;
 
-  // if (isEditing) {
-  //   taskContent = <>
-  //     <input value={task.text} onChange={function(e) {}} />
-  //   </>
-  // }
+  if (isEditing) {
+    taskContent = (
+      <>
+        <input
+          value={task.text}
+          onChange={function (e) {
+            onChange({
+              ...task,
+              text: e.target.value,
+            });
+          }}
+        />
+      </>
+    );
+  }
 
   return (
     <label>
