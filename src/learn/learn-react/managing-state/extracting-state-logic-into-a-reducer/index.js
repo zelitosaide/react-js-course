@@ -63,4 +63,18 @@ function AddTask({ onAddTask }) {
   );
 }
 
-function TaskList({ tasks, onChangeTask, onDeleteTask }) {}
+function TaskList({ tasks, onChangeTask, onDeleteTask }) {
+  return (
+    <ul>
+      {tasks.map(function (task) {
+        return (
+          <li key={task.id}>
+            <Task />
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function Task() {}
