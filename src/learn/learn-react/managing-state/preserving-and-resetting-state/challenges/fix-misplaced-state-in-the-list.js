@@ -56,6 +56,11 @@ function Contact({ contact }) {
       <p>
         <b>{contact.name}</b>
       </p>
+      {expanded && (
+        <p>
+          <i>{contact.email}</i>
+        </p>
+      )}
     </>
   );
 }
