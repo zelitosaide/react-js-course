@@ -69,7 +69,11 @@ function TaskList({ tasks, onChangeTask, onDeleteTask }) {
       {tasks.map(function (task) {
         return (
           <li key={task.id}>
-            <Task />
+            <Task
+              task={task}
+              onChange={onChangeTask}
+              onDelete={onDeleteTask}
+            />
           </li>
         );
       })}
@@ -77,4 +81,4 @@ function TaskList({ tasks, onChangeTask, onDeleteTask }) {
   );
 }
 
-function Task() {}
+function Task({ task, onChange, onDelete }) {}
