@@ -213,5 +213,13 @@ function tasksReducer(tasks, action) {
         done: false,
       },
     ];
+  } else if (action.type === "changed") {
+    return tasks.map(function (t) {
+      if (t.id === action.task.id) {
+        return action.task;
+      } else {
+        return t;
+      }
+    });
   }
 }
