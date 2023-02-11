@@ -1,5 +1,8 @@
 import { useState } from "react";
+
 import { contacts } from "../../../../data/data";
+
+import FixDisappearingInputText from "./challenges/fix-disappearing-input-text";
 
 export default function Index() {
   const counter = <Counter2 />;
@@ -23,6 +26,7 @@ export default function Index() {
       <Messenger3 />
       <Messenger4 />
       <Messenger />
+      <FixDisappearingInputText />
     </div>
   );
 }
