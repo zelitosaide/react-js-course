@@ -61,6 +61,13 @@ function Contact({ contact }) {
           <i>{contact.email}</i>
         </p>
       )}
+      <button
+        onClick={function () {
+          setExpanded(!expanded);
+        }}
+      >
+        {expanded ? "Hide" : "Show"} email
+      </button>
     </>
   );
 }
