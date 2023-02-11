@@ -24,7 +24,13 @@ function TaskApp() {
 
   function handleChangeTask() {}
 
-  function handleDeleteTask() {}
+  function handleDeleteTask(taskId) {
+    setTasks(
+      tasks.filter(function (t) {
+        return t.id !== taskId;
+      })
+    );
+  }
 
   return (
     <>
