@@ -18,4 +18,10 @@ export default function Index() {
 
 function ContactList() {
   const [reverse, setReverse] = useState(false);
+
+  return (
+    <>
+      <label style={{ display: "block" }}></label>
+    </>
+  );
 }
