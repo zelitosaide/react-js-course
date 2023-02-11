@@ -26,6 +26,18 @@ function FixDisappearingInputText() {
           <i>Your favorite city?</i>
         </p>
       )}
+      <Form />
+      {showHint ? (
+        <button
+          onClick={function () {
+            setShowHint(false);
+          }}
+        >
+          Hide hint
+        </button>
+      ) : (
+        <button>Show hint</button>
+      )}
     </div>
   );
 }
