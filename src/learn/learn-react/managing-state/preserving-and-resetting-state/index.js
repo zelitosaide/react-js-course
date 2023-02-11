@@ -6,6 +6,7 @@ import FixDisappearingInputText from "./challenges/fix-disappearing-input-text";
 import SwapTwoFormFields from "./challenges/swap-two-form-fields";
 import ResetADetailForm from "./challenges/reset-a-detail-form";
 import ClearAnImageWhileItIsLoading from "./challenges/clear-an-image-while-it-is-loading";
+import FixMisplacedStateInTheList from "./challenges/fix-misplaced-state-in-the-list";
 
 export default function Index() {
   const counter = <Counter2 />;
@@ -33,6 +34,7 @@ export default function Index() {
       <SwapTwoFormFields />
       <ResetADetailForm />
       <ClearAnImageWhileItIsLoading />
+      <FixMisplacedStateInTheList />
     </div>
   );
 }
