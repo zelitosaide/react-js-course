@@ -20,7 +20,7 @@ function SwapTwoFormFields() {
   const [reverse, setReverse] = useState(false);
 
   let checkbox = (
-    <label>
+    <label style={{ display: "block" }}>
       <input
         type="checkbox"
         checked={reverse}
