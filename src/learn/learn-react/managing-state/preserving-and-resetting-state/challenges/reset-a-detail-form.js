@@ -22,6 +22,6 @@ function ContactManager() {
   );
 }
 
-function ContactList() {}
+function ContactList({ contact, selectedId, onSelect }) {}
 
 function EditContact() {}
