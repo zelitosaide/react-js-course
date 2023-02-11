@@ -9,9 +9,14 @@ export default function Index() {
 function TaskApp() {
   const [tasks, setTasks] = useState(initialTasks);
 
+  function handleAddTask() {}
+
   return (
     <>
       <h1>Prague itinerary</h1>
+      <AddTask onAddTask={handleAddTask} />
     </>
   );
 }
+
+function AddTask({ onAddTask }) {}
