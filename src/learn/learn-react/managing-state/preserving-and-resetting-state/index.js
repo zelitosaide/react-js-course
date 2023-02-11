@@ -3,6 +3,7 @@ import { useState } from "react";
 import { contacts } from "../../../../data/data";
 
 import FixDisappearingInputText from "./challenges/fix-disappearing-input-text";
+import SwapTwoFormFields from "./challenges/swap-two-form-fields";
 
 export default function Index() {
   const counter = <Counter2 />;
@@ -27,6 +28,7 @@ export default function Index() {
       <Messenger4 />
       <Messenger />
       <FixDisappearingInputText />
+      <SwapTwoFormFields />
     </div>
   );
 }
