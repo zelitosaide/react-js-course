@@ -43,8 +43,14 @@ function SwapTwoFormFields() {
   } else {
     return (
       <>
-        <Field label="First name" />
-        <Field label="Last name" />
+        <Field
+          key="First name"
+          label="First name"
+        />
+        <Field
+          key="Last name"
+          label="Last name"
+        />
         {checkbox}
       </>
     );
