@@ -55,7 +55,13 @@ function ContactList({ contacts, selectedId, onSelect }) {
                 onClick={function () {
                   onSelect(contact.id);
                 }}
-              ></button>
+              >
+                {contact.id === selectedId ? (
+                  <b>{contact.name}</b>
+                ) : (
+                  contact.name
+                )}
+              </button>
             </li>
           );
         })}
