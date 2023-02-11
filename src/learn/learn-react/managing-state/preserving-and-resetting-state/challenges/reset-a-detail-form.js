@@ -1,3 +1,7 @@
+import { useState } from "react";
+
+import { contactsV2 as initialContacts } from "../../../../../data/data";
+
 /**
  * Challenge 3 of 5: Reset a detail form
  *
@@ -13,9 +17,15 @@ export default function Index() {
 }
 
 function ContactManager() {
+  const [contacts, setContacts] = useState(initialContacts);
+
   return (
     <div>
-      <ContactList />
+      <ContactList
+        contacts={contacts}
+        selectedId={""}
+        onSelect={() => {}}
+      />
       <hr />
       <EditContact />
     </div>
