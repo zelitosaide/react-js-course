@@ -20,9 +20,6 @@ export function tasksReducerWithImmer(draft, action) {
         return t.id === action.id;
       });
       draft.splite(index, 1);
-      // return draft.filter(function (t) {
-      //   return t.id !== action.id;
-      // });
       break;
     }
     default: {
