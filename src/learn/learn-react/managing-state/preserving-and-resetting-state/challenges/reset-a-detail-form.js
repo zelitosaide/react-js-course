@@ -8,4 +8,8 @@
  * the form keeps showing the previous contact’s details. Fix it so that the form gets
  * reset when the selected contact changes.
  */
-export default function Index() {}
+export default function Index() {
+  return <ContactManager />;
+}
+
+function ContactManager() {}
