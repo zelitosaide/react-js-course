@@ -42,4 +42,15 @@ export default function Index() {
   );
 }
 
-function Form() {}
+function Form() {
+  const [text, setText] = useState("");
+
+  return (
+    <textarea
+      value={text}
+      onChange={function (e) {
+        setText(e.target.value);
+      }}
+    />
+  );
+}
