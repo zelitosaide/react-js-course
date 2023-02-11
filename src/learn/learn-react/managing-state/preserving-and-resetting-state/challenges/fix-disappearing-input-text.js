@@ -16,7 +16,7 @@ export default function Index() {
         <p>
           <i>Your favorite city?</i>
         </p>
-        <Form />
+        <Form key="form" />
         <button
           onClick={function () {
             setShowHint(false);
@@ -30,7 +30,7 @@ export default function Index() {
 
   return (
     <div style={{ clear: "both" }}>
-      <Form />
+      <Form key="form" />
       <button
         onClick={function () {
           setShowHint(true);
