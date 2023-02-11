@@ -8,10 +8,17 @@ import { useState } from "react";
  * this happen? Fix it so that pressing the button does not reset the input text.
  */
 export default function Index() {
-  return <FixDisappearingInputText />;
+  return (
+    <>
+      <FixDisappearingInputText2 />
+      <FixDisappearingInputText />
+    </>
+  );
 }
 
-function FixDisappearingInputText() {
+function FixDisappearingInputText() {}
+
+function FixDisappearingInputText2() {
   const [showHint, setShowHint] = useState(false);
 
   if (showHint) {
