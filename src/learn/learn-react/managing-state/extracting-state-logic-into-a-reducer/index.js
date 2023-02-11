@@ -12,7 +12,13 @@ export default function Index() {
     </>
   );
 }
-function TaskApp() {}
+function TaskApp() {
+  return (
+    <>
+      <h1>Prague itinerary</h1>
+    </>
+  );
+}
 
 function TaskApp2() {
   const [tasks, setTasks] = useState(initialTasks);
