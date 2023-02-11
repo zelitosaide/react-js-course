@@ -18,4 +18,17 @@ export default function Index() {
 
 function SwapTwoFormFields() {
   const [reverse, setReverse] = useState(false);
+
+  let checkbox = (
+    <label>
+      <input
+        type="checkbox"
+        checked={reverse}
+        onChange={function (e) {
+          setReverse(e.target.checked);
+        }}
+      />{" "}
+      Reverse order
+    </label>
+  );
 }
