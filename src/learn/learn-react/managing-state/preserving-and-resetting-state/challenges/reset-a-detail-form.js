@@ -97,6 +97,18 @@ function EditContact({ initialData, onSave }) {
           }}
         />
       </label>
+      <button
+        onClick={function () {
+          const updatedData = {
+            id: initialData.id,
+            name: name,
+            email: email,
+          };
+          onSave(updatedData);
+        }}
+      >
+        Save
+      </button>
     </section>
   );
 }
