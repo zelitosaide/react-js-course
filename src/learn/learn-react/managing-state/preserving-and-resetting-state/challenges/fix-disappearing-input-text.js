@@ -47,6 +47,7 @@ function Form() {
 
   return (
     <textarea
+      style={{ display: "block" }}
       value={text}
       onChange={function (e) {
         setText(e.target.value);
