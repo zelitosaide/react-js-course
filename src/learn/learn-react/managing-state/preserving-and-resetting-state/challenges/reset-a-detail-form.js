@@ -18,12 +18,13 @@ export default function Index() {
 
 function ContactManager() {
   const [contacts, setContacts] = useState(initialContacts);
+  const [selectedId, setSelectedId] = useState(0);
 
   return (
     <div>
       <ContactList
         contacts={contacts}
-        selectedId={""}
+        selectedId={selectedId}
         onSelect={() => {}}
       />
       <hr />
