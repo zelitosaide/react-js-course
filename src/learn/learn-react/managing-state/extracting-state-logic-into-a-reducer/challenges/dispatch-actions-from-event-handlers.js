@@ -25,6 +25,6 @@ function Messenger() {
   );
 }
 
-function ContactList() {}
+function ContactList({ contacts, selectedId, dispatch }) {}
 
 function Chat() {}
