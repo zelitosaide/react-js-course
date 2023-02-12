@@ -18,6 +18,10 @@ export default function Index() {
 
 function Messenger() {
   const [state, dispatch] = useReducer(messengerReducer, initialState);
+  const message = state.message;
+  const contact = contacts.find(function (c) {
+    return c.id === state.selectedId;
+  });
 
   return (
     <div style={{ clear: "both" }}>
@@ -26,7 +30,11 @@ function Messenger() {
         selectedId={state.selectedId}
         dispatch={dispatch}
       />
-      <Chat />
+      <Chat
+        contact={contact}
+        message={message}
+        dispatch={dispatch}
+      />
     </div>
   );
 }
