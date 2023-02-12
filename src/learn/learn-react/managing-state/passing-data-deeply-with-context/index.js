@@ -7,7 +7,13 @@ export default function Index() {
   );
 }
 
-function Page() {}
+function Page() {
+  return (
+    <Section>
+      <Heading level={1}>Title</Heading>
+    </Section>
+  );
+}
 
 function Page2() {
   return (
