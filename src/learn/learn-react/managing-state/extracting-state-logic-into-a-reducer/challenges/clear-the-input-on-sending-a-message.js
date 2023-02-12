@@ -11,4 +11,15 @@ export default function Index() {
   return <Messenger />;
 }
 
-function Messenger() {}
+function Messenger() {
+  return (
+    <div>
+      <ContactList />
+      <Chat />
+    </div>
+  );
+}
+
+function ContactList({}) {}
+
+function Chat() {}
