@@ -12,6 +12,12 @@ export function messengerReducer(state, action) {
         message: "",
       };
     }
+    case "edited_message": {
+      return {
+        ...state,
+        message: action.message,
+      };
+    }
     default: {
       throw new Error("Unknown action: " + action.type);
     }
