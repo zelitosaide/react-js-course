@@ -48,6 +48,10 @@ function Chat({ contact, message, dispatch }) {
       <textarea
         value={message}
         placeholder={"Chat to " + contact.name}
+        onChange={function (e) {
+          // TODO: dispatch edited_message
+          // (Read the input value from e.target.value)
+        }}
       />
     </section>
   );
