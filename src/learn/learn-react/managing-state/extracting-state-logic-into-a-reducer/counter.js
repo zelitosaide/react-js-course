@@ -7,7 +7,7 @@ export default function Index() {
 function Counter() {
   const [count, dispatch] = useReducer(counterReducer, 0);
   return (
-    <>
+    <div style={{ clear: "both" }}>
       {count}{" "}
       <button
         onClick={function () {
@@ -18,7 +18,7 @@ function Counter() {
       >
         +3
       </button>
-    </>
+    </div>
   );
 }
 
