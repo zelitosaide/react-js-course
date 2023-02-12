@@ -1,5 +1,6 @@
 import { useReducer } from "react";
 
+import { contactsV2 as contacts } from "../../../../../data/data";
 import { initialState, messengerReducer } from "./messenger-reducer";
 
 /**
@@ -22,6 +23,10 @@ export default function Index() {
 
 function Messenger() {
   const [state, dispatch] = useReducer(messengerReducer, initialState);
+  const message = state.message;
+  const contact = contacts.find(function (c) {
+    return c.id === state.selectedId;
+  });
 
   return (
     <div>
