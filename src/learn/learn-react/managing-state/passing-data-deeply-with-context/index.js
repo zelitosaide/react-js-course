@@ -8,6 +8,7 @@ function Page() {
       <Heading level={1}>Title</Heading>
       <Heading level={2}>Heading</Heading>
       <Heading level={3}>Sub-heading</Heading>
+      <Heading level={4}>Sub-sub-heading</Heading>
     </Section>
   );
 }
@@ -24,6 +25,8 @@ function Heading({ level, children }) {
       return <h2>{children}</h2>;
     case 3:
       return <h3>{children}</h3>;
+    case 4:
+      return <h4>{children}</h4>;
     default:
       throw Error("Unknown level: " + level);
   }
