@@ -20,7 +20,7 @@ function Messenger() {
   const [state, dispatch] = useReducer(messengerReducer, initialState);
 
   return (
-    <div>
+    <div style={{ clear: "both" }}>
       <ContactList
         contacts={contacts}
         selectedId={state.selectedId}
@@ -31,6 +31,26 @@ function Messenger() {
   );
 }
 
-function ContactList({ contacts, selectedId, dispatch }) {}
+function ContactList({ contacts, selectedId, dispatch }) {
+  return (
+    <section className="contact-list">
+      <ul>
+        {contacts.map(function (contact) {
+          return (
+            <li key={contact.id}>
+              <button>
+                {selectedId === contact.id ? (
+                  <b>{contact.name}</b>
+                ) : (
+                  contact.name
+                )}
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
 
 function Chat({}) {}
