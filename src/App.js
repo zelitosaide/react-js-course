@@ -59,7 +59,9 @@
 
 // import PreservingAndResettingState from "./learn/learn-react/managing-state/preserving-and-resetting-state";
 
-import ExtractingStateLogicIntoAReducer from "./learn/learn-react/managing-state/extracting-state-logic-into-a-reducer";
+// import ExtractingStateLogicIntoAReducer from "./learn/learn-react/managing-state/extracting-state-logic-into-a-reducer";
+
+import PassingDataDeeplyWithContext from "./learn/learn-react/managing-state/passing-data-deeply-with-context";
 
 function App() {
   return (
@@ -123,7 +125,9 @@ function App() {
 
       {/* <PreservingAndResettingState /> */}
 
-      <ExtractingStateLogicIntoAReducer />
+      {/* <ExtractingStateLogicIntoAReducer /> */}
+
+      <PassingDataDeeplyWithContext />
     </>
   );
 }
