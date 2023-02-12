@@ -18,7 +18,7 @@ function Section({ children }) {
 function Heading({ level, children }) {
   switch (level) {
     case 1:
-      return <h>{children}</h>;
+      return <h1>{children}</h1>;
     default:
       throw Error("Unknown level: " + level);
   }
