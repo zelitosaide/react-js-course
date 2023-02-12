@@ -27,4 +27,15 @@ export default function Index() {
 
 function Messenger() {
   const [state, dispatch] = useReducer(messengerReducer, initialState);
+
+  return (
+    <div>
+      <ContactList />
+      <Chat />
+    </div>
+  );
 }
+
+function ContactList() {}
+
+function Chat() {}
