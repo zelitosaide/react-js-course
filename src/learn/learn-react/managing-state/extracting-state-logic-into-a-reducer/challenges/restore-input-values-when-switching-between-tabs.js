@@ -97,7 +97,13 @@ function Chat({ contact, message, dispatch }) {
         }}
       />
       <br />
-      <button>Send to {contact.email}</button>
+      <button
+        onClick={function () {
+          alert(`Sending "${message}" to ${contact.email}`);
+        }}
+      >
+        Send to {contact.email}
+      </button>
     </section>
   );
 }
