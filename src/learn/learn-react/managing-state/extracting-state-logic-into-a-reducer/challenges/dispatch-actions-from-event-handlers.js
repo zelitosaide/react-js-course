@@ -55,7 +55,10 @@ function ContactList({ contacts, selectedId, dispatch }) {
               <button
                 style={{ width: 100, padding: 10, marginRight: 10 }}
                 onClick={function () {
-                  // TODO: dispatch changed_selection
+                  dispatch({
+                    type: "changed_selection",
+                    contactId: contact.id,
+                  });
                 }}
               >
                 {selectedId === contact.id ? (
