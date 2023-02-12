@@ -1,4 +1,6 @@
 import { useReducer } from "react";
+
+import { contactsV2 as contacts } from "../../../../../data/data";
 import { initialState, messengerReducer } from "./messenger-reducer-v2";
 
 /**
@@ -30,12 +32,16 @@ function Messenger() {
 
   return (
     <div>
-      <ContactList />
       <Chat />
+      <ContactList
+        contacts={contacts}
+        selectedId={state.selectedId}
+        dispatch={dispatch}
+      />
     </div>
   );
 }
 
-function ContactList() {}
+function ContactList({ contacts, selectedId, dispatch }) {}
 
 function Chat() {}
