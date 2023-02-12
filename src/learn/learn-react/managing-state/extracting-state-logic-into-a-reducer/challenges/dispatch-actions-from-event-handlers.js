@@ -42,4 +42,13 @@ function Messenger() {
 
 function ContactList({ contacts, selectedId, dispatch }) {}
 
-function Chat() {}
+function Chat({ contact, message, dispatch }) {
+  return (
+    <section className="chat">
+      <textarea
+        value={message}
+        placeholder={"Chat to " + contact.name}
+      />
+    </section>
+  );
+}
