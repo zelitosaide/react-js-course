@@ -3,7 +3,13 @@ export default function Index() {
 }
 
 function Page() {
-  return <Section></Section>;
+  return (
+    <Section>
+      <Heading level={1}>Title</Heading>
+    </Section>
+  );
 }
 
 function Section({ children }) {}
+
+function Heading({ level, children }) {}
