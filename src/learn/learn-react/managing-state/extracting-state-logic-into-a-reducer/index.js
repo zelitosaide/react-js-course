@@ -5,6 +5,7 @@ import { tasks as initialTasks } from "../../../../data/data";
 import { tasksReducer } from "./tasks-reducer";
 
 import DispatchActionsFromEventHandlers from "./challenges/dispatch-actions-from-event-handlers";
+import ClearTheInputOnSendingAMessage from "./challenges/clear-the-input-on-sending-a-message";
 
 let nextId = 3;
 
@@ -15,6 +16,7 @@ export default function Index() {
       <TaskApp3 />
       <TaskApp />
       <DispatchActionsFromEventHandlers />
+      <ClearTheInputOnSendingAMessage />
     </>
   );
 }

@@ -7,3 +7,4 @@
  * 1. Show an alert with the recipient’s email and the message.
  * 2. Clear the message input.
  */
+export default function Index() {}
