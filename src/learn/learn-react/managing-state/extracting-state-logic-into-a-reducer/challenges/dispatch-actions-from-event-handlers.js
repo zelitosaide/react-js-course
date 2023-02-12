@@ -12,4 +12,19 @@
  * reducer is already written so you won’t need to change it. You
  * only need to dispatch the actions in ContactList.js and Chat.js.
  */
-export default function Index() {}
+export default function Index() {
+  return <Messenger />;
+}
+
+function Messenger() {
+  return (
+    <div>
+      <ContactList />
+      <Chat />
+    </div>
+  );
+}
+
+function ContactList() {}
+
+function Chat() {}
