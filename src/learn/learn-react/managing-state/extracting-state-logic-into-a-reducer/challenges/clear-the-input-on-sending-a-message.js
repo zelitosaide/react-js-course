@@ -1,3 +1,8 @@
+import { useReducer } from "react";
+
+import { contactsV2 as contacts } from "../../../../../data/data";
+import { initialState, messengerReducer } from "./messenger-reducer";
+
 /**
  * Challenge 2 of 4: Clear the input on sending a message
  *
@@ -12,14 +17,19 @@ export default function Index() {
 }
 
 function Messenger() {
+  const [state, dispatch] = useReducer(messengerReducer, initialState);
+
   return (
     <div>
-      <ContactList />
+      <ContactList
+        contacts={contacts}
+        selectedId={state.selectedId}
+      />
       <Chat />
     </div>
   );
 }
 
-function ContactList({}) {}
+function ContactList({ contacts, selectedId, dispatch }) {}
 
-function Chat() {}
+function Chat({}) {}
