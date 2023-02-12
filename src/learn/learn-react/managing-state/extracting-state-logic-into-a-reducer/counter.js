@@ -7,7 +7,9 @@ function Counter() {
       {count}{" "}
       <button
         onClick={function () {
-          dispatch();
+          dispatch({ type: "incremented" });
+          dispatch({ type: "incremented" });
+          dispatch({ type: "incremented" });
         }}
       >
         +3
