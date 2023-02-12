@@ -15,4 +15,7 @@ function Section({ children }) {
   return <section className="section">{children}</section>;
 }
 
-function Heading({ level, children }) {}
+function Heading({ level, children }) {
+  switch (level) {
+  }
+}
