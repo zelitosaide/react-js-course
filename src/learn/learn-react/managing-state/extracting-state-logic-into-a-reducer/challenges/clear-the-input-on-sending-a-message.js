@@ -24,6 +24,7 @@ function Messenger() {
       <ContactList
         contacts={contacts}
         selectedId={state.selectedId}
+        dispatch={dispatch}
       />
       <Chat />
     </div>
