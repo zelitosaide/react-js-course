@@ -88,6 +88,12 @@ function Chat({ contact, message, dispatch }) {
         value={message}
         placeholder={"Chat to " + contact.name}
         style={{ height: 150 }}
+        onChange={function (e) {
+          dispatch({
+            type: "edited_message",
+            message: e.target.value,
+          });
+        }}
       />
     </section>
   );
