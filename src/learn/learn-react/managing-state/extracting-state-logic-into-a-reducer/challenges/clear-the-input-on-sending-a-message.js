@@ -87,10 +87,11 @@ function Chat({ contact, message, dispatch }) {
       <button
         onClick={function () {
           alert(contact.email + " : " + message);
-          dispatch({
-            type: "edited_message",
-            message: "",
-          });
+          // dispatch({
+          //   type: "edited_message",
+          //   message: "",
+          // });
+          dispatch({ type: "sent_message" });
         }}
       >
         Send to {contact.email}
