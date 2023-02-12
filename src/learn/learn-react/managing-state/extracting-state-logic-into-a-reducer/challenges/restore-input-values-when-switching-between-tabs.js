@@ -1,3 +1,6 @@
+import { useReducer } from "react";
+import { initialState, messengerReducer } from "./messenger-reducer-v2";
+
 /**
  * Challenge 3 of 4: Restore input values when switching between tabs
  *
@@ -18,4 +21,10 @@
  * separate message draft per contact. You would need to make a few changes to the reducer,
  * the initial state, and the components.
  */
-export default function Index() {}
+export default function Index() {
+  return <Messenger />;
+}
+
+function Messenger() {
+  const [state, dispatch] = useReducer(messengerReducer, initialState);
+}
