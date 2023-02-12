@@ -20,6 +20,15 @@ export function messengerReducer(state, action) {
         selectedId: action.contactId,
       };
     }
+    case "edited_message": {
+      return {
+        ...state,
+        messages: {
+          ...state.messages,
+          [action.contactId]: action.message,
+        },
+      };
+    }
     default: {
       throw new Error("Unknown action: " + action.type);
     }
