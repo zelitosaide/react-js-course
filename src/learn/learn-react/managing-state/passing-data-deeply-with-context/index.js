@@ -1,8 +1,8 @@
 export default function Index() {
-  return <Page />;
+  return <Page2 />;
 }
 
-function Page() {
+function Page2() {
   return (
     <Section>
       <Heading level={1}>Title</Heading>
