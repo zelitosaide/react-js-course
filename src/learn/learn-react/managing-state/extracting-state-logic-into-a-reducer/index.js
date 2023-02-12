@@ -4,6 +4,8 @@ import { useImmerReducer } from "use-immer";
 import { tasks as initialTasks } from "../../../../data/data";
 import { tasksReducer } from "./tasks-reducer";
 
+import DispatchActionsFromEventHandlers from "./challenges/dispatch-actions-from-event-handlers";
+
 let nextId = 3;
 
 export default function Index() {
@@ -12,6 +14,7 @@ export default function Index() {
       <TaskApp2 />
       <TaskApp3 />
       <TaskApp />
+      <DispatchActionsFromEventHandlers />
     </>
   );
 }
