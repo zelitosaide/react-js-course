@@ -1,5 +1,9 @@
 export default function Index() {
-  return <Page2 />;
+  return (
+    <>
+      <Page2 />
+    </>
+  );
 }
 
 function Page2() {
