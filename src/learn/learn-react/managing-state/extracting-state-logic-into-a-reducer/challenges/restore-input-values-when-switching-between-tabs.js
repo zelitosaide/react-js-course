@@ -29,13 +29,21 @@ export default function Index() {
 
 function Messenger() {
   const [state, dispatch] = useReducer(messengerReducer, initialState);
+  const message = state.message[state.selectedId];
+  const contact = contacts.find(function (c) {
+    return c.id === state.selectedId;
+  });
 
   return (
     <div>
-      <Chat />
       <ContactList
         contacts={contacts}
         selectedId={state.selectedId}
+        dispatch={dispatch}
+      />
+      <Chat
+        contact={contact}
+        message={message}
         dispatch={dispatch}
       />
     </div>
@@ -44,4 +52,4 @@ function Messenger() {
 
 function ContactList({ contacts, selectedId, dispatch }) {}
 
-function Chat() {}
+function Chat({ contact, message, dispatch }) {}
