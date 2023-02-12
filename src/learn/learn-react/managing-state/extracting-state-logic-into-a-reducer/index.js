@@ -6,6 +6,7 @@ import { tasksReducer } from "./tasks-reducer";
 
 import DispatchActionsFromEventHandlers from "./challenges/dispatch-actions-from-event-handlers";
 import ClearTheInputOnSendingAMessage from "./challenges/clear-the-input-on-sending-a-message";
+import RestoreInputValuesWhenSwitchingBetweenTabs from "./challenges/restore-input-values-when-switching-between-tabs";
 
 let nextId = 3;
 
@@ -17,6 +18,7 @@ export default function Index() {
       <TaskApp />
       <DispatchActionsFromEventHandlers />
       <ClearTheInputOnSendingAMessage />
+      <RestoreInputValuesWhenSwitchingBetweenTabs />
     </>
   );
 }

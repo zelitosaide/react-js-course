@@ -18,3 +18,4 @@
  * separate message draft per contact. You would need to make a few changes to the reducer,
  * the initial state, and the components.
  */
+export default function Index() {}
