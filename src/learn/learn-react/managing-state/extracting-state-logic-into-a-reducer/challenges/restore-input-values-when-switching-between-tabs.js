@@ -92,7 +92,6 @@ function Chat({ contact, message, dispatch }) {
           dispatch({
             type: "edited_message",
             message: e.target.value,
-            selectedId: contact.id,
           });
         }}
       />
@@ -100,10 +99,7 @@ function Chat({ contact, message, dispatch }) {
       <button
         onClick={function () {
           alert(`Sending "${message}" to ${contact.email}`);
-          dispatch({
-            type: "sent_message",
-            selectedId: contact.id,
-          });
+          dispatch({ type: "sent_message" });
         }}
       >
         Send to {contact.email}

@@ -25,7 +25,7 @@ export function messengerReducer(state, action) {
         ...state,
         messages: {
           ...state.messages,
-          [action.selectedId]: action.message,
+          [state.selectedId]: action.message,
         },
       };
     }
@@ -34,7 +34,7 @@ export function messengerReducer(state, action) {
         ...state,
         messages: {
           ...state.messages,
-          [action.selectedId]: "",
+          [state.selectedId]: "",
         },
       };
     }
