@@ -1,6 +1,6 @@
 import { useReducer } from "react";
 
-import { initialState } from "./messenger-reducer";
+import { initialState, messengerReducer } from "./messenger-reducer";
 
 /**
  * Challenge 1 of 4: Dispatch actions from event handlers
@@ -21,7 +21,7 @@ export default function Index() {
 }
 
 function Messenger() {
-  const [state, dispatch] = useReducer(function () {}, initialState);
+  const [state, dispatch] = useReducer(messengerReducer, initialState);
 
   return (
     <div>
