@@ -84,7 +84,17 @@ function Chat({ contact, message, dispatch }) {
         }}
       />
       <br />
-      <button>Send to {contact.email}</button>
+      <button
+        onClick={function () {
+          alert(contact.email + " : " + contact.message);
+          dispatch({
+            type: "edited_message",
+            message: "",
+          });
+        }}
+      >
+        Send to {contact.email}
+      </button>
     </section>
   );
 }
