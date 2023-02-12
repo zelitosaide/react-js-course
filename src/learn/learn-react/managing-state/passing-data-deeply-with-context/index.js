@@ -2,52 +2,54 @@ export default function Index() {
   return (
     <>
       <Page2 />
-      <Page />
+      <Page3 />
     </>
   );
 }
 
-function Page() {
+function Page() {}
+
+function Page3() {
   return (
-    <Section>
-      <Heading level={1}>Title</Heading>
-      <Section>
-        <Heading level={2}>Heading</Heading>
-        <Heading level={2}>Heading</Heading>
-        <Heading level={2}>Heading</Heading>
-        <Section>
-          <Heading level={3}>Sub-heading</Heading>
-          <Heading level={3}>Sub-heading</Heading>
-          <Heading level={3}>Sub-heading</Heading>
-          <Section>
-            <Heading level={4}>Sub-sub-heading</Heading>
-            <Heading level={4}>Sub-sub-heading</Heading>
-            <Heading level={4}>Sub-sub-heading</Heading>
-          </Section>
-        </Section>
-      </Section>
-    </Section>
+    <Section2>
+      <Heading2 level={1}>Title</Heading2>
+      <Section2>
+        <Heading2 level={2}>Heading</Heading2>
+        <Heading2 level={2}>Heading</Heading2>
+        <Heading2 level={2}>Heading</Heading2>
+        <Section2>
+          <Heading2 level={3}>Sub-heading</Heading2>
+          <Heading2 level={3}>Sub-heading</Heading2>
+          <Heading2 level={3}>Sub-heading</Heading2>
+          <Section2>
+            <Heading2 level={4}>Sub-sub-heading</Heading2>
+            <Heading2 level={4}>Sub-sub-heading</Heading2>
+            <Heading2 level={4}>Sub-sub-heading</Heading2>
+          </Section2>
+        </Section2>
+      </Section2>
+    </Section2>
   );
 }
 
 function Page2() {
   return (
-    <Section>
-      <Heading level={1}>Title</Heading>
-      <Heading level={2}>Heading</Heading>
-      <Heading level={3}>Sub-heading</Heading>
-      <Heading level={4}>Sub-sub-heading</Heading>
-      <Heading level={5}>Sub-sub-sub-heading</Heading>
-      <Heading level={6}>Sub-sub-sub-sub-heading</Heading>
-    </Section>
+    <Section2>
+      <Heading2 level={1}>Title</Heading2>
+      <Heading2 level={2}>Heading</Heading2>
+      <Heading2 level={3}>Sub-heading</Heading2>
+      <Heading2 level={4}>Sub-sub-heading</Heading2>
+      <Heading2 level={5}>Sub-sub-sub-heading</Heading2>
+      <Heading2 level={6}>Sub-sub-sub-sub-heading</Heading2>
+    </Section2>
   );
 }
 
-function Section({ children }) {
+function Section2({ children }) {
   return <section className="section">{children}</section>;
 }
 
-function Heading({ level, children }) {
+function Heading2({ level, children }) {
   switch (level) {
     case 1:
       return <h1>{children}</h1>;
