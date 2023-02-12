@@ -1,4 +1,5 @@
-import { useReducer } from "react";
+// import { useReducer } from "react";
+import { useReducer } from "./challenges/implement-useReducer-from-scratch";
 
 export default function Index() {
   return <Counter />;
@@ -6,6 +7,7 @@ export default function Index() {
 
 function Counter() {
   const [count, dispatch] = useReducer(counterReducer, 0);
+
   return (
     <div style={{ clear: "both" }}>
       {count}{" "}
