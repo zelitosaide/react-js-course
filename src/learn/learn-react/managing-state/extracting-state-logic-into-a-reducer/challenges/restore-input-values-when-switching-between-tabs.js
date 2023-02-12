@@ -100,6 +100,10 @@ function Chat({ contact, message, dispatch }) {
       <button
         onClick={function () {
           alert(`Sending "${message}" to ${contact.email}`);
+          dispatch({
+            type: "sent_message",
+            contactId: contact.id,
+          });
         }}
       >
         Send to {contact.email}
