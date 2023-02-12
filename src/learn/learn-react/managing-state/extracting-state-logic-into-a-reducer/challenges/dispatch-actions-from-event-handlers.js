@@ -76,6 +76,7 @@ function Chat({ contact, message, dispatch }) {
   return (
     <section className="chat">
       <textarea
+        style={{ height: 150 }}
         value={message}
         placeholder={"Chat to " + contact.name}
         onChange={function (e) {
