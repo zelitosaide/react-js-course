@@ -30,7 +30,11 @@ function Messenger() {
 
   return (
     <div>
-      <ContactList />
+      <ContactList
+        contacts={contacts}
+        selectedId={state.selectedId}
+        dispatch={dispatch}
+      />
       <Chat />
     </div>
   );
