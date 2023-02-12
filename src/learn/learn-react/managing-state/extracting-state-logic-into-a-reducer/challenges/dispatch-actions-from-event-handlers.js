@@ -53,6 +53,7 @@ function ContactList({ contacts, selectedId, dispatch }) {
           return (
             <li key={contact.id}>
               <button
+                style={{ width: 100, padding: 10, marginRight: 10 }}
                 onClick={function () {
                   // TODO: dispatch changed_selection
                 }}
