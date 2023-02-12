@@ -86,7 +86,7 @@ function Chat({ contact, message, dispatch }) {
       <br />
       <button
         onClick={function () {
-          alert(contact.email + " : " + contact.message);
+          alert(contact.email + " : " + message);
           dispatch({
             type: "edited_message",
             message: "",
