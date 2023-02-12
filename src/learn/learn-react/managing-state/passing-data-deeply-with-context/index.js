@@ -11,6 +11,8 @@ function Page() {
   );
 }
 
-function Section({ children }) {}
+function Section({ children }) {
+  return <section className="section">{children}</section>;
+}
 
 function Heading({ level, children }) {}
