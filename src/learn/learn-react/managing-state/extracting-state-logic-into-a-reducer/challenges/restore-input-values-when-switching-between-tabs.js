@@ -35,7 +35,7 @@ function Messenger() {
   });
 
   return (
-    <div>
+    <div style={{ clear: "both" }}>
       <ContactList
         contacts={contacts}
         selectedId={state.selectedId}
