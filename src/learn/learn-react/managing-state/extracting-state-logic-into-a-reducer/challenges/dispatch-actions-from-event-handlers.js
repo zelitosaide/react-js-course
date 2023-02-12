@@ -36,6 +36,7 @@ function Messenger() {
         dispatch={dispatch}
       />
       <Chat
+        key={contact.id}
         message={message}
         contact={contact}
         dispatch={dispatch}
