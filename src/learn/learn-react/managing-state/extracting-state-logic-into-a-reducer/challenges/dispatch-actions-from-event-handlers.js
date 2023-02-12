@@ -1,3 +1,5 @@
+import { useReducer } from "react";
+
 /**
  * Challenge 1 of 4: Dispatch actions from event handlers
  *
@@ -17,6 +19,8 @@ export default function Index() {
 }
 
 function Messenger() {
+  const [state, dispatch] = useReducer();
+
   return (
     <div>
       <ContactList />
