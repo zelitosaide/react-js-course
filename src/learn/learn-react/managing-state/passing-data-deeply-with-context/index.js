@@ -19,6 +19,8 @@ function Heading({ level, children }) {
   switch (level) {
     case 1:
       return <h1>{children}</h1>;
+    case 2:
+      return <h2>{children}</h2>;
     default:
       throw Error("Unknown level: " + level);
   }
