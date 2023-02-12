@@ -12,3 +12,4 @@
  * reducer is already written so you won’t need to change it. You
  * only need to dispatch the actions in ContactList.js and Chat.js.
  */
+export default function Index() {}
