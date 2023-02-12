@@ -35,7 +35,11 @@ function Messenger() {
         selectedId={state.selectedId}
         dispatch={dispatch}
       />
-      <Chat />
+      <Chat
+        message={message}
+        contact={contact}
+        dispatch={dispatch}
+      />
     </div>
   );
 }
