@@ -52,7 +52,11 @@ function ContactList({ contacts, selectedId, dispatch }) {
         {contacts.map(function (contact) {
           return (
             <li key={contact.id}>
-              <button>
+              <button
+                onClick={function () {
+                  // TODO: dispatch changed_selection
+                }}
+              >
                 {selectedId === contact.id ? (
                   <b>{contact.name}</b>
                 ) : (
