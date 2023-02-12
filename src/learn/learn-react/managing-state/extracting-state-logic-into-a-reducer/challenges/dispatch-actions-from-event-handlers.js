@@ -53,6 +53,8 @@ function Chat({ contact, message, dispatch }) {
           // (Read the input value from e.target.value)
         }}
       />
+      <br />
+      <button>Send to {contact.email}</button>
     </section>
   );
 }
