@@ -34,11 +34,12 @@ function Messenger() {
 function ContactList({ contacts, selectedId, dispatch }) {
   return (
     <section className="contact-list">
-      <ul>
+      <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
         {contacts.map(function (contact) {
           return (
             <li key={contact.id}>
               <button
+                style={{ width: 100, padding: 10, marginRight: 10 }}
                 onClick={function () {
                   dispatch({
                     type: "changed_selection",
