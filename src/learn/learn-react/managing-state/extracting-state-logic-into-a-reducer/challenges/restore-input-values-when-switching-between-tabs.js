@@ -96,6 +96,8 @@ function Chat({ contact, message, dispatch }) {
           });
         }}
       />
+      <br />
+      <button>Send to {contact.email}</button>
     </section>
   );
 }
