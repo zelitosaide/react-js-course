@@ -92,7 +92,7 @@ function Chat({ contact, message, dispatch }) {
           dispatch({
             type: "edited_message",
             message: e.target.value,
-            contactId: contact.id,
+            selectedId: contact.id,
           });
         }}
       />
@@ -102,7 +102,7 @@ function Chat({ contact, message, dispatch }) {
           alert(`Sending "${message}" to ${contact.email}`);
           dispatch({
             type: "sent_message",
-            contactId: contact.id,
+            selectedId: contact.id,
           });
         }}
       >
