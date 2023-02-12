@@ -92,6 +92,7 @@ function Chat({ contact, message, dispatch }) {
           dispatch({
             type: "edited_message",
             message: e.target.value,
+            contactId: contact.id,
           });
         }}
       />
