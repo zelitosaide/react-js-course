@@ -2,9 +2,12 @@ export default function Index() {
   return (
     <>
       <Page2 />
+      <Page />
     </>
   );
 }
+
+function Page() {}
 
 function Page2() {
   return (
