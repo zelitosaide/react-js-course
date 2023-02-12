@@ -29,6 +29,15 @@ export function messengerReducer(state, action) {
         },
       };
     }
+    case "sent_message": {
+      return {
+        ...state,
+        messages: {
+          ...state.messages,
+          [action.contactId]: "",
+        },
+      };
+    }
     default: {
       throw new Error("Unknown action: " + action.type);
     }
