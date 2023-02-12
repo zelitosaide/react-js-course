@@ -58,7 +58,14 @@ function ContactList({ contacts, selectedId, dispatch }) {
         {contacts.map(function (contact) {
           return (
             <li key={contact.id}>
-              <button>
+              <button
+                onClick={function () {
+                  dispatch({
+                    type: "changed_selection",
+                    contactId: contact.id,
+                  });
+                }}
+              >
                 {selectedId === contact.id ? (
                   <b>{contact.name}</b>
                 ) : (
