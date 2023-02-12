@@ -1,5 +1,9 @@
 import { useReducer } from "react";
 
+export default function Index() {
+  return <Counter />;
+}
+
 function Counter() {
   const [count, dispatch] = useReducer(counterReducer, 0);
   return (
