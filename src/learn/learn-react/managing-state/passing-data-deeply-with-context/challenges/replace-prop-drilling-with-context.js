@@ -37,7 +37,17 @@ function ReplacePropDrillingWithContext() {
   );
 }
 
-function List() {}
+function List() {
+  const listItems = places.map(function (place) {
+    return (
+      <li key={place.id}>
+        <Place place={place} />
+      </li>
+    );
+  });
+
+  return <ul>{listItems}</ul>;
+}
 
 function ReplacePropDrillingWithContext2() {
   const [isLarge, setIsLarge] = useState(false);
