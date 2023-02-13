@@ -1,6 +1,7 @@
 import { useReducer, useState } from "react";
 
 import { tasks as initialTasks } from "../../../../data/data";
+import { TasksContext, TasksDispatchContext } from "./tasks-context";
 
 let nextId = 3;
 
@@ -17,11 +18,13 @@ function TaskApp() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
 
   return (
-    <>
-      <h1>Day off in Kyoto</h1>
-      <AddTask />
-      <TaskList />
-    </>
+    <TasksContext.Provider value={tasks}>
+      <TasksDispatchContext value={dispatch}>
+        <h1>Day off in Kyoto</h1>
+        <AddTask />
+        <TaskList />
+      </TasksDispatchContext>
+    </TasksContext.Provider>
   );
 }
 
