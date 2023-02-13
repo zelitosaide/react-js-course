@@ -13,7 +13,13 @@ export default function Index() {
   );
 }
 
-function Page() {}
+function Page() {
+  return (
+    <Section>
+      <Heading>Title</Heading>
+    </Section>
+  );
+}
 
 function Section({ children }) {
   const level = useContext(LevelContext);
