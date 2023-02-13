@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export default function Index() {
   return <TaskApp />;
 }
@@ -13,4 +15,18 @@ function TaskApp() {
   );
 }
 
-function AddTask({ onAddTask }) {}
+function AddTask({ onAddTask }) {
+  const [text, setText] = useState("");
+
+  return (
+    <>
+      <input
+        placeholder="Add task"
+        onChange={function (e) {
+          setText(e.target.value);
+        }}
+        value={text}
+      />
+    </>
+  );
+}
