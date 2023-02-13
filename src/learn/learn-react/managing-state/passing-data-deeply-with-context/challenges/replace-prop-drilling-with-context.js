@@ -47,9 +47,15 @@ function List({ imageSize }) {
 function Place({ place, imageSize }) {
   return (
     <>
-      <PlaceImage />
+      <PlaceImage
+        place={place}
+        imageSize={imageSize}
+      />
+      <p>
+        <b>{place.name}</b>: {place.description}
+      </p>
     </>
   );
 }
 
-function PlaceImage() {}
+function PlaceImage({ place, imageSize }) {}
