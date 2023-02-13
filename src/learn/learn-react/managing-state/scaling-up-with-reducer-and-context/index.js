@@ -5,7 +5,12 @@ import { tasks as initialTasks } from "../../../../data/data";
 let nextId = 3;
 
 export default function Index() {
-  return <TaskApp2 />;
+  return (
+    <>
+      <TaskApp2 />
+      <TaskApp />
+    </>
+  );
 }
 
 function TaskApp() {
