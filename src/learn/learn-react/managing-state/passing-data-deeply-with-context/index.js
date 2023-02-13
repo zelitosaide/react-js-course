@@ -2,6 +2,8 @@ import { useContext } from "react";
 
 import { LevelContext, LevelContextV2 } from "./level-context";
 
+import ReplacePropDrillingWithContext from "./challenges/replace-prop-drilling-with-context";
+
 export default function Index() {
   return (
     <>
@@ -10,6 +12,7 @@ export default function Index() {
       <Page4 />
       <Page />
       <ProfilePage />
+      <ReplacePropDrillingWithContext />
     </>
   );
 }
