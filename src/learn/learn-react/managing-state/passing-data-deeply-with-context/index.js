@@ -17,6 +17,11 @@ function Page() {
   return (
     <Section>
       <Heading>Title</Heading>
+      <Section>
+        <Heading>Heading</Heading>
+        <Heading>Heading</Heading>
+        <Heading>Heading</Heading>
+      </Section>
     </Section>
   );
 }
