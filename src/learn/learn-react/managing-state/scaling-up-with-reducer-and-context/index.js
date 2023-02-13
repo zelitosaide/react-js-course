@@ -30,7 +30,7 @@ function TaskApp() {
 
 function AddTask() {
   const [text, setText] = useState("");
-  // const dispatch = useContext(TasksDispatchContext);
+  const dispatch = useContext(TasksDispatchContext);
 
   return (
     <>
@@ -44,11 +44,11 @@ function AddTask() {
       <button
         onClick={function () {
           setText("");
-          // dispatch({
-          //   type: "added",
-          //   id: nextId++,
-          //   text: text,
-          // });
+          dispatch({
+            type: "added",
+            id: nextId++,
+            text: text,
+          });
         }}
       >
         Add
