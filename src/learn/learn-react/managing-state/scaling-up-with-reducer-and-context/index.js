@@ -5,10 +5,10 @@ import { tasks as initialTasks } from "../../../../data/data";
 let nextId = 3;
 
 export default function Index() {
-  return <TaskApp />;
+  return <TaskApp2 />;
 }
 
-function TaskApp() {
+function TaskApp2() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
 
   function handleAddTask(text) {
@@ -36,8 +36,8 @@ function TaskApp() {
   return (
     <>
       <h1>Day off in Kyoto</h1>
-      <AddTask onAddTask={handleAddTask} />
-      <TaskList
+      <AddTask2 onAddTask={handleAddTask} />
+      <TaskList2
         tasks={tasks}
         onChangeTask={handleChangeTask}
         onDeleteTask={handleDeleteTask}
@@ -46,13 +46,13 @@ function TaskApp() {
   );
 }
 
-function TaskList({ tasks, onChangeTask, onDeleteTask }) {
+function TaskList2({ tasks, onChangeTask, onDeleteTask }) {
   return (
     <ul>
       {tasks.map(function (task) {
         return (
           <li key={task.id}>
-            <Task
+            <Task2
               task={task}
               onChange={onChangeTask}
               onDelete={onDeleteTask}
@@ -64,7 +64,7 @@ function TaskList({ tasks, onChangeTask, onDeleteTask }) {
   );
 }
 
-function Task({ task, onChange, onDelete }) {
+function Task2({ task, onChange, onDelete }) {
   const [isEditing, setIsEditing] = useState(false);
   let taskContent;
 
@@ -129,7 +129,7 @@ function Task({ task, onChange, onDelete }) {
   );
 }
 
-function AddTask({ onAddTask }) {
+function AddTask2({ onAddTask }) {
   const [text, setText] = useState("");
 
   return (
