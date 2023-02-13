@@ -49,6 +49,8 @@ function List() {
   return <ul>{listItems}</ul>;
 }
 
+function Place({ place }) {}
+
 function ReplacePropDrillingWithContext2() {
   const [isLarge, setIsLarge] = useState(false);
   const imageSize = isLarge ? 150 : 100;
@@ -75,7 +77,7 @@ function List2({ imageSize }) {
   const listItems = places.map(function (place) {
     return (
       <li key={place.id}>
-        <Place
+        <Place2
           place={place}
           imageSize={imageSize}
         />
@@ -85,7 +87,7 @@ function List2({ imageSize }) {
   return <ul>{listItems}</ul>;
 }
 
-function Place({ place, imageSize }) {
+function Place2({ place, imageSize }) {
   return (
     <>
       <PlaceImage
