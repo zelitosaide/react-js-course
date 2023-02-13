@@ -29,6 +29,7 @@ function AddTask({ onAddTask }) {
       />{" "}
       <button
         onClick={function () {
+          setText("");
           onAddTask(text);
         }}
       >
