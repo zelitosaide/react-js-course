@@ -2,14 +2,22 @@ import { useReducer, useState } from "react";
 
 import { tasks as initialTasks } from "../../../../data/data";
 
+let nextId = 3;
+
 export default function Index() {
   return <TaskApp />;
 }
 
 function TaskApp() {
-  const [tasks_, dispatch] = useReducer(function () {}, initialTasks);
+  const [tasks_, dispatch] = useReducer(tasksReducer, initialTasks);
 
-  function handleAddTask() {}
+  function handleAddTask(text) {
+    dispatch({
+      type: "added",
+      id: nextId++,
+      text: text,
+    });
+  }
 
   return (
     <>
