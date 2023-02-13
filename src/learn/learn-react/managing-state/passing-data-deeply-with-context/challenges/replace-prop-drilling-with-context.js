@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+
 import { places } from "../../../../../data/data";
 import { getImageUrl } from "../../../../../utils/utils";
 import { ImageSizeContext } from "./context";
@@ -60,6 +61,19 @@ function Place({ place }) {
   );
 }
 
+function PlaceImage({ place }) {
+  const imageSize = useContext(ImageSizeContext);
+
+  return (
+    <img
+      src={getImageUrl(place)}
+      alt={place.name}
+      width={imageSize}
+      height={imageSize}
+    />
+  );
+}
+
 function ReplacePropDrillingWithContext2() {
   const [isLarge, setIsLarge] = useState(false);
   const imageSize = isLarge ? 150 : 100;
@@ -99,7 +113,7 @@ function List2({ imageSize }) {
 function Place2({ place, imageSize }) {
   return (
     <>
-      <PlaceImage
+      <PlaceImage2
         place={place}
         imageSize={imageSize}
       />
@@ -110,7 +124,7 @@ function Place2({ place, imageSize }) {
   );
 }
 
-function PlaceImage({ place, imageSize }) {
+function PlaceImage2({ place, imageSize }) {
   return (
     <img
       src={getImageUrl(place)}
