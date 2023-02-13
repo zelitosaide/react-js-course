@@ -8,30 +8,33 @@ export default function Index() {
       <Page2 />
       <Page3 />
       <Page4 />
+      <Page />
     </>
   );
 }
 
+function Page() {}
+
 function Page4() {
   return (
-    <Section level={1}>
+    <Section3 level={1}>
       <Heading>Title</Heading>
-      <Section level={2}>
+      <Section3 level={2}>
         <Heading>Heading</Heading>
         <Heading>Heading</Heading>
         <Heading>Heading</Heading>
-        <Section level={3}>
+        <Section3 level={3}>
           <Heading>Sub-heading</Heading>
           <Heading>Sub-heading</Heading>
           <Heading>Sub-heading</Heading>
-          <Section level={4}>
+          <Section3 level={4}>
             <Heading>Sub-sub-heading</Heading>
             <Heading>Sub-sub-heading</Heading>
             <Heading>Sub-sub-heading</Heading>
-          </Section>
-        </Section>
-      </Section>
-    </Section>
+          </Section3>
+        </Section3>
+      </Section3>
+    </Section3>
   );
 }
 
@@ -56,7 +59,7 @@ function Heading({ children }) {
   }
 }
 
-function Section({ children, level }) {
+function Section3({ children, level }) {
   return (
     <section className="section">
       <LevelContext.Provider value={level}>{children}</LevelContext.Provider>
