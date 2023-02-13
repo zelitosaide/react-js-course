@@ -22,9 +22,12 @@ function ProfilePage() {
         title="Hello traveller!"
         body="Read about my adventures."
       />
+      <AllPosts />
     </Section>
   );
 }
+
+function AllPosts() {}
 
 function Post({ title, body }) {
   return (
@@ -33,12 +36,9 @@ function Post({ title, body }) {
       <p>
         <i>{body}</i>
       </p>
-      <AllPosts />
     </Section>
   );
 }
-
-function AllPosts() {}
 
 function Section({ children, isFancy }) {
   const level = useContext(LevelContextV2);
