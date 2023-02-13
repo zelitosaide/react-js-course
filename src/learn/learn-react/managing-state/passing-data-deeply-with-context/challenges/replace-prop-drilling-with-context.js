@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { places } from "../../../../../data/data";
 import { getImageUrl } from "../../../../../utils/utils";
+import { ImageSizeContext } from "./context";
 
 /**
  * Challenge 1 of 1: Replace prop drilling with context
@@ -9,11 +10,34 @@ export default function Index() {
   return (
     <>
       <ReplacePropDrillingWithContext2 />
+      <ReplacePropDrillingWithContext />
     </>
   );
 }
 
-function ReplacePropDrillingWithContext() {}
+function ReplacePropDrillingWithContext() {
+  const [isLarge, setIsLarge] = useState(false);
+  const imageSize = isLarge ? 150 : 100;
+
+  return (
+    <ImageSizeContext.Provider value={imageSize}>
+      <label style={{ display: "block" }}>
+        <input
+          type="checkbox"
+          value={isLarge}
+          onChange={function (e) {
+            setIsLarge(e.target.checked);
+          }}
+        />{" "}
+        Use large images
+      </label>
+      <hr />
+      <List />
+    </ImageSizeContext.Provider>
+  );
+}
+
+function List() {}
 
 function ReplacePropDrillingWithContext2() {
   const [isLarge, setIsLarge] = useState(false);
@@ -32,12 +56,12 @@ function ReplacePropDrillingWithContext2() {
         Use large images
       </label>
       <hr />
-      <List imageSize={imageSize} />
+      <List2 imageSize={imageSize} />
     </>
   );
 }
 
-function List({ imageSize }) {
+function List2({ imageSize }) {
   const listItems = places.map(function (place) {
     return (
       <li key={place.id}>
