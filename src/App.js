@@ -61,7 +61,9 @@
 
 // import ExtractingStateLogicIntoAReducer from "./learn/learn-react/managing-state/extracting-state-logic-into-a-reducer";
 
-import PassingDataDeeplyWithContext from "./learn/learn-react/managing-state/passing-data-deeply-with-context";
+// import PassingDataDeeplyWithContext from "./learn/learn-react/managing-state/passing-data-deeply-with-context";
+
+import ScalingUpWithReducerAndContext from "./learn/learn-react/managing-state/scaling-up-with-reducer-and-context";
 
 function App() {
   return (
@@ -127,7 +129,9 @@ function App() {
 
       {/* <ExtractingStateLogicIntoAReducer /> */}
 
-      <PassingDataDeeplyWithContext />
+      {/* <PassingDataDeeplyWithContext /> */}
+
+      <ScalingUpWithReducerAndContext />
     </>
   );
 }
