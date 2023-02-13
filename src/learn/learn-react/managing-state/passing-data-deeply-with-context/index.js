@@ -15,6 +15,12 @@ export default function Index() {
 
 function Page() {}
 
+function Section({ children }) {
+  const level = useContext(LevelContext);
+
+  return <section className="section">{children}</section>;
+}
+
 function Page4() {
   return (
     <Section3 level={1}>
