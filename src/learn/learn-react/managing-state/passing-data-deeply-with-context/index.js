@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import { LevelContext } from "./level-context";
+import { LevelContext, LevelContextV2 } from "./level-context";
 
 export default function Index() {
   return (
@@ -37,7 +37,7 @@ function Page() {
 }
 
 function Section({ children }) {
-  const level = useContext(LevelContext);
+  const level = useContext(LevelContextV2);
 
   return (
     <section className="section">
@@ -48,22 +48,45 @@ function Section({ children }) {
   );
 }
 
+function Heading({ children }) {
+  const level = useContext(LevelContextV2);
+
+  switch (level) {
+    case 0:
+      throw Error("Heading must be inside a Section!");
+    case 1:
+      return <h1>{children}</h1>;
+    case 2:
+      return <h2>{children}</h2>;
+    case 3:
+      return <h3>{children}</h3>;
+    case 4:
+      return <h4>{children}</h4>;
+    case 5:
+      return <h5>{children}</h5>;
+    case 6:
+      return <h6>{children}</h6>;
+    default:
+      throw Error("Unknown level: " + level);
+  }
+}
+
 function Page4() {
   return (
     <Section3 level={1}>
-      <Heading>Title</Heading>
+      <Heading3>Title</Heading3>
       <Section3 level={2}>
-        <Heading>Heading</Heading>
-        <Heading>Heading</Heading>
-        <Heading>Heading</Heading>
+        <Heading3>Heading</Heading3>
+        <Heading3>Heading</Heading3>
+        <Heading3>Heading</Heading3>
         <Section3 level={3}>
-          <Heading>Sub-heading</Heading>
-          <Heading>Sub-heading</Heading>
-          <Heading>Sub-heading</Heading>
+          <Heading3>Sub-heading</Heading3>
+          <Heading3>Sub-heading</Heading3>
+          <Heading3>Sub-heading</Heading3>
           <Section3 level={4}>
-            <Heading>Sub-sub-heading</Heading>
-            <Heading>Sub-sub-heading</Heading>
-            <Heading>Sub-sub-heading</Heading>
+            <Heading3>Sub-sub-heading</Heading3>
+            <Heading3>Sub-sub-heading</Heading3>
+            <Heading3>Sub-sub-heading</Heading3>
           </Section3>
         </Section3>
       </Section3>
@@ -71,7 +94,7 @@ function Page4() {
   );
 }
 
-function Heading({ children }) {
+function Heading3({ children }) {
   const level = useContext(LevelContext);
 
   switch (level) {
