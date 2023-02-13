@@ -8,6 +8,7 @@ export default function Index() {
 
 function TaskApp() {
   const [tasks_, dispatch] = useReducer(function () {}, initialTasks);
+
   function handleAddTask() {}
 
   return (
@@ -40,4 +41,22 @@ function AddTask({ onAddTask }) {
       </button>
     </>
   );
+}
+
+function tasksReducer(tasks, action) {
+  switch (action.type) {
+    case "added": {
+      return [
+        ...tasks,
+        {
+          id: action.id,
+          text: action.text,
+          done: false,
+        },
+      ];
+    }
+    default: {
+      throw new Error("Unknown action: " + action.type);
+    }
+  }
 }
