@@ -10,4 +10,19 @@ export default function Index() {
 function ReplacePropDrillingWithContext() {
   const [isLarge, setIsLarge] = useState(false);
   const imageSize = isLarge ? 150 : 100;
+
+  return (
+    <>
+      <label style={{ display: "block" }}>
+        <input
+          type="checkbox"
+          value={isLarge}
+          onChange={function (e) {
+            setIsLarge(e.target.checked);
+          }}
+        />{" "}
+        Use large images
+      </label>
+    </>
+  );
 }
