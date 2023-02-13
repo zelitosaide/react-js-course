@@ -5,6 +5,7 @@ import {
   TasksContext,
   TasksDispatchContext,
   TasksProvider,
+  useTasksDispatch,
 } from "./tasks-context";
 
 let nextId = 3;
@@ -31,7 +32,7 @@ function TaskApp() {
 
 function AddTask() {
   const [text, setText] = useState("");
-  const dispatch = useContext(TasksDispatchContext);
+  const dispatch = useTasksDispatch();
 
   return (
     <>
