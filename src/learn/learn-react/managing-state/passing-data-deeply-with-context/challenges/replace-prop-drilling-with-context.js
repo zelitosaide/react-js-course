@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { places } from "../../../../../data/data";
+import { getImageUrl } from "../../../../../utils/utils";
 
 /**
  * Challenge 1 of 1: Replace prop drilling with context
@@ -58,4 +59,13 @@ function Place({ place, imageSize }) {
   );
 }
 
-function PlaceImage({ place, imageSize }) {}
+function PlaceImage({ place, imageSize }) {
+  return (
+    <img
+      src={getImageUrl(place)}
+      alt={place.name}
+      width={imageSize}
+      height={imageSize}
+    />
+  );
+}
