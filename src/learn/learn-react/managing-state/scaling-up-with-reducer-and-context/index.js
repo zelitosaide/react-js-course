@@ -20,7 +20,28 @@ function TaskApp() {
   );
 }
 
-function AddTask() {}
+function AddTask() {
+  const [text, setText] = useState("");
+  return (
+    <>
+      <input
+        placeholder="Add task"
+        value={text}
+        onChange={function (e) {
+          setText(e.target.value);
+        }}
+      />{" "}
+      <button
+        onClick={function () {
+          setText("");
+          // onAddTask(text);
+        }}
+      >
+        Add
+      </button>
+    </>
+  );
+}
 
 function TaskList() {}
 
