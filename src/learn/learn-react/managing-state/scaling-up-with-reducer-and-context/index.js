@@ -57,7 +57,23 @@ function AddTask() {
   );
 }
 
-function TaskList() {}
+function TaskList() {
+  const tasks = useContext(TasksContext);
+
+  return (
+    <ul>
+      {tasks.map(function (task) {
+        return (
+          <li key={task.id}>
+            <Task task={task} />
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function Task({ task }) {}
 
 function TaskApp2() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
