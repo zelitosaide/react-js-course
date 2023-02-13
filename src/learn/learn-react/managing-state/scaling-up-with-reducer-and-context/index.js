@@ -75,7 +75,14 @@ function Task({ task, onChange, onDelete }) {
               text: e.target.value,
             });
           }}
-        />
+        />{" "}
+        <button
+          onClick={function () {
+            setIsEditing(false);
+          }}
+        >
+          Save
+        </button>
       </>
     );
   } else {
