@@ -75,6 +75,7 @@ function TaskList() {
 
 function Task({ task }) {
   const [isEditing, setIsEditing] = useState(false);
+  const dispatch = useContext(TasksDispatchContext);
   let taskContent;
 
   if (isEditing) {
@@ -84,10 +85,13 @@ function Task({ task }) {
           type="text"
           value={task.text}
           onChange={function (e) {
-            // onChange({
-            //   ...task,
-            //   text: e.target.value,
-            // });
+            dispatch({
+              type: "changed",
+              task: {
+                ...task,
+                text: e.target.value,
+              },
+            });
           }}
         />{" "}
         <button
