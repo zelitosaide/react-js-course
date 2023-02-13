@@ -1,4 +1,4 @@
-import { useReducer, useState } from "react";
+import { useContext, useReducer, useState } from "react";
 
 import { tasks as initialTasks } from "../../../../data/data";
 import { TasksContext, TasksDispatchContext } from "./tasks-context";
@@ -30,6 +30,8 @@ function TaskApp() {
 
 function AddTask() {
   const [text, setText] = useState("");
+  const dispatch = useContext(TasksDispatchContext);
+
   return (
     <>
       <input
@@ -42,7 +44,11 @@ function AddTask() {
       <button
         onClick={function () {
           setText("");
-          // onAddTask(text);
+          dispatch({
+            type: "added",
+            id: nextId++,
+            text: text,
+          });
         }}
       >
         Add
