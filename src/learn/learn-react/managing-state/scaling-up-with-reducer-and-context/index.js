@@ -20,8 +20,18 @@ export default function Index() {
 }
 
 function TaskApp() {
-  return <TasksProvider></TasksProvider>;
+  return (
+    <TasksProvider>
+      <h1>Day off in Kyoto</h1>
+      <AddTask />
+      <TaskList />
+    </TasksProvider>
+  );
 }
+
+function AddTask() {}
+
+function TaskList() {}
 
 function TaskApp3() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
