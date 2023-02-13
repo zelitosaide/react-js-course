@@ -23,6 +23,10 @@ function ReplacePropDrillingWithContext() {
         />{" "}
         Use large images
       </label>
+      <hr />
+      <List imageSize={imageSize} />
     </>
   );
 }
+
+function List({ imageSize }) {}
