@@ -124,10 +124,13 @@ function Task({ task }) {
         type="checkbox"
         checked={task.done}
         onChange={function (e) {
-          // onChange({
-          //   ...task,
-          //   done: e.target.checked,
-          // });
+          dispatch({
+            type: "changed",
+            task: {
+              ...task,
+              done: e.target.checked,
+            },
+          });
         }}
       />{" "}
       {taskContent}{" "}
