@@ -29,7 +29,34 @@ function TaskApp() {
   );
 }
 
-function AddTask() {}
+function AddTask() {
+  const [text, setText] = useState("");
+  const dispatch = useContext(TasksDispatchContext);
+
+  return (
+    <>
+      <input
+        placeholder="Add task"
+        value={text}
+        onChange={function (e) {
+          setText(e.target.value);
+        }}
+      />{" "}
+      <button
+        onClick={function () {
+          setText("");
+          dispatch({
+            type: "added",
+            id: nextId++,
+            text: text,
+          });
+        }}
+      >
+        Add
+      </button>
+    </>
+  );
+}
 
 function TaskList() {}
 
