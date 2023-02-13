@@ -1,11 +1,13 @@
 import { useReducer, useState } from "react";
 
+import { tasks as initialTasks } from "../../../../data/data";
+
 export default function Index() {
   return <TaskApp />;
 }
 
 function TaskApp() {
-  const [tasks, dispatch] = useReducer();
+  const [tasks_, dispatch] = useReducer(function () {}, initialTasks);
   function handleAddTask() {}
 
   return (
