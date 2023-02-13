@@ -22,10 +22,10 @@ function AddTask({ onAddTask }) {
     <>
       <input
         placeholder="Add task"
+        value={text}
         onChange={function (e) {
           setText(e.target.value);
         }}
-        value={text}
       />
     </>
   );
