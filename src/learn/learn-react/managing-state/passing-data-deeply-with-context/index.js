@@ -18,7 +18,13 @@ function Page() {}
 function Section({ children }) {
   const level = useContext(LevelContext);
 
-  return <section className="section">{children}</section>;
+  return (
+    <section className="section">
+      <LevelContext.Provider value={level + 1}>
+        {children}
+      </LevelContext.Provider>
+    </section>
+  );
 }
 
 function Page4() {
