@@ -7,12 +7,12 @@ export default function Index() {
     <>
       <Page2 />
       <Page3 />
-      <Page />
+      <Page4 />
     </>
   );
 }
 
-function Page() {
+function Page4() {
   return (
     <Section level={1}>
       <Heading>Title</Heading>
