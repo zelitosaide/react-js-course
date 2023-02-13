@@ -1,13 +1,29 @@
+import { useContext } from "react";
+
+import { LevelContext } from "./level-context";
+
 export default function Index() {
   return (
     <>
       <Page2 />
       <Page3 />
+      <Page />
     </>
   );
 }
 
 function Page() {}
+
+function Heading({ children }) {
+  const level = useContext(LevelContext);
+
+  switch (level) {
+  }
+}
+
+function Section({ children }) {
+  return <section className="section">{children}</section>;
+}
 
 function Page3() {
   return (
