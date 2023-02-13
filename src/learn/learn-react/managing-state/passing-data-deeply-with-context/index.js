@@ -37,30 +37,45 @@ function Post({ title, body }) {
   );
 }
 
-function Page() {
+function Section({ children, isFancy }) {
+  const level = useContext(LevelContextV2);
+
   return (
-    <Section>
-      <Heading>Title</Heading>
-      <Section>
-        <Heading>Heading</Heading>
-        <Heading>Heading</Heading>
-        <Heading>Heading</Heading>
-        <Section>
-          <Heading>Sub-heading</Heading>
-          <Heading>Sub-heading</Heading>
-          <Heading>Sub-heading</Heading>
-          <Section>
-            <Heading>Sub-sub-heading</Heading>
-            <Heading>Sub-sub-heading</Heading>
-            <Heading>Sub-sub-heading</Heading>
-          </Section>
-        </Section>
-      </Section>
-    </Section>
+    <section
+      className="section"
+      style={{ border: isFancy ? "4px dashed pink" : "" }}
+    >
+      <LevelContextV2.Provider value={level + 1}>
+        {children}
+      </LevelContextV2.Provider>
+    </section>
   );
 }
 
-function Section({ children }) {
+function Page() {
+  return (
+    <Section4>
+      <Heading>Title</Heading>
+      <Section4>
+        <Heading>Heading</Heading>
+        <Heading>Heading</Heading>
+        <Heading>Heading</Heading>
+        <Section4>
+          <Heading>Sub-heading</Heading>
+          <Heading>Sub-heading</Heading>
+          <Heading>Sub-heading</Heading>
+          <Section4>
+            <Heading>Sub-sub-heading</Heading>
+            <Heading>Sub-sub-heading</Heading>
+            <Heading>Sub-sub-heading</Heading>
+          </Section4>
+        </Section4>
+      </Section4>
+    </Section4>
+  );
+}
+
+function Section4({ children }) {
   const level = useContext(LevelContextV2);
 
   return (
