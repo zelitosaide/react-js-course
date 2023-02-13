@@ -54,7 +54,33 @@ function TaskList({ tasks, onChangeTask, onDeleteTask }) {
   );
 }
 
-function Task({ task, onChange, onDelete }) {}
+function Task({ task, onChange, onDelete }) {
+  const [isEditing, setIsEditing] = useState(false);
+  let taskContent;
+
+  return (
+    <label>
+      <input
+        type="checkbox"
+        value={task.done}
+        onChange={function (e) {
+          onChange({
+            ...task,
+            done: e.target.checked,
+          });
+        }}
+      />{" "}
+      {taskContent}{" "}
+      <button
+        onClick={function () {
+          onDelete(task.id);
+        }}
+      >
+        Delete
+      </button>
+    </label>
+  );
+}
 
 function AddTask({ onAddTask }) {
   const [text, setText] = useState("");
