@@ -21,6 +21,10 @@ export function useTasks() {
   return useContext(TasksContext);
 }
 
+export function useTasksDispatch() {
+  return useContext(TasksDispatchContext);
+}
+
 function tasksReducer(tasks, action) {
   switch (action.type) {
     case "added": {
