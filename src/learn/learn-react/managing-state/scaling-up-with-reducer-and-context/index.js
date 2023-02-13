@@ -8,6 +8,16 @@ export default function Index() {
   return <TaskApp2 />;
 }
 
+function TaskApp() {
+  const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
+
+  return (
+    <>
+      <h1>Day off in Kyoto</h1>
+    </>
+  );
+}
+
 function TaskApp2() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
 
