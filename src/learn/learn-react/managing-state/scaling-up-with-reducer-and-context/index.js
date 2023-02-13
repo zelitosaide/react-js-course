@@ -9,12 +9,15 @@ export default function Index() {
   return (
     <>
       <TaskApp2 />
+      <TaskApp3 />
       <TaskApp />
     </>
   );
 }
 
-function TaskApp() {
+function TaskApp() {}
+
+function TaskApp3() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
 
   return (
