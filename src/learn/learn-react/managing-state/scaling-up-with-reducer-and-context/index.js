@@ -19,18 +19,18 @@ function TaskApp() {
 
   return (
     <TasksContext.Provider value={tasks}>
-      <TasksDispatchContext value={dispatch}>
+      <TasksDispatchContext.Provider value={dispatch}>
         <h1>Day off in Kyoto</h1>
         <AddTask />
         <TaskList />
-      </TasksDispatchContext>
+      </TasksDispatchContext.Provider>
     </TasksContext.Provider>
   );
 }
 
 function AddTask() {
   const [text, setText] = useState("");
-  const dispatch = useContext(TasksDispatchContext);
+  // const dispatch = useContext(TasksDispatchContext);
 
   return (
     <>
@@ -44,11 +44,11 @@ function AddTask() {
       <button
         onClick={function () {
           setText("");
-          dispatch({
-            type: "added",
-            id: nextId++,
-            text: text,
-          });
+          // dispatch({
+          //   type: "added",
+          //   id: nextId++,
+          //   text: text,
+          // });
         }}
       >
         Add
