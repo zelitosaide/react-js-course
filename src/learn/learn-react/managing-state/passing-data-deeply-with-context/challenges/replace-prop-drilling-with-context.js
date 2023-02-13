@@ -6,10 +6,16 @@ import { getImageUrl } from "../../../../../utils/utils";
  * Challenge 1 of 1: Replace prop drilling with context
  */
 export default function Index() {
-  return <ReplacePropDrillingWithContext />;
+  return (
+    <>
+      <ReplacePropDrillingWithContext2 />
+    </>
+  );
 }
 
-function ReplacePropDrillingWithContext() {
+function ReplacePropDrillingWithContext() {}
+
+function ReplacePropDrillingWithContext2() {
   const [isLarge, setIsLarge] = useState(false);
   const imageSize = isLarge ? 150 : 100;
 
