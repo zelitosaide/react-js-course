@@ -123,6 +123,15 @@ function tasksReducer(tasks, action) {
         },
       ];
     }
+    case "changed": {
+      return tasks.map(function (t) {
+        if (t.id === action.task.id) {
+          return action.task;
+        } else {
+          return t;
+        }
+      });
+    }
     default: {
       throw new Error("Unknown action: " + action.type);
     }
