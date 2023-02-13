@@ -136,7 +136,10 @@ function Task({ task }) {
       {taskContent}{" "}
       <button
         onClick={function () {
-          // onDelete(task.id);
+          dispatch({
+            type: "deleted",
+            id: task.id,
+          });
         }}
       >
         Delete
