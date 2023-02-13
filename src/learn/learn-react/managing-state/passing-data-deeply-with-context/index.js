@@ -9,7 +9,16 @@ export default function Index() {
       <Page3 />
       <Page4 />
       <Page />
+      <ProfilePage />
     </>
+  );
+}
+
+function ProfilePage() {
+  return (
+    <Section>
+      <Heading>My Profile</Heading>
+    </Section>
   );
 }
 
