@@ -44,6 +44,10 @@ function RecentPosts() {
         title="Flavors of Lisbon"
         body="...those pastéis de nata!"
       />
+      <Post
+        title="Buenos Aires in the rhythm of tango"
+        body="I loved it!"
+      />
     </Section>
   );
 }
