@@ -14,9 +14,15 @@ function TaskApp() {
   return (
     <>
       <h1>Day off in Kyoto</h1>
+      <AddTask />
+      <TaskList />
     </>
   );
 }
+
+function AddTask() {}
+
+function TaskList() {}
 
 function TaskApp2() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
