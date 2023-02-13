@@ -5,6 +5,7 @@ import {
   TasksContext,
   TasksDispatchContext,
   TasksProvider,
+  useTasks,
   useTasksDispatch,
 } from "./tasks-context";
 
@@ -59,7 +60,23 @@ function AddTask() {
   );
 }
 
-function TaskList() {}
+function TaskList() {
+  const tasks = useTasks();
+
+  return (
+    <ul>
+      {tasks.map(function (task) {
+        return (
+          <li key={task.id}>
+            <Task task={task} />
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function Task() {}
 
 function TaskApp3() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
