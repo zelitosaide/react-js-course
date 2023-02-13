@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { places } from "../../../../../data/data";
 
 /**
  * Challenge 1 of 1: Replace prop drilling with context
@@ -29,4 +30,17 @@ function ReplacePropDrillingWithContext() {
   );
 }
 
-function List({ imageSize }) {}
+function List({ imageSize }) {
+  const listItems = places.map(function (place) {
+    return (
+      <li key={place.id}>
+        <Place
+          place={place}
+          imageSize={imageSize}
+        />
+      </li>
+    );
+  });
+}
+
+function Place() {}
