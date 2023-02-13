@@ -18,9 +18,15 @@ function ProfilePage() {
   return (
     <Section>
       <Heading>My Profile</Heading>
+      <Post
+        title="Hello traveller!"
+        body="Read about my adventures."
+      />
     </Section>
   );
 }
+
+function Post({ title, body }) {}
 
 function Page() {
   return (
