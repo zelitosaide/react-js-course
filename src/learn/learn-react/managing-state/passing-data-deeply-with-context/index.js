@@ -33,9 +33,12 @@ function Post({ title, body }) {
       <p>
         <i>{body}</i>
       </p>
+      <AllPosts />
     </Section>
   );
 }
+
+function AllPosts() {}
 
 function Section({ children, isFancy }) {
   const level = useContext(LevelContextV2);
