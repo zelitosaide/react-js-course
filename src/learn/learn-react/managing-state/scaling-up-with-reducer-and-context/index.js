@@ -1,7 +1,11 @@
 import { useContext, useReducer, useState } from "react";
 
 import { tasks as initialTasks } from "../../../../data/data";
-import { TasksContext, TasksDispatchContext } from "./tasks-context";
+import {
+  TasksContext,
+  TasksDispatchContext,
+  TasksProvider,
+} from "./tasks-context";
 
 let nextId = 3;
 
@@ -15,7 +19,9 @@ export default function Index() {
   );
 }
 
-function TaskApp() {}
+function TaskApp() {
+  return <TasksProvider></TasksProvider>;
+}
 
 function TaskApp3() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
@@ -24,14 +30,14 @@ function TaskApp3() {
     <TasksContext.Provider value={tasks}>
       <TasksDispatchContext.Provider value={dispatch}>
         <h1>Day off in Kyoto</h1>
-        <AddTask />
-        <TaskList />
+        <AddTask3 />
+        <TaskList3 />
       </TasksDispatchContext.Provider>
     </TasksContext.Provider>
   );
 }
 
-function AddTask() {
+function AddTask3() {
   const [text, setText] = useState("");
   const dispatch = useContext(TasksDispatchContext);
 
@@ -60,7 +66,7 @@ function AddTask() {
   );
 }
 
-function TaskList() {
+function TaskList3() {
   const tasks = useContext(TasksContext);
 
   return (
@@ -68,7 +74,7 @@ function TaskList() {
       {tasks.map(function (task) {
         return (
           <li key={task.id}>
-            <Task task={task} />
+            <Task3 task={task} />
           </li>
         );
       })}
@@ -76,7 +82,7 @@ function TaskList() {
   );
 }
 
-function Task({ task }) {
+function Task3({ task }) {
   const [isEditing, setIsEditing] = useState(false);
   const dispatch = useContext(TasksDispatchContext);
   let taskContent;
