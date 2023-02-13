@@ -41,6 +41,15 @@ function List({ imageSize }) {
       </li>
     );
   });
+  return <ul>{listItems}</ul>;
 }
 
-function Place() {}
+function Place({ place, imageSize }) {
+  return (
+    <>
+      <PlaceImage />
+    </>
+  );
+}
+
+function PlaceImage() {}
