@@ -9,7 +9,7 @@ export default function Index() {
 }
 
 function TaskApp() {
-  const [tasks_, dispatch] = useReducer(tasksReducer, initialTasks);
+  const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
 
   function handleAddTask(text) {
     dispatch({
@@ -19,13 +19,24 @@ function TaskApp() {
     });
   }
 
+  function handleChangeTask() {}
+
+  function handleDeleteTask() {}
+
   return (
     <>
       <h1>Day off in Kyoto</h1>
       <AddTask onAddTask={handleAddTask} />
+      <TaskList
+        tasks={tasks}
+        onChangeTask={handleChangeTask}
+        onDeleteTask={handleDeleteTask}
+      />
     </>
   );
 }
+
+function TaskList({ tasks, onChangeTask, onDeleteTask }) {}
 
 function AddTask({ onAddTask }) {
   const [text, setText] = useState("");
