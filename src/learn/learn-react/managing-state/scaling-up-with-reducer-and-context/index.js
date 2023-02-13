@@ -76,7 +76,80 @@ function TaskList() {
   );
 }
 
-function Task() {}
+function Task({ task }) {
+  const [isEditing, setIsEditing] = useState(false);
+  const dispatch = useTasksDispatch();
+  let taskContent;
+
+  if (isEditing) {
+    taskContent = (
+      <>
+        <input
+          type="text"
+          value={task.text}
+          onChange={function (e) {
+            dispatch({
+              type: "changed",
+              task: {
+                ...task,
+                text: e.target.value,
+              },
+            });
+          }}
+        />{" "}
+        <button
+          onClick={function () {
+            setIsEditing(false);
+          }}
+        >
+          Save
+        </button>
+      </>
+    );
+  } else {
+    taskContent = (
+      <>
+        {task.text}{" "}
+        <button
+          onClick={function () {
+            setIsEditing(true);
+          }}
+        >
+          Edit
+        </button>
+      </>
+    );
+  }
+
+  return (
+    <label>
+      <input
+        type="checkbox"
+        checked={task.done}
+        onChange={function (e) {
+          dispatch({
+            type: "changed",
+            task: {
+              ...task,
+              done: e.target.checked,
+            },
+          });
+        }}
+      />{" "}
+      {taskContent}{" "}
+      <button
+        onClick={function () {
+          dispatch({
+            type: "deleted",
+            id: task.id,
+          });
+        }}
+      >
+        Delete
+      </button>
+    </label>
+  );
+}
 
 function TaskApp3() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
