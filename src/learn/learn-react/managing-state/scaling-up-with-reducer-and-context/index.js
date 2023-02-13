@@ -26,7 +26,14 @@ function AddTask({ onAddTask }) {
         onChange={function (e) {
           setText(e.target.value);
         }}
-      />
+      />{" "}
+      <button
+        onClick={function () {
+          onAddTask(text);
+        }}
+      >
+        Add
+      </button>
     </>
   );
 }
