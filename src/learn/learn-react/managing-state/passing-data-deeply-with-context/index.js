@@ -26,7 +26,13 @@ function ProfilePage() {
   );
 }
 
-function Post({ title, body }) {}
+function Post({ title, body }) {
+  return (
+    <Section isFancy={true}>
+      <Heading>{title}</Heading>
+    </Section>
+  );
+}
 
 function Page() {
   return (
