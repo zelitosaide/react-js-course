@@ -63,7 +63,9 @@
 
 // import PassingDataDeeplyWithContext from "./learn/learn-react/managing-state/passing-data-deeply-with-context";
 
-import ScalingUpWithReducerAndContext from "./learn/learn-react/managing-state/scaling-up-with-reducer-and-context";
+// import ScalingUpWithReducerAndContext from "./learn/learn-react/managing-state/scaling-up-with-reducer-and-context";
+
+import EscapeHatches from "./learn/learn-react/escape-hatches";
 
 function App() {
   return (
@@ -131,7 +133,9 @@ function App() {
 
       {/* <PassingDataDeeplyWithContext /> */}
 
-      <ScalingUpWithReducerAndContext />
+      {/* <ScalingUpWithReducerAndContext /> */}
+
+      <EscapeHatches />
     </>
   );
 }
