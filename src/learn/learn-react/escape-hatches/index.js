@@ -180,10 +180,12 @@ function showNotification(message, theme) {
 }
 
 function Chat() {
+  const [roomId, setRoomId] = useState("general");
+
   return (
     <div>
       <label>
-        Choose the chat room: <select></select>
+        Choose the chat room: <select value={roomId}></select>
       </label>
     </div>
   );
