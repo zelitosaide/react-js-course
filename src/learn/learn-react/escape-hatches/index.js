@@ -42,7 +42,13 @@ function VideoApp() {
 
   return (
     <>
-      <button>{isPlaying ? "Pause" : "Play"}</button>
+      <button
+        onClick={function () {
+          setIsPlaying(!isPlaying);
+        }}
+      >
+        {isPlaying ? "Pause" : "Play"}
+      </button>
     </>
   );
 }
