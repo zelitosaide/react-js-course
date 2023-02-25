@@ -257,6 +257,8 @@ function createConnection(serverUrl, roomId) {
       }
       connectedCallback = callback;
     },
-    disconnect() {},
+    disconnect() {
+      clearTimeout(timeout);
+    },
   };
 }
