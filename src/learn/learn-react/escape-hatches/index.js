@@ -1,4 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+  experimental_useEffectEvent as useEffectEvent,
+} from "react";
 
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
@@ -264,4 +269,28 @@ function createConnection(serverUrl, roomId) {
       clearTimeout(timeout);
     },
   };
+}
+
+function Chat() {}
+
+function ChatRoom({ roomId, theme }) {
+  const onConnected = useEffectEvent(function () {
+    showNotification("Connected!", theme);
+  });
+
+  useEffect(
+    function () {
+      const connection = createConnection(serverUrl, roomId);
+      connection.on("connected", function () {
+        onConnected();
+      });
+      connection.connect();
+      return function () {
+        connection.disconnect();
+      };
+    },
+    [roomId]
+  );
+
+  return <h1>Welcome to the {roomId} room!</h1>;
 }
