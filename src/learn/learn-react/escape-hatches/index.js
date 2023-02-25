@@ -236,7 +236,14 @@ function createConnection(serverUrl, roomId) {
   let timeout;
   return {
     connect() {},
-    on() {},
+    on(event, callback) {
+      if (connectedCallback) {
+        throw Error("Cannot add the handler twice.");
+      }
+      if (event !== "connected") {
+        throw Error("Only 'connected' event is supported.");
+      }
+    },
     disconnect() {},
   };
 }
