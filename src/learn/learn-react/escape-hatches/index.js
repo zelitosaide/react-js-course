@@ -170,8 +170,10 @@ function showNotification(message, theme) {
   Toastify({
     text: message,
     duration: 2000,
-    gravity: "top",
+    gravity: "bottom",
     position: "right",
+    stopOnFocus: true,
+    close: true,
     style: {
       background: theme === "dark" ? "black" : "white",
       color: theme === "dark" ? "white" : "black",
