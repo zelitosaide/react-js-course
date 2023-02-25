@@ -2,7 +2,7 @@ import {
   useEffect,
   useRef,
   useState,
-  experimental_useEffectEvent as useEffectEvent,
+  // experimental_useEffectEvent as useEffectEvent,
 } from "react";
 
 import Toastify from "toastify-js";
@@ -303,7 +303,7 @@ function Chat() {
         Use dark theme
       </label>
       <hr />
-      <ChatRoom4
+      <ChatRoom
         roomId={roomId}
         theme={isDark ? "dark" : "light"}
       />
@@ -312,9 +312,13 @@ function Chat() {
 }
 
 function ChatRoom({ roomId, theme }) {
-  const onConnected = useEffectEvent(function () {
+  // const onConnected = useEffectEvent(function () {
+  //   showNotification("Connected!", theme);
+  // });
+
+  function onConnected() {
     showNotification("Connected!", theme);
-  });
+  }
 
   useEffect(
     function () {
