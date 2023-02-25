@@ -6,6 +6,7 @@ export default function Index() {
       <Counter />
       <Form />
       <VideoApp />
+      <Chat />
     </>
   );
 }
@@ -83,6 +84,8 @@ function VideoPlayer({ isPlaying, src }) {
 }
 
 function Chat() {
+  useEffect(function () {}, []);
+
   return <h1>Welcome to the chat!</h1>;
 }
 
