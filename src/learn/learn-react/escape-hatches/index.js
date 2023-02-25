@@ -64,6 +64,8 @@ function VideoPlayer({ isPlaying, src }) {
     <video
       ref={ref}
       src={src}
+      loop
+      playsInline
     />
   );
 }
