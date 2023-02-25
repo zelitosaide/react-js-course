@@ -11,7 +11,7 @@ export default function Index() {
       <VideoApp />
       <Chat2 />
       <Chat3 />
-      <Chat />
+      <Chat4 />
     </>
   );
 }
@@ -182,7 +182,7 @@ function showNotification(message, theme) {
   }).showToast();
 }
 
-function Chat() {
+function Chat4() {
   const [roomId, setRoomId] = useState("general");
   const [isDark, setIsDark] = useState(false);
 
@@ -213,7 +213,7 @@ function Chat() {
         Use dark theme
       </label>
       <hr />
-      <ChatRoom
+      <ChatRoom4
         roomId={roomId}
         theme={isDark ? "dark" : "light"}
       />
@@ -221,7 +221,7 @@ function Chat() {
   );
 }
 
-function ChatRoom({ roomId, theme }) {
+function ChatRoom4({ roomId, theme }) {
   useEffect(
     function () {
       const connection = createConnection(serverUrl, roomId);
