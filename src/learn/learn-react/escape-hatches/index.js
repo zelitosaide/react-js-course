@@ -57,4 +57,13 @@ function VideoApp() {
   );
 }
 
-function VideoPlayer({ isPlaying, src }) {}
+function VideoPlayer({ isPlaying, src }) {
+  const ref = useRef(null);
+
+  return (
+    <video
+      ref={ref}
+      src={src}
+    />
+  );
+}
