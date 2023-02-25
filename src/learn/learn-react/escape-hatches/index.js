@@ -108,6 +108,8 @@ function createConnection2() {
   };
 }
 
+const serverUrl = "https://localhost:1234";
+
 function Chat() {
   const [roomId, setRoomId] = useState("general");
 
@@ -134,4 +136,18 @@ function Chat() {
 
 function ChatRoom({ roomId }) {
   return <h1>Welcome to the {roomId} room!</h1>;
+}
+
+function createConnection(serverUrl, roomId) {
+  // A real implementation would actually connect to the server
+  return {
+    connect() {
+      console.log(
+        '✅ Connecting to "' + roomId + '" room at ' + serverUrl + "..."
+      );
+    },
+    disconnect() {
+      console.log('❌ Disconnected from "' + roomId + '" room at ' + serverUrl);
+    },
+  };
 }
