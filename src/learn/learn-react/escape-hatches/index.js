@@ -181,6 +181,7 @@ function showNotification(message, theme) {
 
 function Chat() {
   const [roomId, setRoomId] = useState("general");
+  const [isDark, setIsDark] = useState(false);
 
   return (
     <div>
@@ -196,6 +197,17 @@ function Chat() {
           <option value="travel">travel</option>
           <option value="music">music</option>
         </select>
+      </label>
+      <br />
+      <label>
+        <input
+          type="checkbox"
+          checked={isDark}
+          onChange={function (e) {
+            setIsDark(e.target.checked);
+          }}
+        />
+        Use dark theme
       </label>
     </div>
   );
