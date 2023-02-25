@@ -62,6 +62,7 @@ function VideoPlayer({ isPlaying, src }) {
 
   return (
     <video
+      style={{ width: 250, display: "block" }}
       ref={ref}
       src={src}
       loop
