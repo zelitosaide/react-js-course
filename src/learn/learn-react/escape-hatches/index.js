@@ -39,6 +39,12 @@ function Form() {
 
 function VideoApp() {
   const [isPlaying, setIsPlaying] = useState(false);
+
+  return (
+    <>
+      <button>{isPlaying ? "Pause" : "Play"}</button>
+    </>
+  );
 }
 
 function VideoPlayer() {}
