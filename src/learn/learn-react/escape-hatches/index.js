@@ -219,5 +219,24 @@ function Chat() {
 }
 
 function ChatRoom({ roomId, theme }) {
+  useEffect(
+    function () {
+      const connection = createConnection(serverUrl, roomId);
+      // connection.on()
+    },
+    [roomId, theme]
+  );
+
   return <h1>Welcome to the {roomId} room!</h1>;
+}
+
+function createConnection(serverUrl, roomId) {
+  // A real implementation would actually connect to the server
+  let connectedCallback;
+  let timeout;
+  return {
+    connect() {},
+    on() {},
+    disconnect() {},
+  };
 }
