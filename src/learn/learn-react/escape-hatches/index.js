@@ -11,6 +11,7 @@ export default function Index() {
       <VideoApp />
       <Chat2 />
       <Chat3 />
+      <Chat />
     </>
   );
 }
@@ -177,3 +178,7 @@ function showNotification(message, theme) {
     },
   }).showToast();
 }
+
+function Chat() {}
+
+function ChatRoom() {}
