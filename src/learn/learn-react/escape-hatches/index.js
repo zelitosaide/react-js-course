@@ -225,6 +225,7 @@ function ChatRoom({ roomId, theme }) {
       connection.on("connected", function () {
         showNotification("Connected!", theme);
       });
+      connection.connect();
     },
     [roomId, theme]
   );
