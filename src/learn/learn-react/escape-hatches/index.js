@@ -222,7 +222,9 @@ function ChatRoom({ roomId, theme }) {
   useEffect(
     function () {
       const connection = createConnection(serverUrl, roomId);
-      // connection.on()
+      connection.on("connected", function () {
+        showNotification("Connected!", theme);
+      });
     },
     [roomId, theme]
   );
@@ -235,7 +237,13 @@ function createConnection(serverUrl, roomId) {
   let connectedCallback;
   let timeout;
   return {
-    connect() {},
+    connect() {
+      timeout = setTimeout(function () {
+        if (connectedCallback) {
+          connectedCallback();
+        }
+      }, 200);
+    },
     on(event, callback) {
       if (connectedCallback) {
         throw Error("Cannot add the handler twice.");
