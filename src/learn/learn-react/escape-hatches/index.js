@@ -24,10 +24,14 @@ function Counter() {
 function Form() {
   const inputRef = useRef(null);
 
+  function handleClick() {
+    inputRef.current.focus();
+  }
+
   return (
     <>
       <input ref={inputRef} />
-      <button>Focus the input</button>
+      <button onClick={handleClick}>Focus the input</button>
     </>
   );
 }
