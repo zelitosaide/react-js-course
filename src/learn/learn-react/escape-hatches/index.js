@@ -1,7 +1,11 @@
 import { useRef } from "react";
 
 export default function Index() {
-  return <Counter />;
+  return (
+    <>
+      <Counter />
+    </>
+  );
 }
 
 function Counter() {
@@ -15,3 +19,5 @@ function Counter() {
 
   return <button onClick={handleClick}>Click</button>;
 }
+
+function Form() {}
