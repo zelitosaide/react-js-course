@@ -9,7 +9,7 @@ function Counter() {
 
   function handleClick() {
     ref.current = ref.current + 1;
-    alert(`You clicked ${ref.current} times!`);
+    alert("You clicked " + ref.current + " times!");
     console.log(ref);
   }
 
