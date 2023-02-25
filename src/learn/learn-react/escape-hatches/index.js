@@ -9,6 +9,7 @@ function Counter() {
 
   function handleClick() {
     ref.current = ref.current + 1;
+    console.log(ref);
   }
 
   return <button onClick={handleClick}>Click</button>;
