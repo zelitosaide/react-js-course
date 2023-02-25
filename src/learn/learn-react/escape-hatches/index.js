@@ -1,10 +1,11 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export default function Index() {
   return (
     <>
       <Counter />
       <Form />
+      <VideoApp />
     </>
   );
 }
@@ -35,3 +36,9 @@ function Form() {
     </>
   );
 }
+
+function VideoApp() {
+  const [isPlaying, setIsPlaying] = useState(false);
+}
+
+function VideoPlayer() {}
