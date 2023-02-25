@@ -177,6 +177,7 @@ function showNotification(message, theme) {
     style: {
       background: theme === "dark" ? "black" : "white",
       color: theme === "dark" ? "white" : "black",
+      // background: "linear-gradient(to right, #00b09b, #96c93d)",
     },
   }).showToast();
 }
