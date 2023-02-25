@@ -243,6 +243,7 @@ function createConnection(serverUrl, roomId) {
       if (event !== "connected") {
         throw Error("Only 'connected' event is supported.");
       }
+      connectedCallback = callback;
     },
     disconnect() {},
   };
