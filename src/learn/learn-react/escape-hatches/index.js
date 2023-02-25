@@ -218,4 +218,6 @@ function Chat() {
   );
 }
 
-function ChatRoom({ roomId, theme }) {}
+function ChatRoom({ roomId, theme }) {
+  return <h1>Welcome to the {roomId} room!</h1>;
+}
