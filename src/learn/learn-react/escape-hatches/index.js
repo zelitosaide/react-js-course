@@ -191,7 +191,11 @@ function Chat() {
           onChange={function (e) {
             setRoomId(e.target.value);
           }}
-        ></select>
+        >
+          <option value="general">general</option>
+          <option value="travel">travel</option>
+          <option value="music">music</option>
+        </select>
       </label>
     </div>
   );
