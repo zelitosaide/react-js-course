@@ -84,7 +84,13 @@ function VideoPlayer({ isPlaying, src }) {
 }
 
 function Chat() {
-  useEffect(function () {}, []);
+  useEffect(function () {
+    const connection = createConnection();
+    connection.connect();
+    return function () {
+      connection.disconnect();
+    };
+  }, []);
 
   return <h1>Welcome to the chat!</h1>;
 }
