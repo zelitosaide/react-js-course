@@ -170,7 +170,7 @@ function showNotification(message, theme) {
   Toastify({
     text: message,
     duration: 2000,
-    gravity: "bottom",
+    gravity: "top",
     position: "right",
     stopOnFocus: true,
     close: true,
