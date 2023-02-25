@@ -7,6 +7,7 @@ export default function Index() {
       <Form />
       <VideoApp />
       <Chat2 />
+      <Chat />
     </>
   );
 }
@@ -106,3 +107,23 @@ function createConnection2() {
     },
   };
 }
+
+function Chat() {
+  const [roomId, setRoomId] = useState("general");
+
+  return (
+    <div>
+      <label>
+        Choose the chat room:{" "}
+        <select
+          value={roomId}
+          onChange={function (e) {
+            setRoomId(e.target.value);
+          }}
+        ></select>
+      </label>
+    </div>
+  );
+}
+
+function ChatRoom() {}
