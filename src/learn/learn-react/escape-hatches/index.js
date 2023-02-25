@@ -185,7 +185,13 @@ function Chat() {
   return (
     <div>
       <label>
-        Choose the chat room: <select value={roomId}></select>
+        Choose the chat room:{" "}
+        <select
+          value={roomId}
+          onChange={function (e) {
+            setRoomId(e.target.value);
+          }}
+        ></select>
       </label>
     </div>
   );
