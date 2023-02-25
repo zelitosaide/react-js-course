@@ -7,7 +7,7 @@ export default function Index() {
       <Form />
       <VideoApp />
       <Chat2 />
-      <Chat />
+      <Chat3 />
     </>
   );
 }
@@ -110,7 +110,7 @@ function createConnection2() {
 
 const serverUrl = "https://localhost:1234";
 
-function Chat() {
+function Chat3() {
   const [roomId, setRoomId] = useState("general");
 
   return (
@@ -129,15 +129,15 @@ function Chat() {
         </select>
       </label>
       <hr />
-      <ChatRoom roomId={roomId} />
+      <ChatRoom2 roomId={roomId} />
     </div>
   );
 }
 
-function ChatRoom({ roomId }) {
+function ChatRoom2({ roomId }) {
   useEffect(
     function () {
-      const connection = createConnection(serverUrl, roomId);
+      const connection = createConnection3(serverUrl, roomId);
       connection.connect();
       return function () {
         connection.disconnect();
@@ -148,7 +148,7 @@ function ChatRoom({ roomId }) {
   return <h1>Welcome to the {roomId} room!</h1>;
 }
 
-function createConnection(serverUrl, roomId) {
+function createConnection3(serverUrl, roomId) {
   // A real implementation would actually connect to the server
   return {
     connect() {
