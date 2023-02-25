@@ -17,6 +17,7 @@ export default function Index() {
       <Chat2 />
       <Chat3 />
       <Chat4 />
+      <Chat />
     </>
   );
 }
@@ -271,7 +272,44 @@ function createConnection(serverUrl, roomId) {
   };
 }
 
-function Chat() {}
+function Chat() {
+  const [roomId, setRoomId] = useState("general");
+  const [isDark, setIsDark] = useState(false);
+
+  return (
+    <div>
+      <label>
+        Choose the chat room:{" "}
+        <select
+          value={roomId}
+          onChange={function (e) {
+            setRoomId(e.target.value);
+          }}
+        >
+          <option value="general">general</option>
+          <option value="travel">travel</option>
+          <option value="music">music</option>
+        </select>
+      </label>
+      <br />
+      <label>
+        <input
+          type="checkbox"
+          checked={isDark}
+          onChange={function (e) {
+            setIsDark(e.target.checked);
+          }}
+        />
+        Use dark theme
+      </label>
+      <hr />
+      <ChatRoom4
+        roomId={roomId}
+        theme={isDark ? "dark" : "light"}
+      />
+    </div>
+  );
+}
 
 function ChatRoom({ roomId, theme }) {
   const onConnected = useEffectEvent(function () {
