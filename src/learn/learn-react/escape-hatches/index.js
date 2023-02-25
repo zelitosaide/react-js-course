@@ -179,6 +179,14 @@ function showNotification(message, theme) {
   }).showToast();
 }
 
-function Chat() {}
+function Chat() {
+  return (
+    <div>
+      <label>
+        Choose the chat room: <select></select>
+      </label>
+    </div>
+  );
+}
 
 function ChatRoom() {}
