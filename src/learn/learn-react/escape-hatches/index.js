@@ -229,6 +229,9 @@ function ChatRoom({ roomId, theme }) {
         showNotification("Connected!", theme);
       });
       connection.connect();
+      return function () {
+        connection.disconnect();
+      };
     },
     [roomId, theme]
   );
