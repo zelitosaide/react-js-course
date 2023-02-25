@@ -209,8 +209,13 @@ function Chat() {
         />
         Use dark theme
       </label>
+      <hr />
+      <ChatRoom
+        roomId={roomId}
+        theme={isDark ? "dark" : "light"}
+      />
     </div>
   );
 }
 
-function ChatRoom() {}
+function ChatRoom({ roomId, theme }) {}
