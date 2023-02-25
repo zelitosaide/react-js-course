@@ -49,8 +49,12 @@ function VideoApp() {
       >
         {isPlaying ? "Pause" : "Play"}
       </button>
+      <VideoPlayer
+        isPlaying={isPlaying}
+        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+      />
     </>
   );
 }
 
-function VideoPlayer() {}
+function VideoPlayer({ isPlaying, src }) {}
