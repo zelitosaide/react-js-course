@@ -85,7 +85,7 @@ function VideoPlayer({ isPlaying, src }) {
 
 function Chat() {
   useEffect(function () {
-    const connection = createConnection();
+    const connection = createConnection2();
     connection.connect();
     return function () {
       connection.disconnect();
@@ -95,7 +95,7 @@ function Chat() {
   return <h1>Welcome to the chat!</h1>;
 }
 
-function createConnection() {
+function createConnection2() {
   // A real implementation would actually connect to the server
   return {
     connect() {
