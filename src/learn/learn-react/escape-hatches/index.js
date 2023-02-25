@@ -4,6 +4,7 @@ export default function Index() {
   return (
     <>
       <Counter />
+      <Form />
     </>
   );
 }
@@ -20,4 +21,13 @@ function Counter() {
   return <button onClick={handleClick}>Click</button>;
 }
 
-function Form() {}
+function Form() {
+  const inputRef = useRef(null);
+
+  return (
+    <>
+      <input ref={inputRef} />
+      <button>Focus the input</button>
+    </>
+  );
+}
