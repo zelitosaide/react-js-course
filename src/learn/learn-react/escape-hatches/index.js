@@ -6,7 +6,7 @@ export default function Index() {
       <Counter />
       <Form />
       <VideoApp />
-      <Chat />
+      <Chat2 />
     </>
   );
 }
@@ -83,7 +83,7 @@ function VideoPlayer({ isPlaying, src }) {
   );
 }
 
-function Chat() {
+function Chat2() {
   useEffect(function () {
     const connection = createConnection2();
     connection.connect();
