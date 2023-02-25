@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Index() {
   return (
@@ -59,6 +59,17 @@ function VideoApp() {
 
 function VideoPlayer({ isPlaying, src }) {
   const ref = useRef(null);
+
+  useEffect(
+    function () {
+      if (isPlaying) {
+        ref.current.play();
+      } else {
+        ref.current.pause();
+      }
+    },
+    [isPlaying]
+  );
 
   return (
     <video
