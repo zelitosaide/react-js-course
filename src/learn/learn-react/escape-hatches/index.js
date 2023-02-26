@@ -19,6 +19,7 @@ export default function Index() {
       <Chat4 />
       <Chat5 />
       <Chat6 />
+      <Chat />
     </>
   );
 }
@@ -409,6 +410,22 @@ function createConnection({ serverUrl, roomId }) {
   };
 }
 
-function Chat() {}
+function Chat() {
+  const [roomId, setRoomId] = useState("general");
+
+  return (
+    <div>
+      <label>
+        Choose the chat room:{" "}
+        <select
+          value={roomId}
+          onChange={function (e) {
+            setRoomId(e.target.value);
+          }}
+        ></select>
+      </label>
+    </div>
+  );
+}
 
 function ChatRoom() {}
