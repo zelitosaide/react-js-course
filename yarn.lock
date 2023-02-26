@@ -3988,6 +3988,11 @@ eslint-plugin-jsx-a11y@^6.5.1:
     minimatch "^3.1.2"
     semver "^6.3.0"
 
+eslint-plugin-react-hooks@^0.0.0-experimental-bfb9cbd8c-20230223:
+  version "0.0.0-experimental-bfb9cbd8c-20230223"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-0.0.0-experimental-bfb9cbd8c-20230223.tgz#42cd267a165df835f8c9a923330fe71211c403c4"
+  integrity sha512-DeDIwDzDUmE5ACxva9t5OJkVqW+vry6Y8Nn4/2L1vnhDEX8a+qOdKWBwgE7eccqyLfIo+vW4veU8WtchmLoFkg==
+
 eslint-plugin-react-hooks@^4.3.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.0.tgz#4c3e697ad95b77e93f8646aaa1630c1ba607edd3"
@@ -7283,13 +7288,13 @@ react-dev-utils@^12.0.1:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-react-dom@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
-  integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
+react-dom@^0.0.0-experimental-bfb9cbd8c-20230223:
+  version "0.0.0-experimental-bfb9cbd8c-20230223"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-0.0.0-experimental-bfb9cbd8c-20230223.tgz#ebc3de53716161f801f98ed7acdcf911cf32df22"
+  integrity sha512-XMXNW5b3OWZjsxeqbb0vFMG0ZUCBvyll3YK6tiMfM3iULt9BjH0TljvSxm+H2nVcTJwBm1ZPO8sFo25ctD6RHg==
   dependencies:
     loose-envify "^1.1.0"
-    scheduler "^0.23.0"
+    scheduler "0.0.0-experimental-bfb9cbd8c-20230223"
 
 react-error-overlay@^6.0.11:
   version "6.0.11"
@@ -7371,10 +7376,10 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
-  integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
+react@^0.0.0-experimental-bfb9cbd8c-20230223:
+  version "0.0.0-experimental-bfb9cbd8c-20230223"
+  resolved "https://registry.yarnpkg.com/react/-/react-0.0.0-experimental-bfb9cbd8c-20230223.tgz#1f6e7cf3155b28ac35728e0ecc0e3123e368a750"
+  integrity sha512-sVASlvgkErkPqTQg8AN0I9SE8CaBZsvFRuA7m9N6xUjD/TBikvahxH8xIy8XoTojgBKPKDTnKVXcAw5uDLApwQ==
   dependencies:
     loose-envify "^1.1.0"
 
@@ -7668,10 +7673,10 @@ saxes@^5.0.1:
   dependencies:
     xmlchars "^2.2.0"
 
-scheduler@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.0.tgz#ba8041afc3d30eb206a487b6b384002e4e61fdfe"
-  integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
+scheduler@0.0.0-experimental-bfb9cbd8c-20230223:
+  version "0.0.0-experimental-bfb9cbd8c-20230223"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.0.0-experimental-bfb9cbd8c-20230223.tgz#21a5ee01c952978b3df6c9170512ec49d4de8456"
+  integrity sha512-qsjRqFnDR9PpsPcjmg3hVWeC18naH1OtBKExCkB9IDhXHUNJ/LWf/afZ+IOQh7SZ0PlgVSGwA2rbzl4bzMlLHA==
   dependencies:
     loose-envify "^1.1.0"
 
