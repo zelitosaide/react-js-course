@@ -434,4 +434,18 @@ function Chat() {
   );
 }
 
-function ChatRoom({ roomId }) {}
+function ChatRoom({ roomId }) {
+  const [message, setMessage] = useState("");
+
+  return (
+    <>
+      <h1>Welcome to the {roomId} room!</h1>
+      <input
+        value={message}
+        onChange={function (e) {
+          setMessage(e.target.value);
+        }}
+      />
+    </>
+  );
+}
