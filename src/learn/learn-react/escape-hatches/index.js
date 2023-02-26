@@ -437,6 +437,11 @@ function Chat() {
 function ChatRoom({ roomId }) {
   const [message, setMessage] = useState("");
 
+  const options = {
+    serverUrl: serverUrl,
+    roomId: roomId,
+  };
+
   return (
     <>
       <h1>Welcome to the {roomId} room!</h1>
