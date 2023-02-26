@@ -437,19 +437,22 @@ function Chat() {
 function ChatRoom({ roomId }) {
   const [message, setMessage] = useState("");
 
-  const options = {
-    serverUrl: serverUrl,
-    roomId: roomId,
-  };
+  useEffect(
+    function () {
+      const options = {
+        serverUrl: serverUrl,
+        roomId: roomId,
+      };
 
-  useEffect(function () {
-    const connection = createConnection(options);
-    connection.connect();
+      const connection = createConnection(options);
+      connection.connect();
 
-    return function () {
-      connection.disconnect();
-    };
-  }, []);
+      return function () {
+        connection.disconnect();
+      };
+    },
+    [roomId]
+  );
 
   return (
     <>
