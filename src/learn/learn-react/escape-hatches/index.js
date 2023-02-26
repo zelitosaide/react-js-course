@@ -442,6 +442,15 @@ function ChatRoom({ roomId }) {
     roomId: roomId,
   };
 
+  useEffect(function () {
+    const connection = createConnection(options);
+    connection.connect();
+
+    return function () {
+      connection.disconnect();
+    };
+  }, []);
+
   return (
     <>
       <h1>Welcome to the {roomId} room!</h1>
