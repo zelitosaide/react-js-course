@@ -17,7 +17,7 @@ export default function Index() {
       <Chat2 />
       <Chat3 />
       <Chat4 />
-      <Chat />
+      <Chat5 />
     </>
   );
 }
@@ -272,7 +272,7 @@ function createConnection(serverUrl, roomId) {
   };
 }
 
-function Chat() {
+function Chat5() {
   const [roomId, setRoomId] = useState("general");
   const [isDark, setIsDark] = useState(false);
 
@@ -303,7 +303,7 @@ function Chat() {
         Use dark theme
       </label>
       <hr />
-      <ChatRoom
+      <ChatRoom5
         roomId={roomId}
         theme={isDark ? "dark" : "light"}
       />
@@ -311,7 +311,7 @@ function Chat() {
   );
 }
 
-function ChatRoom({ roomId, theme }) {
+function ChatRoom5({ roomId, theme }) {
   const onConnected = useEffectEvent(function () {
     showNotification("Connected!", theme);
   });
