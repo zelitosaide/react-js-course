@@ -372,6 +372,10 @@ function ChatRoom({ roomId }) {
 
   useEffect(function () {
     const connection = createConnection(options);
+    connection.connect();
+    return function () {
+      connection.disconnect();
+    };
   }, []);
 
   return (
