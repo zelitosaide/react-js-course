@@ -428,8 +428,10 @@ function Chat() {
           <option value="music">music</option>
         </select>
       </label>
+      <hr />
+      <ChatRoom roomId={roomId} />
     </div>
   );
 }
 
-function ChatRoom() {}
+function ChatRoom({ roomId }) {}
