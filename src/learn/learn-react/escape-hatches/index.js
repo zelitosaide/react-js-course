@@ -365,8 +365,13 @@ function Chat() {
 function ChatRoom({ roomId }) {
   const [message, setMessage] = useState("");
 
+  const options = {
+    serverUrl: serverUrl,
+    roomId: roomId,
+  };
+
   useEffect(function () {
-    const connection = createConnection();
+    const connection = createConnection(options);
   }, []);
 
   return (
