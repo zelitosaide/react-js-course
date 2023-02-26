@@ -443,10 +443,8 @@ function ChatRoom({ roomId }) {
         serverUrl: serverUrl,
         roomId: roomId,
       };
-
       const connection = createConnection(options);
       connection.connect();
-
       return function () {
         connection.disconnect();
       };
