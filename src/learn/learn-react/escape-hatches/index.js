@@ -18,6 +18,7 @@ export default function Index() {
       <Chat3 />
       <Chat4 />
       <Chat5 />
+      <Chat />
     </>
   );
 }
@@ -337,6 +338,16 @@ function ChatRoom5({ roomId, theme }) {
   return <h1>Welcome to the {roomId} room!</h1>;
 }
 
-function Chat() {}
+function Chat() {
+  const [roomId, setRoomId] = useState("general");
+
+  return (
+    <div>
+      <label>
+        Choose the chat room: <select></select>
+      </label>
+    </div>
+  );
+}
 
 function ChatRoom() {}
