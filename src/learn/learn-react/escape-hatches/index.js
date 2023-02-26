@@ -370,14 +370,17 @@ function ChatRoom({ roomId }) {
     roomId: roomId,
   };
 
-  useEffect(function () {
-    const connection = createConnection(options);
-    connection.connect();
+  useEffect(
+    function () {
+      const connection = createConnection(options);
+      connection.connect();
 
-    return function () {
-      connection.disconnect();
-    };
-  }, []);
+      return function () {
+        connection.disconnect();
+      };
+    },
+    [options]
+  );
 
   return (
     <>
