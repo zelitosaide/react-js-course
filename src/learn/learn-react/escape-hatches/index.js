@@ -231,7 +231,7 @@ function Chat4() {
 function ChatRoom4({ roomId, theme }) {
   useEffect(
     function () {
-      const connection = createConnection(serverUrl, roomId);
+      const connection = createConnection4(serverUrl, roomId);
       connection.on("connected", function () {
         showNotification("Connected!", theme);
       });
@@ -246,7 +246,7 @@ function ChatRoom4({ roomId, theme }) {
   return <h1>Welcome to the {roomId} room!</h1>;
 }
 
-function createConnection(serverUrl, roomId) {
+function createConnection4(serverUrl, roomId) {
   // A real implementation would actually connect to the server
   let connectedCallback;
   let timeout;
@@ -323,7 +323,7 @@ function ChatRoom5({ roomId, theme }) {
 
   useEffect(
     function () {
-      const connection = createConnection(serverUrl, roomId);
+      const connection = createConnection4(serverUrl, roomId);
       connection.on("connected", function () {
         onConnected();
       });
@@ -365,6 +365,10 @@ function Chat() {
 function ChatRoom({ roomId }) {
   const [message, setMessage] = useState("");
 
+  useEffect(function () {
+    const connection = createConnection();
+  }, []);
+
   return (
     <>
       <h1>Welcome to the {roomId} room!</h1>
@@ -376,4 +380,18 @@ function ChatRoom({ roomId }) {
       />
     </>
   );
+}
+
+function createConnection({ serverUrl, roomId }) {
+  // A real implementation would actually connect to the server
+  return {
+    connect() {
+      console.log(
+        '✅ Connecting to "' + roomId + '" room at ' + serverUrl + "..."
+      );
+    },
+    disconnect() {
+      console.log('❌ Disconnected from "' + roomId + '" room at ' + serverUrl);
+    },
+  };
 }
