@@ -312,13 +312,13 @@ function Chat() {
 }
 
 function ChatRoom({ roomId, theme }) {
-  const onConnected = useEffectEvent(function () {
-    showNotification("Connected!", theme);
-  });
-
-  // function onConnected() {
+  // const onConnected = useEffectEvent(function () {
   //   showNotification("Connected!", theme);
-  // }
+  // });
+
+  function onConnected() {
+    showNotification("Connected!", theme);
+  }
 
   useEffect(
     function () {
