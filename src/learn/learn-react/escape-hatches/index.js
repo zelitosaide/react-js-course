@@ -336,3 +336,7 @@ function ChatRoom5({ roomId, theme }) {
 
   return <h1>Welcome to the {roomId} room!</h1>;
 }
+
+function Chat() {}
+
+function ChatRoom() {}
