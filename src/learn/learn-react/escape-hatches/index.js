@@ -408,3 +408,7 @@ function createConnection({ serverUrl, roomId }) {
     },
   };
 }
+
+function Chat() {}
+
+function ChatRoom() {}
