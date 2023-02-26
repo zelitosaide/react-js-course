@@ -18,7 +18,7 @@ export default function Index() {
       <Chat3 />
       <Chat4 />
       <Chat5 />
-      <Chat />
+      <Chat6 />
     </>
   );
 }
@@ -338,7 +338,7 @@ function ChatRoom5({ roomId, theme }) {
   return <h1>Welcome to the {roomId} room!</h1>;
 }
 
-function Chat() {
+function Chat6() {
   const [roomId, setRoomId] = useState("general");
 
   return (
@@ -357,12 +357,12 @@ function Chat() {
         </select>
       </label>
       <hr />
-      <ChatRoom roomId={roomId} />
+      <ChatRoom6 roomId={roomId} />
     </div>
   );
 }
 
-function ChatRoom({ roomId }) {
+function ChatRoom6({ roomId }) {
   const [message, setMessage] = useState("");
 
   const options = {
