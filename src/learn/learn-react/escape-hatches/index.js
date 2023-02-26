@@ -2,7 +2,7 @@ import {
   useEffect,
   useRef,
   useState,
-  // experimental_useEffectEvent as useEffectEvent,
+  experimental_useEffectEvent as useEffectEvent,
 } from "react";
 
 import Toastify from "toastify-js";
@@ -312,13 +312,13 @@ function Chat() {
 }
 
 function ChatRoom({ roomId, theme }) {
-  // const onConnected = useEffectEvent(function () {
-  //   showNotification("Connected!", theme);
-  // });
-
-  function onConnected() {
+  const onConnected = useEffectEvent(function () {
     showNotification("Connected!", theme);
-  }
+  });
+
+  // function onConnected() {
+  //   showNotification("Connected!", theme);
+  // }
 
   useEffect(
     function () {
