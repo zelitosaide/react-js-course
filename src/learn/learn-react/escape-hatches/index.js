@@ -362,4 +362,6 @@ function Chat() {
   );
 }
 
-function ChatRoom({ roomId }) {}
+function ChatRoom({ roomId }) {
+  return <h1>Welcome to the {roomId} room!</h1>;
+}
