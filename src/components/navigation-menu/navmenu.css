@@ -15,6 +15,7 @@ button, p {
   justify-content: center;
   width: 100vw;
   z-index: 1;
+  /* Added */
   background-color: lightcoral;
 }
 
@@ -79,6 +80,7 @@ button, p {
   width: auto;
   animation-duration: 250ms;
   animation-timing-function: ease;
+  /* Added */
   background-color: lightgreen;
 }
 
