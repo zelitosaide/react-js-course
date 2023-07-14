@@ -237,15 +237,7 @@ export default function Navmenu() {
               Notícias
             </Link>
           </Item>
-
-          <Indicator className="NavigationMenuIndicator">
-            <div className="Arrow" />
-          </Indicator>
         </List>
-
-        <div>
-          <Viewport />
-        </div>
       </Root>
     </>
   );
