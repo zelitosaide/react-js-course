@@ -8,7 +8,7 @@ function PopoverDemo() {
       <Popover.Portal>
         <Popover.Content className="PopoverContent">
           Some more info...
-          <Popover.Arrow />
+          <Popover.Arrow className="PopoverArrow" />
         </Popover.Content>
       </Popover.Portal>
     </Popover.Root>

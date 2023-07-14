@@ -10,6 +10,10 @@
   width: 260px;
 }
 
+.PopoverArrow {
+  fill: lightcoral;
+}
+
 
 
 /* :root {
