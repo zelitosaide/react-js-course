@@ -25,7 +25,7 @@ export default function Navmenu() {
             </Link>
           </Item>
           <Item>
-            <Trigger>
+            <Trigger className="NavigationMenuTrigger">
               Ensino <CaretDownIcon aria-hidden />
             </Trigger>
             <Content>
@@ -80,7 +80,7 @@ export default function Navmenu() {
             </Content>
           </Item>
           <Item>
-            <Trigger>
+            <Trigger className="NavigationMenuTrigger">
               Investigação <CaretDownIcon aria-hidden />
             </Trigger>
             <Content>
@@ -159,7 +159,7 @@ export default function Navmenu() {
             </Link>
           </Item>
           <Item>
-            <Trigger>
+            <Trigger className="NavigationMenuTrigger">
               Submissão de Protocolos <CaretDownIcon aria-hidden />
             </Trigger>
             <Content>
