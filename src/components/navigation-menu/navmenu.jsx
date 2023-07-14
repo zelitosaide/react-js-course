@@ -16,7 +16,18 @@ import {
 export default function Navmenu() {
   return (
     <Root>
-      
+      <List>
+        <Item>
+          <Link target="_blank" href="/">
+            Página Inicial
+          </Link>
+        </Item>
+        <Item>
+          <Trigger>
+            Ensino <CaretDownIcon aria-hidden />
+          </Trigger>
+        </Item>
+      </List>
     </Root>
   );
 }
