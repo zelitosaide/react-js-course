@@ -1,6 +1,6 @@
 // import "./App.css";
 
-import Popover from "./components/popover";
+import Popover from "./components/popover/popover";
 
 function App() {
   return (
