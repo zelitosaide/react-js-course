@@ -7,7 +7,7 @@ export default function Component({ trigger, content }) {
     <Root>
       <Trigger className="PopoverTrigger">{trigger}</Trigger>
       <Portal>
-        <Content className="PopoverContent">
+        <Content className="PopoverContent" sideOffset={5}>
           {content}
           <Arrow className="PopoverArrow" />
         </Content>
