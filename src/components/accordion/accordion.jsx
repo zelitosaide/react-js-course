@@ -14,7 +14,7 @@ export default function Component() {
             <ChevronDownIcon aria-hidden />
           </Trigger>
         </Header>
-        <Content>
+        <Content className="AccordionContent">
           <div>Yes. It adheres to the WAI-ARIA design pattern.</div>
         </Content>
       </Item>
@@ -25,7 +25,7 @@ export default function Component() {
             <ChevronDownIcon aria-hidden />
           </Trigger>
         </Header>
-        <Content>
+        <Content className="AccordionContent">
           <div>
             Yes. It's unstyled by default, giving you freedom over the look and feel.
           </div>
@@ -38,7 +38,7 @@ export default function Component() {
             <ChevronDownIcon aria-hidden />
           </Trigger>
         </Header>
-        <Content>
+        <Content className="AccordionContent">
           <div>Yes! You can animate the Accordion with CSS or JavaScript.</div>
         </Content>
       </Item>
