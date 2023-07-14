@@ -3,7 +3,7 @@ import "./accordion.css";
 import { Root, Item, Header, Trigger, Content } from "@radix-ui/react-accordion";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 
-export default function Component() {
+export default function Accordion() {
   return (
     <Root className="AccordionRoot" collapsible type="single" defaultValue="item-1">
       <Item value="item-1" className="AccordionItem">

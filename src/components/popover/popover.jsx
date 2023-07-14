@@ -2,7 +2,7 @@ import "./popover.css";
 
 import { Root, Trigger, Portal, Content, Arrow } from "@radix-ui/react-popover";
 
-export default function Component({ trigger, content }) {
+export default function Popover({ trigger, content }) {
   return (
     <Root>
       <Trigger className="PopoverTrigger">{trigger}</Trigger>
