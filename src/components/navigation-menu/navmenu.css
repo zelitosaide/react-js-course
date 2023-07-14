@@ -41,11 +41,11 @@ button, p {
   color: var(--violet-11);
 }
 
-
 .NavigationMenuTrigger:focus,
 .NavigationMenuLink:focus {
   box-shadow: 0 0 0 2px var(--violet-7);
 }
+
 .NavigationMenuTrigger:hover,
 .NavigationMenuLink:hover {
   background-color: var(--violet-3);
