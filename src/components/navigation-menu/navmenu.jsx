@@ -5,8 +5,8 @@ import {  Root, List, Item, Trigger, Content, Link, Indicator } from "@radix-ui/
 
 export default function Navmenu() {
   return (
-    <Root>
-      <List>
+    <Root className="NavigationMenuRoot">
+      <List className="NavigationMenuList">
         <Item>
           <Link target="_blank" href="/">
             Página Inicial
