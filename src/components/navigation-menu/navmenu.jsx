@@ -18,7 +18,7 @@ export default function Navmenu() {
   return (
     <>
       <Root className="NavigationMenuRoot">
-        <List>
+        <List className="NavigationMenuList">
           <Item>
             <Link href="https://github.com/radix-ui">
               Página Inicial
