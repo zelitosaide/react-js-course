@@ -14,19 +14,19 @@ import {
 
 export default function Navmenu() {
   return (
-    <Root>
-      <List>
+    <Root className="NavigationMenuRoot">
+      <List className="NavigationMenuList">
         <Item>
-          <Trigger>Item one</Trigger>
-          <Content>Item one content</Content>
+          <Trigger className="NavigationMenuTrigger">Item one</Trigger>
+          <Content className="NavigationMenuContent">Item one content</Content>
         </Item>
         <Item>
-          <Trigger>Item two</Trigger>
-          <Content>Item Two content</Content>
+          <Trigger className="NavigationMenuTrigger">Item two</Trigger>
+          <Content className="NavigationMenuContent">Item Two content</Content>
         </Item>
         <Item>
-          <Trigger>Item three</Trigger>
-          <Content>Item Three content</Content>
+          <Trigger className="NavigationMenuTrigger">Item three</Trigger>
+          <Content className="NavigationMenuContent">Item Three content</Content>
         </Item>
       </List>
     </Root>
