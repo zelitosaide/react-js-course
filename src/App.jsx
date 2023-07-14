@@ -5,7 +5,7 @@ import Popover from "./components/popover";
 function App() {
   return (
     <>
-      <Popover />
+      <Popover trigger="More info" content="Some more info..." />
     </>
   );
 }
