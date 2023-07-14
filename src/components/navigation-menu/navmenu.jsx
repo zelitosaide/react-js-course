@@ -14,21 +14,17 @@ import {
 
 export default function Navmenu() {
   return (
-    <Root className="NavigationMenuRoot">
-      <List className="NavigationMenuList">
-        <Item>
-          <Trigger className="NavigationMenuTrigger">Item one</Trigger>
-          <Content className="NavigationMenuContent">Item one content</Content>
-        </Item>
-        <Item>
-          <Trigger className="NavigationMenuTrigger">Item two</Trigger>
-          <Content className="NavigationMenuContent">Item Two content</Content>
-        </Item>
-        <Item>
-          <Trigger className="NavigationMenuTrigger">Item three</Trigger>
-          <Content className="NavigationMenuContent">Item Three content</Content>
-        </Item>
-      </List>
-    </Root>
+    <>
+      <Root>
+        <List>
+          <Item>Página Inicial</Item>
+          <Item>Ensino</Item>
+          <Item>Investigação</Item>
+          <Item>Extensão</Item>
+          <Item>Submissão de Protocolos</Item>
+          <Item>Notícias</Item>
+        </List>
+      </Root>
+    </>
   );
 }
