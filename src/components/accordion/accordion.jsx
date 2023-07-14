@@ -20,23 +20,25 @@ export default function Component() {
       <Item value="item-2">
         <Header>
           <Trigger>
-            Is it accessible?
+            Is it unstyled?
             <ChevronDownIcon aria-hidden />
           </Trigger>
         </Header>
         <Content>
-          <div>Yes. It adheres to the WAI-ARIA design pattern.</div>
+          <div>
+            Yes. It's unstyled by default, giving you freedom over the look and feel.
+          </div>
         </Content>
       </Item>
       <Item value="item-3">
         <Header>
           <Trigger>
-            Is it accessible?
+            Can it be animated?
             <ChevronDownIcon aria-hidden />
           </Trigger>
         </Header>
         <Content>
-          <div>Yes. It adheres to the WAI-ARIA design pattern.</div>
+          <div>Yes! You can animate the Accordion with CSS or JavaScript.</div>
         </Content>
       </Item>
     </Root>
