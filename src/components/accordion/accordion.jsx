@@ -17,6 +17,28 @@ export default function Component() {
           <div>Yes. It adheres to the WAI-ARIA design pattern.</div>
         </Content>
       </Item>
+      <Item value="item-2">
+        <Header>
+          <Trigger>
+            Is it accessible?
+            <ChevronDownIcon aria-hidden />
+          </Trigger>
+        </Header>
+        <Content>
+          <div>Yes. It adheres to the WAI-ARIA design pattern.</div>
+        </Content>
+      </Item>
+      <Item value="item-3">
+        <Header>
+          <Trigger>
+            Is it accessible?
+            <ChevronDownIcon aria-hidden />
+          </Trigger>
+        </Header>
+        <Content>
+          <div>Yes. It adheres to the WAI-ARIA design pattern.</div>
+        </Content>
+      </Item>
     </Root>
   );
 }
