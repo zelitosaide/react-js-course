@@ -6,7 +6,7 @@ function PopoverDemo() {
     <Popover.Root>
       <Popover.Trigger className="PopoverTrigger">More info</Popover.Trigger>
       <Popover.Portal>
-        <Popover.Content>
+        <Popover.Content className="PopoverContent">
           Some more info...
           <Popover.Arrow />
         </Popover.Content>
@@ -20,7 +20,7 @@ function App() {
     <>
       <PopoverDemo />
     </>
-  )
+  );
 }
 
 export default App;
