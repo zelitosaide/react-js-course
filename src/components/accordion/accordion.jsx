@@ -8,8 +8,8 @@ export default function Component() {
   return (
     <Root className="AccordionRoot" collapsible type="single" defaultValue="item-1">
       <Item value="item-1" className="AccordionItem">
-        <Header>
-          <Trigger>
+        <Header className="AccordionHeader">
+          <Trigger className="AccordionTrigger">
             Is it accessible?
             <ChevronDownIcon aria-hidden />
           </Trigger>
@@ -19,8 +19,8 @@ export default function Component() {
         </Content>
       </Item>
       <Item value="item-2" className="AccordionItem">
-        <Header>
-          <Trigger>
+        <Header className="AccordionHeader">
+          <Trigger className="AccordionTrigger">
             Is it unstyled?
             <ChevronDownIcon aria-hidden />
           </Trigger>
@@ -32,8 +32,8 @@ export default function Component() {
         </Content>
       </Item>
       <Item value="item-3" className="AccordionItem">
-        <Header>
-          <Trigger>
+        <Header className="AccordionHeader">
+          <Trigger className="AccordionTrigger">
             Can it be animated?
             <ChevronDownIcon aria-hidden />
           </Trigger>
