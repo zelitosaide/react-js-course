@@ -5,6 +5,9 @@
 
 .PopoverContent {
   background-color: lightcoral;
+  border-radius: 4px;
+  padding: 20px;
+  width: 260px;
 }
 
 
