@@ -95,7 +95,7 @@ button, p {
   left: 0;
   /* Commentado */
   /* width: 100%; */
-  width: auto;
+  /* width: auto; */
   animation-duration: 250ms;
   animation-timing-function: ease;
   /* Added */
