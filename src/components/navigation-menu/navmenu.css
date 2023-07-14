@@ -73,12 +73,14 @@ button, p {
   position: absolute;
   left: 0;
   width: auto;
-  /* animation-duration: 250ms;
-  animation-timing-function: ease; */
+  animation-duration: 250ms;
+  animation-timing-function: ease;
+
+  /* Meus estilos */
   background-color: lightcoral;
 }
 
-/* .NavigationMenuContent[data-motion='from-start'] {
+.NavigationMenuContent[data-motion='from-start'] {
   animation-name: enterFromLeft;
 }
 
@@ -92,7 +94,7 @@ button, p {
 
 .NavigationMenuContent[data-motion='to-end'] {
   animation-name: exitToRight;
-} */
+}
 
 .NavigationMenuIndicator {
   display: flex;
@@ -106,10 +108,86 @@ button, p {
   background-color: red;
 }
 
-.NavigationMenuIndicator[data-state='visible'] {
-  /* animation: fadeIn 200ms ease; */
+@keyframes enterFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-.NavigationMenuIndicator[data-state='hidden'] {
-  /* animation: fadeOut 200ms ease; */
+@keyframes enterFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes exitToRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+}
+
+@keyframes exitToLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-30deg) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: rotateX(-10deg) scale(0.95);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
