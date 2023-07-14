@@ -15,7 +15,7 @@ export default function Component() {
           </Trigger>
         </Header>
         <Content className="AccordionContent">
-          <div>Yes. It adheres to the WAI-ARIA design pattern.</div>
+          <div className="AccordionContentText">Yes. It adheres to the WAI-ARIA design pattern.</div>
         </Content>
       </Item>
       <Item value="item-2" className="AccordionItem">
@@ -26,7 +26,7 @@ export default function Component() {
           </Trigger>
         </Header>
         <Content className="AccordionContent">
-          <div>
+          <div className="AccordionContentText">
             Yes. It's unstyled by default, giving you freedom over the look and feel.
           </div>
         </Content>
@@ -39,7 +39,7 @@ export default function Component() {
           </Trigger>
         </Header>
         <Content className="AccordionContent">
-          <div>Yes! You can animate the Accordion with CSS or JavaScript.</div>
+          <div className="AccordionContentText">Yes! You can animate the Accordion with CSS or JavaScript.</div>
         </Content>
       </Item>
     </Root>
