@@ -5,7 +5,7 @@ import { Root, Trigger, Portal, Content, Arrow } from "@radix-ui/react-popover";
 export default function Component({ trigger, content }) {
   return (
     <Root>
-      <Trigger>{trigger}</Trigger>
+      <Trigger className="PopoverTrigger">{trigger}</Trigger>
       <Portal>
         <Content>
           {content}
