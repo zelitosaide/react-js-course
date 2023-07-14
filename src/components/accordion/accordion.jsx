@@ -2,7 +2,6 @@ import "./accordion.css";
 
 import { Root, Item, Header, Trigger, Content } from "@radix-ui/react-accordion";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
-import classNames from "classnames";
 
 export default function Component() {
   return (
@@ -11,7 +10,7 @@ export default function Component() {
         <Header className="AccordionHeader">
           <Trigger className="AccordionTrigger">
             Is it accessible?
-            <ChevronDownIcon aria-hidden />
+            <ChevronDownIcon className="AccordionChevron" aria-hidden />
           </Trigger>
         </Header>
         <Content className="AccordionContent">
@@ -22,7 +21,7 @@ export default function Component() {
         <Header className="AccordionHeader">
           <Trigger className="AccordionTrigger">
             Is it unstyled?
-            <ChevronDownIcon aria-hidden />
+            <ChevronDownIcon className="AccordionChevron" aria-hidden />
           </Trigger>
         </Header>
         <Content className="AccordionContent">
@@ -35,7 +34,7 @@ export default function Component() {
         <Header className="AccordionHeader">
           <Trigger className="AccordionTrigger">
             Can it be animated?
-            <ChevronDownIcon aria-hidden />
+            <ChevronDownIcon className="AccordionChevron" aria-hidden />
           </Trigger>
         </Header>
         <Content className="AccordionContent">
