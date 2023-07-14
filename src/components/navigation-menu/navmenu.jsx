@@ -152,7 +152,7 @@ export default function Navmenu() {
             </Content>
           </Item>
           <Item>
-            <Trigger>Extensão</Trigger> 
+            <Trigger>Extensão</Trigger>
           </Item>
           <Item>
             <Trigger>
