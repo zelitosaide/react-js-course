@@ -20,7 +20,7 @@ export default function Navmenu() {
       <Root className="NavigationMenuRoot">
         <List className="NavigationMenuList">
           <Item>
-            <Link href="https://github.com/radix-ui">
+            <Link className="NavigationMenuLink" href="https://github.com/radix-ui">
               Página Inicial
             </Link>
           </Item>
@@ -154,7 +154,7 @@ export default function Navmenu() {
             </Content>
           </Item>
           <Item>
-            <Link href="https://github.com/radix-ui">
+            <Link className="NavigationMenuLink" href="https://github.com/radix-ui">
               Extensão
             </Link>
           </Item>
@@ -233,7 +233,7 @@ export default function Navmenu() {
             </Content>
           </Item>
           <Item>
-            <Link href="https://github.com/radix-ui">
+            <Link className="NavigationMenuLink" href="https://github.com/radix-ui">
               Notícias
             </Link>
           </Item>
