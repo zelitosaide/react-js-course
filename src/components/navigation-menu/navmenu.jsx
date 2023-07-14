@@ -8,32 +8,32 @@ export default function Navmenu() {
     <Root className="NavigationMenuRoot">
       <List className="NavigationMenuList">
         <Item>
-          <Link target="_blank" href="/">
+          <Link className="NavigationMenuLink" target="_blank" href="/">
             Página Inicial
           </Link>
         </Item>
         <Item>
-          <Trigger>
+          <Trigger className="NavigationMenuTrigger">
             Ensino <CaretDownIcon aria-hidden />
           </Trigger>
         </Item>
         <Item>
-          <Trigger>
+          <Trigger className="NavigationMenuTrigger">
             Investigação <CaretDownIcon aria-hidden />
           </Trigger>
         </Item>
         <Item>
-          <Link target="_blank" href="/">
+          <Link className="NavigationMenuLink" target="_blank" href="/">
             Extensão
           </Link>
         </Item>
         <Item>
-          <Trigger>
+          <Trigger className="NavigationMenuTrigger">
             Submissão de Protocolos <CaretDownIcon aria-hidden />
           </Trigger>
         </Item>
         <Item>
-          <Link target="_blank" href="/">
+          <Link className="NavigationMenuLink" target="_blank" href="/">
             Notícias
           </Link>
         </Item>
