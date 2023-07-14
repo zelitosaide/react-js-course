@@ -16,12 +16,14 @@ import {
 export default function Menubar() {
   return (
     <Root>
-      <Menu></Menu>
+      <Menu>
+        <Trigger>File</Trigger>
+      </Menu>
 
       <Menu></Menu>
 
       <Menu></Menu>
-      
+
       <Menu></Menu>
     </Root>
   );
