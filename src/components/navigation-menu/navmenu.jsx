@@ -1,3 +1,4 @@
+import { CaretDownIcon } from "@radix-ui/react-icons";
 import "./navmenu.css";
 
 import { 
@@ -17,12 +18,31 @@ export default function Navmenu() {
     <>
       <Root>
         <List>
-          <Item>Página Inicial</Item>
-          <Item>Ensino</Item>
-          <Item>Investigação</Item>
-          <Item>Extensão</Item>
-          <Item>Submissão de Protocolos</Item>
-          <Item>Notícias</Item>
+          <Item>
+            <Trigger>Página Inicial</Trigger>
+          </Item>
+          <Item>
+            <Trigger>
+              Ensino <CaretDownIcon aria-hidden />
+            </Trigger>
+          </Item>
+          <Item>
+            <Trigger>
+              Investigação <CaretDownIcon aria-hidden />
+            </Trigger>
+          </Item>
+          <Item>
+            <Trigger>Extensão</Trigger> 
+          </Item>
+          <Item>
+            <Trigger>
+              Submissão de Protocolos <CaretDownIcon aria-hidden />
+            </Trigger>
+          </Item>
+          <Item>
+            <Trigger>Notícias</Trigger>
+          </Item>
+          <Indicator />
         </List>
       </Root>
     </>
