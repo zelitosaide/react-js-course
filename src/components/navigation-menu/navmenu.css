@@ -80,6 +80,14 @@ button, p {
   transition: width, height, 300ms ease; 
 }
 
+.NavigationMenuContent[data-state='open'] {
+  animation: scaleIn 200ms ease;
+}
+
+.NavigationMenuContent[data-state='closed'] {
+  animation: scaleOut 200ms ease;
+}
+
 .NavigationMenuContent {
   position: absolute;
   /* Commentado */
@@ -177,5 +185,27 @@ button, p {
   }
   to {
     opacity: 0;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-30deg) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: rotateX(-10deg) scale(0.95);
   }
 }
