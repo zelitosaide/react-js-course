@@ -32,6 +32,10 @@ button, p {
   margin: 0;
 }
 
+.NavigationMenuList > li {
+  position: relative;
+}
+
 .NavigationMenuTrigger,
 .NavigationMenuLink {
   padding: 8px 12px;
@@ -69,10 +73,25 @@ button, p {
 
 .NavigationMenuContent {
   position: absolute;
-  top: 0;
   left: 0;
-  /* width: 100%; */
-
+  width: auto;
   /* animation-duration: 250ms;
   animation-timing-function: ease; */
+  background-color: lightcoral;
 }
+
+/* .NavigationMenuContent[data-motion='from-start'] {
+  animation-name: enterFromLeft;
+}
+
+.NavigationMenuContent[data-motion='from-end'] {
+  animation-name: enterFromRight;
+}
+
+.NavigationMenuContent[data-motion='to-start'] {
+  animation-name: exitToLeft;
+}
+
+.NavigationMenuContent[data-motion='to-end'] {
+  animation-name: exitToRight;
+} */
