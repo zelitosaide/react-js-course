@@ -7,7 +7,7 @@ import classNames from "classnames";
 export default function Component() {
   return (
     <Root className="AccordionRoot" collapsible type="single" defaultValue="item-1">
-      <Item value="item-1">
+      <Item value="item-1" className="AccordionItem">
         <Header>
           <Trigger>
             Is it accessible?
@@ -18,7 +18,7 @@ export default function Component() {
           <div>Yes. It adheres to the WAI-ARIA design pattern.</div>
         </Content>
       </Item>
-      <Item value="item-2">
+      <Item value="item-2" className="AccordionItem">
         <Header>
           <Trigger>
             Is it unstyled?
@@ -31,7 +31,7 @@ export default function Component() {
           </div>
         </Content>
       </Item>
-      <Item value="item-3">
+      <Item value="item-3" className="AccordionItem">
         <Header>
           <Trigger>
             Can it be animated?
