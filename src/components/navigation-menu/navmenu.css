@@ -14,6 +14,8 @@ button, p {
   justify-content: center;
   width: 100vw;
   z-index: 1;
+  
+  /* Meus estilos */
   background-image: linear-gradient(330deg, hsl(272, 53%, 50%) 0%, hsl(226, 68%, 56%) 100%);;
   padding: 20px;
 }
