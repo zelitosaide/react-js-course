@@ -5,8 +5,8 @@ import { ChevronDownIcon } from "@radix-ui/react-icons";
 
 export default function Component() {
   return (
-    <Root>
-      <Item>
+    <Root collapsible type="single" defaultValue="item-1">
+      <Item value="item-1">
         <Header>
           <Trigger>
             Is it accessible?
