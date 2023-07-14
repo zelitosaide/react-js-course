@@ -17,7 +17,7 @@ import {
 export default function Navmenu() {
   return (
     <>
-      <Root>
+      <Root className="NavigationMenuRoot">
         <List>
           <Item>
             <Link href="https://github.com/radix-ui">
@@ -154,7 +154,9 @@ export default function Navmenu() {
             </Content>
           </Item>
           <Item>
-            <Trigger>Extensão</Trigger>
+            <Link href="https://github.com/radix-ui">
+              Extensão
+            </Link>
           </Item>
           <Item>
             <Trigger>

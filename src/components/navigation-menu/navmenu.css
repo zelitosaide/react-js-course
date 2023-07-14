@@ -3,3 +3,16 @@
 @import '@radix-ui/colors/mauve.css';
 @import '@radix-ui/colors/purple.css';
 @import '@radix-ui/colors/violet.css';
+
+button, p {
+  all: unset;
+}
+
+.NavigationMenuRoot {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  z-index: 1;
+  background-color: lightblue;
+}
