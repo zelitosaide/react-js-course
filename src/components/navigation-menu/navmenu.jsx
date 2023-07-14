@@ -20,7 +20,9 @@ export default function Navmenu() {
       <Root>
         <List>
           <Item>
-            <Trigger>Página Inicial</Trigger>
+            <Link href="https://github.com/radix-ui">
+              Página Inicial
+            </Link>
           </Item>
           <Item>
             <Trigger>
@@ -229,7 +231,9 @@ export default function Navmenu() {
             </Content>
           </Item>
           <Item>
-            <Trigger>Notícias</Trigger>
+            <Link href="https://github.com/radix-ui">
+              Notícias
+            </Link>
           </Item>
         </List>
       </Root>
