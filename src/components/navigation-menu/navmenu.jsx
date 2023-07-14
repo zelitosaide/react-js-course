@@ -41,6 +41,39 @@ export default function Navmenu() {
                     </a>
                   </Link>
                 </li>
+
+                <li>
+                  <Link asChild>
+                    <a href="https://stitches.dev/">
+                      <div>Stitches</div>
+                      <p>
+                        CSS-in-JS with best-in-class developer experience.
+                      </p>
+                    </a>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link asChild>
+                    <a href="/">
+                      <div>Colors</div>
+                      <p>
+                        Beautiful, thought-out palettes with auto dark mode.
+                      </p>
+                    </a>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link asChild>
+                    <a href="/">
+                      <div>Icons</div>
+                      <p>
+                        A crisp set of 15x15 icons, balanced and consistent.
+                      </p>
+                    </a>
+                  </Link>
+                </li>
               </ul>
             </Content>
           </Item>
