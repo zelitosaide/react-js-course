@@ -51,7 +51,41 @@ export default function Menubar() {
         </Portal>
       </Menu>
 
-      <Menu></Menu>
+      <Menu>
+        <Trigger>Edit</Trigger>
+        <Portal>
+          <Content>
+            <Item>
+              Undo <div>⌘ Z</div>
+            </Item>
+            <Item>
+              Redo <div>⇧ ⌘ Z</div>
+            </Item>
+            <Separator />
+            <Sub>
+              <SubTrigger>
+                Find
+                <div>
+                  <ChevronRightIcon />
+                </div>
+              </SubTrigger>
+              <Portal>
+                <SubContent>
+                  <Item>Search the web…</Item>
+                  <Separator />
+                  <Item>Find…</Item>
+                  <Item>Find Next</Item>
+                  <Item>Find Previous</Item>
+                </SubContent>
+              </Portal>
+            </Sub>
+            <Separator />
+            <Item>Cut</Item>
+            <Item>Copy</Item>
+            <Item>Paste</Item>
+          </Content>
+        </Portal>
+      </Menu>
 
       <Menu></Menu>
 
