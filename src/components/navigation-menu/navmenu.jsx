@@ -158,6 +158,75 @@ export default function Navmenu() {
             <Trigger>
               Submissão de Protocolos <CaretDownIcon aria-hidden />
             </Trigger>
+            <Content>
+              <ul>
+                <li>
+                  <Link asChild>
+                    <a href="/">
+                      <div>Introduction</div>
+                      <p>
+                        Build high-quality, accessible design systems and web apps.
+                      </p>
+                    </a>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link asChild>
+                    <a href="/">
+                      <div>Getting started</div>
+                      <p>
+                        A quick tutorial to get you up and running with Radix Primitives.
+                      </p>
+                    </a>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link asChild>
+                    <a href="/">
+                      <div>Styling</div>
+                      <p>
+                        Unstyled and compatible with any styling solution.
+                      </p>
+                    </a>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link asChild>
+                    <a href="/">
+                      <div>Animation</div>
+                      <p>
+                        Use CSS keyframes or any animation library of your choice.
+                      </p>
+                    </a>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link asChild>
+                    <a href="/">
+                      <div>Accessibility</div>
+                      <p>
+                        Tested in a range of browsers and assistive technologies.
+                      </p>
+                    </a>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link asChild>
+                    <a href="/">
+                      <div>Releases</div>
+                      <p>
+                        Radix Primitives releases and their changelogs.
+                      </p>
+                    </a>
+                  </Link>
+                </li>
+              </ul>
+            </Content>
           </Item>
           <Item>
             <Trigger>Notícias</Trigger>
