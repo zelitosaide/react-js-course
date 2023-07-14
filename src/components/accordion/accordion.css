@@ -54,3 +54,8 @@ button, h3 {
   box-shadow: 0 1px 0 var(--mauve-6);
   background-color: white;
 }
+
+.AccordionTrigger:hover {
+  background-color: var(--mauve-2);
+  cursor: pointer;
+}
