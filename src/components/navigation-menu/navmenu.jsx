@@ -14,7 +14,7 @@ export default function Navmenu() {
         </Item>
         <Item>
           <Trigger className="NavigationMenuTrigger">
-            Ensino <CaretDownIcon aria-hidden />
+            Ensino <CaretDownIcon className="CaretDown" aria-hidden />
           </Trigger>
           <div className="NavigationMenuContentWrapper">
             <Content className="NavigationMenuContent">
@@ -67,8 +67,69 @@ export default function Navmenu() {
         </Item>
         <Item>
           <Trigger className="NavigationMenuTrigger">
-            Investigação <CaretDownIcon aria-hidden />
+            Investigação <CaretDownIcon className="CaretDown" aria-hidden />
           </Trigger>
+          <div className="NavigationMenuContentWrapper">
+            <Content className="NavigationMenuContent">
+              <div className="NavigationMenuContentBoundary">
+                <ul className="List two">
+                  <li>
+                    <Link asChild>
+                      <a className="ListItemLink" href="/">
+                        <div className="ListItemHeading">Stitches</div>
+                        <p className="ListItemText">CSS-in-JS with best-in-class developer experience.</p>
+                      </a>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link asChild>
+                      <a className="ListItemLink" href="/">
+                        <div className="ListItemHeading">Colors</div>
+                        <p className="ListItemText">Beautiful, thought-out palettes with auto dark mode.</p>
+                      </a>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link asChild>
+                      <a className="ListItemLink" href="/">
+                        <div className="ListItemHeading">Icons</div>
+                        <p className="ListItemText">A crisp set of 15x15 icons, balanced and consistent.</p>
+                      </a>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link asChild>
+                      <a className="ListItemLink" href="/">
+                        <div className="ListItemHeading">Icons</div>
+                        <p className="ListItemText">A crisp set of 15x15 icons, balanced and consistent.</p>
+                      </a>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link asChild>
+                      <a className="ListItemLink" href="/">
+                        <div className="ListItemHeading">Icons</div>
+                        <p className="ListItemText">A crisp set of 15x15 icons, balanced and consistent.</p>
+                      </a>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link asChild>
+                      <a className="ListItemLink" href="/">
+                        <div className="ListItemHeading">Icons</div>
+                        <p className="ListItemText">A crisp set of 15x15 icons, balanced and consistent.</p>
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </Content>
+          </div>
         </Item>
         <Item>
           <Link className="NavigationMenuLink" href="/">
@@ -77,7 +138,7 @@ export default function Navmenu() {
         </Item>
         <Item>
           <Trigger className="NavigationMenuTrigger">
-            Submissão de Protocolos <CaretDownIcon aria-hidden />
+            Submissão de Protocolos <CaretDownIcon className="CaretDown" aria-hidden />
           </Trigger>
         </Item>
         <Item>

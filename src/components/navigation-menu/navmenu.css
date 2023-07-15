@@ -101,6 +101,22 @@ button, p {
   /* Added */
 }
 
+.NavigationMenuContent[data-motion='from-start'] {
+  animation-name: enterFromLeft;
+}
+
+.NavigationMenuContent[data-motion='from-end'] {
+  animation-name: enterFromRight;
+}
+
+.NavigationMenuContent[data-motion='to-start'] {
+  animation-name: exitToLeft;
+}
+
+.NavigationMenuContent[data-motion='to-end'] {
+  animation-name: exitToRight;
+}
+
 .List {
   display: grid;
   padding: 16px;
@@ -112,6 +128,12 @@ button, p {
 .List.one {
   width: 500px;
   grid-template-columns: 0.75fr 1fr;
+}
+
+.List.two {
+  width: 600px;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .Callout {
@@ -207,21 +229,57 @@ button, p {
   font-weight: initial;
 }
 
-@keyframes fadeIn {
+.CaretDown {
+  position: relative;
+  color: var(--violet-10);
+  top: 1px;
+  transition: transform 250ms ease;
+}
+[data-state='open'] > .CaretDown {
+  transform: rotate(-180deg);
+}
+
+@keyframes enterFromRight {
   from {
     opacity: 0;
+    transform: translateX(200px);
   }
   to {
     opacity: 1;
+    transform: translateX(0);
   }
 }
 
-@keyframes fadeOut {
+@keyframes enterFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes exitToRight {
   from {
     opacity: 1;
+    transform: translateX(0);
   }
   to {
     opacity: 0;
+    transform: translateX(200px);
+  }
+}
+
+@keyframes exitToLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-200px);
   }
 }
 
@@ -244,5 +302,23 @@ button, p {
   to {
     opacity: 0;
     transform: rotateX(-10deg) scale(0.95);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
