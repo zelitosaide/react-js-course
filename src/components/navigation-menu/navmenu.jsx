@@ -33,6 +33,33 @@ export default function Navmenu() {
                       </a>
                     </Link>
                   </li>
+
+                  <li>
+                    <Link asChild>
+                      <a className="ListItemLink" href="/">
+                        <div className="ListItemHeading">Stitches</div>
+                        <p className="ListItemText">CSS-in-JS with best-in-class developer experience.</p>
+                      </a>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link asChild>
+                      <a className="ListItemLink" href="/">
+                        <div className="ListItemHeading">Colors</div>
+                        <p className="ListItemText">Beautiful, thought-out palettes with auto dark mode.</p>
+                      </a>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link asChild>
+                      <a className="ListItemLink" href="/">
+                        <div className="ListItemHeading">Icons</div>
+                        <p className="ListItemText">A crisp set of 15x15 icons, balanced and consistent.</p>
+                      </a>
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </Content>

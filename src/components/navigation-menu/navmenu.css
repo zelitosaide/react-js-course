@@ -107,6 +107,8 @@ button, p {
   margin: 0;
   column-gap: 10px;
   list-style: none;
+  width: 500px;
+  grid-template-columns: 0.75fr 1fr;
 }
 
 .Callout {
@@ -168,6 +170,38 @@ button, p {
 
 .NavigationMenuIndicator[data-state='hidden'] {
   animation: fadeOut 200ms ease;
+}
+
+.ListItemLink {
+  display: block;
+  outline: none;
+  text-decoration: none;
+  user-select: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.ListItemLink:focus {
+  box-shadow: 0 0 0 2px var(--violet-7);
+}
+
+.ListItemLink:hover {
+  background-color: var(--mauve-3);
+}
+
+.ListItemHeading {
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  color: var(--violet-12);
+}
+
+.ListItemText {
+  color: var(--mauve-11);
+  line-height: 1.4;
+  font-weight: initial;
 }
 
 @keyframes fadeIn {
