@@ -140,6 +140,67 @@ export default function Navmenu() {
           <Trigger className="NavigationMenuTrigger">
             Submissão de Protocolos <CaretDownIcon className="CaretDown" aria-hidden />
           </Trigger>
+          <div className="NavigationMenuContentWrapper">
+            <Content className="NavigationMenuContent">
+              <div className="NavigationMenuContentBoundary">
+                <ul className="List two">
+                  <li>
+                    <Link asChild>
+                      <a className="ListItemLink" href="/">
+                        <div className="ListItemHeading">Introduction</div>
+                        <p className="ListItemText">Build high-quality, accessible design systems and web apps.</p>
+                      </a>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link asChild>
+                      <a className="ListItemLink" href="/">
+                        <div className="ListItemHeading">Getting started</div>
+                        <p className="ListItemText">A quick tutorial to get you up and running with Radix Primitives.</p>
+                      </a>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link asChild>
+                      <a className="ListItemLink" href="/">
+                        <div className="ListItemHeading">Styling</div>
+                        <p className="ListItemText">Unstyled and compatible with any styling solution.</p>
+                      </a>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link asChild>
+                      <a className="ListItemLink" href="/">
+                        <div className="ListItemHeading">Animation</div>
+                        <p className="ListItemText">Use CSS keyframes or any animation library of your choice.</p>
+                      </a>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link asChild>
+                      <a className="ListItemLink" href="/">
+                        <div className="ListItemHeading">Accessibility</div>
+                        <p className="ListItemText">Tested in a range of browsers and assistive technologies.</p>
+                      </a>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link asChild>
+                      <a className="ListItemLink" href="/">
+                        <div className="ListItemHeading">Releases</div>
+                        <p className="ListItemText">Radix Primitives releases and their changelogs.</p>
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </Content>
+          </div>
         </Item>
         <Item>
           <Link className="NavigationMenuLink" href="/">
