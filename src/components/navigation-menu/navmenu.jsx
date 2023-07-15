@@ -208,9 +208,9 @@ export default function Navmenu() {
           </Link>
         </Item>
 
-        <Indicator className="NavigationMenuIndicator">
+        {/* <Indicator className="NavigationMenuIndicator">
           <div className="Arrow" />
-        </Indicator>
+        </Indicator> */}
       </List>
     </Root>
   );
