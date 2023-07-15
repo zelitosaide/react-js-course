@@ -89,12 +89,7 @@ button, p {
 
 .NavigationMenuContent {
   position: absolute;
-  /* Commentado */
-  /* top: 0; */
   left: 0;
-  /* Commentado */
-  /* width: 100%; */
-  /* width: auto; */
   animation-duration: 250ms;
   animation-timing-function: ease;
 }
@@ -146,35 +141,6 @@ button, p {
   color: var(--mauve-4);
   font-size: 14px;
   line-height: 1.3;
-}
-
-.Arrow {
-  position: relative;
-  top: 70%;
-  background-color: white;
-  width: 10px;
-  height: 10px;
-  transform: rotate(45deg);
-  border-top-left-radius: 2px;
-}
-
-.NavigationMenuIndicator {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  height: 10px;
-  top: 100%;
-  overflow: hidden;
-  z-index: 1;
-  transition: width, transform 250ms ease;
-}
-
-.NavigationMenuIndicator[data-state='visible'] {
-  animation: fadeIn 200ms ease;
-}
-
-.NavigationMenuIndicator[data-state='hidden'] {
-  animation: fadeOut 200ms ease;
 }
 
 .ListItemLink {
@@ -238,23 +204,5 @@ button, p {
   to {
     opacity: 0;
     transform: rotateX(-10deg) scale(0.95);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
   }
 }
