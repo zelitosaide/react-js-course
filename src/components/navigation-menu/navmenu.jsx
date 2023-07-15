@@ -19,7 +19,7 @@ export default function Navmenu() {
           <div className="NavigationMenuContentWrapper">
             <Content className="NavigationMenuContent">
               <div className="NavigationMenuContentBoundary">
-                <ul className="List">
+                <ul className="List one">
                   <li style={{ gridRow: 'span 3' }}>
                     <Link asChild>
                       <a className="Callout" href="/">

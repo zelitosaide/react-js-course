@@ -107,6 +107,9 @@ button, p {
   margin: 0;
   column-gap: 10px;
   list-style: none;
+}
+
+.List.one {
   width: 500px;
   grid-template-columns: 0.75fr 1fr;
 }
