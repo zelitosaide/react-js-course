@@ -76,8 +76,8 @@ export default function Navmenu() {
                   <li>
                     <Link asChild>
                       <a className="ListItemLink" href="/">
-                        <div className="ListItemHeading">Stitches</div>
-                        <p className="ListItemText">CSS-in-JS with best-in-class developer experience.</p>
+                        <div className="ListItemHeading">Introduction</div>
+                        <p className="ListItemText">Build high-quality, accessible design systems and web apps.</p>
                       </a>
                     </Link>
                   </li>
@@ -85,8 +85,8 @@ export default function Navmenu() {
                   <li>
                     <Link asChild>
                       <a className="ListItemLink" href="/">
-                        <div className="ListItemHeading">Colors</div>
-                        <p className="ListItemText">Beautiful, thought-out palettes with auto dark mode.</p>
+                        <div className="ListItemHeading">Getting started</div>
+                        <p className="ListItemText">A quick tutorial to get you up and running with Radix Primitives.</p>
                       </a>
                     </Link>
                   </li>
@@ -94,8 +94,8 @@ export default function Navmenu() {
                   <li>
                     <Link asChild>
                       <a className="ListItemLink" href="/">
-                        <div className="ListItemHeading">Icons</div>
-                        <p className="ListItemText">A crisp set of 15x15 icons, balanced and consistent.</p>
+                        <div className="ListItemHeading">Styling</div>
+                        <p className="ListItemText">Unstyled and compatible with any styling solution.</p>
                       </a>
                     </Link>
                   </li>
@@ -103,8 +103,8 @@ export default function Navmenu() {
                   <li>
                     <Link asChild>
                       <a className="ListItemLink" href="/">
-                        <div className="ListItemHeading">Icons</div>
-                        <p className="ListItemText">A crisp set of 15x15 icons, balanced and consistent.</p>
+                        <div className="ListItemHeading">Animation</div>
+                        <p className="ListItemText">Use CSS keyframes or any animation library of your choice.</p>
                       </a>
                     </Link>
                   </li>
@@ -112,8 +112,8 @@ export default function Navmenu() {
                   <li>
                     <Link asChild>
                       <a className="ListItemLink" href="/">
-                        <div className="ListItemHeading">Icons</div>
-                        <p className="ListItemText">A crisp set of 15x15 icons, balanced and consistent.</p>
+                        <div className="ListItemHeading">Accessibility</div>
+                        <p className="ListItemText">Tested in a range of browsers and assistive technologies.</p>
                       </a>
                     </Link>
                   </li>
@@ -121,8 +121,8 @@ export default function Navmenu() {
                   <li>
                     <Link asChild>
                       <a className="ListItemLink" href="/">
-                        <div className="ListItemHeading">Icons</div>
-                        <p className="ListItemText">A crisp set of 15x15 icons, balanced and consistent.</p>
+                        <div className="ListItemHeading">Releases</div>
+                        <p className="ListItemText">Radix Primitives releases and their changelogs.</p>
                       </a>
                     </Link>
                   </li>
