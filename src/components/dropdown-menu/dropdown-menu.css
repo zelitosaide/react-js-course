@@ -104,7 +104,12 @@ button {
   color: var(--mauve-11);
 }
 
-
+[data-highlighted] > .RightSlot {
+  color: white;
+}
+[data-disabled] .RightSlot {
+  color: var(--mauve-8);
+}
 
 
 
