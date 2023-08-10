@@ -7,7 +7,8 @@ import {
   Content,
   Item,
   Sub,
-  SubTrigger
+  SubTrigger,
+  SubContent
 } from "@radix-ui/react-dropdown-menu";
 import { ChevronRightIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 
@@ -38,6 +39,15 @@ export default function DropdownMenu() {
                 <ChevronRightIcon />
               </div>
             </SubTrigger>
+            <Portal>
+              <SubContent 
+                className="DropdownMenuSubContent"
+                sideOffset={2}
+                alignOffset={-5}
+              >
+
+              </SubContent>
+            </Portal>
           </Sub>
         </Content>
       </Portal>
