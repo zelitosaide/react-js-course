@@ -51,7 +51,7 @@ export default function DropdownMenu() {
                 </Item>
                 <Item className="DropdownMenuItem">Create Shortcut…</Item>
                 <Item className="DropdownMenuItem">Name Window…</Item>
-                <Separator className="DropdownMenu.Separator" />
+                <Separator className="DropdownMenuSeparator" />
                 <Item className="DropdownMenuItem">Developer Tools</Item>
               </SubContent>
             </Portal>

@@ -111,6 +111,12 @@ button {
   color: var(--mauve-8);
 }
 
+.DropdownMenuSeparator {
+  height: 1px;
+  background-color: var(--violet-6);
+  margin: 5px;
+}
+
 
 
 
