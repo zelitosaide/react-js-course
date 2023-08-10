@@ -1,7 +1,9 @@
 // import "./App.css";
 // import { useState, useTransition } from "react";
 
-import Submenu from "./components/submenus/submenu";
+import DropdownMenu from "./components/dropdown-menu/dropdown-menu";
+
+// import Submenu from "./components/submenus/submenu";
 
 // import Popover from "./components/popover/popover";
 // import Accordion from "./components/accordion/accordion";
@@ -25,7 +27,8 @@ function App() {
       {/* <Menubar /> */}
       {/* <Navmenu /> */}
       {/* <h1>Heading 1</h1> */}
-      <Submenu />
+      {/* <Submenu /> */}
+      <DropdownMenu />
     </>
   );
 }
