@@ -6,3 +6,15 @@
 button {
   all: unset;
 }
+
+.IconButton {
+  font-family: inherit;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--violet-11);
+  background-color: white;
+}

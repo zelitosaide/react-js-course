@@ -9,9 +9,10 @@ body {
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(330deg, hsl(272, 53%, 50%) 0%, hsl(226, 68%, 56%) 100%);
-  /* display: flex;
-  align-items: flex-start;
-  justify-content: center; */
+  display: flex;
+  /* align-items: flex-start; */
+  align-items: center;
+  justify-content: center;
   /* margin: 20px; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
