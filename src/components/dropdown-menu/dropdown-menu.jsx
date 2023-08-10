@@ -9,11 +9,15 @@ import {
   Sub,
   SubTrigger,
   SubContent,
-  Separator
+  Separator,
+  CheckboxItem,
+  ItemIndicator
 } from "@radix-ui/react-dropdown-menu";
-import { ChevronRightIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { CheckIcon, ChevronRightIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { useState } from "react";
 
 export default function DropdownMenu() {
+  const [bookmarksChecked, setBookmarksChecked] = useState(true);
   return (
     <Root>
       <Trigger asChild>
@@ -56,6 +60,19 @@ export default function DropdownMenu() {
               </SubContent>
             </Portal>
           </Sub>
+
+          <Separator className="DropdownMenuSeparator" />
+
+          <CheckboxItem
+            className="DropdownMenuCheckboxItem"
+            checked={bookmarksChecked}
+            onCheckedChange={setBookmarksChecked}
+          >
+            <ItemIndicator className="DropdownMenuItemIndicator">
+              <CheckIcon />
+            </ItemIndicator>
+            Show Bookmarks <div className="RightSlot">⌘+B</div>
+          </CheckboxItem>
         </Content>
       </Portal>
     </Root>
