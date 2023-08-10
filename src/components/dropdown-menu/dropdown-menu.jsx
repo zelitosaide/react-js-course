@@ -8,7 +8,8 @@ import {
   Item,
   Sub,
   SubTrigger,
-  SubContent
+  SubContent,
+  Separator
 } from "@radix-ui/react-dropdown-menu";
 import { ChevronRightIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 
@@ -45,7 +46,13 @@ export default function DropdownMenu() {
                 sideOffset={2}
                 alignOffset={-5}
               >
-
+                <Item className="DropdownMenuItem">
+                  Save Page As… <div className="RightSlot">⌘+S</div>
+                </Item>
+                <Item className="DropdownMenuItem">Create Shortcut…</Item>
+                <Item className="DropdownMenuItem">Name Window…</Item>
+                <Separator className="DropdownMenu.Separator" />
+                <Item className="DropdownMenuItem">Developer Tools</Item>
               </SubContent>
             </Portal>
           </Sub>
