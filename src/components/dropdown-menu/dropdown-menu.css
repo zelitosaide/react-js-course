@@ -27,3 +27,8 @@ button {
 .IconButton:focus {
   box-shadow: 0 0 0 2px black;
 }
+
+.DropdownMenuContent {
+  min-width: 220px;
+  background-color: white;
+}
