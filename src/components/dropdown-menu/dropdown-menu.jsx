@@ -5,7 +5,7 @@ export default function DropdownMenu() {
   return (
     <Root>
       <Trigger asChild>
-        <button>
+        <button className="IconButton" aria-label="Customise options">
           <HamburgerMenuIcon />
         </button>
       </Trigger>
