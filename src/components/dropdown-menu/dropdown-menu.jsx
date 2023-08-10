@@ -18,6 +18,8 @@ import { useState } from "react";
 
 export default function DropdownMenu() {
   const [bookmarksChecked, setBookmarksChecked] = useState(true);
+  const [urlsChecked, setUrlsChecked] = useState(false);
+
   return (
     <Root>
       <Trigger asChild>
@@ -72,6 +74,17 @@ export default function DropdownMenu() {
               <CheckIcon />
             </ItemIndicator>
             Show Bookmarks <div className="RightSlot">⌘+B</div>
+          </CheckboxItem>
+
+          <CheckboxItem
+            className="DropdownMenuCheckboxItem"
+            checked={urlsChecked}
+            onCheckedChange={setUrlsChecked}
+          >
+            <ItemIndicator className="DropdownMenuItemIndicator">
+              <CheckIcon />
+            </ItemIndicator>
+            Show Full URLs
           </CheckboxItem>
         </Content>
       </Portal>
