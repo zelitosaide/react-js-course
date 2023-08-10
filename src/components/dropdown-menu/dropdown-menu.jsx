@@ -12,7 +12,8 @@ import {
   Separator,
   CheckboxItem,
   ItemIndicator,
-  Label
+  Label,
+  Arrow
 } from "@radix-ui/react-dropdown-menu";
 import { CheckIcon, ChevronRightIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
@@ -91,6 +92,8 @@ export default function DropdownMenu() {
           <Separator className="DropdownMenuSeparator" />
 
           <Label className="DropdownMenuLabel">People</Label>
+
+          <Arrow className="DropdownMenuArrow" />
         </Content>
       </Portal>
     </Root>

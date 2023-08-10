@@ -133,6 +133,10 @@ button {
   color: var(--mauve-11);
 }
 
+.DropdownMenuArrow {
+  fill: white;
+}
+
 
 @keyframes slideUpAndFade {
   from {
