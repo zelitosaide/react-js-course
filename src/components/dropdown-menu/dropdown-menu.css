@@ -98,6 +98,12 @@ button {
   color: var(--violet-1);
 }
 
+.RightSlot {
+  margin-left: auto;
+  padding-left: 20px;
+  color: var(--mauve-11);
+}
+
 
 
 
