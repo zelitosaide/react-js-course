@@ -1,3 +1,5 @@
+import "./dropdown-menu.css";
+
 import { Root, Trigger } from "@radix-ui/react-dropdown-menu";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 
