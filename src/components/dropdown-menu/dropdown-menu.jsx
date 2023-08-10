@@ -13,14 +13,17 @@ import {
   CheckboxItem,
   ItemIndicator,
   Label,
-  Arrow
+  Arrow,
+  RadioGroup,
+  RadioItem
 } from "@radix-ui/react-dropdown-menu";
-import { CheckIcon, ChevronRightIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { CheckIcon, ChevronRightIcon, DotFilledIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
 
 export default function DropdownMenu() {
   const [bookmarksChecked, setBookmarksChecked] = useState(true);
   const [urlsChecked, setUrlsChecked] = useState(false);
+  const [person, setPerson] = useState("pedro");
 
   return (
     <Root>
@@ -92,6 +95,21 @@ export default function DropdownMenu() {
           <Separator className="DropdownMenuSeparator" />
 
           <Label className="DropdownMenuLabel">People</Label>
+
+          <RadioGroup value={person} onValueChange={setPerson}>
+            <RadioItem className="DropdownMenuRadioItem" value="pedro">
+              <ItemIndicator className="DropdownMenuItemIndicator">
+                <DotFilledIcon />
+              </ItemIndicator>
+              Pedro Duarte
+            </RadioItem>
+            <RadioItem className="DropdownMenuRadioItem" value="colm">
+              <ItemIndicator className="DropdownMenuItemIndicator">
+                <DotFilledIcon />
+              </ItemIndicator>
+              Colm Tuite
+            </RadioItem>
+          </RadioGroup>
 
           <Arrow className="DropdownMenuArrow" />
         </Content>
