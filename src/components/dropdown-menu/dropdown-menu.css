@@ -39,7 +39,10 @@ button {
   will-change: transform, opacity;
 }
 
-.DropdownMenuItem {
+.DropdownMenuItem,
+.DropdownMenuCheckboxItem,
+.DropdownMenuRadioItem,
+.DropdownMenuSubTrigger {
   font-size: 13px;
   line-height: 1;
   color: var(--violet-11);

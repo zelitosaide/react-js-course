@@ -19,7 +19,7 @@ export default function DropdownMenu() {
       </Trigger>
 
       <Portal>
-        <Content className="DropdownMenuContent">
+        <Content className="DropdownMenuContent" sideOffset={5}>
           <Item className="DropdownMenuItem">
             New Tab <div className="RightSlot">⌘+T</div>
           </Item>
