@@ -5,9 +5,11 @@ import {
   Trigger,
   Portal,
   Content,
-  Item
+  Item,
+  Sub,
+  SubTrigger
 } from "@radix-ui/react-dropdown-menu";
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { ChevronRightIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 
 export default function DropdownMenu() {
   return (
@@ -29,6 +31,14 @@ export default function DropdownMenu() {
           <Item className="DropdownMenuItem" disabled>
             New Private Window <div className="RightSlot">⇧+⌘+N</div>
           </Item>
+          <Sub>
+            <SubTrigger className="DropdownMenuSubTrigger">
+              More Tools
+              <div className="RightSlot">
+                <ChevronRightIcon />
+              </div>
+            </SubTrigger>
+          </Sub>
         </Content>
       </Portal>
     </Root>
