@@ -44,6 +44,21 @@ button {
   animation-name: slideDownAndFade;
 }
 
+.DropdownMenuContent[data-side='right'],
+.DropdownMenuSubContent[data-side='right'] {
+  animation-name: slideLeftAndFade;
+}
+
+.DropdownMenuContent[data-side='bottom'],
+.DropdownMenuSubContent[data-side='bottom'] {
+  animation-name: slideUpAndFade;
+}
+
+.DropdownMenuContent[data-side='left'],
+.DropdownMenuSubContent[data-side='left'] {
+  animation-name: slideRightAndFade;
+}
+
 .DropdownMenuItem,
 .DropdownMenuCheckboxItem,
 .DropdownMenuRadioItem,
