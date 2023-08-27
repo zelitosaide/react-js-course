@@ -1,7 +1,9 @@
 // import "./App.css";
 // import { useState, useTransition } from "react";
 
-import Notion from "./components/notion/notion";
+import TipTap from "./components/notion/tiptap";
+
+// import Notion from "./components/notion/notion";
 
 // import DropdownMenu from "./components/dropdown-menu/dropdown-menu";
 
@@ -31,7 +33,8 @@ function App() {
       {/* <h1>Heading 1</h1> */}
       {/* <Submenu /> */}
       {/* <DropdownMenu /> */}
-      <Notion></Notion>
+      {/* <Notion></Notion> */}
+      <TipTap />
     </>
   );
 }
