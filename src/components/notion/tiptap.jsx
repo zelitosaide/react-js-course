@@ -42,7 +42,21 @@ export default function TipTap() {
       <MenuBar editor={editor} />
       <EditorContent editor={editor}>
         <FloatingMenu editor={editor}>This is the floating meun</FloatingMenu>
-        <BubbleMenu editor={editor}>This is the bubble menu</BubbleMenu>
+        <BubbleMenu editor={editor}>
+          <button 
+            onClick={() => editor.chain().focus().toggleBold().run()}
+            disabled={
+              !editor.can()
+                .chain()
+                .focus()
+                .toggleBold()
+                .run()
+            }
+            className={editor.isActive('bold') ? 'is-active' : ''}
+          >
+            bold
+          </button>
+        </BubbleMenu>
       </EditorContent>
     </>
     // </EditorProvider>
