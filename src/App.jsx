@@ -1,7 +1,7 @@
 // import "./App.css";
 // import { useState, useTransition } from "react";
 
-import DropdownMenu from "./components/dropdown-menu/dropdown-menu";
+// import DropdownMenu from "./components/dropdown-menu/dropdown-menu";
 
 // import Submenu from "./components/submenus/submenu";
 
@@ -28,7 +28,7 @@ function App() {
       {/* <Navmenu /> */}
       {/* <h1>Heading 1</h1> */}
       {/* <Submenu /> */}
-      <DropdownMenu />
+      {/* <DropdownMenu /> */}
     </>
   );
 }
