@@ -77,6 +77,19 @@ function MenuBar({ editor }) {
       >
         strike
       </button>
+      <button
+        onClick={() => editor.chain().focus().toggleCode().run()}
+        disabled={
+          !editor.can()
+            .chain()
+            .focus()
+            .toggleCode()
+            .run()
+        }
+        className={editor.isActive('code') ? 'is-active' : ''}
+      >
+        code
+      </button>
     </>
   );
 }
