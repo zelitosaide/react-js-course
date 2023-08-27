@@ -96,6 +96,12 @@ function MenuBar({ editor }) {
       <button onClick={() => editor.chain().focus().clearNodes().run()}>
         clear nodes
       </button>
+      <button
+        onClick={() => editor.chain().focus().setParagraph().run()}
+        className={editor.isActive('paragraph') ? 'is-active' : ''}
+      >
+        paragraph
+      </button>
     </>
   );
 }
