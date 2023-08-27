@@ -47,7 +47,12 @@ export default function TipTap() {
             return $from.nodeBefore?.textContent === "/";
           }}
         >
-          Bold
+          <button
+            onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()}
+            className={editor.isActive('heading', { level: 1 }) ? 'is-active' : ''}
+          >
+            Heading 1
+          </button>
         </FloatingMenu>
         <BubbleMenu editor={editor}>
           <button 
