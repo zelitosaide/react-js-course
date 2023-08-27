@@ -41,7 +41,14 @@ export default function TipTap() {
     <>
       <MenuBar editor={editor} />
       <EditorContent editor={editor}>
-        <FloatingMenu editor={editor}>This is the floating meun</FloatingMenu>
+        <FloatingMenu editor={editor} 
+          shouldShow={function({ state  }) {
+            const { $from } = state.selection;
+            return $from.nodeBefore?.textContent === "/";
+          }}
+        >
+          Bold
+        </FloatingMenu>
         <BubbleMenu editor={editor}>
           <button 
             onClick={() => editor.chain().focus().toggleBold().run()}
