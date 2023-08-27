@@ -48,7 +48,9 @@ function MenuBar({ editor }) {
             .run()
         }
         className={editor.isActive('bold') ? 'is-active' : ''}
-      >bold</button>
+      >
+        bold
+      </button>
       <button
         onClick={() => editor.chain().focus().toggleItalic().run()}
         disabled={
