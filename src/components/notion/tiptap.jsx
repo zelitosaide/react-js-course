@@ -49,6 +49,19 @@ function MenuBar({ editor }) {
         }
         className={editor.isActive('bold') ? 'is-active' : ''}
       >bold</button>
+      <button
+        onClick={() => editor.chain().focus().toggleItalic().run()}
+        disabled={
+          !editor.can()
+            .chain()
+            .focus()
+            .toggleItalic()
+            .run()
+        }
+        className={editor.isActive('italic') ? 'is-active' : ''}
+      >
+        italic
+      </button>
     </>
   );
 }
