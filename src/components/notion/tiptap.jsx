@@ -1,7 +1,6 @@
 import "./tiptap.css";
 
-import { 
-  // EditorProvider, 
+import {
   FloatingMenu, 
   BubbleMenu, 
   useEditor,
@@ -37,7 +36,6 @@ export default function TipTap() {
   });
 
   return (
-    // <EditorProvider extensions={extensions} content={content}>
     <>
       <MenuBar editor={editor} />
       <EditorContent editor={editor}>
@@ -71,7 +69,6 @@ export default function TipTap() {
         </BubbleMenu>
       </EditorContent>
     </>
-    // </EditorProvider>
   );
 }
 
