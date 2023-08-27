@@ -90,6 +90,12 @@ function MenuBar({ editor }) {
       >
         code
       </button>
+      <button onClick={() => editor.chain().focus().unsetAllMarks().run()}>
+        clear marks
+      </button>
+      <button onClick={() => editor.chain().focus().clearNodes().run()}>
+        clear nodes
+      </button>
     </>
   );
 }
