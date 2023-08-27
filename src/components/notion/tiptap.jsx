@@ -5,15 +5,15 @@ import {
   FloatingMenu, 
   BubbleMenu, 
   useEditor,
-  EditorContent
+  EditorContent,
 } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
+
+import { content } from "./content";
 
 const extensions = [
   StarterKit
 ];
-
-const content = "<h1>Hello worldd</h1>";
 
 export default function TipTap() {
   const editor = useEditor({
@@ -22,10 +22,33 @@ export default function TipTap() {
 
   return (
     // <EditorProvider extensions={extensions} content={content}>
-    <EditorContent editor={editor}>
-      <FloatingMenu editor={editor}>This is the floating meun</FloatingMenu>
-      <BubbleMenu editor={editor}>This is the bubble menu</BubbleMenu>
-    </EditorContent>
+    <>
+      <MenuBar editor={editor} />
+      <EditorContent editor={editor}>
+        <FloatingMenu editor={editor}>This is the floating meun</FloatingMenu>
+        <BubbleMenu editor={editor}>This is the bubble menu</BubbleMenu>
+      </EditorContent>
+    </>
     // </EditorProvider>
+  );
+}
+
+function MenuBar({ editor }) {
+  if (!editor) return null;
+
+  return (
+    <>
+      <button 
+        onClick={() => editor.chain().focus().toggleBold().run()}
+        disabled={
+          !editor.can()
+            .chain()
+            .focus()
+            .toggleBold()
+            .run()
+        }
+        className={editor.isActive('bold') ? 'is-active' : ''}
+      >bold</button>
+    </>
   );
 }
