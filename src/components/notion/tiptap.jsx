@@ -62,6 +62,19 @@ function MenuBar({ editor }) {
       >
         italic
       </button>
+      <button
+        onClick={() => editor.chain().focus().toggleStrike().run()}
+        disabled={
+          !editor.can()
+            .chain()
+            .focus()
+            .toggleStrike()
+            .run()
+        }
+        className={editor.isActive('strike') ? 'is-active' : ''}
+      >
+        strike
+      </button>
     </>
   );
 }
