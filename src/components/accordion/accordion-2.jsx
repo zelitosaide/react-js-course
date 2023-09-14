@@ -21,7 +21,7 @@ export default function AccordionTwo() {
       </Item>
       <Item className="AccordionItem" value="item-3">
         <AccordionTrigger>Can it be animated?</AccordionTrigger>
-        <Content>
+        <Content className="AccordionContent">
           <div>Yes! You can animate the Accordion with CSS or JavaScript.</div>
         </Content>
       </Item>
