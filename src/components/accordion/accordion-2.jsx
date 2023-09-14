@@ -1,4 +1,6 @@
-import { Root, Item } from "@radix-ui/react-accordion";
+import { Root, Item, Header, Trigger } from "@radix-ui/react-accordion";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
+import { forwardRef } from "react";
 
 export default function AccordionTwo() {
   return (
@@ -15,3 +17,17 @@ export default function AccordionTwo() {
     </Root>
   );
 }
+
+const AccordionTrigger = forwardRef(function({ children, className, ...props }, forwardedRef) {
+  return (
+    <Header>
+      <Trigger
+        {...props}
+        ref={forwardedRef}
+      >
+        {children}
+        <ChevronDownIcon aria-hidden />
+      </Trigger>
+    </Header>
+  );
+});
