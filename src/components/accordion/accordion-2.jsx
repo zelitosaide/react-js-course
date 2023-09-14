@@ -22,8 +22,9 @@ export default function AccordionTwo() {
 
 const AccordionTrigger = forwardRef(function({ children, className, ...props }, forwardedRef) {
   return (
-    <Header>
+    <Header className="AccordionHeader">
       <Trigger
+        className="AccordionTrigger"
         {...props}
         ref={forwardedRef}
       >
