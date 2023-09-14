@@ -7,13 +7,13 @@ import "./accordion-2.css";
 export default function AccordionTwo() {
   return (
     <Root className="AccordionRoot" type="single" defaultValue="item-1" collapsible>
-      <Item value="item-1">
+      <Item className="AccordionItem" value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
       </Item>
-      <Item value="item-2">
+      <Item className="AccordionItem" value="item-2">
         <AccordionTrigger>Is it unstyled?</AccordionTrigger>
       </Item>
-      <Item value="item-3">
+      <Item className="AccordionItem" value="item-3">
         <AccordionTrigger>Can it be animated?</AccordionTrigger>
       </Item>
     </Root>
