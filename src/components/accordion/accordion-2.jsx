@@ -2,9 +2,11 @@ import { Root, Item, Header, Trigger } from "@radix-ui/react-accordion";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import { forwardRef } from "react";
 
+import "./accordion-2.css";
+
 export default function AccordionTwo() {
   return (
-    <Root>
+    <Root className="AccordionRoot">
       <Item value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
       </Item>
