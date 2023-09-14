@@ -1,4 +1,4 @@
-import { Root, Item, Header, Trigger } from "@radix-ui/react-accordion";
+import { Root, Item, Header, Trigger, Content } from "@radix-ui/react-accordion";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import { forwardRef } from "react";
 
@@ -15,6 +15,9 @@ export default function AccordionTwo() {
       </Item>
       <Item className="AccordionItem" value="item-3">
         <AccordionTrigger>Can it be animated?</AccordionTrigger>
+        <Content>
+          <div>Yes! You can animate the Accordion with CSS or JavaScript.</div>
+        </Content>
       </Item>
     </Root>
   );
@@ -32,5 +35,17 @@ const AccordionTrigger = forwardRef(function({ children, className, ...props }, 
         <ChevronDownIcon aria-hidden />
       </Trigger>
     </Header>
+  );
+});
+
+const AccordionContent = forwardRef(function({ children, className, ...props }, forwardedRef) {
+  return (
+    <Content
+      className="AccordionContent"
+      {...props}
+      ref={forwardedRef}
+    >
+      <div>{children}</div>
+    </Content>
   );
 });
