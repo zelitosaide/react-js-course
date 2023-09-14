@@ -1,7 +1,7 @@
 // import "./App.css";
 // import { useState, useTransition } from "react";
 
-import TipTap from "./components/notion/tiptap";
+// import TipTap from "./components/notion/tiptap";
 
 // import Notion from "./components/notion/notion";
 
@@ -10,9 +10,11 @@ import TipTap from "./components/notion/tiptap";
 // import Submenu from "./components/submenus/submenu";
 
 // import Popover from "./components/popover/popover";
-import Accordion from "./components/accordion/accordion";
+// import Accordion from "./components/accordion/accordion";
 // import Menubar from "./components/menubar/menubar";
 // import Navmenu from "./components/navigation-menu/navmenu";
+
+import AccordionTwo from "./components/accordion/accordion-2";
 
 function App() {
   // const [isPending, startTransition] = useTransition();
@@ -27,7 +29,7 @@ function App() {
   return (
     <>
       {/* <Popover trigger="More info" content="Some more info..." /> */}
-      <Accordion />
+      {/* <Accordion /> */}
       {/* <Menubar /> */}
       {/* <Navmenu /> */}
       {/* <h1>Heading 1</h1> */}
@@ -35,6 +37,7 @@ function App() {
       {/* <DropdownMenu /> */}
       {/* <Notion></Notion> */}
       {/* <TipTap /> */}
+      <AccordionTwo />
     </>
   );
 }
