@@ -6,13 +6,13 @@ export default function AccordionTwo() {
   return (
     <Root>
       <Item value="item-1">
-
+        <AccordionTrigger>Is it accessible?</AccordionTrigger>
       </Item>
       <Item value="item-2">
-
+        <AccordionTrigger>Is it unstyled?</AccordionTrigger>
       </Item>
       <Item value="item-3">
-
+        <AccordionTrigger>Can it be animated?</AccordionTrigger>
       </Item>
     </Root>
   );
