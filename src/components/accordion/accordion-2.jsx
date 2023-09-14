@@ -6,7 +6,7 @@ import "./accordion-2.css";
 
 export default function AccordionTwo() {
   return (
-    <Root className="AccordionRoot" type="single" defaultValue="item-1" collapsible>
+    <Root className="AccordionRoot" type="multiple">
       <Item className="AccordionItem" value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
         <AccordionContent>
@@ -40,7 +40,7 @@ const AccordionTrigger = forwardRef(function({ children, className, ...props }, 
         ref={forwardedRef}
       >
         {children}
-        <ChevronDownIcon aria-hidden />
+        <ChevronDownIcon className="AccordionChevron" aria-hidden />
       </Trigger>
     </Header>
   );
