@@ -10,7 +10,7 @@ import TipTap from "./components/notion/tiptap";
 // import Submenu from "./components/submenus/submenu";
 
 // import Popover from "./components/popover/popover";
-// import Accordion from "./components/accordion/accordion";
+import Accordion from "./components/accordion/accordion";
 // import Menubar from "./components/menubar/menubar";
 // import Navmenu from "./components/navigation-menu/navmenu";
 
@@ -27,14 +27,14 @@ function App() {
   return (
     <>
       {/* <Popover trigger="More info" content="Some more info..." /> */}
-      {/* <Accordion /> */}
+      <Accordion />
       {/* <Menubar /> */}
       {/* <Navmenu /> */}
       {/* <h1>Heading 1</h1> */}
       {/* <Submenu /> */}
       {/* <DropdownMenu /> */}
       {/* <Notion></Notion> */}
-      <TipTap />
+      {/* <TipTap /> */}
     </>
   );
 }
