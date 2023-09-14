@@ -14,3 +14,9 @@ h3 {
   width: 300px;
   box-shadow: 0 2px 10px var(--black-a4);
 }
+
+.AccordionItem {
+  overflow: hidden;
+  margin-top: 1px;
+  background-color: red;
+}
