@@ -6,7 +6,7 @@ import "./accordion-2.css";
 
 export default function AccordionTwo() {
   return (
-    <Root className="AccordionRoot">
+    <Root className="AccordionRoot" type="single" defaultValue="item-1" collapsible>
       <Item value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
       </Item>
