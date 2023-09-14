@@ -22,7 +22,9 @@ export default function AccordionTwo() {
       <Item className="AccordionItem" value="item-3">
         <AccordionTrigger>Can it be animated?</AccordionTrigger>
         <Content className="AccordionContent">
-          <div>Yes! You can animate the Accordion with CSS or JavaScript.</div>
+          <div className="AccordionContentText">
+            Yes! You can animate the Accordion with CSS or JavaScript.
+          </div>
         </Content>
       </Item>
     </Root>
@@ -51,7 +53,7 @@ const AccordionContent = forwardRef(function({ children, className, ...props }, 
       {...props}
       ref={forwardedRef}
     >
-      <div>{children}</div>
+      <div className="AccordionContentText">{children}</div>
     </Content>
   );
 });

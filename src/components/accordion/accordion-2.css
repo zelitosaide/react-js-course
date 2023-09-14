@@ -76,6 +76,19 @@ h3 {
   animation: slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);
 }
 
+.AccordionContentText {
+  padding: 15px 20px;
+}
+
+.AccordionChevron {
+  color: var(--violet-10);
+  transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+.AccordionTrigger[data-state='open'] > .AccordionChevron {
+  transform: rotate(180deg);
+}
+
+
 @keyframes slideDown {
   from {
     height: 0;
