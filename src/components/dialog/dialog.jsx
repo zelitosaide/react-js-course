@@ -1,6 +1,7 @@
+import { Cross2Icon } from "@radix-ui/react-icons";
 import "./dialog.css";
 
-import { Content, Description, Overlay, Portal, Root, Title, Trigger } from "@radix-ui/react-dialog";
+import { Close, Content, Description, Overlay, Portal, Root, Title, Trigger } from "@radix-ui/react-dialog";
 
 export default function Dialog() {
   return (
@@ -27,6 +28,16 @@ export default function Dialog() {
             </label>
             <input className="Input" id="username" defaultValue="@peduarte" />
           </fieldset>
+          <div style={{ display: 'flex', marginTop: 25, justifyContent: 'flex-end' }}>
+            <Close asChild>
+              <button className="Button green">Save changes</button>
+            </Close>
+          </div>
+          <Close asChild>
+            <button className="IconButton" aria-label="Close">
+              <Cross2Icon />
+            </button>
+          </Close>
         </Content>
       </Portal>
     </Root>
