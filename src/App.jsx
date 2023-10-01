@@ -1,6 +1,8 @@
 // import "./App.css";
 // import { useState, useTransition } from "react";
 
+import Dialog from "./components/dialog/dialog";
+
 // import TipTap from "./components/notion/tiptap";
 
 // import Notion from "./components/notion/notion";
@@ -16,7 +18,7 @@
 
 // import AccordionTwo from "./components/accordion/accordion-2";
 
-import Carousel from "./components/carousel/carousel";
+// import Carousel from "./components/carousel/carousel";
 
 function App() {
   // const [isPending, startTransition] = useTransition();
@@ -40,7 +42,8 @@ function App() {
       {/* <Notion></Notion> */}
       {/* <TipTap /> */}
       {/* <AccordionTwo /> */}
-      <Carousel />
+      {/* <Carousel /> */}
+      <Dialog />
     </>
   );
 }
