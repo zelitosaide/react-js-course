@@ -14,7 +14,9 @@
 // import Menubar from "./components/menubar/menubar";
 // import Navmenu from "./components/navigation-menu/navmenu";
 
-import AccordionTwo from "./components/accordion/accordion-2";
+// import AccordionTwo from "./components/accordion/accordion-2";
+
+import Carousel from "./components/carousel/carousel";
 
 function App() {
   // const [isPending, startTransition] = useTransition();
@@ -37,7 +39,8 @@ function App() {
       {/* <DropdownMenu /> */}
       {/* <Notion></Notion> */}
       {/* <TipTap /> */}
-      <AccordionTwo />
+      {/* <AccordionTwo /> */}
+      <Carousel />
     </>
   );
 }
