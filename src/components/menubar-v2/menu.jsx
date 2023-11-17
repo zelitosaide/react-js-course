@@ -47,6 +47,69 @@ export default function MenubarDemo() {
           </Menubar.Content>
         </Menubar.Portal>
       </Menubar.Menu>
+
+      <Menubar.Menu>
+        <Menubar.Trigger>Edit</Menubar.Trigger>
+        <Menubar.Portal>
+          <Menubar.Content align="start" sideOffset={5} alignOffset={-3}>
+            <Menubar.Item>
+              Undo <div>⌘ Z</div>
+            </Menubar.Item>
+            <Menubar.Item>
+              Redo <div>⇧ ⌘ Z</div>
+            </Menubar.Item>
+            <Menubar.Separator />
+            <Menubar.Sub>
+              <Menubar.SubTrigger>
+                Find
+                <div>
+                  <ChevronRightIcon />
+                </div>
+              </Menubar.SubTrigger>
+
+              <Menubar.Portal>
+                <Menubar.SubContent alignOffset={-5}>
+                  <Menubar.Item>Search the web…</Menubar.Item>
+                  <Menubar.Separator />
+                  <Menubar.Item>Find…</Menubar.Item>
+                  <Menubar.Item>Find Next</Menubar.Item>
+                  <Menubar.Item>Find Previous</Menubar.Item>
+                </Menubar.SubContent>
+              </Menubar.Portal>
+            </Menubar.Sub>
+            <Menubar.Separator />
+            <Menubar.Item>Cut</Menubar.Item>
+            <Menubar.Item>Copy</Menubar.Item>
+            <Menubar.Item>Paste</Menubar.Item>
+          </Menubar.Content>
+        </Menubar.Portal>
+      </Menubar.Menu>
+
+      <Menubar.Menu>
+        <Menubar.Trigger>View</Menubar.Trigger>
+        <Menubar.Portal>
+          <Menubar.Content
+            align="start"
+            sideOffset={5}
+            alignOffset={-14}
+          >
+            {/* Goes something here!! */}
+          </Menubar.Content>
+        </Menubar.Portal>
+      </Menubar.Menu>
+
+      <Menubar.Menu>
+        <Menubar.Trigger>Profiles</Menubar.Trigger>
+        <Menubar.Portal>
+          <Menubar.Content
+            align="start"
+            sideOffset={5}
+            alignOffset={-14}
+          >
+            {/* Goes something here!! */}
+          </Menubar.Content>
+        </Menubar.Portal>
+      </Menubar.Menu>
     </Menubar.Root>
   );
 }
