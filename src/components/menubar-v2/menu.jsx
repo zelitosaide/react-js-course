@@ -1,3 +1,4 @@
+import { ChevronRightIcon } from "@radix-ui/react-icons";
 import * as Menubar from "@radix-ui/react-menubar";
 import { useState } from "react";
 
@@ -22,6 +23,26 @@ export default function MenubarDemo() {
             </Menubar.Item>
             <Menubar.Item disabled>
               New Incognito Window
+            </Menubar.Item>
+            <Menubar.Separator />
+            <Menubar.Sub>
+              <Menubar.SubTrigger>
+                Share
+                <div>
+                  <ChevronRightIcon />
+                </div>
+              </Menubar.SubTrigger>
+              <Menubar.Portal>
+                <Menubar.SubContent alignOffset={-5}>
+                  <Menubar.Item>Email Link</Menubar.Item>
+                  <Menubar.Item>Messages</Menubar.Item>
+                  <Menubar.Item>Notes</Menubar.Item>
+                </Menubar.SubContent>
+              </Menubar.Portal>
+            </Menubar.Sub>
+            <Menubar.Separator />
+            <Menubar.Item>
+              Print... <div>⌘ P</div>
             </Menubar.Item>
           </Menubar.Content>
         </Menubar.Portal>
