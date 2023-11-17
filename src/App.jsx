@@ -1,7 +1,9 @@
 // import "./App.css";
 // import { useState, useTransition } from "react";
 
-import Dialog from "./components/dialog/dialog";
+import MenubarDemo from "./components/menubar-v2/menu";
+
+// import Dialog from "./components/dialog/dialog";
 
 // import TipTap from "./components/notion/tiptap";
 
@@ -43,7 +45,8 @@ function App() {
       {/* <TipTap /> */}
       {/* <AccordionTwo /> */}
       {/* <Carousel /> */}
-      <Dialog />
+      {/* <Dialog /> */}
+      <MenubarDemo />
     </>
   );
 }
