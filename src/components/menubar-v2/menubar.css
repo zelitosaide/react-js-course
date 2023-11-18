@@ -1,0 +1,31 @@
+@import "@radix-ui/colors/black-alpha.css";
+@import "@radix-ui/colors/mauve.css";
+@import "@radix-ui/colors/violet.css";
+
+/* reset */
+button {
+  all: unset;
+}
+
+.MenubarRoot {
+  display: flex;
+  background-color: white;
+  padding: 3px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px var(--black-a7);
+}
+
+.MenubarTrigger {
+  padding: 8px 12px;
+  outline: none;
+  user-select: none;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 4px;
+  color: var(--violet-11);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+}

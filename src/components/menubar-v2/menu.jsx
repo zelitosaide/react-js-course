@@ -1,4 +1,6 @@
-import { ChevronRightIcon } from "@radix-ui/react-icons";
+import "./menubar.css";
+
+import { CheckIcon, ChevronRightIcon, DotFilledIcon } from "@radix-ui/react-icons";
 import * as Menubar from "@radix-ui/react-menubar";
 import { useState } from "react";
 
@@ -10,9 +12,9 @@ export default function MenubarDemo() {
   const [radioSelection, setRadioSelection] = useState(RADIO_ITEMS[2]);
   
   return (
-    <Menubar.Root>
+    <Menubar.Root className="MenubarRoot">
       <Menubar.Menu>
-        <Menubar.Trigger>File</Menubar.Trigger>
+        <Menubar.Trigger className="MenubarTrigger">File</Menubar.Trigger>
         <Menubar.Portal>
           <Menubar.Content align="start" sideOffset={5} alignOffset={-3}>
             <Menubar.Item>
@@ -49,7 +51,7 @@ export default function MenubarDemo() {
       </Menubar.Menu>
 
       <Menubar.Menu>
-        <Menubar.Trigger>Edit</Menubar.Trigger>
+        <Menubar.Trigger className="MenubarTrigger">Edit</Menubar.Trigger>
         <Menubar.Portal>
           <Menubar.Content align="start" sideOffset={5} alignOffset={-3}>
             <Menubar.Item>
@@ -86,27 +88,72 @@ export default function MenubarDemo() {
       </Menubar.Menu>
 
       <Menubar.Menu>
-        <Menubar.Trigger>View</Menubar.Trigger>
+        <Menubar.Trigger className="MenubarTrigger">View</Menubar.Trigger>
         <Menubar.Portal>
           <Menubar.Content
             align="start"
             sideOffset={5}
             alignOffset={-14}
           >
-            {/* Goes something here!! */}
+            {CHECK_ITEMS.map(function(item) {
+              return (
+                <Menubar.CheckboxItem
+                  key={item}
+                  checked={checkedSelection.includes(item)}
+                  onCheckedChange={() =>
+                    setCheckedSelection((current) =>
+                      current.includes(item)
+                        ? current.filter((el) => el !== item)
+                        : current.concat(item)
+                    )
+                  }
+                >
+                  <Menubar.ItemIndicator>
+                    <CheckIcon />
+                  </Menubar.ItemIndicator>
+                  {item}
+                </Menubar.CheckboxItem>
+              );
+            })}
+            <Menubar.Separator />
+            <Menubar.Item>
+              Reload <div>⌘ R</div>
+            </Menubar.Item>
+            <Menubar.Item disabled>
+              Force Reload <div>⇧ ⌘ R</div>
+            </Menubar.Item>
+            <Menubar.Separator />
+            <Menubar.Item>Toggle Fullscreen</Menubar.Item>
+            <Menubar.Separator />
+            <Menubar.Item>Hide Sidebar</Menubar.Item>
           </Menubar.Content>
         </Menubar.Portal>
       </Menubar.Menu>
 
       <Menubar.Menu>
-        <Menubar.Trigger>Profiles</Menubar.Trigger>
+        <Menubar.Trigger className="MenubarTrigger">Profiles</Menubar.Trigger>
         <Menubar.Portal>
           <Menubar.Content
             align="start"
             sideOffset={5}
             alignOffset={-14}
           >
-            {/* Goes something here!! */}
+            <Menubar.RadioGroup value={radioSelection} onValueChange={setRadioSelection}>
+              {RADIO_ITEMS.map(function(item) {
+                return (
+                  <Menubar.RadioItem key={item} value={item}>
+                    <Menubar.ItemIndicator>
+                      <DotFilledIcon />
+                    </Menubar.ItemIndicator>
+                    {item}
+                  </Menubar.RadioItem>
+                );
+              })}
+            </Menubar.RadioGroup>
+            <Menubar.Separator />
+            <Menubar.Item>Edit…</Menubar.Item>
+            <Menubar.Separator />
+            <Menubar.Item>Add Profile…</Menubar.Item>
           </Menubar.Content>
         </Menubar.Portal>
       </Menubar.Menu>
